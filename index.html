@@ -9,8 +9,8 @@
             display: flex;
             flex-direction: column;
             font-family: Arial, sans-serif;
-            background: #fff;
-            color: #000;
+            background: #121212;
+            color: #fff;
             transition: background 0.3s, color 0.3s;
         }
         body.dark-mode {
@@ -29,7 +29,7 @@
         }
         #sidebar {
             width: 250px;
-            background: #f4f4f4;
+            background: #222;
             padding: 10px;
             overflow-y: auto;
         }
@@ -44,7 +44,7 @@
             position: relative;
         }
         .folder:hover, .folder.active {
-            background: #ddd;
+            background: #444;
         }
         body.dark-mode .folder:hover, body.dark-mode .folder.active {
             background: #444;
@@ -52,28 +52,19 @@
         .folder-icon {
             margin-right: 5px;
         }
-        .folder::before {
-            content: "";
-            position: absolute;
-            left: 5px;
-            width: 10px;
-            height: 100%;
-            border-left: 1px solid #aaa;
-        }
         .folder.indent-1 { margin-left: 20px; }
-        .folder.indent-1::before { height: 20px; }
         .folder.indent-2 { margin-left: 40px; }
         .folder.indent-3 { margin-left: 60px; }
         #image-container {
             flex: 1;
-            display: flex;
             flex-wrap: wrap;
             padding: 10px;
         }
         img {
-            max-width: 400px;
-            margin: 5px;
-            border: 1px solid #ddd;
+            max-width: 600px;
+            max-height: 200px;
+            margin: 10px;
+            border: 1px solid #303030;
             border-radius: 5px;
             cursor: pointer;
         }
@@ -94,10 +85,10 @@
     </style>
 </head>
 <body>
-    <button id="toggle-dark-mode">Toggle Dark Mode</button>
+    <button id="toggle-dark-mode"></button>
     <div id="header">
         <h1>Paralake V6 Development Archive</h1>
-        <p>Coming Soon</p>
+        <p>...</p>
     </div>
     <div id="container">
         <div id="sidebar"></div>
@@ -116,24 +107,25 @@
             }
             
             for (const folder in fileTree) {
-                if (!fileTree[folder] || fileTree[folder].length === 0) continue; 
                 
-                const folderName = folder.split('/').pop();
-                const folderElement = document.createElement('div');
-                folderElement.classList.add('folder', `indent-${getIndentLevel(folder)}`);
-                folderElement.innerHTML = `<span class='folder-icon'>📁</span> ${folderName}`;
-                folderElement.onclick = () => {
-                    document.querySelectorAll('.folder').forEach(f => f.classList.remove('active'));
-                    folderElement.classList.add('active');
-                    imageContainer.innerHTML = '';
-                    fileTree[folder].forEach(file => {
-                        const img = document.createElement('img');
-                        img.src = `images/${folder}/${file}`;
-                        img.onclick = () => window.open(img.src, '_blank');
-                        imageContainer.appendChild(img);
-                    });
-                };
-                sidebar.appendChild(folderElement);
+                if( folder != "" ) {  //remove root folder
+                    const folderName = folder.split('/').pop(); //get only the last directory name
+                    const folderElement = document.createElement('div');
+                    folderElement.classList.add('folder', `indent-${getIndentLevel(folder)}`);
+                    folderElement.innerHTML = `<span class='folder-icon'>📁</span> ${folderName}`;
+                    folderElement.onclick = () => {
+                        document.querySelectorAll('.folder').forEach(f => f.classList.remove('active'));
+                        folderElement.classList.add('active');
+                        imageContainer.innerHTML = '';
+                        fileTree[folder].forEach(file => {
+                            const img = document.createElement('img');
+                            img.src = `images/${folder}/${file}`;
+                            img.onclick = () => window.open(img.src, '_blank');
+                            imageContainer.appendChild(img);
+                        });
+                    };
+                    sidebar.appendChild(folderElement)
+                }
             }
         }
         
