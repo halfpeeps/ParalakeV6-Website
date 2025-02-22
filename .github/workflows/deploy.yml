@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - release  # Trigger this workflow on push to the 'release' branch
-
+      
 jobs:
   deploy:
     runs-on: ubuntu-latest
