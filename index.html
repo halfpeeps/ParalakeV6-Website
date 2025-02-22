@@ -116,29 +116,66 @@
     }
     /* image popout stuff, i dont entirely understand it but it seems to work */
     #image-preview {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.8);
-        display: none;
-        justify-content: center;
-        align-items: center;
         z-index: 1000;
     }
-    #image-preview img {
+        .preview-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
         max-width: 90%;
         max-height: 90%;
+    }
+    #preview-img {
+        max-width: 90%;
+        max-height: 80vh;
         border-radius: 10px;
+    }
+    #image-description {
+        margin-top: 15px;
+        color: white;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 16px;
+        max-width: 80%;
+        text-align: center;
+    }
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 90%;
+        max-height: 90%;
+    }
+    #image-description {
+        margin-top: 15px;
+        color: white;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 16px;
+        max-width: 80%;
     }
     #image-preview .close {
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 20px;
+        right: 20px;
         color: white;
         font-size: 64px;
         cursor: pointer;
+        z-index: 1001;
     }
     #contact-popup {
         font-family: "Jost", serif;
@@ -181,8 +218,12 @@
     <!--image popup-->
     <div id="image-preview">
         <span class="close">&times;</span>
-        <img id="preview-img" src="" alt="Preview">
+        <div class="preview-content">
+            <img id="preview-img" src="" alt="Preview">
+            <div id="image-description"></div>
+        </div>
     </div>
+    
 
     <div id="contact-popup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 9999; justify-content: center; align-items: center;">
         <div style="background: #333; padding: 20px; border-radius: 10px; width: 80%; max-width: 400px; position: relative;">
@@ -207,7 +248,10 @@
         const imagePreview = document.getElementById('image-preview');
         const previewImg = document.getElementById('preview-img');
         const closeBtn = document.querySelector('#image-preview .close');
+        const imageDescription = document.createElement('p');
         
+        imageDescription.style.color = 'white'; //should move into css
+
         let imageFiles = [];
         let currentIndex = -1;
         
@@ -280,14 +324,15 @@
                     folderElement.classList.add('active');
 
                     imageContainer.innerHTML = '';
-                    imageFiles = []; // Reset the image files array
+                    imageFiles = [];
 
                     if (fileTree[folderPath] && fileTree[folderPath].length > 0) {
                         fileTree[folderPath].forEach(file => {
                             const img = document.createElement('img');
-                            img.src = `images/${folderPath}/${file}`;
+                            img.src = `images/${folderPath}/${file.filename}`;
                             img.onclick = () => {
                                 previewImg.src = img.src;
+                                imageDescription.textContent = file.description || ''; //desc
                                 currentIndex = imageFiles.indexOf(img.src);
                                 imagePreview.style.display = 'flex';
                             };
@@ -318,16 +363,22 @@
 
             return nestedContainer;
         }
+        
+        const descriptionContainer = document.createElement('div');
+        descriptionContainer.appendChild(imageDescription);
+        imagePreview.appendChild(descriptionContainer);
 
-        //arrow keys and esc
+        // arrow keys and esc
         document.addEventListener('keydown', (e) => {
             if (imagePreview.style.display === 'flex') {
                 if (e.key === 'ArrowRight') {
                     currentIndex = (currentIndex + 1) % imageFiles.length;
                     previewImg.src = imageFiles[currentIndex];
+                    imageDescription.textContent = fileTree[Object.keys(fileTree)[currentIndex]].description || '';
                 } else if (e.key === 'ArrowLeft') {
                     currentIndex = (currentIndex - 1 + imageFiles.length) % imageFiles.length;
                     previewImg.src = imageFiles[currentIndex];
+                    imageDescription.textContent = fileTree[Object.keys(fileTree)[currentIndex]].description || '';
                 } else if (e.key === 'Escape') {
                     imagePreview.style.display = 'none';
                 }
