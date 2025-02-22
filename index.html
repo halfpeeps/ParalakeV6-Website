@@ -144,7 +144,7 @@
 <body>
     <div id="header">
         <span>Paralake V6 Development Archive</span>
-        <a href="#">  <!--link-->
+        <a href="#">
             <img src="/phv6.png" alt="Logo" style="height: 45px;">
         </a>
     </div>
@@ -296,7 +296,22 @@
             }
     
             const folderElements = {};
-            Object.keys(fileTree).sort().forEach(folder => {
+            const folders = Object.keys(fileTree);
+            //misc folders go last
+            const miscFolders = [];
+            const otherFolders = [];
+    
+            folders.forEach(folder => {
+                if (folder.includes('Misc')) {
+                    miscFolders.push(folder);
+                } else {
+                    otherFolders.push(folder);
+                }
+            });
+    
+            const allFolders = otherFolders.concat(miscFolders);
+    
+            allFolders.forEach(folder => {
                 if (folder !== "") {
                     const parentFolder = folder.substring(0, folder.lastIndexOf('/'));
                     const parentElement = folderElements[parentFolder] || sidebar;
@@ -318,17 +333,18 @@
                 }
             });
         }
-
+    
         document.getElementById('contact-link').addEventListener('click', function (event) {
             event.preventDefault();
             document.getElementById('contact-popup').style.display = 'flex';
         });
-
+    
         function closePopup() {
             document.getElementById('contact-popup').style.display = 'none';
         }
     
         loadImages();
-    </script>    
+    </script>
+    
 </body>
 </html>
