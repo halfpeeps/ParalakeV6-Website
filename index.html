@@ -169,45 +169,49 @@
             const imagePreview = document.getElementById('image-preview');
             const previewImg = document.getElementById('preview-img');
             const closeBtn = document.querySelector('#image-preview .close');
-
+    
+            function cleanFolderName(folderName) {
+                return folderName.replace(/^\d+\s*/, '');
+            }
+    
             function createFolderElement(folderPath, parentElement) {
-                const folderName = folderPath.split('/').pop();
+                const rawFolderName = folderPath.split('/').pop();
+                const folderName = cleanFolderName(rawFolderName);
                 const folderElement = document.createElement('div');
                 folderElement.classList.add('folder');
-
+    
                 const folderHeader = document.createElement('div');
                 folderHeader.style.display = 'flex';
                 folderHeader.style.alignItems = 'center';
                 folderHeader.style.justifyContent = 'flex-start';
-
+    
                 const toggleButton = document.createElement('span');
                 toggleButton.classList.add('toggle-button');
-
+    
                 const hasSubfolders = Object.keys(fileTree).some(key => key.startsWith(folderPath + '/') && key !== folderPath);
                 const hasImages = fileTree[folderPath] && fileTree[folderPath].length > 0;
-
+    
                 if (hasSubfolders) {
                     toggleButton.textContent = '[+]';
                     folderElement.classList.add('parent-folder');
                 }
-
+    
                 const folderLabel = document.createElement('span');
                 folderLabel.innerHTML = `<span class='folder-icon'>📁</span> ${folderName}`;
                 folderLabel.style.flexGrow = "1";
                 folderLabel.style.textAlign = "left";
-
+    
                 if (hasSubfolders) {
                     folderHeader.appendChild(toggleButton);
                 }
                 folderHeader.appendChild(folderLabel);
                 folderElement.appendChild(folderHeader);
-
+    
                 const nestedContainer = document.createElement('div');
                 nestedContainer.classList.add('nested');
                 folderElement.appendChild(nestedContainer);
                 parentElement.appendChild(folderElement);
-
-                //subfolder toggle
+    
                 if (hasSubfolders) {
                     toggleButton.addEventListener('click', (e) => {
                         e.stopPropagation();
@@ -227,14 +231,13 @@
                         }
                     });
                 }
-
-                //dont select empty folders, just expand/collapse
+    
                 if (hasImages) {
                     folderElement.addEventListener('click', (e) => {
                         e.stopPropagation();
                         document.querySelectorAll('.folder').forEach(f => f.classList.remove('active'));
                         folderElement.classList.add('active');
-
+    
                         imageContainer.innerHTML = '';
                         if (fileTree[folderPath] && fileTree[folderPath].length > 0) {
                             fileTree[folderPath].forEach(file => {
@@ -255,7 +258,6 @@
                             folderElement.classList.remove('expanded');
                             toggleButton.textContent = '[+]';
                         } else {
-                            //collapse unrelated folders
                             document.querySelectorAll('.folder').forEach(f => {
                                 if (!f.contains(folderElement) && !folderElement.contains(f)) {
                                     f.classList.remove('expanded');
@@ -268,20 +270,18 @@
                         }
                     });
                 }
-
                 return nestedContainer;
             }
-
+    
             const folderElements = {};
-            Object.keys(fileTree).forEach(folder => {
+            Object.keys(fileTree).sort().forEach(folder => {
                 if (folder !== "") {
                     const parentFolder = folder.substring(0, folder.lastIndexOf('/'));
                     const parentElement = folderElements[parentFolder] || sidebar;
                     folderElements[folder] = createFolderElement(folder, parentElement);
                 }
             });
-
-            //colse preview stuff
+    
             closeBtn.addEventListener('click', () => {
                 imagePreview.style.display = 'none';
             });
@@ -296,8 +296,8 @@
                 }
             });
         }
-
+    
         loadImages();
-    </script>
+    </script>    
 </body>
 </html>
