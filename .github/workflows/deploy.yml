@@ -10,14 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout code
+    - name: Checkout code from private repo
       uses: actions/checkout@v3
       with:
-        ref: release  # Checkout the release branch
+        ref: release  # Checkout the release branch of your private repository
     
-    - name: Set up Git
-      uses: actions/setup-git@v3
-      
     - name: Install rsync
       run: sudo apt-get install rsync
 
@@ -28,4 +25,5 @@ jobs:
         git config --global user.email "github-actions@github.com"
         git add .
         git commit -m "Deploy to GitHub Pages"
-        git push origin main  # Push to the main branch of your public repo
+        git remote add public https://x-access-token:${{ secrets.PUBLIC_REPO_TOKEN }}@github.com/your-username/PHV6-Development-Archive.git
+        git push public main  # Push to the main branch of your public repo
