@@ -21,44 +21,22 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0px 16px;
+        padding: 2px 20px;
         background: #333;
         color: white;
-        border-bottom: 0px solid #444;
-        border-radius: 0px 0px 0 0;
-    }
-    #header h1 {
-        margin: 0;
         font-size: 24px;
-    }
-    #header-logo {
-        width: 120px;
-        height: auto;
-    }
-    a:link {
-        color: white;
-        text-decoration: none;
-    }
-    a:visited {
-        color: white;
-        text-decoration: none;
-    }
-    a:hover {
-        color: goldenrod;
-        text-decoration: none;
+        border-bottom: 2px solid #444;
     }
     #container {
         display: flex;
         flex: 1;
-        border-radius: 0 0 0px 0px;
     }
     #sidebar {
-        width: 300px; /* sidebar width */
+        width: 300px;
         background: #222;
         padding: 10px;
         overflow-y: auto;
         display: block;
-        border-radius: 0px 0 0 0px;
     }
     .folder {
         cursor: pointer;
@@ -72,7 +50,7 @@
         border-radius: 5px;
     }
     .folder.parent-folder:hover {
-        background: #555; /* parent hover colour */
+        background: #555;
     }
     .folder-icon {
         margin-right: 5px;
@@ -84,7 +62,7 @@
     }
     .nested {
         display: none;
-        padding-left: 30px; /* nesting amount */
+        padding-left: 30px;
     }
     .expanded > .nested {
         display: block;
@@ -108,34 +86,54 @@
         color: white;
         padding: 10px;
         text-align: center;
-        position: relative;
+        position: sticky;
         bottom: 0;
         width: 100%;
         border-top: 2px solid #444;
-        border-radius: 0 0 8px 8px;
+        box-sizing: border-box;
     }
     #footer a {
-        margin: 0 10px
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 14px;
     }
-    #footer {
-    background: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    border-top: 2px solid #444;
-    border-radius: 0 0 0px 0px;
-    box-sizing: border-box;
+    #footer a:hover {
+        text-decoration: underline;
+    }
+    /* image popout stuff, i dont entirely understand it but it seems to work */
+    #image-preview {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    #image-preview img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 10px;
+    }
+    #image-preview .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
     }
 </style>
-
+</head>
 <body>
     <div id="header">
-        <h1>Paralake V6 Development Archive</h1>
-        <a href="https://perpheads.com/" target="_blank">
-            <img id="header-logo" src="/phv6.png" alt="Logo">
+        <span>Paralake V6 Development Archive</span>
+        <a href="#">  <!--link-->
+            <img src="/phv6.png" alt="Logo" style="height: 45px;">
         </a>
     </div>
     <div id="container">
@@ -146,10 +144,16 @@
     <div id="footer">
         <p>Created by peeps</p>
         <div>
-            <a href="#" target="_blank">[  Map Download  ]</a>
-            <a href="https://perpheads.com/members/peeps.10255/" target="_blank">[  PERPHeads Forums  ]</a>
-            <a href="https://steamcommunity.com/id/halfpeeps/" target="_blank">[  Contact  ]</a>
+            <a href="#" target="_blank">[ Map Download ]</a>
+            <a href="https://perpheads.com/members/peeps.10255/" target="_blank">[ PERPHeads Forums ]</a>
+            <a href="https://steamcommunity.com/id/halfpeeps/" target="_blank">[ Contact ]</a>
         </div>
+    </div>
+
+    <!--image popup-->
+    <div id="image-preview">
+        <span class="close">&times;</span>
+        <img id="preview-img" src="" alt="Preview">
     </div>
 
     <script>
@@ -158,6 +162,9 @@
             const fileTree = await response.json();
             const sidebar = document.getElementById('sidebar');
             const imageContainer = document.getElementById('image-container');
+            const imagePreview = document.getElementById('image-preview');
+            const previewImg = document.getElementById('preview-img');
+            const closeBtn = document.querySelector('#image-preview .close');
 
             function createFolderElement(folderPath, parentElement) {
                 const folderName = folderPath.split('/').pop();
@@ -177,7 +184,7 @@
 
                 if (hasSubfolders) {
                     toggleButton.textContent = '[+]';
-                    folderElement.classList.add('parent-folder'); //set as parent folder
+                    folderElement.classList.add('parent-folder');
                 }
 
                 const folderLabel = document.createElement('span');
@@ -217,7 +224,7 @@
                     });
                 }
 
-                //dont allow selection of folders with no images, just collapse/expand them
+                //dont select empty folders, just expand/collapse
                 if (hasImages) {
                     folderElement.addEventListener('click', (e) => {
                         e.stopPropagation();
@@ -229,7 +236,10 @@
                             fileTree[folderPath].forEach(file => {
                                 const img = document.createElement('img');
                                 img.src = `images/${folderPath}/${file}`;
-                                img.onclick = () => window.open(img.src, '_blank');
+                                img.onclick = () => {
+                                    previewImg.src = img.src;
+                                    imagePreview.style.display = 'flex';
+                                };
                                 imageContainer.appendChild(img);
                             });
                         }
@@ -266,8 +276,24 @@
                     folderElements[folder] = createFolderElement(folder, parentElement);
                 }
             });
+
+            //colse preview stuff
+            closeBtn.addEventListener('click', () => {
+                imagePreview.style.display = 'none';
+            });
+            imagePreview.addEventListener('click', (e) => {
+                if (e.target === imagePreview) {
+                    imagePreview.style.display = 'none';
+                }
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    imagePreview.style.display = 'none';
+                }
+            });
         }
 
         loadImages();
     </script>
 </body>
+</html>
