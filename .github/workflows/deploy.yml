@@ -17,26 +17,31 @@ jobs:
           ref: release  # The branch in the private repo to watch (release)
           token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
 
-      # Step 2: Set up Git and configure user details for committing to the public repo
+      # Step 2: List files in the private repository to confirm directory structure
+      - name: List files in the private repository
+        run: |
+          ls -R Paralake-V6-Development-Archive
+
+      # Step 3: Set up Git and configure user details for committing to the public repo
       - name: Set up Git
         run: |
           git config --global user.name "Your Name"  # Replace with your name
           git config --global user.email "your-email@example.com"  # Replace with your email
 
-      # Step 3: Clone the public GitHub Pages repository (PHV6-Development-Archive)
+      # Step 4: Clone the public GitHub Pages repository (PHV6-Development-Archive)
       - name: Clone the public repository
         run: |
           git clone https://github.com/halfpeeps/PHV6-Development-Archive.git
           cd PHV6-Development-Archive
 
-      # Step 4: Copy content from the private repo's release branch to the public repo
+      # Step 5: Copy content from the private repo's release branch to the public repo
       - name: Copy website files
         run: |
           cd ..
-          rsync -av --exclude='.git' Paralake-V6-Development-Archive/release/ PHV6-Development-Archive/main
+          rsync -avv --exclude='.git' Paralake-V6-Development-Archive/release/ PHV6-Development-Archive/
           cd PHV6-Development-Archive
 
-      # Step 5: Commit and push changes to the public repo
+      # Step 6: Commit and push changes to the public repo
       - name: Commit and push changes to the public repo
         run: |
           git add .
