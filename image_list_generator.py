@@ -3,7 +3,6 @@ import json
 
 IMAGE_DIR = "images"
 OUTPUT_FILE = "file_list.json"
-
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".webp"}
 
 def scan_directory(directory):
