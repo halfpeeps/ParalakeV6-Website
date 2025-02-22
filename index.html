@@ -128,7 +128,7 @@
         background: rgba(0, 0, 0, 0.8);
         z-index: 1000;
     }
-        .preview-content {
+    .preview-content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -141,15 +141,16 @@
         max-height: 80vh;
         border-radius: 10px;
     }
-    #image-description {
+    .image-description {
         margin-top: 15px;
         color: white;
         background: rgba(0, 0, 0, 0.6);
         padding: 10px 15px;
         border-radius: 8px;
         font-size: 16px;
-        max-width: 80%;
+        max-width: flex;
         text-align: center;
+        display: none;
     }
     .image-container {
         display: flex;
@@ -158,15 +159,6 @@
         text-align: center;
         max-width: 90%;
         max-height: 90%;
-    }
-    #image-description {
-        margin-top: 15px;
-        color: white;
-        background: rgba(0, 0, 0, 0.6);
-        padding: 10px 15px;
-        border-radius: 8px;
-        font-size: 16px;
-        max-width: 80%;
     }
     #image-preview .close {
         position: absolute;
@@ -220,7 +212,6 @@
         <span class="close">&times;</span>
         <div class="preview-content">
             <img id="preview-img" src="" alt="Preview">
-            <div id="image-description"></div>
         </div>
     </div>
     
@@ -250,7 +241,7 @@
         const closeBtn = document.querySelector('#image-preview .close');
         const imageDescription = document.createElement('p');
         
-        imageDescription.style.color = 'white'; //should move into css
+        imageDescription.classList.add('image-description');
 
         let imageFiles = [];
         let currentIndex = -1;
@@ -331,12 +322,17 @@
                             const img = document.createElement('img');
                             img.src = `images/${folderPath}/${file.filename}`;
                             img.onclick = () => {
-                                previewImg.src = img.src;
-                                imageDescription.textContent = file.description || ''; //desc
-                                currentIndex = imageFiles.indexOf(img.src);
+                                currentIndex = imageFiles.findIndex(image => image.src === img.src); // Correctly find the clicked image index
+                                previewImg.src = imageFiles[currentIndex].src;
+                                if (imageFiles[currentIndex].description) {
+                                    imageDescription.textContent = imageFiles[currentIndex].description;
+                                    imageDescription.style.display = 'block'; // Show when there's a description
+                                } else {
+                                    imageDescription.style.display = 'none'; // Hide when empty
+                                }
                                 imagePreview.style.display = 'flex';
                             };
-                            imageFiles.push(img.src);
+                            imageFiles.push({ src: img.src, description: file.description });
                             imageContainer.appendChild(img);
                         });
                     }
@@ -363,24 +359,30 @@
 
             return nestedContainer;
         }
-        
+
         const descriptionContainer = document.createElement('div');
         descriptionContainer.appendChild(imageDescription);
         imagePreview.appendChild(descriptionContainer);
 
         // arrow keys and esc
         document.addEventListener('keydown', (e) => {
-            if (imagePreview.style.display === 'flex') {
-                if (e.key === 'ArrowRight') {
-                    currentIndex = (currentIndex + 1) % imageFiles.length;
-                    previewImg.src = imageFiles[currentIndex];
-                    imageDescription.textContent = fileTree[Object.keys(fileTree)[currentIndex]].description || '';
-                } else if (e.key === 'ArrowLeft') {
-                    currentIndex = (currentIndex - 1 + imageFiles.length) % imageFiles.length;
-                    previewImg.src = imageFiles[currentIndex];
-                    imageDescription.textContent = fileTree[Object.keys(fileTree)[currentIndex]].description || '';
+            if (imagePreview.style.display === 'flex' && currentIndex !== -1) {
+                if (e.key === 'ArrowRight' && currentIndex < imageFiles.length - 1) {
+                    currentIndex++; 
+                } else if (e.key === 'ArrowLeft' && currentIndex > 0) {
+                    currentIndex--; 
                 } else if (e.key === 'Escape') {
                     imagePreview.style.display = 'none';
+                    return;
+                }
+                
+                previewImg.src = imageFiles[currentIndex].src;
+                
+                if (imageFiles[currentIndex].description) {
+                    imageDescription.textContent = imageFiles[currentIndex].description;
+                    imageDescription.style.display = 'block'; 
+                } else {
+                    imageDescription.style.display = 'none'; 
                 }
             }
         });
