@@ -20,10 +20,13 @@ jobs:
 
     - name: Build and deploy to GitHub Pages
       run: |
-        rsync -av --delete ./ /path/to/public/directory  # Update path as needed for your structure
+        mkdir -p /tmp/public  # Temporary directory for syncing
+        rsync -av --delete ./ /tmp/public  # Sync private repo files
         git config --global user.name "GitHub Actions"
         git config --global user.email "github-actions@github.com"
+        cd /tmp/public  # Move into the synced directory
+        git init
+        git remote add public https://x-access-token:${{ secrets.PUBLIC_REPO_TOKEN }}@github.com/halfpeeps/PHV6-Development-Archive.git
         git add .
         git commit -m "Deploy to GitHub Pages"
-        git remote add public https://x-access-token:${{ secrets.PUBLIC_REPO_TOKEN }}@github.com/your-username/PHV6-Development-Archive.git
-        git push public main  # Push to the main branch of your public repo
+        git push -f public master:main  # Force push to the main branch of your public repo
