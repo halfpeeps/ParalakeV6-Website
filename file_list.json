@@ -2,6 +2,7 @@
     "": [],
     "01 City": [],
     "01 City/Bank": [
+        "gmod_bug7xfvaOV.jpg",
         "hammerplusplus_9CQHEioT5h.png",
         "hammerplusplus_AVjOx0JN56.png",
         "hammerplusplus_FLbaWUEB8p.jpg",
@@ -92,14 +93,13 @@
         "gmod_iPdCu0Rw2V.jpg",
         "gmod_SD8BW2V8re.jpg",
         "gmod_tabwWTgmt8.jpg",
+        "gmod_TcpudBP05V.jpg",
         "gmod_tZ5p6t7Bwc.jpg",
-        "gmod_U2kx0SeNo1.jpg",
         "gmod_uqiwHXNNSG.jpg",
+        "gmod_XWAiHWxzuH.jpg",
         "gmod_zoMz4E8iBx.jpg",
         "hammerplusplus_0BWRW8sf7t.jpg",
-        "hammerplusplus_22Mec7HUby.png",
         "hammerplusplus_7bSmhVZsDB.jpg",
-        "hammerplusplus_8shOHgJiI3.png",
         "hammerplusplus_9ohF97HsFR.jpg",
         "hammerplusplus_DO2rXuxtr2.jpg",
         "hammerplusplus_DRaB1b33hb.jpg",
@@ -107,8 +107,7 @@
         "hammerplusplus_hqQYPv9J9q.jpg",
         "hammerplusplus_Kr71tGLDiE.jpg",
         "hammerplusplus_lR08y49SqM.png",
-        "hammerplusplus_mxjnQKIdOo.jpg",
-        "hammerplusplus_UQLWRRCxlB.png"
+        "hammerplusplus_mxjnQKIdOo.jpg"
     ],
     "01 City/Office": [
         "hammerplusplus_07OPVHW7wI.png",
@@ -164,7 +163,8 @@
         "hammerplusplus_Pw9osHz5BR.jpg",
         "hammerplusplus_uLuE2cA4Ga.jpg",
         "hammerplusplus_VqFj9wcGxp.png",
-        "hammerplusplus_wSeIomJNXI.jpg"
+        "hammerplusplus_wSeIomJNXI.jpg",
+        "hammerplusplus_zSIwvgx7Ul.jpg"
     ],
     "01 City/Storage": [
         "hammerplusplus_AjnubzBIzc.jpg",
@@ -188,11 +188,10 @@
         "gmod_0BwR7MhGJp.jpg",
         "gmod_5FDdHTEMRV.jpg",
         "gmod_Essldtgrzq.jpg",
-        "gmod_hay0DFM5wQ.jpg",
+        "gmod_I8IRjlylVf.jpg",
         "gmod_L8jQatklQS.jpg",
         "gmod_P03pP8qMwH.jpg",
         "hammerplusplus_O66bffDAPy.jpg",
-        "hammerplusplus_Vk5aXBhzP6.png",
         "hammerplusplus_Zr7MfoEegK.jpg"
     ],
     "02 Business/Misc": [
@@ -207,6 +206,8 @@
     ],
     "03 Suburbs/Misc": [
         "gmod_4KdZlDQzzv.jpg",
+        "gmod_jN3YN67qHw.jpg",
+        "gmod_P4s6jSmNzy.jpg",
         "gmod_pElRawwG0N.jpg",
         "gmod_SUthRLP4kr.jpg",
         "hammerplusplus_prQGvfbMsF.jpg",
@@ -220,6 +221,7 @@
     ],
     "04 Forest": [],
     "04 Forest/Church": [
+        "gmod_T9MGe8P0yK.jpg",
         "hammerplusplus_oH1KYZldpU.jpg",
         "hammerplusplus_XTFnMIi10o.jpg",
         "hammerplusplus_zcXX6OYAS4.jpg"
@@ -234,6 +236,7 @@
         "hammerplusplus_x7jKHvZcJy.jpg"
     ],
     "04 Forest/Misc": [
+        "gmod_TdzlJw8BQL.jpg",
         "hammerplusplus_bTDt2shPag.jpg",
         "hammerplusplus_CWnc6kJA5n.jpg",
         "hammerplusplus_kBIKu7nRNq.jpg",
@@ -244,8 +247,70 @@
         "hammerplusplus_69WwXXezq0.jpg",
         "hammerplusplus_K8Tu5ZUn3a.jpg"
     ],
-    "05 Other": [],
-    "05 Other/Map Overview": [
+    "05 Cut Content": [],
+    "05 Cut Content/Bazaar": [
+        "gmod_1Hd0fCS8Ri.jpg",
+        "gmod_nHCMTE67Re.jpg",
+        "gmod_WbFG0rBCFk.jpg"
+    ],
+    "05 Cut Content/Casino": [
+        "gmod_hay0DFM5wQ.jpg",
+        "hammerplusplus_Vk5aXBhzP6.png"
+    ],
+    "05 Cut Content/City Garage": [
+        "gmod_2BADlVsvUi.jpg",
+        "gmod_rZB1KVOFu3.jpg",
+        "gmod_VnrdP659WB.jpg"
+    ],
+    "05 Cut Content/City Hall": [
+        "gmod_2OnANkN2cQ.jpg",
+        "gmod_ShPpA7sJkU.jpg",
+        "gmod_V0efDozEsh.jpg"
+    ],
+    "05 Cut Content/Highway": [
+        "gmod_j3DGiidt3H.jpg",
+        "hammerplusplus_8shOHgJiI3.png"
+    ],
+    "05 Cut Content/Misc": [
+        "gmod_9uYPswW3A4.jpg",
+        "gmod_hKatfqqWUJ.jpg",
+        "gmod_S9kBClfawo.jpg",
+        "gmod_TcAGHVScwG.jpg",
+        "gmod_VMO6ibdC0G.jpg",
+        "gmod_wY7Ai4CTWA.jpg",
+        "gmod_zyZenuDL2l.jpg"
+    ],
+    "05 Cut Content/New Apartment": [
+        "gmod_BEc9AXYxgC.jpg",
+        "gmod_H2kldn1LpX.jpg",
+        "gmod_hO6KvlTjpV.jpg",
+        "gmod_ja2F3ET8uI.jpg"
+    ],
+    "05 Cut Content/PD": [
+        "gmod_d6RwqMhxOO.jpg"
+    ],
+    "05 Cut Content/Penthouse": [
+        "gmod_U2kx0SeNo1.jpg"
+    ],
+    "05 Cut Content/Shops": [
+        "gmod_91TJTAyAaN.jpg",
+        "gmod_eILchezfhe.jpg",
+        "gmod_G4IpPMGj5E.jpg",
+        "gmod_i20xdoEBIf.jpg",
+        "gmod_OohvJ8GdTL.jpg",
+        "hammerplusplus_22Mec7HUby.png",
+        "hammerplusplus_UQLWRRCxlB.png"
+    ],
+    "05 Cut Content/Slums": [
+        "gmod_c5WvJ3DdA1.jpg",
+        "gmod_cHYDP3E9CM.jpg",
+        "gmod_Fy1nGEnHSy.jpg",
+        "gmod_JR4jqkfSJO.jpg",
+        "gmod_l5a7460Eg7.jpg",
+        "gmod_uu5HpCtxx0.jpg"
+    ],
+    "06 Other": [],
+    "06 Other/Map Overview": [
         "a1.jpg",
         "a2.jpg",
         "a3.jpg",
@@ -288,7 +353,7 @@
         "n1.jpg",
         "n2.jpg"
     ],
-    "05 Other/Models": [
+    "06 Other/Models": [
         "Adobe_Substance_3D_Painter_01iBuxEMm4.png",
         "Adobe_Substance_3D_Painter_1qp3wFSUPt.jpg",
         "Adobe_Substance_3D_Painter_2VdKFQw5DO.png",
@@ -310,5 +375,9 @@
         "Screenshot 2024-01-11 185919.jpg",
         "Screenshot 2024-02-12 100515.jpg",
         "Screenshot 2024-08-16 014548.jpg"
+    ],
+    "06 Other/Skybox": [
+        "hammerplusplus_5uHNXb7kRM.jpg",
+        "hammerplusplus_AYHE44Lvam.jpg"
     ]
 }
