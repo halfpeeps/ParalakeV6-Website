@@ -143,6 +143,18 @@
     #contact-popup {
         font-family: "Jost", serif;
     }
+    #close-button {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    #close-button:hover {
+        background-color: rgb(160, 0, 0);
+    }
 </style>
 </head>
 <body>
@@ -181,173 +193,193 @@
                 <li><a href="https://perpheads.com/members/peeps.10255/" target="_blank" style="color: white;">PERPHeads Forums</a></li>
                 <li><a href="https://discordapp.com/users/241526229558231051/" target="_blank" style="color: white;">Discord</a></li>
             </ul>
-            <button onclick="closePopup()" style="background-color: red; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Close</button>
+            <button id="close-button" onclick="closePopup()">Close</button>
         </div>
     </div>
     
 
     <script>
-        async function loadImages() {
-            const response = await fetch('file_list.json');
-            const fileTree = await response.json();
-            const sidebar = document.getElementById('sidebar');
-            const imageContainer = document.getElementById('image-container');
-            const imagePreview = document.getElementById('image-preview');
-            const previewImg = document.getElementById('preview-img');
-            const closeBtn = document.querySelector('#image-preview .close');
-    
-            function cleanFolderName(folderName) {
-                return folderName.replace(/^\d+\s*/, '');
-            }
-    
-            function createFolderElement(folderPath, parentElement) {
-                const rawFolderName = folderPath.split('/').pop();
-                const folderName = cleanFolderName(rawFolderName);
-                const folderElement = document.createElement('div');
-                folderElement.classList.add('folder');
-    
-                const folderHeader = document.createElement('div');
-                folderHeader.style.display = 'flex';
-                folderHeader.style.alignItems = 'center';
-                folderHeader.style.justifyContent = 'flex-start';
-    
-                const toggleButton = document.createElement('span');
-                toggleButton.classList.add('toggle-button');
-    
-                const hasSubfolders = Object.keys(fileTree).some(key => key.startsWith(folderPath + '/') && key !== folderPath);
-                const hasImages = fileTree[folderPath] && fileTree[folderPath].length > 0;
-    
-                if (hasSubfolders) {
-                    toggleButton.textContent = '[+]';
-                    folderElement.classList.add('parent-folder');
-                }
-    
-                const folderLabel = document.createElement('span');
-                folderLabel.innerHTML = `<span class='folder-icon'>📁</span> ${folderName}`;
-                folderLabel.style.flexGrow = "1";
-                folderLabel.style.textAlign = "left";
-    
-                if (hasSubfolders) {
-                    folderHeader.appendChild(toggleButton);
-                }
-                folderHeader.appendChild(folderLabel);
-                folderElement.appendChild(folderHeader);
-    
-                const nestedContainer = document.createElement('div');
-                nestedContainer.classList.add('nested');
-                folderElement.appendChild(nestedContainer);
-                parentElement.appendChild(folderElement);
-    
-                if (hasSubfolders) {
-                    toggleButton.addEventListener('click', (e) => {
-                        e.stopPropagation();
-                        if (folderElement.classList.contains('expanded')) {
-                            folderElement.classList.remove('expanded');
-                            toggleButton.textContent = '[+]';
-                        } else {
-                            document.querySelectorAll('.folder').forEach(f => {
-                                if (!f.contains(folderElement) && !folderElement.contains(f)) {
-                                    f.classList.remove('expanded');
-                                    const toggleBtn = f.querySelector('.toggle-button');
-                                    if (toggleBtn) toggleBtn.textContent = '[+]';
-                                }
-                            });
-                            folderElement.classList.add('expanded');
-                            toggleButton.textContent = '[-]';
-                        }
-                    });
-                }
-    
-                if (hasImages) {
-                    folderElement.addEventListener('click', (e) => {
-                        e.stopPropagation();
-                        document.querySelectorAll('.folder').forEach(f => f.classList.remove('active'));
-                        folderElement.classList.add('active');
-    
-                        imageContainer.innerHTML = '';
-                        if (fileTree[folderPath] && fileTree[folderPath].length > 0) {
-                            fileTree[folderPath].forEach(file => {
-                                const img = document.createElement('img');
-                                img.src = `images/${folderPath}/${file}`;
-                                img.onclick = () => {
-                                    previewImg.src = img.src;
-                                    imagePreview.style.display = 'flex';
-                                };
-                                imageContainer.appendChild(img);
-                            });
-                        }
-                    });
-                } else {
-                    folderElement.addEventListener('click', (e) => {
-                        e.stopPropagation();
-                        if (folderElement.classList.contains('expanded')) {
-                            folderElement.classList.remove('expanded');
-                            toggleButton.textContent = '[+]';
-                        } else {
-                            document.querySelectorAll('.folder').forEach(f => {
-                                if (!f.contains(folderElement) && !folderElement.contains(f)) {
-                                    f.classList.remove('expanded');
-                                    const toggleBtn = f.querySelector('.toggle-button');
-                                    if (toggleBtn) toggleBtn.textContent = '[+]';
-                                }
-                            });
-                            folderElement.classList.add('expanded');
-                            toggleButton.textContent = '[-]';
-                        }
-                    });
-                }
-                return nestedContainer;
-            }
-    
-            const folderElements = {};
-            const folders = Object.keys(fileTree);
-            //misc folders go last
-            const miscFolders = [];
-            const otherFolders = [];
-    
-            folders.forEach(folder => {
-                if (folder.includes('Misc')) {
-                    miscFolders.push(folder);
-                } else {
-                    otherFolders.push(folder);
-                }
-            });
-    
-            const allFolders = otherFolders.concat(miscFolders);
-    
-            allFolders.forEach(folder => {
-                if (folder !== "") {
-                    const parentFolder = folder.substring(0, folder.lastIndexOf('/'));
-                    const parentElement = folderElements[parentFolder] || sidebar;
-                    folderElements[folder] = createFolderElement(folder, parentElement);
-                }
-            });
-    
-            closeBtn.addEventListener('click', () => {
-                imagePreview.style.display = 'none';
-            });
-            imagePreview.addEventListener('click', (e) => {
-                if (e.target === imagePreview) {
-                    imagePreview.style.display = 'none';
-                }
-            });
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    imagePreview.style.display = 'none';
-                }
-            });
+    async function loadImages() {
+        const response = await fetch('file_list.json');
+        const fileTree = await response.json();
+        const sidebar = document.getElementById('sidebar');
+        const imageContainer = document.getElementById('image-container');
+        const imagePreview = document.getElementById('image-preview');
+        const previewImg = document.getElementById('preview-img');
+        const closeBtn = document.querySelector('#image-preview .close');
+        
+        let imageFiles = [];
+        let currentIndex = -1;
+        
+        function cleanFolderName(folderName) {
+            return folderName.replace(/^\d+\s*/, '');
         }
-    
-        document.getElementById('contact-link').addEventListener('click', function (event) {
-            event.preventDefault();
-            document.getElementById('contact-popup').style.display = 'flex';
+
+        function createFolderElement(folderPath, parentElement) {
+            const rawFolderName = folderPath.split('/').pop();
+            const folderName = cleanFolderName(rawFolderName);
+            const folderElement = document.createElement('div');
+            folderElement.classList.add('folder');
+
+            const folderHeader = document.createElement('div');
+            folderHeader.style.display = 'flex';
+            folderHeader.style.alignItems = 'center';
+            folderHeader.style.justifyContent = 'flex-start';
+
+            const toggleButton = document.createElement('span');
+            toggleButton.classList.add('toggle-button');
+
+            const hasSubfolders = Object.keys(fileTree).some(key => key.startsWith(folderPath + '/') && key !== folderPath);
+            const hasImages = fileTree[folderPath] && fileTree[folderPath].length > 0;
+
+            if (hasSubfolders) {
+                toggleButton.textContent = '[+]';
+                folderElement.classList.add('parent-folder');
+            }
+
+            const folderLabel = document.createElement('span');
+            folderLabel.innerHTML = `<span class='folder-icon'>📁</span> ${folderName}`;
+            folderLabel.style.flexGrow = "1";
+            folderLabel.style.textAlign = "left";
+
+            if (hasSubfolders) {
+                folderHeader.appendChild(toggleButton);
+            }
+            folderHeader.appendChild(folderLabel);
+            folderElement.appendChild(folderHeader);
+
+            const nestedContainer = document.createElement('div');
+            nestedContainer.classList.add('nested');
+            folderElement.appendChild(nestedContainer);
+            parentElement.appendChild(folderElement);
+
+            if (hasSubfolders) {
+                toggleButton.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (folderElement.classList.contains('expanded')) {
+                        folderElement.classList.remove('expanded');
+                        toggleButton.textContent = '[+]';
+                    } else {
+                        document.querySelectorAll('.folder').forEach(f => {
+                            if (!f.contains(folderElement) && !folderElement.contains(f)) {
+                                f.classList.remove('expanded');
+                                const toggleBtn = f.querySelector('.toggle-button');
+                                if (toggleBtn) toggleBtn.textContent = '[+]';
+                            }
+                        });
+                        folderElement.classList.add('expanded');
+                        toggleButton.textContent = '[-]';
+                    }
+                });
+            }
+
+            if (hasImages) {
+                folderElement.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    document.querySelectorAll('.folder').forEach(f => f.classList.remove('active'));
+                    folderElement.classList.add('active');
+
+                    imageContainer.innerHTML = '';
+                    imageFiles = []; // Reset the image files array
+
+                    if (fileTree[folderPath] && fileTree[folderPath].length > 0) {
+                        fileTree[folderPath].forEach(file => {
+                            const img = document.createElement('img');
+                            img.src = `images/${folderPath}/${file}`;
+                            img.onclick = () => {
+                                previewImg.src = img.src;
+                                currentIndex = imageFiles.indexOf(img.src);
+                                imagePreview.style.display = 'flex';
+                            };
+                            imageFiles.push(img.src);
+                            imageContainer.appendChild(img);
+                        });
+                    }
+                });
+            } else {
+                folderElement.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (folderElement.classList.contains('expanded')) {
+                        folderElement.classList.remove('expanded');
+                        toggleButton.textContent = '[+]';
+                    } else {
+                        document.querySelectorAll('.folder').forEach(f => {
+                            if (!f.contains(folderElement) && !folderElement.contains(f)) {
+                                f.classList.remove('expanded');
+                                const toggleBtn = f.querySelector('.toggle-button');
+                                if (toggleBtn) toggleBtn.textContent = '[+]';
+                            }
+                        });
+                        folderElement.classList.add('expanded');
+                        toggleButton.textContent = '[-]';
+                    }
+                });
+            }
+
+            return nestedContainer;
+        }
+
+        //arrow keys and esc
+        document.addEventListener('keydown', (e) => {
+            if (imagePreview.style.display === 'flex') {
+                if (e.key === 'ArrowRight') {
+                    currentIndex = (currentIndex + 1) % imageFiles.length;
+                    previewImg.src = imageFiles[currentIndex];
+                } else if (e.key === 'ArrowLeft') {
+                    currentIndex = (currentIndex - 1 + imageFiles.length) % imageFiles.length;
+                    previewImg.src = imageFiles[currentIndex];
+                } else if (e.key === 'Escape') {
+                    imagePreview.style.display = 'none';
+                }
+            }
         });
-    
-        function closePopup() {
-            document.getElementById('contact-popup').style.display = 'none';
-        }
-    
-        loadImages();
+
+        const folderElements = {};
+        const folders = Object.keys(fileTree);
+        const miscFolders = [];
+        const otherFolders = [];
+
+        folders.forEach(folder => {
+            if (folder.includes('Misc')) {
+                miscFolders.push(folder);
+            } else {
+                otherFolders.push(folder);
+            }
+        });
+
+        const allFolders = otherFolders.concat(miscFolders);
+
+        allFolders.forEach(folder => {
+            if (folder !== "") {
+                const parentFolder = folder.substring(0, folder.lastIndexOf('/'));
+                const parentElement = folderElements[parentFolder] || sidebar;
+                folderElements[folder] = createFolderElement(folder, parentElement);
+            }
+        });
+
+        closeBtn.addEventListener('click', () => {
+            imagePreview.style.display = 'none';
+        });
+
+        imagePreview.addEventListener('click', (e) => {
+            if (e.target === imagePreview) {
+                imagePreview.style.display = 'none';
+            }
+        });
+
+    }
+
+    document.getElementById('contact-link').addEventListener('click', function (event) {
+        event.preventDefault();
+        document.getElementById('contact-popup').style.display = 'flex';
+    });
+
+    function closePopup() {
+        document.getElementById('contact-popup').style.display = 'none';
+    }
+
+    loadImages();
+
     </script>
     
 </body>
