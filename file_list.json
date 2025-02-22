@@ -174,9 +174,16 @@
         "Screenshot 2023-11-23 173929.jpg",
         "Screenshot 2023-11-24 125137.jpg",
         "Screenshot 2023-11-24 143729.jpg",
-        "Screenshot 2023-11-24 221053.jpg"
+        "Screenshot 2023-11-24 221053.jpg",
+        "Screenshot 2023-12-16 235805.jpg"
     ],
     "02 Business": [],
+    "02 Business/Bazaar": [
+        "hammerplusplus_fBthp8Iz2v.png"
+    ],
+    "02 Business/Car Dealer": [
+        "hammerplusplus_o8sxfowpsO.jpg"
+    ],
     "02 Business/Casino": [
         "gmod_0BwR7MhGJp.jpg",
         "gmod_5FDdHTEMRV.jpg",
@@ -189,8 +196,6 @@
         "hammerplusplus_Zr7MfoEegK.jpg"
     ],
     "02 Business/Misc": [
-        "hammerplusplus_fBthp8Iz2v.png",
-        "hammerplusplus_o8sxfowpsO.jpg",
         "hammerplusplus_TQPPV5eJo0.png",
         "Screenshot 2025-01-06 220510.jpg"
     ],
@@ -283,5 +288,27 @@
         "n1.jpg",
         "n2.jpg"
     ],
-    "05 Other/Models": []
+    "05 Other/Models": [
+        "Adobe_Substance_3D_Painter_01iBuxEMm4.png",
+        "Adobe_Substance_3D_Painter_1qp3wFSUPt.jpg",
+        "Adobe_Substance_3D_Painter_2VdKFQw5DO.png",
+        "Adobe_Substance_3D_Painter_6EmraiWjvV.jpg",
+        "Adobe_Substance_3D_Painter_a96NwEZ2xO.jpg",
+        "Adobe_Substance_3D_Painter_cfLCTkna8R.jpg",
+        "Adobe_Substance_3D_Painter_e9kHgBmOne.jpg",
+        "Adobe_Substance_3D_Painter_Kv4CvozF7b.jpg",
+        "Adobe_Substance_3D_Painter_oUbcE5P4ir.jpg",
+        "Adobe_Substance_3D_Painter_t8toH4xGMR.png",
+        "Adobe_Substance_3D_Painter_u7OatThdKj.png",
+        "Adobe_Substance_3D_Painter_vi7jwUh9aM.jpg",
+        "Adobe_Substance_3D_Painter_VNdLk1dK6P.jpg",
+        "Adobe_Substance_3D_Painter_zXGnWPIc2C.png",
+        "blender_3FZ5WVkk3I.png",
+        "blender_EkBgCAWu7a.jpg",
+        "blender_h5tAFbtPyF.jpg",
+        "Screenshot 2024-01-11 181905.jpg",
+        "Screenshot 2024-01-11 185919.jpg",
+        "Screenshot 2024-02-12 100515.jpg",
+        "Screenshot 2024-08-16 014548.jpg"
+    ]
 }
