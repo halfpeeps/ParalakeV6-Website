@@ -3,48 +3,29 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - release  # Trigger this workflow on push to the 'release' branch
+      - release  # Trigger deployment on push to the release branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    
     steps:
-      # Step 1: Checkout the private repository's release branch
-      - name: Checkout the private repo's release branch
-        uses: actions/checkout@v3
-        with:
-          repository: halfpeeps/Paralake-V6-Development-Archive  # Change to your username/repo
-          ref: release  # The branch in the private repo to watch (release)
-          token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        ref: release  # Checkout the release branch
+    
+    - name: Set up Git
+      uses: actions/setup-git@v3
+      
+    - name: Install rsync
+      run: sudo apt-get install rsync
 
-      # Step 2: List files in the private repository to confirm directory structure
-      - name: List files in the private repository
-        run: |
-          cd /home/runner/work/Paralake-V6-Development-Archive/Paralake-V6-Development-Archive
-          ls -R
-
-      # Step 3: Set up Git and configure user details for committing to the public repo
-      - name: Set up Git
-        run: |
-          git config --global user.name "Your Name"  # Replace with your name
-          git config --global user.email "your-email@example.com"  # Replace with your email
-
-      # Step 4: Clone the public GitHub Pages repository (PHV6-Development-Archive)
-      - name: Clone the public repository
-        run: |
-          git clone https://github.com/halfpeeps/PHV6-Development-Archive.git
-          cd PHV6-Development-Archive
-
-      # Step 5: Copy content from the private repo's release branch to the public repo
-      - name: Copy website files
-        run: |
-          cd ..
-          rsync -avv --exclude='.git' Paralake-V6-Development-Archive/release/ PHV6-Development-Archive/
-          cd PHV6-Development-Archive
-
-      # Step 6: Commit and push changes to the public repo
-      - name: Commit and push changes to the public repo
-        run: |
-          git add .
-          git commit -m "Update GitHub Pages from release branch"
-          git push origin main  # or 'master', depending on your default branch in the public repo
+    - name: Build and deploy to GitHub Pages
+      run: |
+        rsync -av --delete ./ /path/to/public/directory  # Update path as needed for your structure
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "github-actions@github.com"
+        git add .
+        git commit -m "Deploy to GitHub Pages"
+        git push origin main  # Push to the main branch of your public repo
