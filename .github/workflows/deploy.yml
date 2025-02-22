@@ -20,7 +20,8 @@ jobs:
       # Step 2: List files in the private repository to confirm directory structure
       - name: List files in the private repository
         run: |
-          ls -R Paralake-V6-Development-Archive
+          cd /home/runner/work/Paralake-V6-Development-Archive/Paralake-V6-Development-Archive
+          ls -R
 
       # Step 3: Set up Git and configure user details for committing to the public repo
       - name: Set up Git
