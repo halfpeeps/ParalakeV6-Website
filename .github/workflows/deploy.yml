@@ -13,7 +13,7 @@ jobs:
       - name: Checkout the private repo's release branch
         uses: actions/checkout@v3
         with:
-          repository: yourusername/Paralake-V6-Development-Archive  # Change to your username/repo
+          repository: halfpeeps/Paralake-V6-Development-Archive  # Change to your username/repo
           ref: release  # The branch in the private repo to watch (release)
           token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
 
@@ -26,7 +26,7 @@ jobs:
       # Step 3: Clone the public GitHub Pages repository (PHV6-Development-Archive)
       - name: Clone the public repository
         run: |
-          git clone https://github.com/yourusername/PHV6-Development-Archive.git
+          git clone https://github.com/halfpeeps/PHV6-Development-Archive.git
           cd PHV6-Development-Archive
 
       # Step 4: Copy content from the private repo's release branch to the public repo
