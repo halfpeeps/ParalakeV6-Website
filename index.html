@@ -3,137 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Archive</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            font-family: Arial, sans-serif;
-            background: #121212;
-            color: #fff;
-            transition: background 0.3s, color 0.3s;
-        }
-        body.dark-mode {
-            background: #121212;
-            color: #fff;
-        }
-        #header {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: white;
-        }
-        #container {
-            display: flex;
-            flex: 1;
-        }
-        #sidebar {
-            width: 250px;
-            background: #222;
-            padding: 10px;
-            overflow-y: auto;
-        }
-        body.dark-mode #sidebar {
-            background: #222;
-        }
-        .folder {
-            cursor: pointer;
-            padding: 5px;
-            display: flex;
-            align-items: center;
-            position: relative;
-        }
-        .folder:hover, .folder.active {
-            background: #444;
-        }
-        body.dark-mode .folder:hover, body.dark-mode .folder.active {
-            background: #444;
-        }
-        .folder-icon {
-            margin-right: 5px;
-        }
-        .folder.indent-1 { margin-left: 20px; }
-        .folder.indent-2 { margin-left: 40px; }
-        .folder.indent-3 { margin-left: 60px; }
-        #image-container {
-            flex: 1;
-            flex-wrap: wrap;
-            padding: 10px;
-        }
-        img {
-            max-width: 600px;
-            max-height: 200px;
-            margin: 10px;
-            border: 1px solid #303030;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        #toggle-dark-mode {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            padding: 5px 10px;
-            background: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        body.dark-mode #toggle-dark-mode {
-            background: #bbb;
-            color: black;
-        }
-    </style>
-</head>
+    <title>Paralake V6 Development Archive</title>
+    <link rel="icon" type="image/x-icon" href="/ph_icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        background: #121212;
+        color: #fff;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 16px;
+        background: #333;
+        color: white;
+        border-bottom: 0px solid #444;
+        border-radius: 0px 0px 0 0;
+    }
+    #header h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+    #header-logo {
+        width: 120px;
+        height: auto;
+    }
+    a:link {
+        color: white;
+        text-decoration: none;
+    }
+    a:visited {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        color: goldenrod;
+        text-decoration: none;
+    }
+    #container {
+        display: flex;
+        flex: 1;
+        border-radius: 0 0 0px 0px;
+    }
+    #sidebar {
+        width: 300px; /* sidebar width */
+        background: #222;
+        padding: 10px;
+        overflow-y: auto;
+        display: block;
+        border-radius: 0px 0 0 0px;
+    }
+    .folder {
+        cursor: pointer;
+        padding: 5px;
+        display: block;
+        position: relative;
+        border-radius: 5px;
+    }
+    .folder:hover, .folder.active {
+        background: #444;
+        border-radius: 5px;
+    }
+    .folder.parent-folder:hover {
+        background: #555; /* parent hover colour */
+    }
+    .folder-icon {
+        margin-right: 5px;
+    }
+    .toggle-button {
+        cursor: pointer;
+        margin-right: 5px;
+        user-select: none;
+    }
+    .nested {
+        display: none;
+        padding-left: 30px; /* nesting amount */
+    }
+    .expanded > .nested {
+        display: block;
+    }
+    #image-container {
+        flex: 1;
+        flex-wrap: wrap;
+        padding: 10px;
+        border-radius: 0 8px 8px 0;
+    }
+    img {
+        max-width: 600px;
+        max-height: 200px;
+        margin: 10px;
+        border: 1px solid #303030;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #footer {
+        background: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        border-top: 2px solid #444;
+        border-radius: 0 0 8px 8px;
+    }
+    #footer a {
+        margin: 0 10px
+    }
+    #footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #444;
+    border-radius: 0 0 0px 0px;
+    box-sizing: border-box;
+    }
+</style>
+
 <body>
-    <button id="toggle-dark-mode"></button>
     <div id="header">
         <h1>Paralake V6 Development Archive</h1>
-        <p>...</p>
+        <a href="https://perpheads.com/" target="_blank">
+            <img id="header-logo" src="/phv6.png" alt="Logo">
+        </a>
     </div>
     <div id="container">
         <div id="sidebar"></div>
         <div id="image-container"></div>
     </div>
-    
+
+    <div id="footer">
+        <p>Created by peeps</p>
+        <div>
+            <a href="#" target="_blank">[  Map Download  ]</a>
+            <a href="https://perpheads.com/members/peeps.10255/" target="_blank">[  PERPHeads Forums  ]</a>
+            <a href="https://steamcommunity.com/id/halfpeeps/" target="_blank">[  Contact  ]</a>
+        </div>
+    </div>
+
     <script>
         async function loadImages() {
             const response = await fetch('file_list.json');
             const fileTree = await response.json();
             const sidebar = document.getElementById('sidebar');
             const imageContainer = document.getElementById('image-container');
-            
-            function getIndentLevel(path) {
-                return path.split('/').length - 1;
-            }
-            
-            for (const folder in fileTree) {
-                
-                if( folder != "" ) {  //remove root folder
-                    const folderName = folder.split('/').pop(); //get only the last directory name
-                    const folderElement = document.createElement('div');
-                    folderElement.classList.add('folder', `indent-${getIndentLevel(folder)}`);
-                    folderElement.innerHTML = `<span class='folder-icon'>📁</span> ${folderName}`;
-                    folderElement.onclick = () => {
+
+            function createFolderElement(folderPath, parentElement) {
+                const folderName = folderPath.split('/').pop();
+                const folderElement = document.createElement('div');
+                folderElement.classList.add('folder');
+
+                const folderHeader = document.createElement('div');
+                folderHeader.style.display = 'flex';
+                folderHeader.style.alignItems = 'center';
+                folderHeader.style.justifyContent = 'flex-start';
+
+                const toggleButton = document.createElement('span');
+                toggleButton.classList.add('toggle-button');
+
+                const hasSubfolders = Object.keys(fileTree).some(key => key.startsWith(folderPath + '/') && key !== folderPath);
+                const hasImages = fileTree[folderPath] && fileTree[folderPath].length > 0;
+
+                if (hasSubfolders) {
+                    toggleButton.textContent = '[+]';
+                    folderElement.classList.add('parent-folder'); //set as parent folder
+                }
+
+                const folderLabel = document.createElement('span');
+                folderLabel.innerHTML = `<span class='folder-icon'>📁</span> ${folderName}`;
+                folderLabel.style.flexGrow = "1";
+                folderLabel.style.textAlign = "left";
+
+                if (hasSubfolders) {
+                    folderHeader.appendChild(toggleButton);
+                }
+                folderHeader.appendChild(folderLabel);
+                folderElement.appendChild(folderHeader);
+
+                const nestedContainer = document.createElement('div');
+                nestedContainer.classList.add('nested');
+                folderElement.appendChild(nestedContainer);
+                parentElement.appendChild(folderElement);
+
+                //subfolder toggle
+                if (hasSubfolders) {
+                    toggleButton.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        if (folderElement.classList.contains('expanded')) {
+                            folderElement.classList.remove('expanded');
+                            toggleButton.textContent = '[+]';
+                        } else {
+                            document.querySelectorAll('.folder').forEach(f => {
+                                if (!f.contains(folderElement) && !folderElement.contains(f)) {
+                                    f.classList.remove('expanded');
+                                    const toggleBtn = f.querySelector('.toggle-button');
+                                    if (toggleBtn) toggleBtn.textContent = '[+]';
+                                }
+                            });
+                            folderElement.classList.add('expanded');
+                            toggleButton.textContent = '[-]';
+                        }
+                    });
+                }
+
+                //dont allow selection of folders with no images, just collapse/expand them
+                if (hasImages) {
+                    folderElement.addEventListener('click', (e) => {
+                        e.stopPropagation();
                         document.querySelectorAll('.folder').forEach(f => f.classList.remove('active'));
                         folderElement.classList.add('active');
+
                         imageContainer.innerHTML = '';
-                        fileTree[folder].forEach(file => {
-                            const img = document.createElement('img');
-                            img.src = `images/${folder}/${file}`;
-                            img.onclick = () => window.open(img.src, '_blank');
-                            imageContainer.appendChild(img);
-                        });
-                    };
-                    sidebar.appendChild(folderElement)
+                        if (fileTree[folderPath] && fileTree[folderPath].length > 0) {
+                            fileTree[folderPath].forEach(file => {
+                                const img = document.createElement('img');
+                                img.src = `images/${folderPath}/${file}`;
+                                img.onclick = () => window.open(img.src, '_blank');
+                                imageContainer.appendChild(img);
+                            });
+                        }
+                    });
+                } else {
+                    folderElement.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        if (folderElement.classList.contains('expanded')) {
+                            folderElement.classList.remove('expanded');
+                            toggleButton.textContent = '[+]';
+                        } else {
+                            //collapse unrelated folders
+                            document.querySelectorAll('.folder').forEach(f => {
+                                if (!f.contains(folderElement) && !folderElement.contains(f)) {
+                                    f.classList.remove('expanded');
+                                    const toggleBtn = f.querySelector('.toggle-button');
+                                    if (toggleBtn) toggleBtn.textContent = '[+]';
+                                }
+                            });
+                            folderElement.classList.add('expanded');
+                            toggleButton.textContent = '[-]';
+                        }
+                    });
                 }
+
+                return nestedContainer;
             }
+
+            const folderElements = {};
+            Object.keys(fileTree).forEach(folder => {
+                if (folder !== "") {
+                    const parentFolder = folder.substring(0, folder.lastIndexOf('/'));
+                    const parentElement = folderElements[parentFolder] || sidebar;
+                    folderElements[folder] = createFolderElement(folder, parentElement);
+                }
+            });
         }
-        
-        document.getElementById('toggle-dark-mode').addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-        });
-        
+
         loadImages();
     </script>
 </body>
-</html>
