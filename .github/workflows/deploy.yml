@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - release  # Trigger this workflow on push to the 'release' branch
-      
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -33,7 +33,7 @@ jobs:
       - name: Copy website files
         run: |
           cd ..
-          rsync -av --exclude='.git' Paralake-V6-Development-Archive/release/ PHV6-Development-Archive/
+          rsync -av --exclude='.git' Paralake-V6-Development-Archive/release/ PHV6-Development-Archive/main
           cd PHV6-Development-Archive
 
       # Step 5: Commit and push changes to the public repo
