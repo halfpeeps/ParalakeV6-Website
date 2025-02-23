@@ -13,6 +13,7 @@
     --spacing-small: 10px;
     --spacing-medium: 20px;
     --spacing-large: 50px;
+    --spacing-nested: 40px;
     --border-radius: 10px;
     --sidebar-width: 340px;
 }
@@ -132,7 +133,7 @@ body {
 
 .nested {
     display: none;
-    padding-left: var(--spacing-large);
+    padding-left: var(--spacing-nested);
 }
 .expanded > .nested {
     display: block;
