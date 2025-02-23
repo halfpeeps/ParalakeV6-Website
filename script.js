@@ -1,3 +1,15 @@
+function isMobile() {
+    return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+function closeMobileWarning() {
+    document.getElementById('mobile-warning').style.display = 'none';
+}
+window.onload = function() {
+    if (isMobile()) {
+        document.getElementById('mobile-warning').style.display = 'flex';
+    }
+};
+
 async function loadImages() {
     const response = await fetch('file_list.json');
     const fileTree = await response.json();
@@ -40,7 +52,7 @@ async function loadImages() {
         }
 
         const folderLabel = document.createElement('span');
-        folderLabel.innerHTML = `<span class='folder-icon'>📁</span> ${folderName}`;
+        folderLabel.innerHTML = `<span class='folder-icon'>&nbsp📁</span> ${folderName}`;
         folderLabel.style.flexGrow = "1";
         folderLabel.style.textAlign = "left";
 
@@ -89,13 +101,13 @@ async function loadImages() {
                         const img = document.createElement('img');
                         img.src = `images/${folderPath}/${file.filename}`;
                         img.onclick = () => {
-                            currentIndex = imageFiles.findIndex(image => image.src === img.src); // Correctly find the clicked image index
+                            currentIndex = imageFiles.findIndex(image => image.src === img.src);
                             previewImg.src = imageFiles[currentIndex].src;
                             if (imageFiles[currentIndex].description) {
                                 imageDescription.textContent = imageFiles[currentIndex].description;
-                                imageDescription.style.display = 'block'; // Show when there's a description
+                                imageDescription.style.display = 'block';
                             } else {
-                                imageDescription.style.display = 'none'; // Hide when empty
+                                imageDescription.style.display = 'none';
                             }
                             imagePreview.style.display = 'flex';
                         };
