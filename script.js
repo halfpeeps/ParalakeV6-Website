@@ -201,6 +201,7 @@ async function loadImages() {
 
 }
 
+//contact popup
 document.getElementById('contact-link').addEventListener('click', function (event) {
     event.preventDefault();
     document.getElementById('contact-popup').style.display = 'flex';
@@ -209,5 +210,15 @@ document.getElementById('contact-link').addEventListener('click', function (even
 function closePopup() {
     document.getElementById('contact-popup').style.display = 'none';
 }
+
+//open preview image in a new tab if clicked
+document.addEventListener("DOMContentLoaded", function () {
+    const img = document.getElementById("preview-img");
+    const link = document.getElementById("preview-link");
+
+    img.addEventListener("load", function () {
+        link.href = img.src;
+    });
+});
 
 loadImages();
