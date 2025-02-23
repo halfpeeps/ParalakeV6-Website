@@ -207,8 +207,17 @@ document.getElementById('contact-link').addEventListener('click', function (even
     document.getElementById('contact-popup').style.display = 'flex';
 });
 
-function closePopup() {
+function closeContact() {
     document.getElementById('contact-popup').style.display = 'none';
+}
+
+document.getElementById('about-link').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('about-popup').style.display = 'flex';
+});
+
+function closeAbout() {
+    document.getElementById('about-popup').style.display = 'none';
 }
 
 //open preview image in a new tab if clicked
