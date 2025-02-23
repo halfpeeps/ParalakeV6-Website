@@ -192,6 +192,11 @@ img:hover {
     max-width: 90%;
     max-height: 80vh;
     border-radius: var(--border-radius);
+    border: 0px;
+}
+
+#preview-img:hover {
+    border: 0px;
 }
 
 #image-preview .close {
