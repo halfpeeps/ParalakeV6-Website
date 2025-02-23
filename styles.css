@@ -28,7 +28,7 @@ body {
     overflow: hidden;
 }
 
-/* Header */
+/* header */
 #header {
     display: flex;
     justify-content: space-between;
@@ -50,7 +50,7 @@ body {
     line-height: 0.8;
 }
 
-/* Layout */
+/* sidebar */
 #container {
     display: flex;
     flex: 1;
@@ -89,7 +89,7 @@ body {
     display: block;
 }
 
-/* Image Container */
+/* image container */
 #image-container {
     flex: 1;
     flex-wrap: wrap;
@@ -106,7 +106,7 @@ img {
     cursor: pointer;
 }
 
-/* Image Preview */
+/* image preview */
 #image-preview {
     display: none;
     flex-direction: column;
@@ -146,7 +146,7 @@ img {
     z-index: 1001;
 }
 
-/* Contact Popup */
+/* contact popup*/
 #contact-popup {
     display: none;
     position: fixed;
@@ -208,7 +208,7 @@ img {
     background-color: var(--color-danger-hover);
 }
 
-/* Footer */
+/* footer */
 #footer {
     background: var(--color-header-footer);
     color: var(--color-text);
