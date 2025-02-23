@@ -1,5 +1,5 @@
 function isMobile() {
-    return /Android|Mac|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 }
 function closeMobileWarning() {
     document.getElementById('mobile-warning').style.display = 'none';
