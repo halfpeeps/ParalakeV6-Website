@@ -4,7 +4,8 @@
     --color-bg: #121212;
     --color-header-footer: #333;
     --color-sidebar: #222;
-    --color-border: #444;
+    --color-border: #44444400;
+    --color-border-hover: #444;
     --color-text: #fff;
     --color-hover: #444;
     --color-hover-dark: #555;
@@ -124,6 +125,7 @@ body {
     display: block;
     position: relative;
     border-radius: var(--border-radius);
+    transition: background .2s;
 }
 .folder:hover, .folder.active {
     background: var(--color-hover);
@@ -155,6 +157,11 @@ img {
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
     cursor: pointer;
+    transition: border .2s;
+}
+
+img:hover {
+    border: 1px solid var(--color-border-hover);
 }
 
 /* image preview */
