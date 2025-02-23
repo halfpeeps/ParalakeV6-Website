@@ -101,13 +101,13 @@ async function loadImages() {
                         const img = document.createElement('img');
                         img.src = `images/${folderPath}/${file.filename}`;
                         img.onclick = () => {
-                            currentIndex = imageFiles.findIndex(image => image.src === img.src); // Correctly find the clicked image index
+                            currentIndex = imageFiles.findIndex(image => image.src === img.src);
                             previewImg.src = imageFiles[currentIndex].src;
                             if (imageFiles[currentIndex].description) {
                                 imageDescription.textContent = imageFiles[currentIndex].description;
-                                imageDescription.style.display = 'block'; // Show when there's a description
+                                imageDescription.style.display = 'block';
                             } else {
-                                imageDescription.style.display = 'none'; // Hide when empty
+                                imageDescription.style.display = 'none';
                             }
                             imagePreview.style.display = 'flex';
                         };
