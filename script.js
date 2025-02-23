@@ -52,7 +52,7 @@ async function loadImages() {
         }
 
         const folderLabel = document.createElement('span');
-        folderLabel.innerHTML = `<span class='folder-icon'>📁</span> ${folderName}`;
+        folderLabel.innerHTML = `<span class='folder-icon'>&nbsp📁</span> ${folderName}`;
         folderLabel.style.flexGrow = "1";
         folderLabel.style.textAlign = "left";
 
