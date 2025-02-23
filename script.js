@@ -1,3 +1,15 @@
+function isMobile() {
+    return /Android|Mac|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+function closeMobileWarning() {
+    document.getElementById('mobile-warning').style.display = 'none';
+}
+window.onload = function() {
+    if (isMobile()) {
+        document.getElementById('mobile-warning').style.display = 'flex';
+    }
+};
+
 async function loadImages() {
     const response = await fetch('file_list.json');
     const fileTree = await response.json();
