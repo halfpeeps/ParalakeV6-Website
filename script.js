@@ -211,6 +211,7 @@ function closeContact() {
     document.getElementById('contact-popup').style.display = 'none';
 }
 
+//about popup
 document.getElementById('about-link').addEventListener('click', function (event) {
     event.preventDefault();
     document.getElementById('about-popup').style.display = 'flex';
@@ -218,6 +219,16 @@ document.getElementById('about-link').addEventListener('click', function (event)
 
 function closeAbout() {
     document.getElementById('about-popup').style.display = 'none';
+}
+
+//download popup
+document.getElementById('download-link').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('download-popup').style.display = 'flex';
+});
+
+function closeDownload() {
+    document.getElementById('download-popup').style.display = 'none';
 }
 
 //open preview image in a new tab if clicked
