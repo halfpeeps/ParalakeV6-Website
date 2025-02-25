@@ -390,6 +390,6 @@ img:hover {
 #counter {
     position: absolute;
     bottom: 10px;
-    right: 0px;
+    right: 10px;
     border-radius: 4px;
 }
