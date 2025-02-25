@@ -26,8 +26,8 @@ async function loadImages() {
     let currentIndex = -1;
     
     function cleanFolderName(folderName) {
-        return folderName.replace(/^\d+\s*/, '');
-    }
+        return folderName.replace(/^\d+\s*/, '').replace(/-/g, ' ');
+    }    
 
     function createFolderElement(folderPath, parentElement) {
         const rawFolderName = folderPath.split('/').pop();
