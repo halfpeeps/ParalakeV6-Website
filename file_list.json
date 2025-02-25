@@ -1,21 +1,9 @@
 {
     "": [],
-    "06 Other": [],
-    "06 Other/Logos": [
+    "06Other": [],
+    "06Other/Logos": [
         {
-            "filename": "Adobe_Premiere_Pro_LIqUKNug77.png",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Premiere_Pro_srzmwNFRD9.png",
-            "description": ""
-        },
-        {
-            "filename": "archive_icon.png",
-            "description": ""
-        },
-        {
-            "filename": "archive_icon_mono.png",
+            "filename": "ph_icon.png",
             "description": ""
         },
         {
@@ -23,27 +11,23 @@
             "description": ""
         },
         {
+            "filename": "v6_icon.png",
+            "description": ""
+        },
+        {
+            "filename": "archive_icon_mono.png",
+            "description": ""
+        },
+        {
             "filename": "archive_logo_mono.png",
             "description": ""
         },
         {
-            "filename": "archive_logo_solid.png",
+            "filename": "Adobe_Premiere_Pro_LIqUKNug77.png",
             "description": ""
         },
         {
-            "filename": "header.png",
-            "description": ""
-        },
-        {
-            "filename": "phv6.png",
-            "description": ""
-        },
-        {
-            "filename": "ph_icon.png",
-            "description": ""
-        },
-        {
-            "filename": "v6_icon.png",
+            "filename": "wallpaperpack.png",
             "description": ""
         },
         {
@@ -51,151 +35,61 @@
             "description": ""
         },
         {
-            "filename": "wallpaperpack.png",
+            "filename": "ytbanner.png",
+            "description": ""
+        },
+        {
+            "filename": "PH-DARK.png",
+            "description": ""
+        },
+        {
+            "filename": "archive_icon.png",
+            "description": ""
+        },
+        {
+            "filename": "header.png",
+            "description": ""
+        },
+        {
+            "filename": "archive_logo_solid.png",
+            "description": ""
+        },
+        {
+            "filename": "Adobe_Premiere_Pro_srzmwNFRD9.png",
+            "description": ""
+        },
+        {
+            "filename": "PHV6-LOGO-BLACK.png",
+            "description": ""
+        },
+        {
+            "filename": "phv6.png",
             "description": ""
         }
     ],
-    "06 Other/Menu Background Pack": [
-        {
-            "filename": "01 (0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "02 (0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "03 (0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "04 (0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "05 (0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "06 (0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "07 (0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "08 (0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "09 (0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "10 (0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "11 (0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "12 (0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "13 (0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "14 (0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "15 (0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "16 (0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "phv6.jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        }
-    ],
-    "06 Other/Promotional Screenshots": [
-        {
-            "filename": "10.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
-        },
+    "06Other/Promotional-Screenshots": [
         {
             "filename": "1025.jpg",
             "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
-        },
-        {
-            "filename": "11.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
-        },
-        {
-            "filename": "1126.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
-        },
-        {
-            "filename": "12.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
         },
         {
             "filename": "1227.jpg",
             "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
         },
         {
-            "filename": "1328.jpg",
+            "filename": "Car+Dealer05.jpg",
             "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
-        },
-        {
-            "filename": "1429.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
-        },
-        {
-            "filename": "1530.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
-        },
-        {
-            "filename": "1631.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
-        },
-        {
-            "filename": "1715.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
-        },
-        {
-            "filename": "3.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
-        },
-        {
-            "filename": "5.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
-        },
-        {
-            "filename": "514.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
-        },
-        {
-            "filename": "6.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
         },
         {
             "filename": "612.jpg",
             "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
         },
         {
-            "filename": "7.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+            "filename": "Underground+Parking06.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
         },
         {
-            "filename": "708.jpg",
+            "filename": "1631.jpg",
             "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
         },
         {
@@ -207,31 +101,27 @@
             "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
         },
         {
+            "filename": "1126.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+        },
+        {
             "filename": "923.jpg",
             "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
         },
         {
+            "filename": "12.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+        },
+        {
+            "filename": "1530.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+        },
+        {
+            "filename": "11.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+        },
+        {
             "filename": "a57.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
-        },
-        {
-            "filename": "b03.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
-        },
-        {
-            "filename": "c58.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
-        },
-        {
-            "filename": "Car+Dealer05.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
-        },
-        {
-            "filename": "d00.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
-        },
-        {
-            "filename": "e01.jpg",
             "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
         },
         {
@@ -239,12 +129,134 @@
             "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
         },
         {
+            "filename": "514.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+        },
+        {
+            "filename": "10.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+        },
+        {
+            "filename": "1715.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+        },
+        {
+            "filename": "c58.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+        },
+        {
+            "filename": "d00.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+        },
+        {
+            "filename": "b03.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+        },
+        {
+            "filename": "708.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+        },
+        {
+            "filename": "1328.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+        },
+        {
             "filename": "Table32.jpg",
             "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
         },
         {
-            "filename": "Underground+Parking06.jpg",
+            "filename": "e01.jpg",
             "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+        },
+        {
+            "filename": "5.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+        },
+        {
+            "filename": "1429.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+        },
+        {
+            "filename": "7.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+        },
+        {
+            "filename": "6.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+        },
+        {
+            "filename": "3.jpg",
+            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+        }
+    ],
+    "06Other/Menu-Background-Pack": [
+        {
+            "filename": "12-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "06-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "02-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "09-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "16-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "13-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "07-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "03-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "08-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "04-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "10-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "14-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "05-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "11-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "15-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "01-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "phv6.jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
         }
     ]
 }
