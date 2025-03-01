@@ -1,6 +1,76 @@
 {
     "": [],
     "06Other": [],
+    "06Other/Menu-Background-Pack": [
+        {
+            "filename": "11-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "05-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "01-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "15-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "10-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "04-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "14-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "07-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "13-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "08-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "03-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "06-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "12-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "09-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "16-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "02-(0-00-00-00).jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        },
+        {
+            "filename": "phv6.jpg",
+            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+        }
+    ],
     "06Other/Logos": [
         {
             "filename": "ph_icon.png",
@@ -39,15 +109,23 @@
             "description": ""
         },
         {
-            "filename": "PH-DARK.png",
-            "description": ""
-        },
-        {
             "filename": "archive_icon.png",
             "description": ""
         },
         {
             "filename": "header.png",
+            "description": ""
+        },
+        {
+            "filename": "PH-DARK.png",
+            "description": ""
+        },
+        {
+            "filename": "card_info_template.png",
+            "description": ""
+        },
+        {
+            "filename": "card_info_blank.png",
             "description": ""
         },
         {
@@ -60,6 +138,10 @@
         },
         {
             "filename": "PHV6-LOGO-BLACK.png",
+            "description": ""
+        },
+        {
+            "filename": "card_info_background.png",
             "description": ""
         },
         {
@@ -187,76 +269,6 @@
         {
             "filename": "3.jpg",
             "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
-        }
-    ],
-    "06Other/Menu-Background-Pack": [
-        {
-            "filename": "12-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "06-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "02-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "09-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "16-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "13-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "07-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "03-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "08-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "04-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "10-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "14-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "05-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "11-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "15-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "01-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        },
-        {
-            "filename": "phv6.jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
         }
     ]
 }
