@@ -10,7 +10,7 @@ INFO_PATTERN = re.compile(r"^info(\d{2})?$", re.IGNORECASE)  # Matches "info", "
 def scan_directory(directory):
     file_tree = {}
     for root, _, files in os.walk(directory):
-        relative_path = os.path.relpath(root, directory).replace("\\", "/")  # Normalize paths
+        relative_path = os.path.relpath(root, directory).replace("\\", "/") #fix path issue on windows
         if relative_path == ".":
             relative_path = ""
         
