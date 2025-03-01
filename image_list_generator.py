@@ -71,3 +71,7 @@ def save_file_list(directory, output_file):
 
 if __name__ == "__main__":
     save_file_list(IMAGE_DIR, OUTPUT_FILE)
+
+
+# Images called info01.png, info02.jpg, etc. will be sorted to the beginning of the list, followed by other images.  info with no number will be sorted first.
+# The script reads the existing file list (if it exists) and updates the descriptions of the images in the new file tree.
