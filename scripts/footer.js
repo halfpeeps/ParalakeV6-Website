@@ -7,16 +7,18 @@ fetch('footer.html')
 
 // Use event delegation to handle clicks dynamically
 document.getElementById('pagefooter').addEventListener('click', function (event) {
-    event.preventDefault();
-    
     if (event.target.matches('#contact-link')) {
+        event.preventDefault();
         document.getElementById('contact-popup').style.display = 'flex';
     } else if (event.target.matches('#about-link')) {
+        event.preventDefault();
         document.getElementById('about-popup').style.display = 'flex';
     } else if (event.target.matches('#download-link')) {
+        event.preventDefault();
         document.getElementById('download-popup').style.display = 'flex';
     }
 });
+
 
 function closeContact() {
     document.getElementById('contact-popup').style.display = 'none';
