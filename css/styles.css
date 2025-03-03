@@ -385,13 +385,11 @@ img:hover {
     color: var(--color-text);
     padding: var(--spacing-small);
     text-align: center;
-    position: fixed;
     bottom: 0;
     width: 100%;
     border-top: 2px solid var(--color-border);
     font-family: var(--font-secondary);
     font-weight: 600;
-    z-index: 999;
 }
 
 #footer a {
