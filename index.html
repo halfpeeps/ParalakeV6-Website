@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paralake V6 Development Archive</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="images/06Other/Logos/archive_icon_mono.png">
     <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
         <!-- Remove "<br><span id="header-subtitle" style="font-size: 22px;">Coming Soon</span>" when the archive is ready -->
         <span style="line-height: 0.8;">Paralake V6 Development Archive<br><span id="header-subtitle" style="font-size: 22px;">Coming Soon</span></span>
         
-        <a href="https://perpheads.com/threads/paralake-v6-development-update-february.66735/" target="_blank" style="padding-top: 5px">
+        <a href="/index.html" style="padding-top: 5px">
             <img src="images/06Other/Logos/archive_logo_mono.png" alt="Logo" style="height: 45px; border: 0px"
             onmouseover="this.src='images/06Other/Logos/archive_logo.png';"
             onmouseout="this.src='images/06Other/Logos/archive_logo_mono.png';">
@@ -34,70 +34,18 @@
         <div id="image-container"></div>
     </div>
 
-        <!--image popup-->
-        <div id="image-preview">
-            <span class="close">&times;</span>
-            <div class="preview-content">
-                <a id="preview-link" hreg="" target="_blank">
-                    <img id="preview-img" src="" alt="Image">
-                </a>
-            </div>
-        </div>
-
-    <div id="footer">
-        <p>Created by peeps</p>
-        <div>
-            <a href="#" id="download-link">Map Download</a>
-            <a href="https://perpheads.com/" target="_blank">PERPHeads Forums</a>
-            <a href="#" id="contact-link">Contact</a>
-            <a href="#" id="about-link">About</a>
+    <!--image popup-->
+    <div id="image-preview">
+        <span class="close">&times;</span>
+        <div class="preview-content">
+            <a id="preview-link" hreg="" target="_blank">
+                <img id="preview-img" src="" alt="Image">
+            </a>
         </div>
     </div>
 
-    <div id="download-popup">
-        <div class="download-content">
-            <h3>Download Paralake V6</h3>
-            <ul>
-                <h4>Coming Soon</h4>
-                <!-- <li><a href=" l i n k " target="_blank">Steam Workshop</a></li> -->
-                <!-- Any other download links can be added here too -->
-            </ul>
-            <button id="close-button" onclick="closeDownload()">Close</button>
-        </div>
-    </div>
-    
-    <div id="contact-popup">
-        <div class="contact-content">
-            <img src="https://perpheads.com/data/avatars/l/10/10255.jpg?1717343207" alt="Profile Image">
-            <h3>Contact Links</h3>
-            <ul>
-                <li><a href="https://steamcommunity.com/id/halfpeeps/" target="_blank">Steam</a></li>
-                <li><a href="https://perpheads.com/members/peeps.10255/" target="_blank">PERPHeads Forums</a></li>
-                <li><a href="https://discordapp.com/users/241526229558231051/" target="_blank">Discord</a></li>
-            </ul>
-            <button id="close-button" onclick="closeContact()">Close</button>
-        </div>
-    </div>
-
-    <div id="about-popup">
-        <div class="about-content">
-            <h3>About</h3>
-            <ul>
-                <h4>
-                    An archive of material from the development of Paralake V6 created and maintained by peeps for PERPHeads. <br>
-                </h4>
-                <h5>
-                    <!-- Update last update manually when releasing a new version -->
-                    Last Updated: 01/03/2025 <br>
-                    <!-- Run image_counter.py to get these values, update manually -->
-                    Image Count: 66 <br> 
-                    Total Size: 31.66 MB
-                </h5>
-            </ul>
-            <a><img id="counter" src="https://counter6.optistats.ovh/private/freecounterstat.php?c=1lgw32at3psjugh8wghgxw4xx5zpmnua" border="0"></a>
-            <button id="close-button" onclick="closeAbout()">Close</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    <div id="pagefooter"></div>
+    <script src="scripts/footer.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

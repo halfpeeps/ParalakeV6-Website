@@ -1,0 +1,93 @@
+#page-container {
+    overflow-y: auto;
+}
+
+#downloads-container {
+    max-width: 60%;
+    min-width: 40%;
+    margin: 20px auto;
+    padding: var(--spacing-medium);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+    font-family: var(--font-secondary);
+    border-radius: var(--border-radius);
+    background-color: var(--color-hover);
+}
+
+.download-item {
+    display: flex;
+    align-items: center;
+    background: var(--color-sidebar);
+    padding: var(--spacing-small);
+    border-radius: var(--border-radius);
+    transition: background .3s ease;
+    font-family: var(--font-primary);
+}
+
+.download-item-map {
+    display: flex;
+    min-height: 400px;
+    align-items: center;
+    background: var(--color-hover-gradient);
+    padding: 1%;
+    border-radius: var(--border-radius);
+    transition: background .3s ease;
+    font-family: var(--font-primary);
+}
+
+.download-item:hover {
+    background: var(--color-accent-dark);
+}
+
+.download-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-right: var(--spacing-medium);
+}
+.download-item-map img {
+    width: 400px;
+    min-height: 400px;
+    object-fit: contain;
+    border-radius: var(--border-radius);
+    margin-right: var(--spacing-medium);
+    margin-left: 5px;
+}
+
+.download-info {
+    flex: 1;
+}
+
+.download-info h2 {
+    font-family: var(--font-secondary);
+    margin: 0 0 var(--spacing-small);
+}
+
+.download-info h1 {
+    font-family: var(--font-secondary);
+}
+
+.download-info p {
+    margin: 0 0 var(--spacing-small);
+}
+
+.download-info-map p {
+    margin: 0 0 var(--spacing-small);
+}
+
+.download-link {
+    display: inline-block;
+    padding: var(--spacing-small) var(--spacing-medium);
+    background: var(--color-header-footer);
+    color: var(--color-text);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: background 0.3s;
+}
+
+.download-link:hover {
+    background: var(--color-accent);
+    color: var(--color-text-dark);
+}
