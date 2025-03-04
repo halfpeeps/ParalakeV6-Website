@@ -10,7 +10,7 @@
 
 #downloads-container {
     max-width: 60%;
-    min-width: 40%;
+    min-width: 400px;
     margin: 20px auto;
     padding: var(--spacing-medium);
     display: flex;
@@ -19,6 +19,7 @@
     font-family: var(--font-secondary);
     border-radius: var(--border-radius);
     background-color: var(--color-hover-transparent);
+    min-width: 900px;
 }
 
 .download-item {
@@ -40,6 +41,7 @@
     border-radius: var(--border-radius);
     transition: background .3s ease;
     font-family: var(--font-primary);
+    min-width: 800px;
 }
 
 .download-item:hover {
