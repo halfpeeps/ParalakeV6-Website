@@ -1,13 +1,13 @@
 :root {
     --font-primary: 'Sono', serif;
     --font-secondary: 'Jost', serif;
+
     --color-bg: #121212;
     --color-header-footer: #333;
     --color-sidebar: #222;
     --color-border: #44444400;
     --color-border-hover: #444;
-    --color-hover-gradient: linear-gradient(to right, #d12d9c, #f25f30, #5ea2ef);
-    --color-grey-gradient: linear-gradient(to right, #111111 #111111 ##111111 #111111);
+    --color-v6-gradient: linear-gradient(to right, #d12d9c, #f25f30, #5ea2ef);
     --color-text: #fff;
     --color-text-dark: #121212;
     --color-hover: #444;
@@ -16,8 +16,9 @@
     --color-danger: red;
     --color-danger-hover: rgb(160, 0, 0);
     --color-accent: #f3b447;
-    --color-accent-dark: #181818;
+    --color-downloads-background: #181818;
     --color-steam: #1A9FFF;
+    
     --spacing-small: 10px;
     --spacing-medium: 20px;
     --spacing-large: 50px;
