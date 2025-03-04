@@ -11,6 +11,7 @@
     --color-text: #fff;
     --color-text-dark: #121212;
     --color-hover: #444;
+    --color-hover-transparent: #444444ca;
     --color-hover-dark: #555;
     --color-danger: red;
     --color-danger-hover: rgb(160, 0, 0);

@@ -1,5 +1,11 @@
 #page-container {
     overflow-y: auto;
+    background-image: url("images_excluded/bg01.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
 }
 
 #downloads-container {
@@ -12,7 +18,7 @@
     gap: var(--spacing-medium);
     font-family: var(--font-secondary);
     border-radius: var(--border-radius);
-    background-color: var(--color-hover);
+    background-color: var(--color-hover-transparent);
 }
 
 .download-item {
@@ -56,6 +62,14 @@
     border-radius: var(--border-radius);
     margin-right: var(--spacing-medium);
     margin-left: 5px;
+    border-width: 0px;
+}
+
+.download-item img:hover {
+    border-width: 0px;
+}
+
+.download-item-map img:hover {
     border-width: 0px;
 }
 
