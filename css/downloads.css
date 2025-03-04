@@ -90,7 +90,24 @@
     transition: background 0.3s;
 }
 
+.download-link-steam {
+    display: inline-block;
+    padding: var(--spacing-small) var(--spacing-medium);
+    background: var(--color-header-footer);
+    color: var(--color-text);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: background 0.3s;
+    transition: color 0.15s;
+    background-color: var(--color-steam);
+}
+
 .download-link:hover {
+    background: var(--color-accent);
+    color: var(--color-text-dark);
+}
+
+.download-link-steam:hover {
     background: var(--color-accent);
     color: var(--color-text-dark);
 }
