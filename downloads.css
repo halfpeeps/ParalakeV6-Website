@@ -1,10 +1,16 @@
 #page-container {
     overflow-y: auto;
+    background-image: url("images_excluded/bg01.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
 }
 
 #downloads-container {
     max-width: 60%;
-    min-width: 40%;
+    min-width: 400px;
     margin: 20px auto;
     padding: var(--spacing-medium);
     display: flex;
@@ -12,7 +18,8 @@
     gap: var(--spacing-medium);
     font-family: var(--font-secondary);
     border-radius: var(--border-radius);
-    background-color: var(--color-hover);
+    background-color: var(--color-hover-transparent);
+    min-width: 900px;
 }
 
 .download-item {
@@ -29,15 +36,16 @@
     display: flex;
     min-height: 400px;
     align-items: center;
-    background: var(--color-hover-gradient);
+    background: var(--color-v6-gradient);
     padding: 1%;
     border-radius: var(--border-radius);
     transition: background .3s ease;
     font-family: var(--font-primary);
+    min-width: 800px;
 }
 
 .download-item:hover {
-    background: var(--color-accent-dark);
+    background: var(--color-downloads-background);
 }
 
 .download-item img {
@@ -56,6 +64,14 @@
     border-radius: var(--border-radius);
     margin-right: var(--spacing-medium);
     margin-left: 5px;
+    border-width: 0px;
+}
+
+.download-item img:hover {
+    border-width: 0px;
+}
+
+.download-item-map img:hover {
     border-width: 0px;
 }
 
