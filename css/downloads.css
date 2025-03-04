@@ -46,7 +46,9 @@
     object-fit: cover;
     border-radius: var(--border-radius);
     margin-right: var(--spacing-medium);
+    border-width: 0px;
 }
+
 .download-item-map img {
     width: 400px;
     min-height: 400px;
@@ -54,6 +56,7 @@
     border-radius: var(--border-radius);
     margin-right: var(--spacing-medium);
     margin-left: 5px;
+    border-width: 0px;
 }
 
 .download-info {
