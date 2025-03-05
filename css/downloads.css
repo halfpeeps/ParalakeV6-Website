@@ -1,6 +1,5 @@
 #page-container {
     overflow-y: auto;
-    background-image: url("images_excluded/bg01.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
