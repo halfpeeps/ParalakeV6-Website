@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paralake V6 Development Archive</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/archive.css">
     <link rel="icon" type="image/x-icon" href="images/06Other/Logos/archive_icon_mono.png">
     <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+    
     <div id="mobile-warning">
         <div class="mobile-warning-content">
             <p>This site is not designed to work on mobile devices.</p>
@@ -43,9 +48,31 @@
             </a>
         </div>
     </div>
-    
+
     <div id="pagefooter" style="position: sticky; z-index: 9999;"></div>
-    <script src="scripts/mobileWarning.js"></script>
+
+    <script>
+        // loading screen
+        let minLoadingTime = 500; // 1 second minimum
+                let startTime = Date.now();
+
+                window.addEventListener("load", function() {
+                    let loadingScreen = document.getElementById("loading-screen");
+                    let content = document.getElementById("content");
+
+                    let timeElapsed = Date.now() - startTime;
+                    let remainingTime = Math.max(0, minLoadingTime - timeElapsed);
+
+                    setTimeout(() => {
+                        loadingScreen.classList.add("hidden");
+
+                        setTimeout(() => {
+                            loadingScreen.style.display = "none";
+                        }, 500);
+                    }, remainingTime);
+                });
+    </script>
+
     <script src="scripts/footer.js"></script>
     <script src="scripts/archive.js"></script>
 </body>

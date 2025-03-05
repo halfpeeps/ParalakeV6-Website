@@ -5,7 +5,6 @@ fetch('footer.html')
     })
     .catch(error => console.error('Error loading footer:', error));
 
-// Use event delegation to handle clicks dynamically
 document.getElementById('pagefooter').addEventListener('click', function (event) {
     if (event.target.matches('#contact-link')) {
         event.preventDefault();
