@@ -124,6 +124,7 @@
 
 /* footer */
 #footer {
+    height: var(--footer-height);
     background: var(--color-header-footer);
     color: var(--color-text);
     padding: var(--spacing-small);

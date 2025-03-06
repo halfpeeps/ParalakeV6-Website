@@ -199,4 +199,47 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+//loading images spinner
+(function() {
+    const spinner = document.getElementById('image-spinner');
+    let loadingImagesCount = 0;
+
+    function updateSpinnerVisibility() {
+        if (loadingImagesCount > 0) {
+            spinner.style.display = 'block';
+        } else {
+            spinner.style.display = 'none';
+        }
+    }
+
+    function handleImageLoad(image) {
+        loadingImagesCount--;
+        updateSpinnerVisibility();
+    }
+
+    function handleImageError(image) {
+        loadingImagesCount--;
+        updateSpinnerVisibility();
+    }
+
+    function monitorImageLoading(image) {
+        if (!image.complete) {
+            loadingImagesCount++;
+            image.addEventListener('load', () => handleImageLoad(image));
+            image.addEventListener('error', () => handleImageError(image));
+        }
+    }
+
+    const allImages = document.querySelectorAll('img');
+    allImages.forEach(monitorImageLoading);
+
+    const observer = new MutationObserver(() => {
+        const newlyAddedImages = document.querySelectorAll('img');
+        newlyAddedImages.forEach(monitorImageLoading);
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+    updateSpinnerVisibility();
+})();
+
 loadImages();
