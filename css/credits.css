@@ -17,8 +17,6 @@
     gap: var(--spacing-medium);
     border-radius: var(--border-radius);
     background-color: var(--color-hover-transparent);
-    min-width:
-    900px;
 }
 
 .credit-item {
@@ -28,20 +26,29 @@
     justify-content: center;
     background: var(--color-sidebar);
     border-radius: var(--border-radius);
-    min-width: 800px;
+    min-width: 500px;
+}
+
+.credit-item h1 {
+    text-align: center;
+    font-family: var(--font-secondary);
 }
 
 .credit-row {
     display: flex;
-    justify-content: center;
-    gap: 200px; /* space collumns */
+    justify-content: space-between;
+    gap: 0px; /* space between collumns */
 }
 
 .credits-collumn {
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
+    min-width: 300px;
+    padding: 20px
 }
+
 
 .credits-collumn h1 {
     font-family: var(--font-secondary);
@@ -50,8 +57,10 @@
 
 .credits-collumn h2 {
     font-family: var(--font-primary);
-    line-height: 2px;
-    padding: 0px;
+    line-height: 1;
+    padding: 0;
+    margin: 2px 0;
+    font-weight: 400;
 }
 
 .credit-item-basedon {
