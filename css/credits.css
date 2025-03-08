@@ -7,6 +7,11 @@
     width: 100vw;
 }
 
+#page-container a {
+    text-decoration: none;
+    color: inherit;
+}
+
 #credits-container {
     max-width: 60%;
     min-width: 400px;
@@ -115,6 +120,11 @@
     width: 300px; /* primary pfp size*/
     height: 300px; /* primary pfp size*/
     border-radius: var(--border-radius);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-box img:hover {
+    transform: scale(1.05);
 }
 
 .image-box p {
