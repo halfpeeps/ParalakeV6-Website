@@ -10,6 +10,11 @@
 #page-container a {
     text-decoration: none;
     color: inherit;
+    transition: color .1s;
+}
+
+#page-container a:hover {
+    color: var(--color-accent)
 }
 
 #credits-container {
@@ -66,6 +71,12 @@
     padding: 0;
     margin: 2px 0;
     font-weight: 400;
+    transition: color 0.1s ease-in-out;
+}
+
+.credits-collumn h2:hover {
+    color: var(--color-accent);
+    transition: color 0.1s ease-in-out;
 }
 
 .credit-item-basedon {
@@ -120,11 +131,13 @@
     width: 300px; /* primary pfp size*/
     height: 300px; /* primary pfp size*/
     border-radius: var(--border-radius);
-    transition: transform 0.3s ease-in-out;
+    border: 2px solid #ffffff00;
+    transition: border 0.2s ease-in-out;
 }
 
 .image-box img:hover {
-    transform: scale(1.05);
+    border: 2px solid var(--color-accent);
+    transition: border 0.2s ease-in-out;
 }
 
 .image-box p {
