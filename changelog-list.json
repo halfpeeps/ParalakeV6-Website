@@ -196,5 +196,11 @@
         "build": "1.4.5",
         "title": "Functional Metro Logic",
         "file": "1.4.5.md"
+    },
+    {
+        "date": "2025-03-09",
+        "build": "1.4.6",
+        "title": "Business Industrial Buildings",
+        "file": "1.4.6.md"
     }
 ]
