@@ -21,7 +21,7 @@ a {
     background: var(--color-sidebar);
     padding: var(--spacing-medium);
     overflow-y: auto;
-    height: 100vh;
+    height: calc(100vh - var(--footer-height) - 128px);
     position: sticky;
     top: 0;
     display: flex;
@@ -111,4 +111,9 @@ a {
     padding: var(--spacing-small);
     background: var(--color-sidebar);
     border-radius: var(--border-radius);
+    transition: background 0.3s ease;
+}
+
+.changelog-entry:hover {
+    background: var(--color-downloads-background)
 }

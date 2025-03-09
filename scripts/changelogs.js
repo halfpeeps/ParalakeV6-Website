@@ -4,14 +4,14 @@ async function loadChangelogs() {
     const sidebar = document.getElementById('sidebar');
     const timelineLine = document.getElementById('timeline-line');
     const changelogList = document.getElementById('changelog-content-wrapper');
-    
-    changelogs.forEach(async (log, index) => {
+
+    for (const log of changelogs) {
         const entry = document.createElement('div');
         entry.classList.add('timeline-entry');
-        
+
         const dot = document.createElement('div');
         dot.classList.add('timeline-dot');
-        
+
         const btn = document.createElement('button');
         btn.textContent = log.build;
         btn.classList.add('timeline-button');
@@ -19,12 +19,11 @@ async function loadChangelogs() {
         btn.onclick = () => {
             const targetElement = document.getElementById(log.file.replace('.md', ''));
             if (targetElement) {
-                // Get the header height to adjust the scroll position
                 const headerHeight = document.getElementById('header').offsetHeight;
                 const container = document.getElementById('changelog-container');
                 const containerPadding = parseInt(window.getComputedStyle(container).paddingTop, 10);
                 container.scrollTo({
-                    top: targetElement.offsetTop - containerPadding - headerHeight, 
+                    top: targetElement.offsetTop - containerPadding - headerHeight,
                     behavior: 'smooth'
                 });
             }
@@ -36,7 +35,7 @@ async function loadChangelogs() {
 
         const mdResponse = await fetch(`changelogs/${log.file}`);
         const mdText = await mdResponse.text();
-        
+
         const changelogEntry = document.createElement('div');
         changelogEntry.classList.add('changelog-entry');
         changelogEntry.id = log.file.replace('.md', '');
@@ -46,14 +45,16 @@ async function loadChangelogs() {
             <div>${marked.parse(mdText)}</div>
         `;
         changelogList.appendChild(changelogEntry);
-    });
+    }
 
+    // Adjust timeline line height
     const entries = document.querySelectorAll('.timeline-entry');
     if (entries.length > 0) {
         const lastEntry = entries[entries.length - 1];
         timelineLine.style.height = `${lastEntry.offsetTop + lastEntry.offsetHeight}px`;
     }
 
+    // Scroll tracking for active button
     const container = document.getElementById('changelog-container');
     container.addEventListener('scroll', () => {
         const entries = document.querySelectorAll('.changelog-entry');

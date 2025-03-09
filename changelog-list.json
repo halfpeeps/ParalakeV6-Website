@@ -22,5 +22,179 @@
         "build": "1.1.7",
         "title": "Taxi Depot, City Block",
         "file": "1.1.7.md"
+    },
+    {
+        "date": "2024-08-11",
+        "build": "1.1.8",
+        "title": "Early Version of New Mainstreet",
+        "file": "1.1.8.md"
+    },
+    {
+        "date": "2024-08-12",
+        "build": "1.1.9",
+        "title": "New Mainstreet",
+        "file": "1.1.9.md"
+    },
+    {
+        "date": "2024-08-13",
+        "build": "1.2.0",
+        "title": "City Highway On/Off Ramp + Bug Fixes",
+        "file": "1.2.0.md"
+    },
+    {
+        "date": "2024-08-16",
+        "build": "1.2.1",
+        "title": "Started work on Soundscapes, FD Parking, City Center Sidewalks",
+        "file": "1.2.1.md"
+    },
+    {
+        "date": "2024-08-22",
+        "build": "1.2.2",
+        "title": "City Soundscapes, Gas Station",
+        "file": "1.2.2.md"
+    },
+    {
+        "date": "2024-08-31",
+        "build": "1.2.3",
+        "title": "New new City Hall",
+        "file": "1.2.3.md"
+    },
+    {
+        "date": "2024-09-28",
+        "build": "1.2.5",
+        "title": "City Metro Station",
+        "file": "1.2.5.md"
+    },
+    {
+        "date": "2024-10-08",
+        "build": "1.2.6",
+        "title": "PD Garage, City Hall Exterior, Many Fixes",
+        "file": "1.2.6.md"
+    },
+    {
+        "date": "2024-10-15",
+        "build": "1.2.7",
+        "title": "WIP Slums, WIP Suburbs",
+        "file": "1.2.7.md"
+    },
+    {
+        "date": "2024-10-19",
+        "build": "1.2.8",
+        "title": "Mostly Fixes",
+        "file": "1.2.8.md"
+    },
+    {
+        "date": "2024-11-12",
+        "build": "1.2.9",
+        "title": "Merged Playtest Build",
+        "file": "1.2.9.md"
+    },
+    {
+        "date": "2024-11-15",
+        "build": "1.3.0",
+        "title": "Forest Rework, New Parking Garage",
+        "file": "1.3.0.md"
+    },
+    {
+        "date": "2024-11-24",
+        "build": "1.3.1",
+        "title": "Slums Area Overhaul",
+        "file": "1.3.1.md"
+    },
+    {
+        "date": "2024-12-15",
+        "build": "1.3.2",
+        "title": "WIP Forest Detailing",
+        "file": "1.3.2.md"
+    },
+    {
+        "date": "2024-12-18",
+        "build": "1.3.3",
+        "title": "Subs/Forest Iterative Update 1",
+        "file": "1.3.3.md"
+    },
+    {
+        "date": "2025-01-04",
+        "build": "1.3.4",
+        "title": "Forest and Suburbs Soundscapes",
+        "file": "1.3.4.md"
+    },
+    {
+        "date": "2025-01-06",
+        "build": "1.3.5",
+        "title": "Subs/Forest Iterative Update 2",
+        "file": "1.3.5.md"
+    },
+    {
+        "date": "2025-01-09",
+        "build": "1.3.6",
+        "title": "Reduced draw distance",
+        "file": "1.3.6.md"
+    },
+    {
+        "date": "2025-01-14",
+        "build": "1.3.7",
+        "title": "Performance improvements, Menu locations",
+        "file": "1.3.7.md"
+    },
+    {
+        "date": "2025-01-20",
+        "build": "1.3.8",
+        "title": "City Fixes and Improvements",
+        "file": "1.3.8.md"
+    },
+    {
+        "date": "2025-01-20",
+        "build": "1.3.9",
+        "title": "Raised map by 1000 units",
+        "file": "1.3.9.md"
+    },
+    {
+        "date": "2025-01-21",
+        "build": "1.4.0",
+        "title": "Merged Lelios' Business + 3D skybox",
+        "file": "1.4.0.md"
+    },
+    {
+        "date": "2025-01-27",
+        "build": "1.4.1",
+        "title": "Central Business Layout Overhaul",
+        "file": "1.4.1.md"
+    },
+    {
+        "date": "2025-02-01",
+        "build": "1.4.2",
+        "title": "Dockside Apartment Blockout",
+        "file": "1.4.2.md"
+    },
+    {
+        "date": "2025-02-01",
+        "build": "1.4.2-revision2",
+        "title": "Dockside Apartment Blockout Revision 2",
+        "file": "1.4.2-revision2.md"
+    },
+    {
+        "date": "2025-02-01",
+        "build": "1.4.2-revision3",
+        "title": "Dockside Apartment Blockout Revision 3",
+        "file": "1.4.2-revision3.md"
+    },
+    {
+        "date": "2025-02-07",
+        "build": "1.4.3",
+        "title": "Mall Interior, Casino Lobby",
+        "file": "1.4.3.md"
+    },
+    {
+        "date": "2025-02-??",
+        "build": "1.4.4",
+        "title": "Business Apt, Business Industrial Layout",
+        "file": "1.4.4.md"
+    },
+    {
+        "date": "2025-03-??",
+        "build": "1.4.5",
+        "title": "Functional Metro Logic",
+        "file": "1.4.5.md"
     }
 ]
