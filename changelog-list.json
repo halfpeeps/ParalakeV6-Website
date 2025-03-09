@@ -1,26 +1,26 @@
 [
     {
-        "date": "2025-03-09",
-        "build": "1.0.5",
-        "title": "Patch 1.0.5",
-        "file": "2025-03-09.md"
+        "date": "2024-07-02",
+        "build": "1.1.4",
+        "title": "Latest Lelios changes, new city buildings",
+        "file": "1.1.4.md"
     },
     {
-        "date": "2025-03-09-1",
-        "build": "1.0.6",
-        "title": "Patch 1.0.6",
-        "file": "2025-03-09-1.md"
+        "date": "2024-07-15",
+        "build": "1.1.5",
+        "title": "Bank Plaza",
+        "file": "1.1.5.md"
     },
     {
-        "date": "2025-03-09-1",
-        "build": "1.0.7",
-        "title": "Patch 1.0.7",
-        "file": "2025-03-09-1 copy.md"
+        "date": "2024-07-27",
+        "build": "1.1.6",
+        "title": "Hospital, Homeless Area, Roadcrew",
+        "file": "1.1.6.md"
     },
     {
-        "date": "2025-03-09-1",
-        "build": "1.0.8",
-        "title": "Patch 1.0.8",
-        "file": "2025-03-09-1 copy 2.md"
+        "date": "2024-08-10",
+        "build": "1.1.7",
+        "title": "Taxi Depot, City Block",
+        "file": "1.1.7.md"
     }
 ]
