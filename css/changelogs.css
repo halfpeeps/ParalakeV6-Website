@@ -5,6 +5,11 @@ html, body {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
 #container {
     display: flex;
     flex: 1;
@@ -90,6 +95,14 @@ html, body {
     background-color: var(--color-hover-transparent);
     padding: var(--spacing-medium);
     border-radius: var(--border-radius);
+}
+
+#changelog-content-wrapper h2 {
+    font-family: var(--font-secondary);
+}
+
+#changelog-content-wrapper p strong {
+    font-family: var(--font-secondary);
 }
 
 .changelog-entry {
