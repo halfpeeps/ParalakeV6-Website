@@ -60,7 +60,6 @@
             border-radius: 50%;
             position: absolute;
             left: -4px;
-            transform: translateY(calc(-50% + 4px));
         }
         
         .timeline-button {
@@ -71,7 +70,7 @@
             color: var(--color-text);
             font-family: var(--font-secondary);
             border-radius: var(--border-radius);
-            margin-left: 40px;
+            margin-left: 30px;
             cursor: pointer;
             position: relative;
             z-index: 2;
@@ -95,7 +94,6 @@
             background: var(--color-bg);
             color: var(--color-text);
             overflow-y: auto;
-            height: 100vh;
         }
         
         #changelog-content-wrapper {
@@ -106,28 +104,11 @@
             border-radius: var(--border-radius);
         }
         
-        .changelog-header {
-            background: var(--color-sidebar);
+        .changelog-entry {
+            margin-bottom: var(--spacing-medium);
             padding: var(--spacing-small);
+            background: var(--color-sidebar);
             border-radius: var(--border-radius);
-            margin-bottom: var(--spacing-small);
-        }
-        
-        #changelog-title {
-            font-family: var(--font-secondary);
-            text-align: center;
-            margin-bottom: var(--spacing-small);
-        }
-        
-        #changelog-meta {
-            text-align: center;
-            font-size: 1rem;
-            color: var(--color-text);
-        }
-        
-        #changelog-content {
-            border-top: 2px solid var(--color-border-hover);
-            padding-top: var(--spacing-small);
         }
     </style>
 </head>
@@ -148,11 +129,7 @@
         </div>
         <div id="changelog-container">
             <div id="changelog-content-wrapper">
-                <div class="changelog-header">
-                    <h2 id="changelog-title">Select a release</h2>
-                    <p id="changelog-meta"></p>
-                </div>
-                <div id="changelog-content"></div>
+                <!-- Changelog entries will be dynamically loaded here -->
             </div>
         </div>
     </div>
@@ -163,8 +140,9 @@
             const changelogs = await response.json();
             const sidebar = document.getElementById('sidebar');
             const timelineLine = document.getElementById('timeline-line');
+            const changelogList = document.getElementById('changelog-content-wrapper');
             
-            changelogs.forEach((log, index) => {
+            changelogs.forEach(async (log, index) => {
                 const entry = document.createElement('div');
                 entry.classList.add('timeline-entry');
                 
@@ -172,44 +150,46 @@
                 dot.classList.add('timeline-dot');
                 
                 const btn = document.createElement('button');
-                btn.textContent = log.date;
+                btn.textContent = log.build;
                 btn.classList.add('timeline-button');
                 btn.onclick = () => {
-                    document.querySelectorAll('.timeline-button').forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    loadChangelog(log.file);
+                    const targetElement = document.getElementById(log.file.replace('.md', ''));
+                    if (targetElement) {
+                        // Scroll the changelog container instead of the entire page
+                        const container = document.getElementById('changelog-container');
+                        const containerPadding = parseInt(window.getComputedStyle(container).paddingTop, 10);
+                        container.scrollTo({
+                            top: targetElement.offsetTop - containerPadding,
+                            behavior: 'smooth'
+                        });
+
+                    }
                 };
-                
+
                 entry.appendChild(dot);
                 entry.appendChild(btn);
                 sidebar.appendChild(entry);
+
+                // Fetch and display markdown content
+                const mdResponse = await fetch(`changelogs/${log.file}`);
+                const mdText = await mdResponse.text();
+                
+                const changelogEntry = document.createElement('div');
+                changelogEntry.classList.add('changelog-entry');
+                changelogEntry.id = log.file.replace('.md', ''); // Remove the '.md' extension for the ID
+                changelogEntry.innerHTML = `
+                    <h2>${log.title}</h2>
+                    <p><strong>Build:</strong> ${log.build} | <strong>Date:</strong> ${log.date}</p>
+                    <div>${marked.parse(mdText)}</div>
+                `;
+                changelogList.appendChild(changelogEntry);
             });
 
-            // Adjust timeline height to match the last button
+            // Adjust timeline height to fit the last button
             const entries = document.querySelectorAll('.timeline-entry');
             if (entries.length > 0) {
                 const lastEntry = entries[entries.length - 1];
-                timelineLine.style.height = `${lastEntry.offsetTop + lastEntry.offsetHeight - 10}px`;
-            }
-        }
-
-        async function loadChangelog(jsonFile) {
-            try {
-                const response = await fetch(`changelogs/${jsonFile}`);
-                if (!response.ok) throw new Error('Failed to load JSON');
-                const log = await response.json();
-                
-                document.getElementById('changelog-title').textContent = log.title;
-                document.getElementById('changelog-meta').textContent = `Build ${log.build} - ${log.date}`;
-                
-                const mdResponse = await fetch(`changelogs/${log.file}`);
-                if (!mdResponse.ok) throw new Error('Failed to load Markdown');
-                const mdText = await mdResponse.text();
-                
-                document.getElementById('changelog-content').innerHTML = marked.parse(mdText);
-            } catch (error) {
-                console.error('Error loading changelog:', error);
-                document.getElementById('changelog-content').innerHTML = '<p>Error loading changelog. Please check the console.</p>';
+                timelineLine.style.height = `${lastEntry.offsetTop + lastEntry.offsetHeight}px`;
             }
         }
 
