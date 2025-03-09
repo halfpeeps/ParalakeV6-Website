@@ -43,7 +43,7 @@ a {
     display: flex;
     align-items: center;
     position: relative;
-    margin-bottom: var(--spacing-small);
+    margin-bottom: 0px;
 }
 
 .timeline-dot {
