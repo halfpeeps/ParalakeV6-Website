@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog Archive</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/06Other/Logos/archive_icon_mono.png">
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+        
+        #sidebar {
+            width: flex;
+            background: var(--color-sidebar);
+            padding: var(--spacing-medium);
+            overflow-y: auto;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+        }
+        
+        #timeline-line {
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            width: 4px;
+            background: var(--color-border-hover);
+            transition: height 0.3s ease;
+        }
+        
+        .timeline-entry {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: var(--spacing-small);
+        }
+        
+        .timeline-dot {
+            width: 12px;
+            height: 12px;
+            background: var(--color-accent);
+            border-radius: 50%;
+            position: absolute;
+            left: -4px;
+            transform: translateY(calc(-50% + 4px));
+        }
+        
+        .timeline-button {
+            padding: var(--spacing-small);
+            background: var(--color-hover-transparent);
+            border: none;
+            text-align: left;
+            color: var(--color-text);
+            font-family: var(--font-secondary);
+            border-radius: var(--border-radius);
+            margin-left: 40px;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .timeline-button:hover {
+            background: var(--color-hover);
+        }
+        
+        .timeline-button.active {
+            background: var(--color-accent);
+            color: var(--color-text-dark);
+        }
+        
+        #changelog-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: var(--spacing-medium);
+            background: var(--color-bg);
+            color: var(--color-text);
+            overflow-y: auto;
+            height: 100vh;
+        }
+        
+        #changelog-content-wrapper {
+            width: 80%;
+            max-width: 1000px;
+            background-color: var(--color-hover-transparent);
+            padding: var(--spacing-medium);
+            border-radius: var(--border-radius);
+        }
+        
+        .changelog-header {
+            background: var(--color-sidebar);
+            padding: var(--spacing-small);
+            border-radius: var(--border-radius);
+            margin-bottom: var(--spacing-small);
+        }
+        
+        #changelog-title {
+            font-family: var(--font-secondary);
+            text-align: center;
+            margin-bottom: var(--spacing-small);
+        }
+        
+        #changelog-meta {
+            text-align: center;
+            font-size: 1rem;
+            color: var(--color-text);
+        }
+        
+        #changelog-content {
+            border-top: 2px solid var(--color-border-hover);
+            padding-top: var(--spacing-small);
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <span style="line-height: 0.8;">Paralake V6 Development Archive<br><span id="header-subtitle" style="font-size: 22px;">Development Changelogs</span></span>
+        
+        <a href="https://halfpeeps.github.io/Paralake-V6-Development-Archive/" style="padding-top: 5px">
+            <img src="images/06Other/Logos/archive_logo_mono.png" alt="Logo" style="height: 45px; border: 0px"
+            onmouseover="this.src='images/06Other/Logos/archive_logo.png';"
+            onmouseout="this.src='images/06Other/Logos/archive_logo_mono.png';">
+        </a>
+    </div>
+
+    <div id="container">
+        <div id="sidebar">
+            <div id="timeline-line"></div>
+        </div>
+        <div id="changelog-container">
+            <div id="changelog-content-wrapper">
+                <div class="changelog-header">
+                    <h2 id="changelog-title">Select a release</h2>
+                    <p id="changelog-meta"></p>
+                </div>
+                <div id="changelog-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function loadChangelogs() {
+            const response = await fetch('changelog-list.json');
+            const changelogs = await response.json();
+            const sidebar = document.getElementById('sidebar');
+            const timelineLine = document.getElementById('timeline-line');
+            
+            changelogs.forEach((log, index) => {
+                const entry = document.createElement('div');
+                entry.classList.add('timeline-entry');
+                
+                const dot = document.createElement('div');
+                dot.classList.add('timeline-dot');
+                
+                const btn = document.createElement('button');
+                btn.textContent = log.date;
+                btn.classList.add('timeline-button');
+                btn.onclick = () => {
+                    document.querySelectorAll('.timeline-button').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    loadChangelog(log.file);
+                };
+                
+                entry.appendChild(dot);
+                entry.appendChild(btn);
+                sidebar.appendChild(entry);
+            });
+
+            // Adjust timeline height to match the last button
+            const entries = document.querySelectorAll('.timeline-entry');
+            if (entries.length > 0) {
+                const lastEntry = entries[entries.length - 1];
+                timelineLine.style.height = `${lastEntry.offsetTop + lastEntry.offsetHeight - 10}px`;
+            }
+        }
+
+        async function loadChangelog(jsonFile) {
+            try {
+                const response = await fetch(`changelogs/${jsonFile}`);
+                if (!response.ok) throw new Error('Failed to load JSON');
+                const log = await response.json();
+                
+                document.getElementById('changelog-title').textContent = log.title;
+                document.getElementById('changelog-meta').textContent = `Build ${log.build} - ${log.date}`;
+                
+                const mdResponse = await fetch(`changelogs/${log.file}`);
+                if (!mdResponse.ok) throw new Error('Failed to load Markdown');
+                const mdText = await mdResponse.text();
+                
+                document.getElementById('changelog-content').innerHTML = marked.parse(mdText);
+            } catch (error) {
+                console.error('Error loading changelog:', error);
+                document.getElementById('changelog-content').innerHTML = '<p>Error loading changelog. Please check the console.</p>';
+            }
+        }
+
+        loadChangelogs();
+    </script>
+
+    <div id="pagefooter" style="position: sticky !important; bottom: 0; width: 100%; z-index: 9999;"></div>
+    <script src="scripts/footer.js"></script>
+</body>
+</html>
