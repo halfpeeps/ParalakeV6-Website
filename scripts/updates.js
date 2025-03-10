@@ -11,7 +11,8 @@ async function loadUpdates() {
         updateEntry.classList.add('update-entry');
         updateEntry.innerHTML = `
             <div class="update-content">${parseBBCode(bbText)}</div>
-            <h3 class="update-subtitle">Posted by: ${update.postedby}</h2>
+            <h3 class="update-subtitle">Posted by: ${update.postedby}</h3>
+            <h3 class="update-subtitle" styles="font-size: 8px;">${update.date}</h3>
         `;
         updateList.appendChild(updateEntry);
     }
@@ -31,7 +32,7 @@ function parseBBCode(bbcode) {
           }
         },
         { regex: /\[URL=['"]?(.*?)['"]?\](.*?)\[\/URL\]/gis, replacement: '<a href="$1" target="_blank" class="update-link">$2</a>' },
-        { regex: /\[USER=(\d+)\](.*?)\[\/USER\]/gis, replacement: '<a class="update-user-mention href="https://perpheads.com/members/$1/">$2</a>' },
+        { regex: /\[USER=(\d+)\](.*?)\[\/USER\]/gis, replacement: '<a class="update-user-mention" target="_blank" href="https://perpheads.com/members/$1/">$2</a>' },
         { regex: /\[MEDIA=youtube\](.*?)\[\/MEDIA\]/gis, replacement: '<iframe class="update-video" width="560" height="315" src="https://www.youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe>' },
         { regex: /\[SPOILER="?(.*?)"?\](.*?)\[\/SPOILER\]/gis, replacement: '<details class="update-spoiler"><summary>$1</summary>$2</details>' }
     ];
