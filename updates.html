@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changelog Archive | Paralake V6 Development Archive</title>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <title>Update Archive | Paralake V6 Development Archive</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/changelogs.css">
+    <link rel="stylesheet" href="css/updates.css">
     <link rel="icon" type="image/x-icon" href="images/06Other/Logos/archive_icon_mono.png">
     <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="header">
-        <span style="line-height: 0.8;">Paralake V6 Development Archive<br><span id="header-subtitle" style="font-size: 22px;">Development Changelogs</span></span>
+        <span style="line-height: 0.8;">Paralake V6 Development Archive<br><span id="header-subtitle" style="font-size: 22px;">Update Archive</span></span>
         
         <a href="https://halfpeeps.github.io/Paralake-V6-Development-Archive/" style="padding-top: 5px">
             <img src="images/06Other/Logos/archive_logo_mono.png" alt="Logo" style="height: 45px; border: 0px"
@@ -23,26 +22,22 @@
 
         <div id="header-menu">
             <button class="menu-button" onclick="location.href='https://halfpeeps.github.io/Paralake-V6-Development-Archive/'">Development Archive</button>
-            <button class="menu-button-active" onclick="location.href='#'">Changelogs Archive</button>
-            <button class="menu-button" onclick="location.href='https://halfpeeps.github.io/Paralake-V6-Development-Archive/updates'">Update Posts</button>
+            <button class="menu-button-disabled" onclick="location.href='#'">Changelogs Archive</button>
+            <button class="menu-button-active" onclick="location.href='https://halfpeeps.github.io/Paralake-V6-Development-Archive/updates'">Update Posts</button>
             <button class="menu-button" onclick="location.href='https://halfpeeps.github.io/Paralake-V6-Development-Archive/downloads'">Downloads</button>
             <button class="menu-button" onclick="location.href='https://halfpeeps.github.io/Paralake-V6-Development-Archive/credits'">Map Credits</button>
         </div>
     </div>
 
     <div id="container">
-        <div id="sidebar">
-            <div id="timeline-line"></div>
-        </div>
-        <div id="changelog-container">
-            <div id="changelog-content-wrapper">
-                <!-- changelog entries will be dynamically loaded here -->
+        <div id="update-container">
+            <div id="update-content-wrapper">
+                <!-- updates dynamically load here -->
             </div>
         </div>
     </div>
 
-    <script src="scripts/changelogs.js"></script>
-
+    <script src="scripts/updates.js"></script>
     <div id="pagefooter" style="position: sticky !important; bottom: 0; width: 100%; z-index: 9999;"></div>
     <script src="scripts/footer.js"></script>
     <script src="scripts/headerMenu.js"></script>
