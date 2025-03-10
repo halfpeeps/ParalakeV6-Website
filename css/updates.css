@@ -1,0 +1,125 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+#container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+#update-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: var(--spacing-medium);
+    background: var(--color-bg);
+    color: var(--color-text);
+    overflow-y: auto;
+}
+
+#update-content-wrapper {
+    width: 80%;
+    max-width: 1100px;
+    background-color: var(--color-hover-transparent);
+    padding: var(--spacing-medium);
+    border-radius: var(--border-radius);
+}
+
+#update-content-wrapper h2 {
+    font-family: var(--font-secondary);
+}
+
+#update-content-wrapper p strong {
+    font-family: var(--font-secondary);
+}
+
+.update-entry {
+    margin-bottom: var(--spacing-medium);
+    padding: var(--spacing-small);
+    background: var(--color-sidebar);
+    border-radius: var(--border-radius);
+    transition: background 0.3s ease;
+}
+
+.update-entry:hover {
+    background: var(--color-downloads-background);
+}
+
+.update-entry img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+/* Update Posts Styling */
+
+.update-main-title {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: var(--font-secondary);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.update-subtitle {
+    font-size: 20px;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-text-light);
+    margin-bottom: 20px;
+}
+
+.update-section {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: var(--font-secondary);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.update-link {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.update-link:hover {
+    text-decoration: underline;
+}
+
+.update-video {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    margin: 10px auto;
+}
+
+.update-user-mention {
+    font-weight: bold;
+    color: var(--color-accent);
+}
+
+.update-spoiler {
+    margin: 10px 0;
+    background: var(--color-sidebar);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update-spoiler summary {
+    font-weight: bold;
+    cursor: pointer;
+}

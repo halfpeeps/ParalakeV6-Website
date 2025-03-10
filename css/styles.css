@@ -46,8 +46,8 @@ body {
 #header-menu {
     position: absolute;
     top: 110%;
-    left: calc(50% - 400px);
-    width: 800px;
+    left: calc(50% - 500px);
+    width: 1000px;
     background-color: var(--color-hover-transparent);
     text-align: center;
     align-items: center;
@@ -67,13 +67,15 @@ body {
     margin: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s, transform 0.1s;
+    transition: background 0.3s, transform 0.1s, color 0.3s;
     border-radius: var(--border-radius);
 }
 
 .menu-button:hover {
     background: var(--color-accent);
     transform: scale(1.05);
+    color: var(--color-text-dark);
+    transition: background 0.3s, transform 0.1s, color 0.3s;
 }
 
 .menu-button-active {
@@ -84,13 +86,15 @@ body {
     margin: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s, transform 0.1s;
+    transition: background 0.3s, transform 0.1s, color 0.3s;
     border-radius: var(--border-radius);
 }
 
 .menu-button-active:hover {
     background: var(--color-accent);
     transform: scale(1.05);
+    color: var(--color-text-dark);
+    transition: background 0.3s, transform 0.1s, color 0.3s;
 }
 
 .menu-button-disabled {
