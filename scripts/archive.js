@@ -1,5 +1,5 @@
 async function loadImages() {
-    const response = await fetch('file_list.json');
+    const response = await fetch('json/file_list.json');
     const fileTree = await response.json();
     const sidebar = document.getElementById('sidebar');
     const imageContainer = document.getElementById('image-container');

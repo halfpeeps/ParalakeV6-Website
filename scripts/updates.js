@@ -1,5 +1,5 @@
 async function loadUpdates() {
-    const response = await fetch('update-list.json');
+    const response = await fetch('json/update_list.json');
     const updates = await response.json();
     const updateList = document.getElementById('update-content-wrapper');
 

@@ -1,5 +1,5 @@
 async function loadChangelogs() {
-    const response = await fetch('changelog-list.json');
+    const response = await fetch('json/changelog_list.json');
     const changelogs = await response.json();
     const sidebar = document.getElementById('sidebar');
     const timelineLine = document.getElementById('timeline-line');

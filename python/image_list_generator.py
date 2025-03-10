@@ -3,7 +3,7 @@ import json
 import re
 
 IMAGE_DIR = "images"
-OUTPUT_FILE = "file_list.json"
+OUTPUT_FILE = "json/file_list.json"
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".webp"}
 INFO_PATTERN = re.compile(r"^info(\d{2})?$", re.IGNORECASE)  # Matches "info", "info01", "info02", etc.
 
