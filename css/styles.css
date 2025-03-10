@@ -46,8 +46,8 @@ body {
 #header-menu {
     position: absolute;
     top: 110%;
-    left: calc(50% - 25%);
-    width: 50%;
+    left: calc(50% - 400px);
+    width: 800px;
     background-color: var(--color-hover-transparent);
     text-align: center;
     align-items: center;
@@ -91,6 +91,22 @@ body {
 .menu-button-active:hover {
     background: var(--color-accent);
     transform: scale(1.05);
+}
+
+.menu-button-disabled {
+    background-color: var(--color-border-hover);
+    color: var(--color-text);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    border-radius: var(--border-radius);
+}
+
+.menu-button-disabled:hover {
+    background: var(--color-hover-dark);
 }
 
 #header:hover + #header-menu,
