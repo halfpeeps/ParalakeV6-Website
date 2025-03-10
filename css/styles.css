@@ -42,6 +42,64 @@ body {
     overflow: hidden;
 }
 
+/* toolbar */
+#header-menu {
+    position: absolute;
+    top: 110%;
+    left: calc(50% - 25%);
+    width: 50%;
+    background-color: var(--color-hover-transparent);
+    text-align: center;
+    align-items: center;
+    display: none;
+    padding: 10px 0;
+    border-radius: var(--border-radius);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.menu-button {
+    background-color: var(--color-border-hover);
+    color: var(--color-text);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    border-radius: var(--border-radius);
+}
+
+.menu-button:hover {
+    background: var(--color-accent);
+    transform: scale(1.05);
+}
+
+.menu-button-active {
+    background-color: var(--color-border-hover);
+    color: var(--color-text);
+    border: 2px solid var(--color-accent);
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    border-radius: var(--border-radius);
+}
+
+.menu-button-active:hover {
+    background: var(--color-accent);
+    transform: scale(1.05);
+}
+
+#header:hover + #header-menu,
+#header-menu:hover {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* header */
 #header {
     display: flex;
