@@ -61,6 +61,8 @@ body {
 
 .menu-button {
     background-color: var(--color-border-hover);
+    font-family: var(--font-secondary);
+    font-weight: 600;
     color: var(--color-text);
     border: none;
     padding: 10px 20px;
@@ -80,6 +82,8 @@ body {
 
 .menu-button-active {
     background-color: var(--color-border-hover);
+    font-family: var(--font-secondary);
+    font-weight: 600;
     color: var(--color-text);
     border: 2px solid var(--color-accent);
     padding: 10px 20px;
@@ -100,6 +104,8 @@ body {
 .menu-button-disabled {
     background-color: var(--color-border-hover);
     color: var(--color-text);
+    font-family: var(--font-secondary);
+    font-weight: 600;
     border: none;
     padding: 10px 20px;
     margin: 5px;
