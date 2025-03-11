@@ -23,17 +23,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 }, 300);
             }
-        }, 150); // Grace period
+        }, 150); //grace period
     }
 
-    // Show menu on hover
+
     header.addEventListener("mouseenter", showMenu);
     menu.addEventListener("mouseenter", showMenu);
 
     header.addEventListener("mouseleave", hideMenu);
     menu.addEventListener("mouseleave", hideMenu);
 
-    // Show the menu on page load for 2 seconds, then hide
+
     showMenu();
-    setTimeout(hideMenu, 2000); // Adjust the duration if needed
+    setTimeout(hideMenu, 2000);
 });
