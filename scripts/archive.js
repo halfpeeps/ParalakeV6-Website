@@ -87,6 +87,7 @@ async function loadImages() {
                 if (fileTree[folderPath] && fileTree[folderPath].length > 0) {
                     fileTree[folderPath].forEach(file => {
                         const img = document.createElement('img');
+                        img.classList.add('archive-img');
                         img.src = `images/${folderPath}/${file.filename}`;
                         img.onclick = () => {
                             currentIndex = imageFiles.findIndex(image => image.src === img.src);
