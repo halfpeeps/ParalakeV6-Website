@@ -25,8 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }, 150); //grace period
     }
-
-
+    
     header.addEventListener("mouseenter", showMenu);
     menu.addEventListener("mouseenter", showMenu);
 
