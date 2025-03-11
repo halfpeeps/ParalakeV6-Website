@@ -102,7 +102,7 @@
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
 
-img {
+.archive-img {
     max-width: 600px;
     max-height: 200px;
     margin: var(--spacing-small);
@@ -112,7 +112,7 @@ img {
     transition: border .2s;
 }
 
-img:hover {
+.archive-img:hover {
     border: 1px solid var(--color-border-hover);
 }
 
