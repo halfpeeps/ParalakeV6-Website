@@ -7,6 +7,7 @@
     <title>Paralake V6 Development Archive</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/archive.css">
+    <link rel="stylesheet" type="text/css" href="css/splashscreen.css">
     <link rel="icon" type="image/x-icon" href="images/06Other/Logos/archive_icon_mono.png">
     <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -20,6 +21,21 @@
         <div class="mobile-warning-content">
             <p>This site is not designed to work on mobile devices.</p>
             <button onclick="closeMobileWarning()">Okay</button>
+        </div>
+    </div>
+    
+    <!-- SPLASH SCREEN -->
+    <div class="popup-overlay" id="popup">
+        <div class="popup-container">
+            <button class="popup-close" onclick="closePopup()">&times;</button>
+            <div class="popup-image">
+                <img src="images_excluded/archive_splash.png" alt="Popup Image">
+            </div>
+            <div class="popup-content">
+                <div class="popup-header">The new Paralake V6 Development Archive</div>
+                <div class="popup-text">Welcome to the new Paralake V6 Development Archive.  Post launch, you will be able to find lots of images, logs and information on from the development of V6.  For now, you can use the archive to find all the promotional material, in one convinient place.</div>
+                <!-- <a href="#" class="popup-button">BUTTON</a> -->
+            </div>
         </div>
     </div>
     
@@ -90,5 +106,7 @@
     <script src="scripts/footer.js"></script>
     <script src="scripts/headerMenu.js"></script>
     <script src="scripts/archive.js"></script>
+    <script src="scripts/splashscreen.js"></script>
+
 </body>
 </html>
