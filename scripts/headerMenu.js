@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 }, 300);
             }
-        }, 150); //grace period
+        }, 3000); //grace period
     }
     
     header.addEventListener("mouseenter", showMenu);
