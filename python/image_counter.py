@@ -25,9 +25,16 @@ def count_images(directory):
     return image_count
 
 if __name__ == "__main__":
-    current_directory = os.getcwd()
-    total_size = get_total_image_size(current_directory)
-    total_images = count_images(current_directory)
-    print(f"Total images found: {total_images}")
-    print(f"Total size of all images: {total_size / (1024 * 1024):.2f} MB")
+    script_directory = os.path.dirname(os.path.abspath(__file__))
+    site_root = os.path.abspath(os.path.join(script_directory, ".."))
+    images_directory = os.path.join(site_root, "images")
+
+    if not os.path.exists(images_directory):
+        print("Error: The 'images' directory does not exist in the site root.")
+    else:
+        total_size = get_total_image_size(images_directory)
+        total_images = count_images(images_directory)
+        print(f"Total images found in 'images' folder: {total_images}")
+        print(f"Total size of all images: {total_size / (1024 * 1024):.2f} MB")
+
     input("Press Enter to exit...")
