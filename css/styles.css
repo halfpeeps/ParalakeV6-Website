@@ -20,6 +20,7 @@
     --color-accent-hover: #bb8933;
     --color-downloads-background: #181818;
     --color-steam: #1A9FFF;
+    --color-headertext: #fff;
     
     --spacing-small: 10px;
     --spacing-medium: 20px;
@@ -30,6 +31,27 @@
     --sidebar-width: 340px;
     --footer-height: 78px;
 }
+
+html[data-theme='light'] {
+    --color-v6-gradient-subtle: linear-gradient(to right, #d12d9c, #f25f30, #5ea2ef, #cfcfcf, #cfcfcf, #cfcfcf, #cfcfcf, #cfcfcf, #cfcfcf);
+    --color-bg: #c2c2c2;
+    --color-header-footer: #ddd;
+    --color-sidebar: #ccc;
+    --color-border: #bbb;
+    --color-border-hover: #888;
+    --color-text: #121212;
+    --color-text-dark: #fff;
+    --color-hover: #ddd;
+    --color-hover-transparent: #888888ca;
+    --color-hover-dark: #aaa;
+    --color-danger: red;
+    --color-danger-hover: rgb(160, 0, 0);
+    --color-accent: #d08934;
+    --color-accent-hover: #a86c27;
+    --color-downloads-background: #f0f0f0;
+    --color-steam: #1A9FFF;
+}
+
 
 body {
     display: flex;
@@ -47,8 +69,8 @@ body {
 #header-menu {
     position: absolute;
     top: 110%;
-    left: calc(50% - 500px);
-    width: 1000px;
+    left: calc(50% - 550px);
+    width: 1100px;
     background-color: var(--color-hover-transparent);
     text-align: center;
     align-items: center;
@@ -127,6 +149,35 @@ body {
     transform: translateY(0);
 }
 
+#theme-toggle {
+    background-color: #dfdfdf;
+    color: var(--color-text-dark);
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s, color 0.3s;
+    border-radius: var(--border-radius);
+}
+
+html[data-theme='light'] #theme-toggle {
+    background-color: #222;
+    color: white;
+}
+
+#theme-toggle:hover {
+    color: var(--color-text-dark);
+    background-color: var(--color-accent);
+}
+
+html[data-theme='light'] #theme-toggle:hover {
+    color: var(--color-text-dark);
+    background-color: var(--color-accent);
+}
+
 /* header */
 #header {
     display: flex;
@@ -143,6 +194,11 @@ body {
     top: 0;
     z-index: 10;
 }
+
+#header-title {
+    color: var(--color-headertext)
+}
+
 #header-subtitle {
     font-weight: 400;
     font-size: 22px;
