@@ -27,6 +27,7 @@
     gap: var(--spacing-medium);
     border-radius: var(--border-radius);
     background-color: var(--color-hover-transparent);
+    transition: background-color 0.3s ease;
 }
 
 .credit-item {
@@ -37,6 +38,7 @@
     background: var(--color-sidebar);
     border-radius: var(--border-radius);
     min-width: 500px;
+    transition: background-color 0.3s ease;
 }
 
 .credit-item h1 {
@@ -89,6 +91,7 @@
     font-family: var(--font-primary);
     min-width: 800px;
     padding-top: 14px;
+    transition: background-color 0.3s ease;
 }
 
 .credit-item-basedon h1 {
@@ -108,6 +111,7 @@
     transition: background .3s ease;
     font-family: var(--font-primary);
     min-width: 800px;
+    color: var(--color-headertext)
 }
 
 .credit-item-primary h1 {
