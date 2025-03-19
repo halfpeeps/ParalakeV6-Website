@@ -14,7 +14,7 @@
     --color-hover: #444;
     --color-hover-transparent: #444444ca;
     --color-hover-dark: #555;
-    --color-danger: red;
+    --color-danger: rgb(221, 31, 31);
     --color-danger-hover: rgb(160, 0, 0);
     --color-accent: #f3b447;
     --color-accent-hover: #bb8933;
@@ -33,7 +33,7 @@
 }
 
 html[data-theme='light'] {
-    --color-v6-gradient-subtle: linear-gradient(to right, #d12d9c, #f25f30, #5ea2ef, #cfcfcf, #cfcfcf, #cfcfcf, #cfcfcf, #cfcfcf, #cfcfcf);
+    --color-v6-gradient-subtle: linear-gradient(to right, #d12d9c, #f25f30, #5ea2ef, #cfcfcf, #cfcfcf, #cfcfcf, #cfcfcf, #cfcfcf, #333);
     --color-bg: #c2c2c2;
     --color-header-footer: #ddd;
     --color-sidebar: #ccc;
@@ -44,7 +44,7 @@ html[data-theme='light'] {
     --color-hover: #ddd;
     --color-hover-transparent: #b6b6b6ca;
     --color-hover-dark: #aaa;
-    --color-danger: red;
+    --color-danger: rgb(221, 31, 31);
     --color-danger-hover: rgb(160, 0, 0);
     --color-accent: #d08934;
     --color-accent-hover: #a86c27;
