@@ -14,6 +14,7 @@ a {
     display: flex;
     flex: 1;
     overflow: hidden;
+    transition: background-color 0.3s ease;
 }
 
 #update-container {
@@ -25,6 +26,7 @@ a {
     background: var(--color-bg);
     color: var(--color-text);
     overflow-y: auto;
+    transition: background-color 0.3s ease;
 }
 
 #update-content-wrapper {
