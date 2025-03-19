@@ -69,6 +69,7 @@
     position: sticky;
     top: 0;
     z-index: 5;
+    transition: background-color 0.3s ease;
 }
 
 .folder {
@@ -100,6 +101,8 @@
     flex-wrap: wrap;
     padding: var(--spacing-small);
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    background-color: var(--color-bg);
+    transition: background-color 0.3s ease;
 }
 
 .archive-img {
@@ -129,6 +132,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     z-index: 10000;
+    color: white
 }
 
 .preview-content {
@@ -155,7 +159,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    color: var(--color-text);
+    color: white;
     font-size: 64px;
     cursor: pointer;
     z-index: 1001;

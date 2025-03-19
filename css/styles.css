@@ -42,7 +42,7 @@ html[data-theme='light'] {
     --color-text: #121212;
     --color-text-dark: #fff;
     --color-hover: #ddd;
-    --color-hover-transparent: #888888ca;
+    --color-hover-transparent: #b6b6b6ca;
     --color-hover-dark: #aaa;
     --color-danger: red;
     --color-danger-hover: rgb(160, 0, 0);
@@ -79,7 +79,7 @@ body {
     border-radius: var(--border-radius);
     opacity: 0;
     transform: translateY(-10px);
-    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out, background-color 0.3s ease;
 }
 
 .menu-button {
