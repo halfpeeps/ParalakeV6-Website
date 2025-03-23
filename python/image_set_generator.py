@@ -19,7 +19,7 @@ def collect_images(root):
             if ext in IMAGE_EXTENSIONS:
                 abs_path = os.path.join(dirpath, file)
                 rel_path = os.path.relpath(abs_path, BASE_IMAGE_DIR)
-                web_path = os.path.join(URL_PREFIX, rel_path).replace("\\", "/")
+                web_path = os.path.join(URL_PREFIX, rel_path).replace("\\", "/").lstrip("/") #remove leading /
                 image_paths.append(web_path)
 
     return image_paths
