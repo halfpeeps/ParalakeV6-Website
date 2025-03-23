@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const zipName = button.dataset.zipname || "images.zip";
   
         if (!source) {
-          alert("No data-source specified for this button.");
+          alert("Error getting download.  Sorry :c");
           return;
         }
   
