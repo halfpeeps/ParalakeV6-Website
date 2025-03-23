@@ -116,6 +116,7 @@
     transition: background 0.3s;
     border: none;
     height: 40px;
+    font-family: var(--font-primary);
 }
 
 .download-button:hover {
