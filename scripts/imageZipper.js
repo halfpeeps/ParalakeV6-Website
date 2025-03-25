@@ -57,6 +57,14 @@ document.addEventListener("DOMContentLoaded", () => {
     <script src="/scripts/imageZipper.js"></script>
 */}
 
+//add this to display the download spinner
+{/* <div id="zip-loading-popup">
+                <div id="zip-loading-popup-content">
+                    <div class="spinner"></div>
+                    Preparing download...
+                </div>
+            </div> */}
+
 //add the following to the button
 {/*
     <button class="download-button zip-download"
