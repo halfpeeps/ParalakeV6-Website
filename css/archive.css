@@ -11,25 +11,6 @@
     transition: opacity 0.5s ease-out;
 }
 
-.spinner {
-    width: 50px;
-    height: 50px;
-    border: 5px solid #fff;
-    border-top-color: var(--color-accent);
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-.hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-
 /* loading - image */
 
 #image-spinner {
