@@ -119,6 +119,7 @@
     font-family: var(--font-primary);
     font-weight: 400;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .download-button:hover {
