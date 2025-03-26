@@ -35,22 +35,39 @@ document.addEventListener("DOMContentLoaded", () => {
         const res = await fetch(source);
         const imageList = await res.json();
 
+        const baseFolder = "/images/06-Other/Menu-Background-Pack/";
+        const relativePaths = imageList.map(url =>
+          url.startsWith(baseFolder) ? url.slice(baseFolder.length) : url
+        );
+
+        const folders = new Set(
+          relativePaths.map(path =>
+            path.includes("/") ? path.split("/").slice(0, -1).join("/") : ""
+          )
+        );
+
+        const shouldFlatten = folders.size <= 1;
+
         let index = 0;
-        for (const url of imageList) {
+        for (let i = 0; i < imageList.length; i++) {
+          const url = imageList[i];
           const response = await fetch(url);
           if (!response.ok) throw new Error(`Failed to fetch ${url}`);
           const blob = await response.blob();
 
-          const baseFolder = "/images/06-Other/Menu-Background-Pack/";
           const relativePath = url.startsWith(baseFolder)
             ? url.slice(baseFolder.length)
-            : url.split("/").pop();
+            : url;
 
-          zip.file(relativePath, blob);
+          const finalPath = shouldFlatten
+            ? relativePath.split("/").pop()
+            : relativePath;
+
+          zip.file(finalPath, blob);
 
           index++;
           const downloadProgress = index / imageList.length;
-          const totalProgress = Math.floor(downloadProgress * 50); // 0–50%
+          const totalProgress = Math.floor(downloadProgress * 50); //0–50%
           if (progressBar) progressBar.style.width = totalProgress + "%";
           if (progressLabel) progressLabel.textContent = `Fetching images... ${totalProgress}%`;
         }
@@ -84,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
           if (popup) {
             popup.classList.remove("show");
-            setTimeout(() => { popup.style.display = "none"; }, 400);
+            setTimeout(() => { popup.style.display = "none"; }, 800);
           }
 
           if (progressBar) progressBar.style.width = "0%";
