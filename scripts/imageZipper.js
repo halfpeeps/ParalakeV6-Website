@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".zip-download");
   const popup = document.getElementById("zip-loading-popup");
+  const progressBar = document.getElementById("zip-progress-bar");
+  const progressLabel = document.getElementById("zip-progress-label");
+  const fileProgressLabel = document.getElementById("zip-file-progress-label");
+  const successMessage = document.getElementById("zip-success-message");
 
   buttons.forEach(button => {
     button.addEventListener("click", async () => {
@@ -15,32 +19,85 @@ document.addEventListener("DOMContentLoaded", () => {
       const zip = new JSZip();
 
       try {
-        // 🟡 Show the "Packing ZIP..." popup
-        if (popup) popup.style.display = "flex";
+        if (popup) {
+          popup.style.display = "flex";
+          popup.offsetHeight; // force reflow
+          popup.classList.add("show");
+        }
+        if (progressBar) progressBar.style.width = "0%";
+        if (progressLabel) progressLabel.textContent = "Preparing download...";
+        if (fileProgressLabel) fileProgressLabel.textContent = "";
+        if (successMessage) {
+          successMessage.style.display = "none";
+          successMessage.classList.remove("show");
+        }
 
         const res = await fetch(source);
         const imageList = await res.json();
 
+        let index = 0;
         for (const url of imageList) {
           const response = await fetch(url);
           if (!response.ok) throw new Error(`Failed to fetch ${url}`);
           const blob = await response.blob();
 
-          // Remove everything before the base image folder
           const baseFolder = "/images/06-Other/Menu-Background-Pack/";
           const relativePath = url.startsWith(baseFolder)
             ? url.slice(baseFolder.length)
             : url.split("/").pop();
 
           zip.file(relativePath, blob);
+
+          index++;
+          const downloadProgress = index / imageList.length;
+          const totalProgress = Math.floor(downloadProgress * 50); // 0–50%
+          if (progressBar) progressBar.style.width = totalProgress + "%";
+          if (progressLabel) progressLabel.textContent = `Downloading images... ${totalProgress}%`;
         }
 
-        const content = await zip.generateAsync({ type: "blob" });
+        if (progressLabel) progressLabel.textContent = "Compressing ZIP...";
+        if (fileProgressLabel) fileProgressLabel.textContent = "";
 
-        // 🟢 Hide popup before downloading
-        if (popup) popup.style.display = "none";
+        let zipProgress = 50;
+        const interval = setInterval(() => {
+          zipProgress += 1;
+          if (zipProgress >= 99) zipProgress = 99;
+          if (progressBar) progressBar.style.width = zipProgress + "%";
+          if (progressLabel) progressLabel.textContent = `Compressing ZIP... ${zipProgress}%`;
+        }, 100);
+
+        const content = await zip.generateAsync({
+          type: "blob",
+          compression: "DEFLATE",
+          compressionOptions: { level: 6 },
+          streamFiles: true
+        });
+
+        clearInterval(interval);
+        if (progressBar) progressBar.style.width = "100%";
+        if (progressLabel) progressLabel.textContent = `Done! Preparing download...`;
+        if (successMessage) {
+          successMessage.style.display = "block";
+          successMessage.classList.add("show");
+        }
+
+        setTimeout(() => {
+          if (popup) {
+            popup.classList.remove("show");
+            setTimeout(() => { popup.style.display = "none"; }, 400);
+          }
+
+          if (progressBar) progressBar.style.width = "0%";
+          if (progressLabel) progressLabel.textContent = "";
+          if (fileProgressLabel) fileProgressLabel.textContent = "";
+          if (successMessage) {
+            successMessage.style.display = "none";
+            successMessage.classList.remove("show");
+          }
+        }, 1200);
 
         saveAs(content, zipName);
+
       } catch (err) {
         if (popup) popup.style.display = "none";
         alert("Error creating ZIP: " + err.message);
@@ -59,11 +116,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //add this to display the download spinner
 {/* <div id="zip-loading-popup">
-                <div id="zip-loading-popup-content">
-                    <div class="spinner"></div>
-                    Preparing download...
-                </div>
-            </div> */}
+<div id="zip-loading-popup-content">
+  <div id="zip-progress-label">Preparing download...</div>
+  <div id="zip-file-progress-label" style="font-size: 0.9rem; margin-bottom: 8px;"></div>
+
+  <div id="zip-progress-bar-container">
+    <div id="zip-progress-bar"></div>
+  </div>
+
+  <div id="zip-success-message" style="display: none; margin-top: 20px;">
+    <svg id="zip-success-check" viewBox="0 0 52 52">
+      <path d="M14 27 L22 35 L38 17" fill="none" stroke="var(--color-accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+    <div style="margin-top: 10px; font-size: 1.2rem; color: var(--color-text);">Download Ready!</div>
+  </div>
+</div>
+</div>     */}
 
 //add the following to the button
 {/*

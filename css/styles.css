@@ -286,30 +286,96 @@ html[data-theme='light'] #theme-toggle:hover {
     pointer-events: none;
 }
 
+
 #zip-loading-popup {
     display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: rgba(0, 0, 0, 0.8);
     z-index: 999999;
     justify-content: center;
     align-items: center;
-    font-family: var(--font-secondary);
-}
+    font-family: var(--font-secondary, sans-serif);
+  }
+  
+  #zip-loading-popup.show {
+    display: flex;
+    opacity: 1;
+  }
+  
 
-#zip-loading-popup-content {
+  #zip-loading-popup-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: var(--color-header-footer);
-    padding: var(--spacing-medium);
-    border-radius: var(--border-radius);
+    background: var(--color-header-footer, #222);
+    padding: 2rem;
+    border-radius: var(--border-radius, 10px);
     width: 80%;
     max-width: 400px;
-    position: relative;
     text-align: center;
-    color: var(--color-text);
-}
+    color: var(--color-text, #fff);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  }
+  
+
+  #zip-progress-label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  #zip-file-progress-label {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: var(--color-text, #ccc);
+  }
+  
+
+  #zip-progress-bar-container {
+    width: 100%;
+    height: 16px;
+    background: var(--color-bg-dark, #444);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+  
+
+  #zip-progress-bar {
+    height: 100%;
+    width: 0%;
+    background: var(--color-accent, #ffcc00);
+    transition: width 0.2s ease-in-out;
+  }
+  
+
+  #zip-success-message {
+    display: none;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: var(--color-text, #fff);
+    text-align: center;
+  }
+  
+  #zip-success-check {
+    width: 50px;
+    height: 50px;
+    stroke-dasharray: 40;
+    stroke-dashoffset: 40;
+    fill: none;
+    stroke: var(--color-accent, #ffcc00);
+    stroke-width: 4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    margin: 0 auto;
+    animation: drawCheck 0.6s ease forwards;
+  }
+  
+  /* Checkmark Animation */
+  @keyframes drawCheck {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }  
