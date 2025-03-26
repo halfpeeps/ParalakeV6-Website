@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const downloadProgress = index / imageList.length;
           const totalProgress = Math.floor(downloadProgress * 50); // 0–50%
           if (progressBar) progressBar.style.width = totalProgress + "%";
-          if (progressLabel) progressLabel.textContent = `Downloading images... ${totalProgress}%`;
+          if (progressLabel) progressLabel.textContent = `Fetching images... ${totalProgress}%`;
         }
 
         if (progressLabel) progressLabel.textContent = "Compressing ZIP...";
