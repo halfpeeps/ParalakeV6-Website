@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const zip = new JSZip();
 
       try {
-        // 🟡 Show popup and reset everything
         if (popup) {
           popup.style.display = "flex";
           popup.offsetHeight; // force reflow
@@ -33,11 +32,9 @@ document.addEventListener("DOMContentLoaded", () => {
           successMessage.classList.remove("show");
         }
 
-        // 🔽 Fetch image list
         const res = await fetch(source);
         const imageList = await res.json();
 
-        // 🧠 Download images (0–50%)
         let index = 0;
         for (const url of imageList) {
           const response = await fetch(url);
@@ -58,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
           if (progressLabel) progressLabel.textContent = `Downloading images... ${totalProgress}%`;
         }
 
-        // 🧠 Simulated zipping progress (50–99%)
         if (progressLabel) progressLabel.textContent = "Compressing ZIP...";
         if (fileProgressLabel) fileProgressLabel.textContent = "";
 
@@ -77,7 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
           streamFiles: true
         });
 
-        // ✅ Finish
         clearInterval(interval);
         if (progressBar) progressBar.style.width = "100%";
         if (progressLabel) progressLabel.textContent = `Done! Preparing download...`;
@@ -86,14 +81,12 @@ document.addEventListener("DOMContentLoaded", () => {
           successMessage.classList.add("show");
         }
 
-        // Hide popup after delay & reset for reuse
         setTimeout(() => {
           if (popup) {
             popup.classList.remove("show");
             setTimeout(() => { popup.style.display = "none"; }, 400);
           }
 
-          // Reset everything for the next use
           if (progressBar) progressBar.style.width = "0%";
           if (progressLabel) progressLabel.textContent = "";
           if (fileProgressLabel) fileProgressLabel.textContent = "";
