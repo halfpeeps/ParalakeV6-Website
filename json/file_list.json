@@ -1,1468 +1,7 @@
 {
     "": [],
-    "01City": [],
-    "01City/Bank": [
-        {
-            "filename": "gmod_bug7xfvaOV.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_9CQHEioT5h.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_AVjOx0JN56.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_FLbaWUEB8p.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_Gn6itsd4pH.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_h2EvgYyJFx.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_hgzcZILqag.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_HnFxe8koi3.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_kiv12MYcB7.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_LqwMVyi612.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_Ne25r15XEp.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_O71uomP1Ik.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_q9Z6TR5w7z.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_qQUr2lM1PZ.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_Ryl3GlTUBN.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_UdH6epMIm2.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_x0KNseQ15Q.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_x7hYGgOXTq.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_Xd3uxhMNLq.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_xv8OJwqP7V.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_yHr8AnfYaP.png",
-            "description": ""
-        }
-    ],
-    "01City/City-Block": [
-        {
-            "filename": "gmod_f6n4itJobz.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_FqTk7CHFqQ.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_zDkVKopKeI.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_AnUcLkcikt.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_J6f78gV75j.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_mP3TKJhR71.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_YRzCLvbQ30.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_ZftbbV4tNb.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_ZPPHS2dYxl.jpg",
-            "description": ""
-        }
-    ],
-    "01City/City-Garage": [
-        {
-            "filename": "gmod_2BADlVsvUi.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_BAvtqMpx5k.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_If0bt1MS97.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_rZB1KVOFu3.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_twoB7bwQ2n.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_VnrdP659WB.jpg",
-            "description": ""
-        }
-    ],
-    "01City/City-Hall": [
-        {
-            "filename": "gmod_bhESrFkpMj.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_tF0rQiRN72.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_2zluU1dfOa.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_3Qo2meBm1W.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_3v2jNOMym4.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_7stoBv6lPY.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_aSNjL2w0gy.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_jtjACA5sJJ.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_s1eJixCmKT.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_scsw6LPcXz.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_T5J0H5OdXu.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_vPyGk5QEwV.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_vRa5rUmI8H.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_WB0KMHbuBN.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_YxvtewZqFi.jpg",
-            "description": ""
-        }
-    ],
-    "01City/Homless-Area": [
-        {
-            "filename": "gmod_Hg3zUqLqz1.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_JXmr1n3Td9.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_KvKonJctdT.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_poRY8lkhvb.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_QtkOfcExSh.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_8syUx31d9Y.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_d1rgSq6hhO.jpg",
-            "description": ""
-        }
-    ],
-    "01City/Hospital": [
-        {
-            "filename": "gmod_DucoJPJyWU.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_HgiDmPpkto.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_RX9AGrmA8n.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_waGbf9BCvc.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_WtWrO64K7b.jpg",
-            "description": ""
-        }
-    ],
-    "01City/Hungriges": [
-        {
-            "filename": "hammerplusplus_5sOQypMg5v.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_bVUQqIk92W.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_CRmC9vfIsC.jpg",
-            "description": ""
-        }
-    ],
-    "01City/Metro": [
-        {
-            "filename": "gmod_6cehqQ9waa.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_7V3oKBpskc.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_AY2LD1ongR.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_hUNyk9Eg5I.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_0ad0Yys9zo.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_EpXslC5RD0.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_gjpbjNMEvV.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_gTCjVU2iV8.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_WdI3xgcpYP.jpg",
-            "description": ""
-        }
-    ],
-    "01City/Misc": [
-        {
-            "filename": "gmod_BJwuoWnp4O.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_iPdCu0Rw2V.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_j3DGiidt3H.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_SD8BW2V8re.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_tabwWTgmt8.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_TcpudBP05V.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_tZ5p6t7Bwc.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_uqiwHXNNSG.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_XWAiHWxzuH.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_zoMz4E8iBx.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_0BWRW8sf7t.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_7bSmhVZsDB.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_8shOHgJiI3.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_9ohF97HsFR.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_DO2rXuxtr2.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_DRaB1b33hb.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_ffomKFMkMo.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_hqQYPv9J9q.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_Kr71tGLDiE.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_lR08y49SqM.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_mxjnQKIdOo.jpg",
-            "description": ""
-        }
-    ],
-    "01City/Office": [
-        {
-            "filename": "hammerplusplus_07OPVHW7wI.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_8lA7RSQ4xf.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_Acz3dXua7A.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_dD6e3L7Xlb.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_dJ52pnEb1f.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_djVYt24WC4.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_efc4M0komG.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_GDRKxCjo2N.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_jWyxrwvDYK.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_L1Hi1sN3oY.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_meGtpQrKCq.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_ndyhsWwuCZ.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_Q7L0iqEOzs.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_QLksovyzBG.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_r7PfdCgzOf.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_srGeLuIOjJ.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_Uj1a1ohnDK.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_zAOveP8xeH.png",
-            "description": ""
-        }
-    ],
-    "01City/PLPD": [
-        {
-            "filename": "gmod_d6RwqMhxOO.jpg",
-            "description": ""
-        }
-    ],
-    "01City/Shops": [
-        {
-            "filename": "gmod_G4IpPMGj5E.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_i20xdoEBIf.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_22Mec7HUby.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_45WQKp3oHz.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_6OdUdjQ0yx.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_7bvXJuKkKO.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_BRum8OeLRA.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_CLwLCOp8Zr.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_dD8VhJ3Sqv.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_F8b97LVziJ.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_Fs4DHG4wiy.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_g10t4ns9Ml.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_HD4LT3ErXC.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_JsAHFoRCUt.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_kUxa10VnLu.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_KzxFqJvtBv.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_lChaPMXlF8.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_MjdtXEB3nW.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_UGcqNSpCVx.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_UQLWRRCxlB.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_uSyOda4C1Q.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_xavy0VAYfP.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_Y0nYWPu1yc.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_Z6NbnXmPUU.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_z7ZkxINt45.jpg",
-            "description": ""
-        }
-    ],
-    "01City/Slums-Street": [
-        {
-            "filename": "gmod_rKGFmXANmX.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_7svOykvfio.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_aKy3R07NUq.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_kg24fOMVUr.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_KJWNYXDqkS.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_MydLz89ECd.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_Pw9osHz5BR.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_uLuE2cA4Ga.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_VqFj9wcGxp.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_wSeIomJNXI.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_zSIwvgx7Ul.jpg",
-            "description": ""
-        }
-    ],
-    "01City/Storage": [
-        {
-            "filename": "hammerplusplus_AjnubzBIzc.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_hMQPiet72S.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Screenshot 2023-11-22 015055.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Screenshot 2023-11-22 200910.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Screenshot 2023-11-23 173929.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Screenshot 2023-11-24 125137.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Screenshot 2023-11-24 143729.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Screenshot 2023-11-24 221053.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Screenshot 2023-12-16 235805.jpg",
-            "description": ""
-        }
-    ],
-    "02Business": [],
-    "02Business/Bazaar": [
-        {
-            "filename": "hammerplusplus_fBthp8Iz2v.png",
-            "description": ""
-        }
-    ],
-    "02Business/Car-Dealer": [
-        {
-            "filename": "hammerplusplus_o8sxfowpsO.jpg",
-            "description": ""
-        }
-    ],
-    "02Business/Casino": [
-        {
-            "filename": "gmod_0BwR7MhGJp.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_5FDdHTEMRV.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_Essldtgrzq.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_hay0DFM5wQ.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_I8IRjlylVf.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_L8jQatklQS.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_P03pP8qMwH.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_O66bffDAPy.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_Vk5aXBhzP6.png",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_Zr7MfoEegK.jpg",
-            "description": ""
-        }
-    ],
-    "02Business/Misc": [
-        {
-            "filename": "hammerplusplus_TQPPV5eJo0.png",
-            "description": ""
-        },
-        {
-            "filename": "Screenshot 2025-01-06 220510.jpg",
-            "description": ""
-        }
-    ],
-    "03Suburbs": [],
-    "03Suburbs/Misc": [
-        {
-            "filename": "gmod_4KdZlDQzzv.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_jN3YN67qHw.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_P4s6jSmNzy.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_pElRawwG0N.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_SUthRLP4kr.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_prQGvfbMsF.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_slggIW09bb.jpg",
-            "description": ""
-        }
-    ],
-    "03Suburbs/Suburbs-Houses": [
-        {
-            "filename": "hammerplusplus_FWAaI88fGb.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_MOqvWUf7ix.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_OtsCErIaAw.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_SAfE0YNubo.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_tCjuyrR1xq.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_W2rZpvXW3E.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_yFwHCT7Mvs.jpg",
-            "description": ""
-        }
-    ],
-    "04Forest": [],
-    "04Forest/Church": [
-        {
-            "filename": "gmod_T9MGe8P0yK.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_oH1KYZldpU.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_XTFnMIi10o.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_zcXX6OYAS4.jpg",
-            "description": ""
-        }
-    ],
-    "04Forest/Comms-Outpost": [
-        {
-            "filename": "hammerplusplus_5zi66bamjD.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_aEYwQVYtCt.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_guwvkNMvMC.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_oLC4IauRQj.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_vdsLaLIUq0.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_vwPJvLCOzy.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_x7jKHvZcJy.jpg",
-            "description": ""
-        }
-    ],
-    "04Forest/Misc": [
-        {
-            "filename": "gmod_TdzlJw8BQL.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_bTDt2shPag.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_CWnc6kJA5n.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_kBIKu7nRNq.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_LeU6Z0bndD.jpg",
-            "description": ""
-        }
-    ],
-    "04Forest/Woodcabins": [
-        {
-            "filename": "hammerplusplus_4emg4MNSDz.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_69WwXXezq0.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_K8Tu5ZUn3a.jpg",
-            "description": ""
-        }
-    ],
-    "05Cut-Content": [],
-    "05Cut-Content/Jennifers": [
-        {
-            "filename": "gmod_91TJTAyAaN.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_eILchezfhe.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_OohvJ8GdTL.jpg",
-            "description": ""
-        }
-    ],
-    "05Cut-Content/Misc": [
-        {
-            "filename": "gmod_9uYPswW3A4.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_hKatfqqWUJ.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_S9kBClfawo.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_TcAGHVScwG.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_VMO6ibdC0G.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_wY7Ai4CTWA.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_zyZenuDL2l.jpg",
-            "description": ""
-        }
-    ],
-    "05Cut-Content/New-Apartment": [
-        {
-            "filename": "gmod_BEc9AXYxgC.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_H2kldn1LpX.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_hO6KvlTjpV.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_ja2F3ET8uI.jpg",
-            "description": ""
-        }
-    ],
-    "05Cut-Content/Original-V6-Bazaar": [
-        {
-            "filename": "gmod_1Hd0fCS8Ri.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_nHCMTE67Re.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_WbFG0rBCFk.jpg",
-            "description": ""
-        }
-    ],
-    "05Cut-Content/Original-V6-City-Hall": [
-        {
-            "filename": "gmod_2OnANkN2cQ.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_ShPpA7sJkU.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_V0efDozEsh.jpg",
-            "description": ""
-        }
-    ],
-    "05Cut-Content/Original-V6-Slums": [
-        {
-            "filename": "gmod_c5WvJ3DdA1.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_cHYDP3E9CM.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_Fy1nGEnHSy.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_JR4jqkfSJO.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_l5a7460Eg7.jpg",
-            "description": ""
-        },
-        {
-            "filename": "gmod_uu5HpCtxx0.jpg",
-            "description": ""
-        }
-    ],
-    "05Cut-Content/Penthouse": [
-        {
-            "filename": "gmod_U2kx0SeNo1.jpg",
-            "description": ""
-        }
-    ],
-    "06Other": [],
-    "06Other/In-Game-Art": [
-        {
-            "filename": "air-con.png",
-            "description": ""
-        },
-        {
-            "filename": "Artboard 1.png",
-            "description": ""
-        },
-        {
-            "filename": "Bank.png",
-            "description": ""
-        },
-        {
-            "filename": "bank_sign_decal.png",
-            "description": ""
-        },
-        {
-            "filename": "BAZAAR.png",
-            "description": ""
-        },
-        {
-            "filename": "bazaar_logo.png",
-            "description": ""
-        },
-        {
-            "filename": "bazaar_media.png",
-            "description": ""
-        },
-        {
-            "filename": "bazaar_selling.png",
-            "description": ""
-        },
-        {
-            "filename": "bazaar_shopping.png",
-            "description": ""
-        },
-        {
-            "filename": "card.png",
-            "description": ""
-        },
-        {
-            "filename": "cardealer_poster01.jpg",
-            "description": ""
-        },
-        {
-            "filename": "cardealer_poster02.jpg",
-            "description": ""
-        },
-        {
-            "filename": "cardealer_poster03.jpg",
-            "description": ""
-        },
-        {
-            "filename": "cardealer_poster04.jpg",
-            "description": ""
-        },
-        {
-            "filename": "cardealer_poster05.jpg",
-            "description": ""
-        },
-        {
-            "filename": "cardealer_poster06.jpg",
-            "description": ""
-        },
-        {
-            "filename": "cardnml.png",
-            "description": ""
-        },
-        {
-            "filename": "cctv_sticker.png",
-            "description": ""
-        },
-        {
-            "filename": "cheapmenu01.png",
-            "description": ""
-        },
-        {
-            "filename": "cheapmenu02.png",
-            "description": ""
-        },
-        {
-            "filename": "cheapmenu03.png",
-            "description": ""
-        },
-        {
-            "filename": "closingdown.png",
-            "description": ""
-        },
-        {
-            "filename": "decal_rogue.png",
-            "description": ""
-        },
-        {
-            "filename": "diet.png",
-            "description": ""
-        },
-        {
-            "filename": "digipeeps_dots.png",
-            "description": ""
-        },
-        {
-            "filename": "digipeeps_dots_reversed.png",
-            "description": ""
-        },
-        {
-            "filename": "doorbellcard.png",
-            "description": ""
-        },
-        {
-            "filename": "dropoff.png",
-            "description": ""
-        },
-        {
-            "filename": "EFANVAPE.png",
-            "description": ""
-        },
-        {
-            "filename": "exit.png",
-            "description": ""
-        },
-        {
-            "filename": "exit_f.png",
-            "description": ""
-        },
-        {
-            "filename": "f.png",
-            "description": ""
-        },
-        {
-            "filename": "fireindustrialsign.png",
-            "description": ""
-        },
-        {
-            "filename": "fish_logo.png",
-            "description": ""
-        },
-        {
-            "filename": "floor_0.png",
-            "description": ""
-        },
-        {
-            "filename": "floor_1.png",
-            "description": ""
-        },
-        {
-            "filename": "floor_2.png",
-            "description": ""
-        },
-        {
-            "filename": "floor_3.png",
-            "description": ""
-        },
-        {
-            "filename": "floor_4.png",
-            "description": ""
-        },
-        {
-            "filename": "foodtruck_menu04.png",
-            "description": ""
-        },
-        {
-            "filename": "foodtruck_menu05.png",
-            "description": ""
-        },
-        {
-            "filename": "foundry_closure_sign.png",
-            "description": ""
-        },
-        {
-            "filename": "foundry_decal.png",
-            "description": ""
-        },
-        {
-            "filename": "foundry_letter.png",
-            "description": ""
-        },
-        {
-            "filename": "foundry_logo.png",
-            "description": ""
-        },
-        {
-            "filename": "fredys_overlay01.png",
-            "description": ""
-        },
-        {
-            "filename": "fredys_sign02.png",
-            "description": ""
-        },
-        {
-            "filename": "gun_banner.png",
-            "description": ""
-        },
-        {
-            "filename": "gun_logo.png",
-            "description": ""
-        },
-        {
-            "filename": "hardware_sign.png",
-            "description": ""
-        },
-        {
-            "filename": "hvac_label.png",
-            "description": ""
-        },
-        {
-            "filename": "hvac_logo.png",
-            "description": ""
-        },
-        {
-            "filename": "ice.png",
-            "description": ""
-        },
-        {
-            "filename": "ICECREAM.png",
-            "description": ""
-        },
-        {
-            "filename": "icecream_logo.png",
-            "description": ""
-        },
-        {
-            "filename": "icelogo.png",
-            "description": ""
-        },
-        {
-            "filename": "infoboard01.png",
-            "description": ""
-        },
-        {
-            "filename": "logo.png",
-            "description": ""
-        },
-        {
-            "filename": "logo_coin.png",
-            "description": ""
-        },
-        {
-            "filename": "logo_taxi.png",
-            "description": ""
-        },
-        {
-            "filename": "market.png",
-            "description": ""
-        },
-        {
-            "filename": "mintbox_bg.png",
-            "description": ""
-        },
-        {
-            "filename": "motelsign.png",
-            "description": ""
-        },
-        {
-            "filename": "orangejuice.png",
-            "description": ""
-        },
-        {
-            "filename": "paralegalgroup.png",
-            "description": ""
-        },
-        {
-            "filename": "parkacola_banner.png",
-            "description": ""
-        },
-        {
-            "filename": "parkingsign_bank.png",
-            "description": ""
-        },
-        {
-            "filename": "parkingsign_citypark.png",
-            "description": ""
-        },
-        {
-            "filename": "parkingsign_parkinggarage.png",
-            "description": ""
-        },
-        {
-            "filename": "parkingsign_regalsresort.png",
-            "description": ""
-        },
-        {
-            "filename": "parkingsign_shoppingcenter.png",
-            "description": ""
-        },
-        {
-            "filename": "peepslogo.png",
-            "description": ""
-        },
-        {
-            "filename": "perpcats.png",
-            "description": ""
-        },
-        {
-            "filename": "Photos_F1UjcB9ZEm.jpg",
-            "description": ""
-        },
-        {
-            "filename": "ph_graffiti04.png",
-            "description": ""
-        },
-        {
-            "filename": "pizza.png",
-            "description": ""
-        },
-        {
-            "filename": "pointlesspawn.png",
-            "description": ""
-        },
-        {
-            "filename": "reel1.png",
-            "description": ""
-        },
-        {
-            "filename": "reel2.png",
-            "description": ""
-        },
-        {
-            "filename": "ruralmotel_sign.png",
-            "description": ""
-        },
-        {
-            "filename": "safety_logo.png",
-            "description": ""
-        },
-        {
-            "filename": "safety_poster_old.png",
-            "description": ""
-        },
-        {
-            "filename": "sale.png",
-            "description": ""
-        },
-        {
-            "filename": "screen.png",
-            "description": ""
-        },
-        {
-            "filename": "sign2.png",
-            "description": ""
-        },
-        {
-            "filename": "sign22.png",
-            "description": ""
-        },
-        {
-            "filename": "sign223.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_232.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_bookstore.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_catcafe.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_grabngo.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_helpwanted.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_laundrette.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_oldelectronics.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_sale.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_vhsstore.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_yeasty.png",
-            "description": ""
-        },
-        {
-            "filename": "slot_faint.png",
-            "description": ""
-        },
-        {
-            "filename": "slot_faintapple.png",
-            "description": ""
-        },
-        {
-            "filename": "slot_oj.png",
-            "description": ""
-        },
-        {
-            "filename": "slot_parkaclassic.png",
-            "description": ""
-        },
-        {
-            "filename": "slot_parkadiet.png",
-            "description": ""
-        },
-        {
-            "filename": "slot_splurt.png",
-            "description": ""
-        },
-        {
-            "filename": "sportstock.png",
-            "description": ""
-        },
-        {
-            "filename": "stickynote.png",
-            "description": ""
-        },
-        {
-            "filename": "subway_callsign.png",
-            "description": ""
-        },
-        {
-            "filename": "swift01.png",
-            "description": ""
-        },
-        {
-            "filename": "tandjs.png",
-            "description": ""
-        },
-        {
-            "filename": "taxifrontsign.png",
-            "description": ""
-        },
-        {
-            "filename": "tiny.png",
-            "description": ""
-        },
-        {
-            "filename": "tinyelec_old.png",
-            "description": ""
-        },
-        {
-            "filename": "v6monitor.png",
-            "description": ""
-        },
-        {
-            "filename": "xq_bank_decal2.png",
-            "description": ""
-        },
-        {
-            "filename": "xq_logo_new.png",
-            "description": ""
-        }
-    ],
-    "06Other/Logos": [
+    "06Promotional-Material": [],
+    "06Promotional-Material/Logos": [
         {
             "filename": "Adobe_Premiere_Pro_LIqUKNug77.png",
             "description": ""
@@ -1552,461 +91,199 @@
             "description": ""
         }
     ],
-    "06Other/Map-Overviews": [
-        {
-            "filename": "a1.jpg",
-            "description": ""
-        },
-        {
-            "filename": "a2.jpg",
-            "description": ""
-        },
-        {
-            "filename": "a3.jpg",
-            "description": ""
-        },
-        {
-            "filename": "b1.jpg",
-            "description": ""
-        },
-        {
-            "filename": "b2.jpg",
-            "description": ""
-        },
-        {
-            "filename": "b3.jpg",
-            "description": ""
-        },
-        {
-            "filename": "c1.jpg",
-            "description": ""
-        },
-        {
-            "filename": "c2.jpg",
-            "description": ""
-        },
-        {
-            "filename": "c3.jpg",
-            "description": ""
-        },
-        {
-            "filename": "d1.jpg",
-            "description": ""
-        },
-        {
-            "filename": "d2.jpg",
-            "description": ""
-        },
-        {
-            "filename": "d3.jpg",
-            "description": ""
-        },
-        {
-            "filename": "e1.jpg",
-            "description": ""
-        },
-        {
-            "filename": "e2.jpg",
-            "description": ""
-        },
-        {
-            "filename": "e3.jpg",
-            "description": ""
-        },
-        {
-            "filename": "f1.jpg",
-            "description": ""
-        },
-        {
-            "filename": "f2.jpg",
-            "description": ""
-        },
-        {
-            "filename": "f3.jpg",
-            "description": ""
-        },
-        {
-            "filename": "g1.jpg",
-            "description": ""
-        },
-        {
-            "filename": "g2.jpg",
-            "description": ""
-        },
-        {
-            "filename": "g3.jpg",
-            "description": ""
-        },
-        {
-            "filename": "h1.jpg",
-            "description": ""
-        },
-        {
-            "filename": "h2.jpg",
-            "description": ""
-        },
-        {
-            "filename": "h3.jpg",
-            "description": ""
-        },
-        {
-            "filename": "i1.jpg",
-            "description": ""
-        },
-        {
-            "filename": "i2.jpg",
-            "description": ""
-        },
-        {
-            "filename": "i3.jpg",
-            "description": ""
-        },
-        {
-            "filename": "j1.jpg",
-            "description": ""
-        },
-        {
-            "filename": "j2.jpg",
-            "description": ""
-        },
-        {
-            "filename": "j3.jpg",
-            "description": ""
-        },
-        {
-            "filename": "k1.jpg",
-            "description": ""
-        },
-        {
-            "filename": "k2.jpg",
-            "description": ""
-        },
-        {
-            "filename": "k3.jpg",
-            "description": ""
-        },
-        {
-            "filename": "l1.jpg",
-            "description": ""
-        },
-        {
-            "filename": "l2.jpg",
-            "description": ""
-        },
-        {
-            "filename": "l3.jpg",
-            "description": ""
-        },
-        {
-            "filename": "m1.jpg",
-            "description": ""
-        },
-        {
-            "filename": "m2.jpg",
-            "description": ""
-        },
-        {
-            "filename": "m3.jpg",
-            "description": ""
-        },
-        {
-            "filename": "n1.jpg",
-            "description": ""
-        },
-        {
-            "filename": "n2.jpg",
-            "description": ""
-        }
-    ],
-    "06Other/Menu-Background-Pack": [
+    "06Promotional-Material/Menu-Background-Pack": [
         {
             "filename": "01-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+            "description": ""
         },
         {
             "filename": "02-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+            "description": ""
         },
         {
             "filename": "03-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+            "description": ""
         },
         {
             "filename": "04-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+            "description": ""
         },
         {
             "filename": "05-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+            "description": ""
         },
         {
             "filename": "06-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+            "description": ""
         },
         {
             "filename": "07-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+            "description": ""
         },
         {
             "filename": "08-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+            "description": ""
         },
         {
             "filename": "09-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+            "description": ""
         },
         {
             "filename": "10-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+            "description": ""
         },
         {
             "filename": "11-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+            "description": ""
         },
         {
             "filename": "12-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+            "description": ""
         },
         {
             "filename": "13-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+            "description": ""
         },
         {
             "filename": "14-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+            "description": ""
         },
         {
             "filename": "15-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+            "description": ""
         },
         {
             "filename": "16-(0-00-00-00).jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
+            "description": ""
         },
         {
             "filename": "phv6.jpg",
-            "description": "https://steamcommunity.com/sharedfiles/filedetails/?id=3285051645"
-        }
-    ],
-    "06Other/Models": [
-        {
-            "filename": "Adobe_Substance_3D_Painter_01iBuxEMm4.png",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_1qp3wFSUPt.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_2VdKFQw5DO.png",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_6EmraiWjvV.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_a96NwEZ2xO.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_cfLCTkna8R.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_e9kHgBmOne.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_Kv4CvozF7b.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_oUbcE5P4ir.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_t8toH4xGMR.png",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_u7OatThdKj.png",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_vi7jwUh9aM.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_VNdLk1dK6P.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_zXGnWPIc2C.png",
-            "description": ""
-        },
-        {
-            "filename": "blender_3FZ5WVkk3I.png",
-            "description": ""
-        },
-        {
-            "filename": "blender_EkBgCAWu7a.jpg",
-            "description": ""
-        },
-        {
-            "filename": "blender_h5tAFbtPyF.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Screenshot 2024-01-11 181905.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Screenshot 2024-01-11 185919.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Screenshot 2024-02-12 100515.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Screenshot 2024-08-16 014548.jpg",
             "description": ""
         }
     ],
-    "06Other/Promotional-Screenshots": [
+    "06Promotional-Material/Promotional-Screenshots": [
         {
             "filename": "10.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+            "description": ""
         },
         {
             "filename": "1025.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "11.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+            "description": ""
         },
         {
             "filename": "1126.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "12.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+            "description": ""
         },
         {
             "filename": "1227.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "1328.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "1429.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "1530.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "1631.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "1715.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "3.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+            "description": ""
         },
         {
             "filename": "5.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+            "description": ""
         },
         {
             "filename": "514.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "6.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+            "description": ""
         },
         {
             "filename": "612.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "7.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+            "description": ""
         },
         {
             "filename": "708.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "8.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+            "description": ""
         },
         {
             "filename": "9.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update-february.66735/"
+            "description": ""
         },
         {
             "filename": "923.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "a57.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "b03.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "c58.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "Car+Dealer05.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "d00.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "e01.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "SafetyFirst+Sign32.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "Table32.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
+            "description": ""
         },
         {
             "filename": "Underground+Parking06.jpg",
-            "description": "https://perpheads.com/threads/paralake-v6-development-update.64143/"
-        }
-    ],
-    "06Other/Skybox": [
-        {
-            "filename": "hammerplusplus_5uHNXb7kRM.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_AYHE44Lvam.jpg",
             "description": ""
         }
     ],
-    "06Other/Video-Screenshots": [
+    "06Promotional-Material/Video-Screenshots": [
         {
             "filename": "info.png",
             "description": ""
@@ -2185,6 +462,403 @@
         },
         {
             "filename": "firefox_zPgsBCxds0.jpg",
+            "description": ""
+        }
+    ],
+    "07Classic-Paralake-Maps": [],
+    "07Classic-Paralake-Maps/Paralake-V1": [
+        {
+            "filename": "20250325225225_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225233_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225246_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225257_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225321_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225341_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225348_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225407_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225421_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225430_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225438_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225447_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225518_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225526_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225536_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225545_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225600_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225614_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225643_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225650_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225659_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225707_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225727_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225735_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325225802_1.jpg",
+            "description": ""
+        }
+    ],
+    "07Classic-Paralake-Maps/Paralake-V2": [
+        {
+            "filename": "20250325230149_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230156_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230200_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230209_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230217_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230228_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230234_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230247_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230301_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230312_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230319_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230323_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230327_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230333_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230348_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230417_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230439_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230456_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230508_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230521_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230525_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230530_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230607_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230620_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230628_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230634_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230654_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230702_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230707_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230712_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230721_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230728_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230731_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230741_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230745_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230755_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230800_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230810_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230820_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230824_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325230831_1.jpg",
+            "description": ""
+        }
+    ],
+    "07Classic-Paralake-Maps/Paralake-V3": [
+        {
+            "filename": "20250325230957_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231013_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231016_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231044_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231053_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231056_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231100_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231123_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231129_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231142_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231154_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231205_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231239_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231258_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231312_1.jpg",
+            "description": ""
+        }
+    ],
+    "07Classic-Paralake-Maps/Paralake-V4": [
+        {
+            "filename": "20250325231406_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231443_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231452_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231455_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231458_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231506_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231513_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231517_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231531_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231552_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231604_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231620_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231646_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231706_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231714_1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "20250325231729_1.jpg",
             "description": ""
         }
     ]
