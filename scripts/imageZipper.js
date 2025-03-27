@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
             successMessage.style.display = "none";
             successMessage.classList.remove("show");
           }
-        }, 1200);
+        }, 3000);
 
         saveAs(content, zipName);
 
