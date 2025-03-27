@@ -1,12 +1,12 @@
-# This script needs to be configured for each output JSON file.
+# image_set_generator preset with the full archive vairables
 import os
 import json
 
 # --- CONFIGURATION ---
-BASE_IMAGE_DIR = "images"  # relative to project root
-OUTPUT_JSON_DIR = "json/image_sets"  # where to write json files
-URL_PREFIX = "/images"  # web path to images
-OUTPUT_JSON_NAME = "full-archive.json"  # output file name
+BASE_IMAGE_DIR = "images"
+OUTPUT_JSON_DIR = "json/image_sets"
+URL_PREFIX = "/images"
+OUTPUT_JSON_NAME = "full-archive.json"
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".bmp", ".tiff"}
 
