@@ -1,6 +1,7 @@
 :root {
     --font-primary: 'Sono', serif;
     --font-secondary: 'Jost', serif;
+    --font-body: 'Funnel Sans', sans-serif;
 
     --color-bg: #121212;
     --color-header-footer: #333;
