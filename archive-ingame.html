@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralake V6 Development Archive</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/archive.css">
+    <link rel="stylesheet" type="text/css" href="css/splashscreen.css">
+    <link rel="icon" type="image/x-icon" href="images/06Promotional-Material/Logos/archive_icon_mono.png">
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Jost:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+    
+    <div id="header">
+        <!-- Remove "<br><span id="header-subtitle" style="font-size: 22px;">Coming Soon</span>" when the archive is ready -->
+        <span id="header-title" style="line-height: 0.8;">Paralake V6 Development Archive<br><span id="header-subtitle" style="font-size: 22px;">Created by peeps</span></span>
+        
+        <a href="#" style="padding-top: 5px">
+            <img src="images/06Promotional-Material/Logos/archive_logo_mono.png" alt="Logo" style="height: 45px; border: 0px"
+            onmouseover="this.src='images/06Promotional-Material/Logos/archive_logo.png';"
+            onmouseout="this.src='images/06Promotional-Material/Logos/archive_logo_mono.png';">
+        </a>
+    </div>
+
+    <div id="container">
+        <div id="sidebar"></div>
+        <div id="image-container"></div>
+    </div>
+
+    <!--image popup-->
+    <div id="image-preview">
+        <span class="close">&times;</span>
+        <div class="preview-content">
+            <a id="preview-link" hreg="" target="_blank">
+                <img id="preview-img" src="" alt="Image">
+            </a>
+        </div>
+    </div>
+
+    <div id="pagefooter" style="position: sticky; z-index: 9999;"></div>
+
+    <!-- image loading spinner -->
+    <div id="image-spinner" style="display: none;">
+        <div class="image-spinner"></div>
+    </div>
+    
+    <script>
+        // loading screen
+        let minLoadingTime = 500; // 1 second minimum
+                let startTime = Date.now();
+
+                window.addEventListener("load", function() {
+                    let loadingScreen = document.getElementById("loading-screen");
+                    let content = document.getElementById("content");
+
+                    let timeElapsed = Date.now() - startTime;
+                    let remainingTime = Math.max(0, minLoadingTime - timeElapsed);
+
+                    setTimeout(() => {
+                        loadingScreen.classList.add("hidden");
+
+                        setTimeout(() => {
+                            loadingScreen.style.display = "none";
+                        }, 500);
+                    }, remainingTime);
+                });
+    </script>
+
+    <script src="scripts/archive-ingame.js"></script>
+
+</body>
+</html>
