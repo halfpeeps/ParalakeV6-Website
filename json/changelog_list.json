@@ -202,5 +202,17 @@
         "build": "1.4.6",
         "title": "Business Industrial Buildings",
         "file": "1.4.6.md"
+    },
+    {
+        "date": "2025-03-18",
+        "build": "1.4.7",
+        "title": "Paralake Foundry",
+        "file": "1.4.7.md"
+    },
+    {
+        "date": "2025-03-29",
+        "build": "1.4.8",
+        "title": "Paralake Foundry",
+        "file": "1.4.8.md"
     }
 ]
