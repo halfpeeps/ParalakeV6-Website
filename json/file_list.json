@@ -1003,14 +1003,10 @@
             "description": ""
         }
     ],
-    "06Other": [],
-    "06Other/In-Game-Art": [
+    "09In-Game-Art": [],
+    "09In-Game-Art/Branding": [
         {
             "filename": "air-con.png",
-            "description": ""
-        },
-        {
-            "filename": "Artboard 1.png",
             "description": ""
         },
         {
@@ -1027,6 +1023,244 @@
         },
         {
             "filename": "bazaar_logo.png",
+            "description": ""
+        },
+        {
+            "filename": "decal_rogue.png",
+            "description": ""
+        },
+        {
+            "filename": "diet.png",
+            "description": ""
+        },
+        {
+            "filename": "digipeeps_dots.png",
+            "description": ""
+        },
+        {
+            "filename": "digipeeps_dots_reversed.png",
+            "description": ""
+        },
+        {
+            "filename": "EFANVAPE.png",
+            "description": ""
+        },
+        {
+            "filename": "f.png",
+            "description": ""
+        },
+        {
+            "filename": "fish_logo.png",
+            "description": ""
+        },
+        {
+            "filename": "foundry_decal.png",
+            "description": ""
+        },
+        {
+            "filename": "foundry_logo.png",
+            "description": ""
+        },
+        {
+            "filename": "fredys_overlay01.png",
+            "description": ""
+        },
+        {
+            "filename": "fredys_sign02.png",
+            "description": ""
+        },
+        {
+            "filename": "gun_banner.png",
+            "description": ""
+        },
+        {
+            "filename": "gun_logo.png",
+            "description": ""
+        },
+        {
+            "filename": "hardware_sign.png",
+            "description": ""
+        },
+        {
+            "filename": "hvac_logo.png",
+            "description": ""
+        },
+        {
+            "filename": "ice.png",
+            "description": ""
+        },
+        {
+            "filename": "ICECREAM.png",
+            "description": ""
+        },
+        {
+            "filename": "icecream_logo.png",
+            "description": ""
+        },
+        {
+            "filename": "icelogo.png",
+            "description": ""
+        },
+        {
+            "filename": "logo.png",
+            "description": ""
+        },
+        {
+            "filename": "logo_coin.png",
+            "description": ""
+        },
+        {
+            "filename": "logo_taxi.png",
+            "description": ""
+        },
+        {
+            "filename": "market.png",
+            "description": ""
+        },
+        {
+            "filename": "orangejuice.png",
+            "description": ""
+        },
+        {
+            "filename": "paralegalgroup.png",
+            "description": ""
+        },
+        {
+            "filename": "parkacola_banner.png",
+            "description": ""
+        },
+        {
+            "filename": "peepslogo.png",
+            "description": ""
+        },
+        {
+            "filename": "pizza.png",
+            "description": ""
+        },
+        {
+            "filename": "pointlesspawn.png",
+            "description": ""
+        },
+        {
+            "filename": "reel1.png",
+            "description": ""
+        },
+        {
+            "filename": "reel2.png",
+            "description": ""
+        },
+        {
+            "filename": "ruralmotel_sign.png",
+            "description": ""
+        },
+        {
+            "filename": "safety_logo.png",
+            "description": ""
+        },
+        {
+            "filename": "safety_poster_old.png",
+            "description": ""
+        },
+        {
+            "filename": "sign2.png",
+            "description": ""
+        },
+        {
+            "filename": "sign22.png",
+            "description": ""
+        },
+        {
+            "filename": "sign223.png",
+            "description": ""
+        },
+        {
+            "filename": "sign_232.png",
+            "description": ""
+        },
+        {
+            "filename": "sign_bookstore.png",
+            "description": ""
+        },
+        {
+            "filename": "sign_catcafe.png",
+            "description": ""
+        },
+        {
+            "filename": "sign_grabngo.png",
+            "description": ""
+        },
+        {
+            "filename": "sign_laundrette.png",
+            "description": ""
+        },
+        {
+            "filename": "sign_oldelectronics.png",
+            "description": ""
+        },
+        {
+            "filename": "sign_vhsstore.png",
+            "description": ""
+        },
+        {
+            "filename": "sign_yeasty.png",
+            "description": ""
+        },
+        {
+            "filename": "slot_faint.png",
+            "description": ""
+        },
+        {
+            "filename": "slot_faintapple.png",
+            "description": ""
+        },
+        {
+            "filename": "slot_oj.png",
+            "description": ""
+        },
+        {
+            "filename": "slot_parkaclassic.png",
+            "description": ""
+        },
+        {
+            "filename": "slot_parkadiet.png",
+            "description": ""
+        },
+        {
+            "filename": "slot_splurt.png",
+            "description": ""
+        },
+        {
+            "filename": "sportstock.png",
+            "description": ""
+        },
+        {
+            "filename": "swift01.png",
+            "description": ""
+        },
+        {
+            "filename": "tandjs.png",
+            "description": ""
+        },
+        {
+            "filename": "tiny.png",
+            "description": ""
+        },
+        {
+            "filename": "tinyelec_old.png",
+            "description": ""
+        },
+        {
+            "filename": "xq_bank_decal2.png",
+            "description": ""
+        },
+        {
+            "filename": "xq_logo_new.png",
+            "description": ""
+        }
+    ],
+    "09In-Game-Art/Misc": [
+        {
+            "filename": "Artboard 1.png",
             "description": ""
         },
         {
@@ -1078,6 +1312,108 @@
             "description": ""
         },
         {
+            "filename": "foundry_closure_sign.png",
+            "description": ""
+        },
+        {
+            "filename": "foundry_letter.png",
+            "description": ""
+        },
+        {
+            "filename": "hvac_label.png",
+            "description": ""
+        },
+        {
+            "filename": "mintbox_bg.png",
+            "description": ""
+        },
+        {
+            "filename": "perpcats.png",
+            "description": ""
+        },
+        {
+            "filename": "ph_graffiti04.png",
+            "description": ""
+        },
+        {
+            "filename": "screen.png",
+            "description": ""
+        },
+        {
+            "filename": "v6monitor.png",
+            "description": ""
+        }
+    ],
+    "09In-Game-Art/Parking-Signs": [
+        {
+            "filename": "parkingsign_bank.png",
+            "description": ""
+        },
+        {
+            "filename": "parkingsign_citypark.png",
+            "description": ""
+        },
+        {
+            "filename": "parkingsign_parkinggarage.png",
+            "description": ""
+        },
+        {
+            "filename": "parkingsign_regalsresort.png",
+            "description": ""
+        },
+        {
+            "filename": "parkingsign_shoppingcenter.png",
+            "description": ""
+        }
+    ],
+    "09In-Game-Art/Police-Department": [
+        {
+            "filename": "pd_dirsign02a.png",
+            "description": ""
+        },
+        {
+            "filename": "pd_dirsign02b.png",
+            "description": ""
+        },
+        {
+            "filename": "pd_dirsign02c.png",
+            "description": ""
+        },
+        {
+            "filename": "pd_dirsign02d.png",
+            "description": ""
+        },
+        {
+            "filename": "pd_dirsign02e.png",
+            "description": ""
+        },
+        {
+            "filename": "pd_dirsign02f.png",
+            "description": ""
+        },
+        {
+            "filename": "pd_dirsign02g.png",
+            "description": ""
+        },
+        {
+            "filename": "pd_dirsign02h.png",
+            "description": ""
+        },
+        {
+            "filename": "pd_dirsign02i.png",
+            "description": ""
+        },
+        {
+            "filename": "pd_dirsign02j.png",
+            "description": ""
+        },
+        {
+            "filename": "pd_dirsign02k.png",
+            "description": ""
+        }
+    ],
+    "09In-Game-Art/Signs": [
+        {
             "filename": "cheapmenu01.png",
             "description": ""
         },
@@ -1094,31 +1430,11 @@
             "description": ""
         },
         {
-            "filename": "decal_rogue.png",
-            "description": ""
-        },
-        {
-            "filename": "diet.png",
-            "description": ""
-        },
-        {
-            "filename": "digipeeps_dots.png",
-            "description": ""
-        },
-        {
-            "filename": "digipeeps_dots_reversed.png",
-            "description": ""
-        },
-        {
             "filename": "doorbellcard.png",
             "description": ""
         },
         {
             "filename": "dropoff.png",
-            "description": ""
-        },
-        {
-            "filename": "EFANVAPE.png",
             "description": ""
         },
         {
@@ -1130,15 +1446,7 @@
             "description": ""
         },
         {
-            "filename": "f.png",
-            "description": ""
-        },
-        {
             "filename": "fireindustrialsign.png",
-            "description": ""
-        },
-        {
-            "filename": "fish_logo.png",
             "description": ""
         },
         {
@@ -1170,87 +1478,7 @@
             "description": ""
         },
         {
-            "filename": "foundry_closure_sign.png",
-            "description": ""
-        },
-        {
-            "filename": "foundry_decal.png",
-            "description": ""
-        },
-        {
-            "filename": "foundry_letter.png",
-            "description": ""
-        },
-        {
-            "filename": "foundry_logo.png",
-            "description": ""
-        },
-        {
-            "filename": "fredys_overlay01.png",
-            "description": ""
-        },
-        {
-            "filename": "fredys_sign02.png",
-            "description": ""
-        },
-        {
-            "filename": "gun_banner.png",
-            "description": ""
-        },
-        {
-            "filename": "gun_logo.png",
-            "description": ""
-        },
-        {
-            "filename": "hardware_sign.png",
-            "description": ""
-        },
-        {
-            "filename": "hvac_label.png",
-            "description": ""
-        },
-        {
-            "filename": "hvac_logo.png",
-            "description": ""
-        },
-        {
-            "filename": "ice.png",
-            "description": ""
-        },
-        {
-            "filename": "ICECREAM.png",
-            "description": ""
-        },
-        {
-            "filename": "icecream_logo.png",
-            "description": ""
-        },
-        {
-            "filename": "icelogo.png",
-            "description": ""
-        },
-        {
             "filename": "infoboard01.png",
-            "description": ""
-        },
-        {
-            "filename": "logo.png",
-            "description": ""
-        },
-        {
-            "filename": "logo_coin.png",
-            "description": ""
-        },
-        {
-            "filename": "logo_taxi.png",
-            "description": ""
-        },
-        {
-            "filename": "market.png",
-            "description": ""
-        },
-        {
-            "filename": "mintbox_bg.png",
             "description": ""
         },
         {
@@ -1258,79 +1486,7 @@
             "description": ""
         },
         {
-            "filename": "orangejuice.png",
-            "description": ""
-        },
-        {
-            "filename": "paralegalgroup.png",
-            "description": ""
-        },
-        {
-            "filename": "parkacola_banner.png",
-            "description": ""
-        },
-        {
-            "filename": "parkingsign_bank.png",
-            "description": ""
-        },
-        {
-            "filename": "parkingsign_citypark.png",
-            "description": ""
-        },
-        {
-            "filename": "parkingsign_parkinggarage.png",
-            "description": ""
-        },
-        {
-            "filename": "parkingsign_regalsresort.png",
-            "description": ""
-        },
-        {
-            "filename": "parkingsign_shoppingcenter.png",
-            "description": ""
-        },
-        {
-            "filename": "peepslogo.png",
-            "description": ""
-        },
-        {
-            "filename": "perpcats.png",
-            "description": ""
-        },
-        {
             "filename": "Photos_F1UjcB9ZEm.jpg",
-            "description": ""
-        },
-        {
-            "filename": "ph_graffiti04.png",
-            "description": ""
-        },
-        {
-            "filename": "pizza.png",
-            "description": ""
-        },
-        {
-            "filename": "pointlesspawn.png",
-            "description": ""
-        },
-        {
-            "filename": "reel1.png",
-            "description": ""
-        },
-        {
-            "filename": "reel2.png",
-            "description": ""
-        },
-        {
-            "filename": "ruralmotel_sign.png",
-            "description": ""
-        },
-        {
-            "filename": "safety_logo.png",
-            "description": ""
-        },
-        {
-            "filename": "safety_poster_old.png",
             "description": ""
         },
         {
@@ -1338,87 +1494,7 @@
             "description": ""
         },
         {
-            "filename": "screen.png",
-            "description": ""
-        },
-        {
-            "filename": "sign2.png",
-            "description": ""
-        },
-        {
-            "filename": "sign22.png",
-            "description": ""
-        },
-        {
-            "filename": "sign223.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_232.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_bookstore.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_catcafe.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_grabngo.png",
-            "description": ""
-        },
-        {
             "filename": "sign_helpwanted.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_laundrette.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_oldelectronics.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_sale.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_vhsstore.png",
-            "description": ""
-        },
-        {
-            "filename": "sign_yeasty.png",
-            "description": ""
-        },
-        {
-            "filename": "slot_faint.png",
-            "description": ""
-        },
-        {
-            "filename": "slot_faintapple.png",
-            "description": ""
-        },
-        {
-            "filename": "slot_oj.png",
-            "description": ""
-        },
-        {
-            "filename": "slot_parkaclassic.png",
-            "description": ""
-        },
-        {
-            "filename": "slot_parkadiet.png",
-            "description": ""
-        },
-        {
-            "filename": "slot_splurt.png",
-            "description": ""
-        },
-        {
-            "filename": "sportstock.png",
             "description": ""
         },
         {
@@ -1430,39 +1506,278 @@
             "description": ""
         },
         {
-            "filename": "swift01.png",
-            "description": ""
-        },
-        {
-            "filename": "tandjs.png",
-            "description": ""
-        },
-        {
             "filename": "taxifrontsign.png",
-            "description": ""
-        },
-        {
-            "filename": "tiny.png",
-            "description": ""
-        },
-        {
-            "filename": "tinyelec_old.png",
-            "description": ""
-        },
-        {
-            "filename": "v6monitor.png",
-            "description": ""
-        },
-        {
-            "filename": "xq_bank_decal2.png",
-            "description": ""
-        },
-        {
-            "filename": "xq_logo_new.png",
             "description": ""
         }
     ],
-    "06Other/Map-Overviews": [
+    "09In-Game-Art/Wayfinding-Signs": [
+        {
+            "filename": "bankplaza_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "bankplaza_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "beachfront_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "beachfront_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "boardwalk_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "boardwalk_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "citycenter_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "citycenter_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "citypark_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "citypark_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "fire_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "fire_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "hospital_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "hospital_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "hungriges_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "hungriges_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "metro_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "metro_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "motel_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "motel_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "officecomplex_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "office_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "parkinggarage_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "parkinggarage_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "parking_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "parking_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "police_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "police_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "regals_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "regals_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "roadcrew_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "roadcrew_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "shops_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "shops_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "suburbspark_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "suburbspark_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "suburbs_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "suburbs_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "taxi_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "taxi_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "toilets_wayfinding.png",
+            "description": ""
+        },
+        {
+            "filename": "toilets_wayfinding_rev.png",
+            "description": ""
+        }
+    ],
+    "13Other": [],
+    "13Other/06Models": [
+        {
+            "filename": "Adobe_Substance_3D_Painter_01iBuxEMm4.png",
+            "description": ""
+        },
+        {
+            "filename": "Adobe_Substance_3D_Painter_1qp3wFSUPt.jpg",
+            "description": ""
+        },
+        {
+            "filename": "Adobe_Substance_3D_Painter_2VdKFQw5DO.png",
+            "description": ""
+        },
+        {
+            "filename": "Adobe_Substance_3D_Painter_6EmraiWjvV.jpg",
+            "description": ""
+        },
+        {
+            "filename": "Adobe_Substance_3D_Painter_a96NwEZ2xO.jpg",
+            "description": ""
+        },
+        {
+            "filename": "Adobe_Substance_3D_Painter_cfLCTkna8R.jpg",
+            "description": ""
+        },
+        {
+            "filename": "Adobe_Substance_3D_Painter_e9kHgBmOne.jpg",
+            "description": ""
+        },
+        {
+            "filename": "Adobe_Substance_3D_Painter_Kv4CvozF7b.jpg",
+            "description": ""
+        },
+        {
+            "filename": "Adobe_Substance_3D_Painter_oUbcE5P4ir.jpg",
+            "description": ""
+        },
+        {
+            "filename": "Adobe_Substance_3D_Painter_t8toH4xGMR.png",
+            "description": ""
+        },
+        {
+            "filename": "Adobe_Substance_3D_Painter_u7OatThdKj.png",
+            "description": ""
+        },
+        {
+            "filename": "Adobe_Substance_3D_Painter_vi7jwUh9aM.jpg",
+            "description": ""
+        },
+        {
+            "filename": "Adobe_Substance_3D_Painter_VNdLk1dK6P.jpg",
+            "description": ""
+        },
+        {
+            "filename": "Adobe_Substance_3D_Painter_zXGnWPIc2C.png",
+            "description": ""
+        },
+        {
+            "filename": "blender_3FZ5WVkk3I.png",
+            "description": ""
+        },
+        {
+            "filename": "blender_EkBgCAWu7a.jpg",
+            "description": ""
+        },
+        {
+            "filename": "blender_h5tAFbtPyF.jpg",
+            "description": ""
+        },
+        {
+            "filename": "Screenshot 2024-01-11 181905.jpg",
+            "description": ""
+        },
+        {
+            "filename": "Screenshot 2024-01-11 185919.jpg",
+            "description": ""
+        },
+        {
+            "filename": "Screenshot 2024-02-12 100515.jpg",
+            "description": ""
+        },
+        {
+            "filename": "Screenshot 2024-08-16 014548.jpg",
+            "description": ""
+        }
+    ],
+    "13Other/07Skybox": [
+        {
+            "filename": "hammerplusplus_5uHNXb7kRM.jpg",
+            "description": ""
+        },
+        {
+            "filename": "hammerplusplus_AYHE44Lvam.jpg",
+            "description": ""
+        }
+    ],
+    "13Other/08Map-Overviews": [
         {
             "filename": "a1.jpg",
             "description": ""
@@ -1628,104 +1943,7 @@
             "description": ""
         }
     ],
-    "06Other/Models": [
-        {
-            "filename": "Adobe_Substance_3D_Painter_01iBuxEMm4.png",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_1qp3wFSUPt.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_2VdKFQw5DO.png",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_6EmraiWjvV.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_a96NwEZ2xO.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_cfLCTkna8R.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_e9kHgBmOne.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_Kv4CvozF7b.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_oUbcE5P4ir.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_t8toH4xGMR.png",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_u7OatThdKj.png",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_vi7jwUh9aM.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_VNdLk1dK6P.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Adobe_Substance_3D_Painter_zXGnWPIc2C.png",
-            "description": ""
-        },
-        {
-            "filename": "blender_3FZ5WVkk3I.png",
-            "description": ""
-        },
-        {
-            "filename": "blender_EkBgCAWu7a.jpg",
-            "description": ""
-        },
-        {
-            "filename": "blender_h5tAFbtPyF.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Screenshot 2024-01-11 181905.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Screenshot 2024-01-11 185919.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Screenshot 2024-02-12 100515.jpg",
-            "description": ""
-        },
-        {
-            "filename": "Screenshot 2024-08-16 014548.jpg",
-            "description": ""
-        }
-    ],
-    "06Other/Skybox": [
-        {
-            "filename": "hammerplusplus_5uHNXb7kRM.jpg",
-            "description": ""
-        },
-        {
-            "filename": "hammerplusplus_AYHE44Lvam.jpg",
-            "description": ""
-        }
-    ],
-    "06Promotional-Material": [],
-    "06Promotional-Material/Logos": [
+    "13Other/14Logos": [
         {
             "filename": "Adobe_Premiere_Pro_LIqUKNug77.png",
             "description": ""
@@ -1815,7 +2033,8 @@
             "description": ""
         }
     ],
-    "06Promotional-Material/Menu-Background-Pack": [
+    "15Promotional-Material": [],
+    "15Promotional-Material/Menu-Background-Pack": [
         {
             "filename": "01-(0-00-00-00).png",
             "description": ""
@@ -1885,7 +2104,7 @@
             "description": ""
         }
     ],
-    "06Promotional-Material/Promotional-Screenshots": [
+    "15Promotional-Material/Promotional-Screenshots": [
         {
             "filename": "10.jpg",
             "description": ""
@@ -2007,7 +2226,7 @@
             "description": ""
         }
     ],
-    "06Promotional-Material/Video-Screenshots": [
+    "15Promotional-Material/Video-Screenshots": [
         {
             "filename": "info.png",
             "description": ""
@@ -2189,8 +2408,8 @@
             "description": ""
         }
     ],
-    "07Classic-Paralake-Maps": [],
-    "07Classic-Paralake-Maps/Paralake-V1": [
+    "16Classic-Paralake-Maps": [],
+    "16Classic-Paralake-Maps/Paralake-V1": [
         {
             "filename": "20250325225225_1.jpg",
             "description": ""
@@ -2292,7 +2511,7 @@
             "description": ""
         }
     ],
-    "07Classic-Paralake-Maps/Paralake-V2": [
+    "16Classic-Paralake-Maps/Paralake-V2": [
         {
             "filename": "20250325230149_1.jpg",
             "description": ""
@@ -2458,7 +2677,7 @@
             "description": ""
         }
     ],
-    "07Classic-Paralake-Maps/Paralake-V3": [
+    "16Classic-Paralake-Maps/Paralake-V3": [
         {
             "filename": "20250325230957_1.jpg",
             "description": ""
@@ -2520,7 +2739,7 @@
             "description": ""
         }
     ],
-    "07Classic-Paralake-Maps/Paralake-V4": [
+    "16Classic-Paralake-Maps/Paralake-V4": [
         {
             "filename": "20250325231406_1.jpg",
             "description": ""
