@@ -1,19 +1,15 @@
 [
     {
-      "name": "Hospital",
-      "x": 450,
-      "y": 360,
-      "tags": ["Medical", "Emergency"],
-      "description": "Main healthcare facility for the region.",
-      "image": "/images/hospital.jpg"
-    },
-    {
-      "name": "Parking Garage",
-      "x": 512,
-      "y": 420,
-      "tags": ["Parking"],
-      "description": "Multi-level parking garage.",
-      "image": "/images/garage.jpg"
+      "name": "New Building",
+      "x": 1972,
+      "y": 1908,
+      "tags": [
+        "Medical"
+      ],
+      "primaryTag": "Medical",
+      "description": "Description here.",
+      "image": "/images/example.jpg",
+      "icon": "map_recourses/icons/hospital.png"
     }
-  ]
+]
   
