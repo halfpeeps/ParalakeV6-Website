@@ -1,0 +1,314 @@
+<!-- Full corrected document combining all features (search, tag filter, sidebar, map, markers, icons) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paralake V6 Map Viewer</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    :root {
+      --background: #1e1e1e;
+      --sidebar-bg: #2c2c2c;
+      --text: #f0f0f0;
+      --accent: #007acc;
+      --border: #444;
+      --tag-bg: #444;
+    }
+
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: var(--background);
+      font-family: "Segoe UI", sans-serif;
+      color: var(--text);
+      overflow: hidden;
+    }
+
+    #map-container {
+      position: absolute;
+      top: 0; bottom: 0; left: 0; right: 0;
+      overflow: hidden;
+    }
+
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+
+    .leaflet-container {
+      background: var(--background) !important;
+    }
+
+    .custom-marker {
+      background-color: var(--accent);
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      display: block;
+      transform: translate(-50%, -50%);
+    }
+
+    #sidebar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 320px;
+      height: 100%;
+      background: var(--sidebar-bg);
+      border-left: 1px solid var(--border);
+      padding: 16px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      display: none;
+      z-index: 1000;
+      box-sizing: border-box;
+    }
+
+    #sidebar.active {
+      display: block;
+    }
+
+    #sidebar h2 {
+      margin: 0 0 10px 0;
+      font-size: 1.4em;
+      color: var(--accent);
+    }
+
+    .tags span {
+      display: inline-block;
+      background: var(--tag-bg);
+      color: #fff;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin: 4px 4px 4px 0;
+      font-size: 0.75em;
+    }
+
+    .building-image {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    #editor-toggle {
+      position: absolute;
+      bottom: 50px;
+      left: 10px;
+      z-index: 1001;
+      background: var(--sidebar-bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+
+    #editor-toggle:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    #back-button {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      z-index: 1001;
+      background: var(--sidebar-bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    #back-button:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    #sidebar-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      color: var(--text);
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    #tag-filter {
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      z-index: 1002;
+      background: var(--sidebar-bg);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 10px;
+      border-radius: 6px;
+      max-height: 300px;
+      overflow-y: auto;
+      width: 200px;
+      box-sizing: border-box;
+    }
+
+    #tag-filter label {
+      display: block;
+      margin-bottom: 4px;
+      cursor: pointer;
+    }
+
+    #search-box {
+      position: absolute;
+      top: 10px;
+      left: 60px;
+      z-index: 1003;
+      width: 240px;
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      outline: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    #search-box:focus {
+      background: #fff;
+      color: #000;
+      border-color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div id="map-container">
+    <input type="text" id="search-box" placeholder="Search buildings..." />
+    <div id="map"></div>
+    <div id="tag-filter"></div>
+    <a href="/Paralake-V6-Development-Archive/archive.html" id="back-button" title="Back to archive">Back</a>
+    <button id="editor-toggle" style="display: none;">Enable Editor</button>
+    <div id="sidebar">
+      <button id="sidebar-close" title="Close sidebar">×</button>
+      <h2 id="building-name"></h2>
+      <div class="tags" id="building-tags"></div>
+      <p id="building-description"></p>
+      <img id="building-image" class="building-image" />
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    const EDITOR_MODE = false;
+    const bounds = [[0, 0], [0, 0]];
+    const baseMap = L.imageOverlay('map_recourses/map.png', bounds);
+    const satelliteMap = L.imageOverlay('map_satellite.png', bounds);
+    const map = L.map('map', {
+      crs: L.CRS.Simple,
+      minZoom: -2,
+      maxZoom: 2,
+      layers: [baseMap]
+    });
+    const baseLayers = {
+      "Default View": baseMap,
+      "Satellite View": satelliteMap
+    };
+    L.control.layers(baseLayers, null, { position: 'bottomright' }).addTo(map);
+
+    const tagColors = {};
+    const markers = [];
+
+    Promise.all([
+      fetch('/map_recourses/buildings.json').then(res => res.json()),
+      fetch('/map_recourses/tags.json').then(res => res.json())
+    ]).then(([buildings, tags]) => {
+      tags.forEach(t => tagColors[t.name] = t.color);
+      const tagFilter = document.getElementById('tag-filter');
+
+      tags.forEach(t => {
+        const label = document.createElement('label');
+        label.innerHTML = `<input type="checkbox" value="${t.name}" checked> ${t.name}`;
+        tagFilter.appendChild(label);
+      });
+
+      const checkboxes = tagFilter.querySelectorAll('input[type="checkbox"]');
+
+      buildings.forEach(b => {
+        const icon = b.icon ? L.icon({
+          iconUrl: b.icon,
+          iconSize: [24, 24],
+          iconAnchor: [12, 12]
+        }) : L.divIcon({
+          className: 'custom-marker',
+          iconSize: [16, 16]
+        });
+
+        const marker = L.marker([b.y, b.x], { icon }).addTo(map);
+        marker.metaTags = b.tags;
+        marker.metaData = b;
+        marker.on('click', () => showSidebar(b));
+        markers.push(marker);
+      });
+
+      checkboxes.forEach(cb => {
+        cb.addEventListener('change', () => {
+          const activeTags = Array.from(checkboxes).filter(c => c.checked).map(c => c.value);
+          markers.forEach(marker => {
+            const visible = marker.metaTags.some(tag => activeTags.includes(tag));
+            marker[visible ? 'addTo' : 'removeFrom'](map);
+          });
+        });
+      });
+    });
+
+    const mapImage = new Image();
+    mapImage.src = 'map_recourses/map.png';
+    mapImage.onload = () => {
+      const w = mapImage.width;
+      const h = mapImage.height;
+      bounds[1] = [h, w];
+      baseMap.setBounds(bounds);
+      satelliteMap.setBounds(bounds);
+      map.setMaxBounds(bounds);
+      map.fitBounds(bounds);
+    };
+
+    document.getElementById('sidebar-close').addEventListener('click', () => {
+      document.getElementById('sidebar').classList.remove('active');
+    });
+
+    function showSidebar(building) {
+      document.getElementById('building-name').textContent = building.name;
+      const tags = document.getElementById('building-tags');
+      tags.innerHTML = '';
+      building.tags.forEach(tag => {
+        const span = document.createElement('span');
+        span.textContent = tag;
+        span.style.backgroundColor = tagColors[tag] || 'gray';
+        tags.appendChild(span);
+      });
+      document.getElementById('building-description').textContent = building.description;
+      document.getElementById('building-image').src = building.image;
+      document.getElementById('sidebar').classList.add('active');
+    }
+
+    document.getElementById('search-box').addEventListener('input', () => {
+      const query = document.getElementById('search-box').value.toLowerCase();
+      markers.forEach(marker => {
+        const b = marker.metaData;
+        const match =
+          b.name.toLowerCase().includes(query) ||
+          b.tags.some(t => t.toLowerCase().includes(query)) ||
+          (b.description && b.description.toLowerCase().includes(query));
+        marker[match ? 'addTo' : 'removeFrom'](map);
+      });
+    });
+  </script>
+</body>
+</html>

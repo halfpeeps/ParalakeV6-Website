@@ -1,0 +1,19 @@
+[
+    {
+      "name": "Hospital",
+      "x": 450,
+      "y": 360,
+      "tags": ["Medical", "Emergency"],
+      "description": "Main healthcare facility for the region.",
+      "image": "/images/hospital.jpg"
+    },
+    {
+      "name": "Parking Garage",
+      "x": 512,
+      "y": 420,
+      "tags": ["Parking"],
+      "description": "Multi-level parking garage.",
+      "image": "/images/garage.jpg"
+    }
+  ]
+  
