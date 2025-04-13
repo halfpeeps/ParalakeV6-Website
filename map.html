@@ -88,7 +88,7 @@
       font-size: 0.75em;
     }
 
-    .building-image {
+    .location-image {
       width: 100%;
       margin-top: 10px;
       border-radius: 4px;
@@ -192,17 +192,17 @@
 </head>
 <body>
   <div id="map-container">
-    <input type="text" id="search-box" placeholder="Search buildings..." />
+    <input type="text" id="search-box" placeholder="Search locations..." />
     <div id="map"></div>
     <div id="tag-filter"></div>
     <a href="/Paralake-V6-Development-Archive/archive.html" id="back-button" title="Back to archive">Back</a>
     <button id="editor-toggle" style="display: none;">Enable Editor</button>
     <div id="sidebar">
       <button id="sidebar-close" title="Close sidebar">×</button>
-      <h2 id="building-name"></h2>
-      <div class="tags" id="building-tags"></div>
-      <p id="building-description"></p>
-      <img id="building-image" class="building-image" />
+      <h2 id="location-name"></h2>
+      <div class="tags" id="location-tags"></div>
+      <p id="location-description"></p>
+      <img id="location-image" class="location-image" />
     </div>
   </div>
 
@@ -245,9 +245,9 @@
     }
 
     Promise.all([
-      fetch('/map_recourses/buildings.json').then(res => res.json()),
+      fetch('/map_recourses/locations.json').then(res => res.json()),
       fetch('/map_recourses/tags.json').then(res => res.json())
-    ]).then(([buildings, tags]) => {
+    ]).then(([locations, tags]) => {
       tags.forEach(t => tagColors[t.name] = t.color);
       const tagFilter = document.getElementById('tag-filter');
 
@@ -259,7 +259,7 @@
 
       const checkboxes = tagFilter.querySelectorAll('input[type="checkbox"]');
 
-      buildings.forEach(b => {
+      locations.forEach(b => {
         const color = tagColors[b.primaryTag] || 'gray';
         if (b.icon && b.primaryTag) {
           colorizeIcon(b.icon, color, (tintedSrc) => {
@@ -321,7 +321,7 @@
               const x = Math.round(e.latlng.lng);
               const y = Math.round(e.latlng.lat);
               const json = {
-                name: "New Building",
+                name: "New location",
                 x: x,
                 y: y,
                 tags: ["Tag"],
@@ -330,6 +330,7 @@
                 image: "map_recourses/images/image.jpg",
                 icon: "map_recourses/icons/icon.png"
               };
+              console.log(JSON.stringify(json, null, 2));
               alert('Marker data copied to console!');
             });
           }
@@ -341,18 +342,18 @@
       document.getElementById('sidebar').classList.remove('active');
     });
 
-    function showSidebar(building) {
-      document.getElementById('building-name').textContent = building.name;
-      const tags = document.getElementById('building-tags');
+    function showSidebar(location) {
+      document.getElementById('location-name').textContent = location.name;
+      const tags = document.getElementById('location-tags');
       tags.innerHTML = '';
-      building.tags.forEach(tag => {
+      location.tags.forEach(tag => {
         const span = document.createElement('span');
         span.textContent = tag;
         span.style.backgroundColor = tagColors[tag] || 'gray';
         tags.appendChild(span);
       });
-      document.getElementById('building-description').textContent = building.description;
-      document.getElementById('building-image').src = building.image;
+      document.getElementById('location-description').textContent = location.description;
+      document.getElementById('location-image').src = location.image;
       document.getElementById('sidebar').classList.add('active');
     }
 

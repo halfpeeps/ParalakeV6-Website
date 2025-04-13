@@ -1,5 +1,22 @@
 [
-    { "name": "Medical", "color": "#d94c4c" },
-    { "name": "Residential", "color": "#4cd974" }
+    { "name": "Hospital", "color": "#d94c4c" },
+    { "name": "Police Department", "color": "#466cc7" },
+    { "name": "Fire Department", "color": "#cc561f" },
+    { "name": "Job", "color": "#bf870d" },
+    { "name": "Vendor", "color": "#b63ebd" },
+    
+    { "name": "Apartment", "color": "#51a4c4" },
+    { "name": "House", "color": "#e87c58" },
+    { "name": "Office", "color": "#5851c4" },
+    { "name": "Shop", "color": "#e8bf4f" },
+    { "name": "Industrial", "color": "#6b3e25" },
+    { "name": "Restaurant", "color": "#bf3b3b" },
+    
+    { "name": "Park", "color": "#0a8020" },
+    { "name": "Ocean", "color": "#4068ad" },
+    { "name": "Lake", "color": "#4068ad" },
+    { "name": "Pond", "color": "#4068ad" },
+
+    { "name": "Ownable", "color": "#545454" }
   ]
   

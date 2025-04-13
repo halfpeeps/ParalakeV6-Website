@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Slums",
+    "x": 751,
+    "y": 3574,
+    "tags": [
+      "Apartment"
+    ],
+    "primaryTag": "Apartment",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/highrise_ownable.png"
+  },
+
+  {
+    "name": "Roadcrew",
+    "x": 623,
+    "y": 2758,
+    "tags": [
+      "Job",
+      "Vendor"
+    ],
+    "primaryTag": "Job",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/roadcrew.png"
+  },
+
+  {
+    "name": "Stalburg Pumping Station",
+    "x": 941,
+    "y": 2552,
+    "tags": [
+      "Industrial"
+    ],
+    "primaryTag": "Industrial",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/valve.png"
+  },
+
+  {
+    "name": "Police Department",
+    "x": 1118,
+    "y": 3021,
+    "tags": [
+      "Police Department",
+      "Job"
+    ],
+    "primaryTag": "Police Department",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/pd.png"
+  },
+
+  {
+    "name": "Fire Department",
+    "x": 1752,
+    "y": 3327,
+    "tags": [
+      "Fire Department",
+      "Job",
+      "Vendor"
+    ],
+    "primaryTag": "Fire Department",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/fd.png"
+  },
+
+  {
+    "name": "NEON",
+    "x": 1509,
+    "y": 3011,
+    "tags": [
+      "Vendor",
+      "Bar"
+    ],
+    "primaryTag": "Bar",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/bar.png"
+  },
+
+  {
+    "name": "Hospital",
+    "x": 1593,
+    "y": 2789,
+    "tags": [
+      "Hospital",
+      "Job",
+      "Vendor"
+    ],
+    "primaryTag": "Hospital",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/hospital.png"
+  }
+]
+  
