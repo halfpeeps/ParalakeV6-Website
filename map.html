@@ -189,185 +189,241 @@
       border-color: var(--accent);
     }
   </style>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
   <div id="map-container">
-    <input type="text" id="search-box" placeholder="Search locations..." />
-    <div id="map"></div>
-    <div id="tag-filter"></div>
-    <a href="/Paralake-V6-Development-Archive/archive.html" id="back-button" title="Back to archive">Back</a>
-    <button id="editor-toggle" style="display: none;">Enable Editor</button>
-    <div id="sidebar">
-      <button id="sidebar-close" title="Close sidebar">×</button>
-      <h2 id="location-name"></h2>
-      <div class="tags" id="location-tags"></div>
-      <p id="location-description"></p>
-      <img id="location-image" class="location-image" />
-    </div>
+  <input type="text" id="search-box" placeholder="Search locations..." />
+  <div id="map"></div>
+  <div id="tag-filter"></div>
+  <a href="/Paralake-V6-Development-Archive/archive.html" id="back-button" title="Back to archive">Back</a>
+  <button id="editor-toggle" style="display: none;">Enable Editor</button>
+  <div id="sidebar">
+    <button id="sidebar-close" title="Close sidebar">×</button>
+    <h2 id="location-name"></h2>
+    <div class="tags" id="location-tags"></div>
+    <p id="location-description"></p>
+    <img id="location-image" class="location-image" />
   </div>
+</div>
 
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script>
-    const EDITOR_MODE = true;
-    const bounds = [[0, 0], [0, 0]];
-    const baseMap = L.imageOverlay('map_recourses/map.png', bounds);
-    const satelliteMap = L.imageOverlay('map_recourses/map_sat.png', bounds);
-    const map = L.map('map', {
-      crs: L.CRS.Simple,
-      minZoom: -2,
-      maxZoom: 2,
-      layers: [baseMap]
-    });
-    const baseLayers = {
-      "Default View": baseMap,
-      "Satellite View": satelliteMap
-    };
-    L.control.layers(baseLayers, null, { position: 'bottomright' }).addTo(map);
+<script>
+const EDITOR_MODE = true;
+const bounds = [[0, 0], [0, 0]];
+const baseMap = L.imageOverlay('map_recourses/map.png', bounds);
+const satelliteMap = L.imageOverlay('map_recourses/map_sat.png', bounds);
+const map = L.map('map', {
+  crs: L.CRS.Simple,
+  minZoom: -2,
+  maxZoom: 2,
+  layers: [baseMap]
+});
+const baseLayers = {
+  "Default View": baseMap,
+  "Satellite View": satelliteMap
+};
+L.control.layers(baseLayers, null, { position: 'bottomright' }).addTo(map);
 
-    const tagColors = {};
-    const markers = [];
+const tagColors = {};
+const markers = [];
 
-    function colorizeIcon(imgSrc, colorHex, callback) {
-      const img = new Image();
-      img.crossOrigin = "Anonymous";
-      img.onload = function () {
-        const canvas = document.createElement("canvas");
-        canvas.width = img.width;
-        canvas.height = img.height;
-        const ctx = canvas.getContext("2d");
-        ctx.drawImage(img, 0, 0);
-        ctx.globalCompositeOperation = "source-in";
-        ctx.fillStyle = colorHex || 'gray';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        callback(canvas.toDataURL());
-      };
-      img.src = imgSrc;
-    }
+function getScaleFromZoom(zoom) {
+  return 1 + zoom * 0.3;
+}
 
-    Promise.all([
-      fetch('/map_recourses/locations.json').then(res => res.json()),
-      fetch('/map_recourses/tags.json').then(res => res.json())
-    ]).then(([locations, tags]) => {
-      tags.forEach(t => tagColors[t.name] = t.color);
-      const tagFilter = document.getElementById('tag-filter');
+function colorizeIcon(imgSrc, colorHex, scale = 1, callback) {
+  const img = new Image();
+  img.crossOrigin = "Anonymous";
+  img.onload = function () {
+    const padding = 12 * scale;
+    const iconSize = img.width * scale;
+    const size = iconSize + padding * 2;
 
-      tags.forEach(t => {
-        const label = document.createElement('label');
-        label.innerHTML = `<input type="checkbox" value="${t.name}" checked> ${t.name}`;
-        tagFilter.appendChild(label);
-      });
+    const canvas = document.createElement("canvas");
+    canvas.width = size;
+    canvas.height = size;
+    const ctx = canvas.getContext("2d");
 
-      const checkboxes = tagFilter.querySelectorAll('input[type="checkbox"]');
+    const center = size / 2;
+    const radius = iconSize / 2 + padding / 2;
 
-      locations.forEach(b => {
-        const color = tagColors[b.primaryTag] || 'gray';
-        if (b.icon && b.primaryTag) {
-          colorizeIcon(b.icon, color, (tintedSrc) => {
-            const icon = L.icon({
-              iconUrl: tintedSrc,
-              iconSize: [24, 24],
-              iconAnchor: [12, 12]
-            });
-            placeMarker(b, icon);
-          });
-        } else {
-          const icon = L.divIcon({
-            className: 'custom-marker',
-            iconSize: [16, 16]
-          });
-          placeMarker(b, icon);
-        }
-      });
+    ctx.beginPath();
+    ctx.arc(center, center, radius, 0, 2 * Math.PI);
+    ctx.fillStyle = '#fff';
+    ctx.fill();
 
-      function placeMarker(b, icon) {
-        const marker = L.marker([b.y, b.x], { icon }).addTo(map);
-        marker.metaTags = b.tags;
-        marker.metaData = b;
-        marker.on('click', () => showSidebar(b));
-        markers.push(marker);
-      }
+    ctx.strokeStyle = '#000';
+    ctx.lineWidth = 2 * scale;
+    ctx.stroke();
 
-      checkboxes.forEach(cb => {
-        cb.addEventListener('change', () => {
-          const activeTags = Array.from(checkboxes).filter(c => c.checked).map(c => c.value);
-          markers.forEach(marker => {
-            const visible = marker.metaTags.some(tag => activeTags.includes(tag));
-            marker[visible ? 'addTo' : 'removeFrom'](map);
-          });
+    const tempCanvas = document.createElement("canvas");
+    tempCanvas.width = iconSize;
+    tempCanvas.height = iconSize;
+    const tempCtx = tempCanvas.getContext("2d");
+
+    tempCtx.drawImage(img, 0, 0, iconSize, iconSize);
+    tempCtx.globalCompositeOperation = "source-in";
+    tempCtx.fillStyle = colorHex || 'gray';
+    tempCtx.fillRect(0, 0, iconSize, iconSize);
+
+    ctx.drawImage(tempCanvas, padding, padding);
+
+    callback(canvas.toDataURL());
+  };
+  img.src = imgSrc;
+}
+
+Promise.all([
+  fetch('/map_recourses/locations.json').then(res => res.json()),
+  fetch('/map_recourses/tags.json').then(res => res.json())
+]).then(([locations, tags]) => {
+  tags.forEach(t => tagColors[t.name] = t.color);
+  const tagFilter = document.getElementById('tag-filter');
+
+  tags.forEach(t => {
+    const label = document.createElement('label');
+    label.innerHTML = `<input type="checkbox" value="${t.name}" checked> ${t.name}`;
+    tagFilter.appendChild(label);
+  });
+
+  const checkboxes = tagFilter.querySelectorAll('input[type="checkbox"]');
+  const scale = getScaleFromZoom(map.getZoom());
+
+  locations.forEach(b => {
+    const color = tagColors[b.primaryTag] || 'gray';
+    if (b.icon && b.primaryTag) {
+      colorizeIcon(b.icon, color, scale, (tintedSrc) => {
+        const size = 32 * scale;
+        const icon = L.icon({
+          iconUrl: tintedSrc,
+          iconSize: [size, size],
+          iconAnchor: [size / 2, size / 2]
         });
+        placeMarker(b, icon);
       });
-    });
-
-    const mapImage = new Image();
-    mapImage.src = 'map_recourses/map.png';
-    mapImage.onload = () => {
-      const w = mapImage.width;
-      const h = mapImage.height;
-      bounds[1] = [h, w];
-      baseMap.setBounds(bounds);
-      satelliteMap.setBounds(bounds);
-      map.setMaxBounds(bounds);
-      map.fitBounds(bounds);
-
-      if (EDITOR_MODE) {
-        const toggle = document.getElementById('editor-toggle');
-        toggle.style.display = 'block';
-        let editorEnabled = false;
-        toggle.addEventListener('click', () => {
-          editorEnabled = !editorEnabled;
-          toggle.textContent = editorEnabled ? 'Disable Editor' : 'Enable Editor';
-          if (editorEnabled) {
-            map.once('click', e => {
-              const x = Math.round(e.latlng.lng);
-              const y = Math.round(e.latlng.lat);
-              const json = {
-                name: "New location",
-                x: x,
-                y: y,
-                tags: ["Tag"],
-                primaryTag: "Tag",
-                description: "Description here.",
-                image: "map_recourses/images/image.jpg",
-                icon: "map_recourses/icons/icon.png"
-              };
-              console.log(JSON.stringify(json, null, 2));
-              alert('Marker data copied to console!');
-            });
-          }
-        });
-      }
-    };
-
-    document.getElementById('sidebar-close').addEventListener('click', () => {
-      document.getElementById('sidebar').classList.remove('active');
-    });
-
-    function showSidebar(location) {
-      document.getElementById('location-name').textContent = location.name;
-      const tags = document.getElementById('location-tags');
-      tags.innerHTML = '';
-      location.tags.forEach(tag => {
-        const span = document.createElement('span');
-        span.textContent = tag;
-        span.style.backgroundColor = tagColors[tag] || 'gray';
-        tags.appendChild(span);
+    } else {
+      const icon = L.divIcon({
+        className: 'custom-marker',
+        iconSize: [16, 16]
       });
-      document.getElementById('location-description').textContent = location.description;
-      document.getElementById('location-image').src = location.image;
-      document.getElementById('sidebar').classList.add('active');
+      placeMarker(b, icon);
     }
+  });
 
-    document.getElementById('search-box').addEventListener('input', () => {
-      const query = document.getElementById('search-box').value.toLowerCase();
+  function placeMarker(b, icon) {
+    const marker = L.marker([b.y, b.x], { icon }).addTo(map);
+    marker.metaTags = b.tags;
+    marker.metaData = b;
+    marker.on('click', () => showSidebar(b));
+    markers.push(marker);
+  }
+
+  checkboxes.forEach(cb => {
+    cb.addEventListener('change', () => {
+      const activeTags = Array.from(checkboxes).filter(c => c.checked).map(c => c.value);
       markers.forEach(marker => {
-        const b = marker.metaData;
-        const match =
-          b.name.toLowerCase().includes(query) ||
-          b.tags.some(t => t.toLowerCase().includes(query)) ||
-          (b.description && b.description.toLowerCase().includes(query));
-        marker[match ? 'addTo' : 'removeFrom'](map);
+        const visible = marker.metaTags.some(tag => activeTags.includes(tag));
+        marker[visible ? 'addTo' : 'removeFrom'](map);
       });
     });
-  </script>
+  });
+});
+
+const mapImage = new Image();
+mapImage.src = 'map_recourses/map.png';
+mapImage.onload = () => {
+  const w = mapImage.width;
+  const h = mapImage.height;
+  bounds[1] = [h, w];
+  baseMap.setBounds(bounds);
+  satelliteMap.setBounds(bounds);
+  map.setMaxBounds(bounds);
+  map.fitBounds(bounds);
+
+  map.on('zoomend', () => {
+    const zoom = map.getZoom();
+    const scale = getScaleFromZoom(zoom);
+
+    markers.forEach(marker => {
+      const data = marker.metaData;
+      const color = tagColors[data.primaryTag] || 'gray';
+
+      if (data.icon && data.primaryTag) {
+        colorizeIcon(data.icon, color, scale, (tintedSrc) => {
+          const size = 34 * scale;
+          const icon = L.icon({
+            iconUrl: tintedSrc,
+            iconSize: [size, size],
+            iconAnchor: [size / 2, size / 2]
+          });
+          marker.setIcon(icon);
+        });
+      }
+    });
+  });
+
+  if (EDITOR_MODE) {
+    const toggle = document.getElementById('editor-toggle');
+    toggle.style.display = 'block';
+    let editorEnabled = false;
+    toggle.addEventListener('click', () => {
+      editorEnabled = !editorEnabled;
+      toggle.textContent = editorEnabled ? 'Disable Editor' : 'Enable Editor';
+      document.getElementById('map').style.cursor = editorEnabled ? 'crosshair' : 'grab';
+
+      if (editorEnabled) {
+        map.once('click', e => {
+          const x = Math.round(e.latlng.lng);
+          const y = Math.round(e.latlng.lat);
+          const json = {
+            name: "New location",
+            x: x,
+            y: y,
+            tags: ["Tag"],
+            primaryTag: "Tag",
+            description: "Description here.",
+            image: "map_recourses/images/image.jpg",
+            icon: "map_recourses/icons/icon.png"
+          };
+          console.log(JSON.stringify(json, null, 2));
+          alert('Marker data copied to console!');
+        });
+      }
+    });
+
+  }
+};
+
+document.getElementById('sidebar-close').addEventListener('click', () => {
+  document.getElementById('sidebar').classList.remove('active');
+});
+
+function showSidebar(location) {
+  document.getElementById('location-name').textContent = location.name;
+  const tags = document.getElementById('location-tags');
+  tags.innerHTML = '';
+  location.tags.forEach(tag => {
+    const span = document.createElement('span');
+    span.textContent = tag;
+    span.style.backgroundColor = tagColors[tag] || 'gray';
+    tags.appendChild(span);
+  });
+  document.getElementById('location-description').textContent = location.description;
+  document.getElementById('location-image').src = location.image;
+  document.getElementById('sidebar').classList.add('active');
+}
+
+document.getElementById('search-box').addEventListener('input', () => {
+  const query = document.getElementById('search-box').value.toLowerCase();
+  markers.forEach(marker => {
+    const b = marker.metaData;
+    const match =
+      b.name.toLowerCase().includes(query) ||
+      b.tags.some(t => t.toLowerCase().includes(query)) ||
+      (b.description && b.description.toLowerCase().includes(query));
+    marker[match ? 'addTo' : 'removeFrom'](map);
+  });
+});
+</script>
 </body>
 </html>
