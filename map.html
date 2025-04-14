@@ -195,7 +195,7 @@
   <div id="map-container">
   <input type="text" id="search-box" placeholder="Search locations..." />
   <div id="map"></div>
-  <div id="tag-filter"></div>
+  <!-- <div id="tag-filter"></div> -->
   <a href="/Paralake-V6-Development-Archive/archive.html" id="back-button" title="Back to archive">Back</a>
   <button id="editor-toggle" style="display: none;">Enable Editor</button>
   <div id="sidebar">
@@ -278,15 +278,15 @@ Promise.all([
   fetch('/map_recourses/tags.json').then(res => res.json())
 ]).then(([locations, tags]) => {
   tags.forEach(t => tagColors[t.name] = t.color);
-  const tagFilter = document.getElementById('tag-filter');
+  //const tagFilter = document.getElementById('tag-filter');
 
   tags.forEach(t => {
     const label = document.createElement('label');
     label.innerHTML = `<input type="checkbox" value="${t.name}" checked> ${t.name}`;
-    tagFilter.appendChild(label);
+    //tagFilter.appendChild(label);
   });
 
-  const checkboxes = tagFilter.querySelectorAll('input[type="checkbox"]');
+  //const checkboxes = tagFilter.querySelectorAll('input[type="checkbox"]');
   const scale = getScaleFromZoom(map.getZoom());
 
   locations.forEach(b => {
