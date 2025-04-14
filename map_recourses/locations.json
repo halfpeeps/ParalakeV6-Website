@@ -80,7 +80,7 @@
       "Vendor",
       "Bar"
     ],
-    "primaryTag": "Bar",
+    "primaryTag": "Vendor",
     "description": "Description here.",
     "image": "map_recourses/images/image.jpg",
     "icon": "map_recourses/icons/bar.png"
@@ -119,7 +119,8 @@
     "y": 2544,
     "tags": [
       "Public Services",
-      "Job"
+      "Job",
+      "Vendor"
     ],
     "primaryTag": "Public Services",
     "description": "Description here.",
