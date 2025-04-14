@@ -53,24 +53,28 @@
     }
 
     #sidebar {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 320px;
-      height: 100%;
-      background: var(--sidebar-bg);
-      border-left: 1px solid var(--border);
-      padding: 16px;
-      overflow-y: auto;
-      overflow-x: hidden;
-      display: none;
-      z-index: 1000;
-      box-sizing: border-box;
-    }
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    background: var(--sidebar-bg);
+    border-left: 1px solid var(--border);
+    padding: 16px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: translateX(100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+  }
 
-    #sidebar.active {
-      display: block;
-    }
+  #sidebar.active {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
 
     #sidebar h2 {
       margin: 0 0 10px 0;
@@ -235,8 +239,9 @@ function colorizeIcon(imgSrc, colorHex, scale = 1, callback) {
   const img = new Image();
   img.crossOrigin = "Anonymous";
   img.onload = function () {
+    const baseSize = 32 * scale;
+    const iconSize = Math.max(40, baseSize); // Enforce minimum size
     const padding = 12 * scale;
-    const iconSize = img.width * scale;
     const size = iconSize + padding * 2;
 
     const canvas = document.createElement("canvas");
@@ -247,15 +252,30 @@ function colorizeIcon(imgSrc, colorHex, scale = 1, callback) {
     const center = size / 2;
     const radius = iconSize / 2 + padding / 2;
 
+    // Colored halo
+    ctx.beginPath();
+    ctx.arc(center, center, radius + 6, 0, 2 * Math.PI);
+    ctx.fillStyle = colorHex + '55'; // transparent halo
+    ctx.fill();
+
+    // Drop shadow
+    ctx.shadowColor = 'rgba(0, 0, 0, 0.3)';
+    ctx.shadowBlur = 4;
+    ctx.shadowOffsetX = 1;
+    ctx.shadowOffsetY = 1;
+
+    // Icon background
     ctx.beginPath();
     ctx.arc(center, center, radius, 0, 2 * Math.PI);
     ctx.fillStyle = '#fff';
     ctx.fill();
 
+    // Border
     ctx.strokeStyle = '#000';
     ctx.lineWidth = 2 * scale;
     ctx.stroke();
 
+    // Colorize the icon
     const tempCanvas = document.createElement("canvas");
     tempCanvas.width = iconSize;
     tempCanvas.height = iconSize;
@@ -272,6 +292,7 @@ function colorizeIcon(imgSrc, colorHex, scale = 1, callback) {
   };
   img.src = imgSrc;
 }
+
 
 Promise.all([
   fetch('/map_recourses/locations.json').then(res => res.json()),
@@ -311,7 +332,7 @@ Promise.all([
   });
 
   function placeMarker(b, icon) {
-    const marker = L.marker([b.y, b.x], { icon }).addTo(map);
+    const marker = L.marker([b.y, b.x], { icon, title: b.name }).addTo(map);
     marker.metaTags = b.tags;
     marker.metaData = b;
     marker.on('click', () => showSidebar(b));
