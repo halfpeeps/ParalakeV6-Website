@@ -1,7 +1,4 @@
 [
-    { "name": "Hospital", "color": "#d94c4c" },
-    { "name": "Police Department", "color": "#466cc7" },
-    { "name": "Fire Department", "color": "#cc561f" },
     { "name": "Job", "color": "#bf870d" },
     { "name": "Vendor", "color": "#b63ebd" },
     { "name": "Public Services", "color": "#3269a8" },
@@ -16,10 +13,8 @@
     { "name": "Restaurant", "color": "#bf3b3b" },
     
     { "name": "Park", "color": "#0a8020" },
-    { "name": "Ocean", "color": "#4068ad" },
-    { "name": "Lake", "color": "#4068ad" },
-    { "name": "Pond", "color": "#4068ad" },
+    { "name": "Water", "color": "#4068ad" },
 
-    { "name": "Ownable", "color": "#545454" }
+    { "name": "Ownable", "color": "#190ee8" }
   ]
   

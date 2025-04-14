@@ -197,18 +197,23 @@
 </head>
 <body>
   <div id="map-container">
-  <input type="text" id="search-box" placeholder="Search locations..." />
-  <div id="map"></div>
-  <!-- <div id="tag-filter"></div> -->
-  <a href="/Paralake-V6-Development-Archive/archive.html" id="back-button" title="Back to archive">Back</a>
-  <button id="editor-toggle" style="display: none;">Enable Editor</button>
-  <div id="sidebar">
-    <button id="sidebar-close" title="Close sidebar">×</button>
-    <h2 id="location-name"></h2>
-    <div class="tags" id="location-tags"></div>
-    <p id="location-description"></p>
-    <img id="location-image" class="location-image" />
-  </div>
+    <input type="text" id="search-box" placeholder="Search locations..." />
+    <div id="map"></div>
+
+      <div id="tag-filter">
+        <strong style="display:block; margin-bottom: 6px;">Filter by Tag</strong>
+      </div>  
+
+      <a href="/Paralake-V6-Development-Archive/archive.html" id="back-button" title="Back to archive">Back</a>
+      <button id="editor-toggle" style="display: none;">Enable Editor</button>
+
+      <div id="sidebar">
+        <button id="sidebar-close" title="Close sidebar">×</button>
+        <h2 id="location-name"></h2>
+        <div class="tags" id="location-tags"></div>
+        <p id="location-description"></p>
+        <img id="location-image" class="location-image" />
+    </div>
 </div>
 
 <script>
@@ -240,7 +245,7 @@ function colorizeIcon(imgSrc, colorHex, scale = 1, callback) {
   img.crossOrigin = "Anonymous";
   img.onload = function () {
     const baseSize = 32 * scale;
-    const iconSize = Math.max(40, baseSize); // Enforce minimum size
+    const iconSize = Math.max(40, baseSize);
     const padding = 12 * scale;
     const size = iconSize + padding * 2;
 
@@ -255,7 +260,7 @@ function colorizeIcon(imgSrc, colorHex, scale = 1, callback) {
     // Colored halo
     ctx.beginPath();
     ctx.arc(center, center, radius + 6, 0, 2 * Math.PI);
-    ctx.fillStyle = colorHex + '55'; // transparent halo
+    ctx.fillStyle = colorHex + '55';
     ctx.fill();
 
     // Drop shadow
@@ -299,15 +304,39 @@ Promise.all([
   fetch('/map_recourses/tags.json').then(res => res.json())
 ]).then(([locations, tags]) => {
   tags.forEach(t => tagColors[t.name] = t.color);
-  //const tagFilter = document.getElementById('tag-filter');
+  const usedPrimaryTags = new Set(locations.map(loc => loc.primaryTag));
+  const tagFilter = document.getElementById('tag-filter');
+  const activeTags = new Set(); // Start empty; we’ll add used ones
 
   tags.forEach(t => {
+    if (!usedPrimaryTags.has(t.name)) return; // Skip unused tags
+
+    activeTags.add(t.name); // Add to activeTags
+
     const label = document.createElement('label');
-    label.innerHTML = `<input type="checkbox" value="${t.name}" checked> ${t.name}`;
-    //tagFilter.appendChild(label);
+    label.innerHTML = `
+      <input type="checkbox" value="${t.name}" checked>
+      ${t.name}
+    `;
+    const checkbox = label.querySelector('input');
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked) {
+        activeTags.add(t.name);
+      } else {
+        activeTags.delete(t.name);
+      }
+
+      // Update marker visibility based on primaryTag
+      markers.forEach(marker => {
+        const b = marker.metaData;
+        const isVisible = activeTags.has(b.primaryTag);
+        marker[isVisible ? 'addTo' : 'removeFrom'](map);
+      });
+    });
+    tagFilter.appendChild(label);
   });
 
-  //const checkboxes = tagFilter.querySelectorAll('input[type="checkbox"]');
+
   const scale = getScaleFromZoom(map.getZoom());
 
   locations.forEach(b => {
@@ -338,16 +367,6 @@ Promise.all([
     marker.on('click', () => showSidebar(b));
     markers.push(marker);
   }
-
-  checkboxes.forEach(cb => {
-    cb.addEventListener('change', () => {
-      const activeTags = Array.from(checkboxes).filter(c => c.checked).map(c => c.value);
-      markers.forEach(marker => {
-        const visible = marker.metaTags.some(tag => activeTags.includes(tag));
-        marker[visible ? 'addTo' : 'removeFrom'](map);
-      });
-    });
-  });
 });
 
 const mapImage = new Image();
