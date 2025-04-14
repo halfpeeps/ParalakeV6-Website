@@ -4,7 +4,8 @@
     "x": 751,
     "y": 3574,
     "tags": [
-      "Apartment"
+      "Apartment",
+      "Ownable"
     ],
     "primaryTag": "Apartment",
     "description": "Description here.",
@@ -18,7 +19,8 @@
     "y": 2758,
     "tags": [
       "Job",
-      "Vendor"
+      "Vendor",
+      "Public Services"
     ],
     "primaryTag": "Job",
     "description": "Description here.",
@@ -45,7 +47,8 @@
     "y": 3021,
     "tags": [
       "Police Department",
-      "Job"
+      "Job",
+      "Public Services"
     ],
     "primaryTag": "Police Department",
     "description": "Description here.",
@@ -60,6 +63,7 @@
     "tags": [
       "Fire Department",
       "Job",
+      "Public Services",
       "Vendor"
     ],
     "primaryTag": "Fire Department",
@@ -89,12 +93,244 @@
     "tags": [
       "Hospital",
       "Job",
+      "Public Services",
       "Vendor"
     ],
     "primaryTag": "Hospital",
     "description": "Description here.",
     "image": "map_recourses/images/image.jpg",
     "icon": "map_recourses/icons/hospital.png"
+  },
+  {
+    "name": "City Park",
+    "x": 921,
+    "y": 2949,
+    "tags": [
+      "Park"
+    ],
+    "primaryTag": "Park",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/park.png"
+  },
+  {
+    "name": "City Hall",
+    "x": 1163,
+    "y": 2544,
+    "tags": [
+      "Public Services",
+      "Job"
+    ],
+    "primaryTag": "Public Services",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/cityhall.png"
+  },
+  {
+    "name": "XQ Bank",
+    "x": 1103,
+    "y": 2259,
+    "tags": [
+      "Vendor"
+    ],
+    "primaryTag": "Vendor",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/bank.png"
+  },
+  {
+    "name": "Paralake News",
+    "x": 876,
+    "y": 2221,
+    "tags": [
+      "Vendor"
+    ],
+    "primaryTag": "Vendor",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/pln.png"
+  },
+  {
+    "name": "City Parking Garage",
+    "x": 1513,
+    "y": 2235,
+    "tags": [
+      "Parking",
+      "Vendor",
+      "Public Services"
+    ],
+    "primaryTag": "Parking",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/garage.png"
+  },
+  {
+    "name": "Roast Rogue",
+    "x": 1435,
+    "y": 2623,
+    "tags": [
+      "Restaurant",
+      "Shop",
+      "Vendor"
+    ],
+    "primaryTag": "Restaurant",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/food.png"
+  },
+  {
+    "name": "Ol' Stool",
+    "x": 1535,
+    "y": 2622,
+    "tags": [
+      "Vendor",
+      "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/vendor.png"
+  },
+  {
+    "name": "Hammer Plus",
+    "x": 1651,
+    "y": 2623,
+    "tags": [
+      "Vendor",
+      "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/vendor.png"
+  },
+  {
+    "name": "Safety First",
+    "x": 1741,
+    "y": 2632,
+    "tags": [
+      "Vendor",
+      "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/vendor.png"
+  },
+  {
+    "name": "Poisson",
+    "x": 1811,
+    "y": 2631,
+    "tags": [
+      "Vendor",
+      "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/vendor.png"
+  },
+  {
+    "name": "BOLLI",
+    "x": 1472,
+    "y": 2464,
+    "tags": [
+      "Vendor",
+      "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/vendor.png"
+  },
+  {
+    "name": "Hotshot: Gunrange",
+    "x": 1582,
+    "y": 2471,
+    "tags": [
+      "Vendor",
+      "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/vendor.png"
+  },
+  {
+    "name": "Fredy's Bakery",
+    "x": 1745,
+    "y": 2471,
+    "tags": [
+      "Restaurant",
+      "Vendor"
+    ],
+    "primaryTag": "Restaurant",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/food.png"
+  },
+  {
+    "name": "DIGIPEEPS",
+    "x": 1809,
+    "y": 2468,
+    "tags": [
+      "Vendor",
+      "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/vendor.png"
+  },
+  {
+    "name": "Bank Plaza",
+    "x": 925,
+    "y": 2383,
+    "tags": [
+      "Park"
+    ],
+    "primaryTag": "Park",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/park.png"
+  },
+  {
+    "name": "Bank Plaza Public Toilets",
+    "x": 906,
+    "y": 2484,
+    "tags": [
+      "Public Services"
+    ],
+    "primaryTag": "Public Services",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/wc.png"
+  },
+  {
+    "name": "Hungriges",
+    "x": 1411,
+    "y": 2038,
+    "tags": [
+      "Restaurant",
+      "Ownable"
+    ],
+    "primaryTag": "Restaurant",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/food.png"
+  },
+  {
+    "name": "Office Complex",
+    "x": 1767,
+    "y": 2208,
+    "tags": [
+      "Office",
+      "Ownable"
+    ],
+    "primaryTag": "Office",
+    "description": "Description here.",
+    "image": "map_recourses/images/image.jpg",
+    "icon": "map_recourses/icons/highrise_ownable.png"
   }
 ]
   
