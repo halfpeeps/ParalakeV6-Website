@@ -1,4 +1,7 @@
 [
+    { "name": "Hospital", "color": "#d94c4c" },
+    { "name": "Police Department", "color": "#466cc7" },
+    { "name": "Fire Department", "color": "#cc561f" },
     { "name": "Job", "color": "#bf870d" },
     { "name": "Vendor", "color": "#b63ebd" },
     { "name": "Public Services", "color": "#3269a8" },
