@@ -1,8 +1,8 @@
 :root {
-    --background: white;
+    --background: #121212;
     --sidebar-bg: #2c2c2c;
     --text: #f0f0f0;
-    --accent: #007acc;
+    --accent: #f3b447;
     --border: #444;
     --tag-bg: #444;
   }
