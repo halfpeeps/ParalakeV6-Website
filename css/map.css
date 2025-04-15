@@ -11,7 +11,7 @@
     margin: 0;
     height: 100%;
     background: var(--background);
-    font-family: "Segoe UI", sans-serif;
+    font-family: 'Funnel Sans', sans-serif;
     color: var(--text);
     overflow: hidden;
   }
@@ -69,6 +69,7 @@
 
   #sidebar h2 {
     margin: 0 0 10px 0;
+    font-family: 'Jost', serif;
     font-size: 1.4em;
     color: var(--accent);
   }
