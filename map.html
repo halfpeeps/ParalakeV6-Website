@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralake V6 Interactive Map  |  Paralake V6 Development Archive</title>
+    <link rel="icon" type="image/x-icon" href="images_excluded/archive_icon_mono.png">
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Jost:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/map.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  </head>
+  <body>
+    <div id="map-container">
+      <input type="text" id="search-box" placeholder="Search locations..." />
+      <div id="map"></div>
+
+        <div id="tag-filter">
+          <strong style="display:block; margin-bottom: 6px;">Filter by Tag</strong>
+        </div>
+
+        <button id="tag-directory-toggle">📂 Open Directory</button>
+        <div id="tag-directory">
+          <div id="tag-directory-content"></div>
+        </div>
+
+        <a href="archive.html" id="back-button" title="Back to archive">Back</a>
+        <button id="editor-toggle" style="display: none;">Enable Editor</button>
+
+        <div id="sidebar">
+          <button id="sidebar-close" title="Close sidebar">×</button>
+          <h2 id="location-name"></h2>
+          <div class="tags" id="location-tags"></div>
+          <p id="location-description"></p>
+          <img id="location-image" class="location-image" />
+      </div>
+    </div>
+
+    <script src="scripts/map.js"></script>
+
+  </body>
+</html>

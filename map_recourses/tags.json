@@ -1,0 +1,23 @@
+[
+    { "name": "Hospital", "color": "#d94c4c" },
+    { "name": "Police Department", "color": "#466cc7" },
+    { "name": "Fire Department", "color": "#cc561f" },
+    { "name": "Job", "color": "#bf870d" },
+    { "name": "Vendor", "color": "#b63ebd" },
+    { "name": "Public Services", "color": "#3269a8" },
+
+    { "name": "Parking", "color": "#3269a8" },
+    
+    { "name": "Apartment", "color": "#51a4c4" },
+    { "name": "House", "color": "#e87c58" },
+    { "name": "Office", "color": "#5851c4" },
+    { "name": "Shop", "color": "#e8bf4f" },
+    { "name": "Industrial", "color": "#6b3e25" },
+    { "name": "Restaurant", "color": "#bf3b3b" },
+    
+    { "name": "Park", "color": "#0a8020" },
+    { "name": "Water", "color": "#4068ad" },
+
+    { "name": "Ownable", "color": "#190ee8" }
+  ]
+  
