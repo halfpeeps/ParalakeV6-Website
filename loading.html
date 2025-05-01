@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Loading</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Loading...</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
       overflow: hidden;
-    }
-
-    body {
-      background: black;
+      color: white;
     }
 
     .background {
@@ -22,7 +20,7 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background-image: url('images_excluded/devserver_loading.png');
+      background-image: url('images_excluded/devserver_loading02.png');
       background-size: cover;
       background-position: center;
       animation: hueRotate 20s linear infinite;
@@ -31,16 +29,32 @@
     }
 
     @keyframes hueRotate {
-      from {
-        filter: hue-rotate(0deg);
-      }
-      to {
-        filter: hue-rotate(360deg);
-      }
+      from { filter: hue-rotate(0deg); }
+      to { filter: hue-rotate(360deg); }
+    }
+
+    .player-name {
+      font-family: Jost, sans-serif;
+      font-weight: 800;
+      font-size: 36;
+      position: absolute;
+      bottom: 60px;
+      left: 40px;
+      font-size: 1.6em;
     }
   </style>
 </head>
 <body>
   <div class="background"></div>
+  <div class="player-name" id="steamName">Hello.</div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const playerName = params.get("playername");
+
+    if (playerName) {
+      document.getElementById("steamName").textContent = `Hello, ${decodeURIComponent(playerName)}`;
+    }
+  </script>
 </body>
 </html>
