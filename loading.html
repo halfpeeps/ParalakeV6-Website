@@ -11,7 +11,7 @@
       padding: 0;
       height: 100%;
       overflow: hidden;
-      color: white;
+      color: rgb(255, 255, 255);
     }
 
     .background {
@@ -32,29 +32,9 @@
       from { filter: hue-rotate(0deg); }
       to { filter: hue-rotate(360deg); }
     }
-
-    .player-name {
-      font-family: Jost, sans-serif;
-      font-weight: 800;
-      font-size: 36;
-      position: absolute;
-      bottom: 60px;
-      left: 40px;
-      font-size: 1.6em;
-    }
   </style>
 </head>
 <body>
   <div class="background"></div>
-  <div class="player-name" id="steamName">Hello.</div>
-
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const playerName = params.get("playername");
-
-    if (playerName) {
-      document.getElementById("steamName").textContent = `Hello, ${decodeURIComponent(playerName)}`;
-    }
-  </script>
 </body>
 </html>
