@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loading</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      background: black;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('images_excluded/devserver_loading.png');
+      background-size: cover;
+      background-position: center;
+      animation: hueRotate 20s linear infinite;
+      filter: hue-rotate(0deg);
+      z-index: -1;
+    }
+
+    @keyframes hueRotate {
+      from {
+        filter: hue-rotate(0deg);
+      }
+      to {
+        filter: hue-rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+</body>
+</html>
