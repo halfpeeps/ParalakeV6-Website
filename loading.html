@@ -13,7 +13,7 @@
       overflow: hidden;
       font-family: 'Jost', sans-serif;
       font-weight: bold 700;
-      background: black;
+      background: rgb(42, 42, 42);
     }
 
     .background-wrapper {
@@ -58,60 +58,24 @@
     }
 
     .hue-animation {
-      animation: hueRotate 60s linear infinite;
+      animation: hueRotate 30s linear infinite;
     }
-
-    .namebox {
-    opacity: 0.64;
-    position: fixed;
-    bottom: 0px;
-    left: 30px;
-    width: 324px;
-    height: 160px;
-    background: url('images_excluded/loading/namebox.png') no-repeat center center;
-    background-size: contain;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    padding: 20px 30px;
-    pointer-events: none;
-    z-index: 1;
-  }
-
-  .namebox #welcomeMessage {
-    color: white;
-    font-size: 34px;
-    font-family: 'Jost', sans-serif;
-    position: relative;
-    left: -10px;
-    top: -45px;
-    opacity: 1;
-  }
-
-
-
-
   </style>
 </head>
+
 <body>
   <div class="background-wrapper hue-animation">
     <div class="background visible" id="bg1"></div>
     <div class="background" id="bg2"></div>
   </div>  
 
-  <div class="namebox">
-    <span id="welcomeMessage">Hello Player</span>
-  </div>
-  
-
   <script>
-    //image stuff
     window.addEventListener('DOMContentLoaded', () => {
       const images = [
-      { src: 'images_excluded/loading/devserver_loading_blank.png', duration: 2000 },
         { src: 'images_excluded/loading/devserver_loading01.png', duration: 10000 },
         { src: 'images_excluded/loading/devserver_loading_blank.png', duration: 2000 },
-        { src: 'images_excluded/loading/evserver_loading02.png', duration: 20000 }
+        { src: 'images_excluded/loading/devserver_loading02.png', duration: 20000 },
+        { src: 'images_excluded/loading/devserver_loading_blank.png', duration: 2000 }
       ];
 
       const bg1 = document.getElementById('bg1');
@@ -146,17 +110,6 @@
       }
 
       setTimeout(showNextImage, images[0].duration);
-
-      //player name
-      const params = new URLSearchParams(window.location.search);
-      let playerName = params.get('playername') || 'Player';
-      playerName = decodeURIComponent(playerName);
-
-      if (playerName.length > 9) {
-        playerName = playerName.substring(0, 9);
-      }
-
-      document.getElementById('welcomeMessage').textContent = `Hello ${playerName}`;
     });
   </script>
 </body>
