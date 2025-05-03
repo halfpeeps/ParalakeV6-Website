@@ -79,7 +79,7 @@
   <div class="background"></div>
 
   <div class="tip-box">
-    <div class="tip-title" id="tip-title">-</div>
+    <div class="tip-title" id="tip-title">GAMEPLAY TIP</div>
     <div class="tip-text" id="tip-text">Loading tips...</div>
   </div>  
   
@@ -205,8 +205,8 @@
     let currentTip = 0;
   
     function showNextTip() {
-      // tipText.style.opacity = 0;
-      tipTitle.style.opacity = 0;
+      tipText.style.opacity = 0;
+      // tipTitle.style.opacity = 0;
   
       setTimeout(() => {
         tipTitle.textContent = hints[currentTip].title;
