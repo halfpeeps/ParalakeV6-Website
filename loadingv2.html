@@ -70,6 +70,42 @@
       transition: opacity 1s ease-in-out;
     }
 
+    .loading-status-box {
+      position: fixed;
+      top: 2%;
+      right: 1%;
+      z-index: 10;
+      text-align: right;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    #status-text {
+      font-size: clamp(12px, 1.5vw, 16px);
+      margin-bottom: 4px;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    .loading-bar-bg {
+      width: 200px;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      overflow: hidden;
+      margin-left: auto;
+    }
+
+    #loading-bar-fill {
+      width: 0%;
+      height: 100%;
+      background: white;
+      opacity: 0.8;
+      transition: width 0.3s ease;
+    }
+
+
     .overlay-top, .overlay-bottom {
       position: fixed;
       left: 0;
@@ -195,6 +231,13 @@
     <div class="title-banner shimmer" id="title-banner">PERPHEADS.COM</div>
   </div>
 
+  <div class="loading-status-box" id="loading-status-box">
+    <div id="status-text">Connecting...</div>
+    <div class="loading-bar-bg">
+      <div id="loading-bar-fill"></div>
+    </div>
+  </div>
+  
   <div class="tip-box">
     <div class="tip-title" id="tip-title">GAMEPLAY TIP</div>
     <div class="tip-text" id="tip-text">Loading tips...</div>
@@ -212,6 +255,26 @@
         [array[i], array[j]] = [array[j], array[i]];
       }
     }
+
+    let totalFiles = 0;
+
+    window.SetStatusChanged = function(status) {
+      document.getElementById('status-text').textContent = status;
+    };
+
+    window.SetFilesTotal = function(total) {
+      totalFiles = total;
+    };
+
+    window.SetFilesNeeded = function(needed) {
+      const progress = totalFiles > 0 ? ((totalFiles - needed) / totalFiles) * 100 : 0;
+      document.getElementById('status-text').textContent = `Downloading files... (${totalFiles - needed}/${totalFiles})`;
+      document.getElementById('loading-bar-fill').style.width = `${progress}%`;
+    };
+
+    window.GameDetails = function(servername, url, mapname, maxplayers, steamid, gamemode) {
+      console.log(`Server: ${servername}, Map: ${mapname}, Gamemode: ${gamemode}`);
+    };
 
     //------------------------------images---------------------------------
     const imageData = [
