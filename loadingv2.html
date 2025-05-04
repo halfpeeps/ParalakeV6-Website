@@ -28,6 +28,7 @@
       animation: hueRotate 20s linear infinite;
       filter: hue-rotate(0deg);
       z-index: 0;
+      transition: opacity 1s ease-in-out;
     }
 
     @keyframes hueRotate {
@@ -52,21 +53,21 @@
 
     .background-rotate.active {
         opacity: 1;
-        transition: opacity 800ms ease-in-out;
+        transition: opacity 1s ease-in-out;
     }
 
     .author {
         position: fixed;
         text-align: center;
         font-family: 'Roboto', sans-serif;
-        font-weight: 800;
+        font-weight: 600;
         bottom: 8px;
         left: 8px;
         color: white;
-        opacity: .2;
-        font-size: 1rem;
+        opacity: 0;
+        font-size: 22px;
         z-index: 10;
-        transition: opacity 800ms ease-in-out;
+        transition: opacity 1s ease-in-out;
     }
 
     .overlay-top, .overlay-bottom {
@@ -90,9 +91,10 @@
     
     .title-wrapper {
         position: absolute;
-        top: 20px;
+        top: 27.5px;
+        left: 100px;
         width: 100%;
-        text-align: center;
+        text-align: left;
         z-index: 2;
         pointer-events: none;
     }
@@ -100,12 +102,10 @@
     .title-banner {
         display: inline-block;
         font-family: 'Roboto', sans-serif;
-        font-size: 64px;
+        font-size: 48px;
         font-weight: 900;
         color: rgb(255, 255, 255);
-        letter-spacing: 1em;
-        margin-left: 1em;
-        opacity: 0;
+        opacity: .5;
         transition: opacity 1.5s ease-in-out;
     }
 
@@ -128,31 +128,20 @@
         }
     }
 
-    .title-banner.sub {
-        display: inline-block;
-        font-family: 'Roboto', sans-serif;
-        font-size: 24px;
-        font-weight: 900;
-        color: white;
-        letter-spacing: 0.5em;
-        margin-left: 1em;
-        opacity: 0;
-        transition: opacity 2s ease-in-out;
-    }
-
     .center-logo {
         position: absolute;
         top: 6%;
         left: 3%;
         transform: translate(-50%, -50%);
         z-index: 10;
+        opacity: 0.2;
+        transition: opacity 1s ease-in-out;
     }
 
     .center-logo svg {
         width: 7vh;
         height: auto;
         mix-blend-mode: hue;
-        opacity: 0.2;
         pointer-events: none;
     }
 
@@ -178,20 +167,20 @@
         font-weight: 900;
         margin-bottom: 5px;
         font-size: 24px;
-        opacity: .8;
+        opacity: 0;
         transition: opacity 0.5s ease;
     }
 
     .tip-text {
         font-family: 'Funnel Sans', sans-serif;
         font-size: 22px;
-        opacity: .6;
+        opacity: 0;
         transition: opacity 0.5s ease;
     }
   </style>
 </head>
 <body>
-    <div class="background"></div>
+    <div class="background" id="background"></div>
 
     <div id="BG1" class="background-rotate"></div>
     <div id="BG2" class="background-rotate"></div>
@@ -201,10 +190,9 @@
     
     <div class="title-wrapper">
         <div class="title-banner shimmer" id="title-banner">PERPHEADS.COM</div><br>
-        <div class="title-banner sub" id="title-banner-sub">Serious Roleplay Server</div>
     </div>
     
-    <div class="center-logo">
+    <div class="center-logo" id="logo">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <rect x="10" y="10" width="180" height="180" fill="none" stroke="white" stroke-width="8" stroke-dasharray="150 570" stroke-dashoffset="0">
             <animate attributeName="stroke-dashoffset" from="0" to="720" dur="3s" repeatCount="indefinite" />
@@ -221,7 +209,9 @@
 
   <script>
     const titleBanner = document.getElementById('title-banner');
-    const titleSub = document.getElementById('title-banner-sub');
+    const mainBackground = document.getElementById('background');
+    const authorText = document.getElementById('author');
+    const logo = document.getElementById('logo');
 
     function shuffle(array) {
       for (let i = array.length - 1; i > 0; i--) {
@@ -453,13 +443,16 @@
       showImage(current);
       setInterval(nextImage, timeBetweenImages);
 
-      tipTitle.style.opacity = 1
-      titleBanner.style.opacity = 1 
-      titleSub.style.opacity = 1
+      showNextTip();
+      setInterval(showNextTip, 15000);
+
+      tipTitle.style.opacity = .8;
+      mainBackground.style.opacity = 0;
+      authorText.style.opacity = .3;
+      titleBanner.style.opacity= .6;
+      logo.style.opacity = .3;
     }, 5000);
 
-    showNextTip();
-    setInterval(showNextTip, 15000);
   </script>
 </body>
 </html>
