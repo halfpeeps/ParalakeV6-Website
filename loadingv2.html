@@ -32,180 +32,173 @@
     }
 
     @keyframes hueRotate {
-        from {
+      from {
         filter: hue-rotate(360deg);
-        }
-        to {
+      }
+      to {
         filter: hue-rotate(0deg);
-        }
+      }
     }
 
     .background-rotate {
-        position: fixed;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        background-size: cover;
-        background-position: center;
-        opacity: 0;
-        transition: opacity 2s ease-in-out;
-        pointer-events: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+      pointer-events: none;
     }
 
     .background-rotate.active {
-        opacity: 1;
-        transition: opacity 1s ease-in-out;
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
     }
 
     .author {
-        position: fixed;
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 600;
-        bottom: 8px;
-        left: 8px;
-        color: white;
-        opacity: 0;
-        font-size: 22px;
-        z-index: 10;
-        transition: opacity 1s ease-in-out;
+      position: fixed;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+      bottom: 8px;
+      left: 8px;
+      color: white;
+      opacity: 0;
+      font-size: 22px;
+      z-index: 10;
+      transition: opacity 1s ease-in-out;
     }
 
     .overlay-top, .overlay-bottom {
-        position: fixed;
-        left: 0;
-        width: 100%;
-        height: 200px;
-        pointer-events: none;
-        z-index: 2;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      height: 200px;
+      pointer-events: none;
+      z-index: 2;
     }
 
     .overlay-top {
-        top: 0;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+      top: 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
     }
 
     .overlay-bottom {
-        bottom: 0;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-    }
-    
-    .title-wrapper {
-        position: absolute;
-        top: 3.6%;
-        left: 5%;
-        width: 100%;
-        text-align: left;
-        z-index: 2;
-        pointer-events: none;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     }
 
-    .title-banner {
-        display: inline-block;
-        font-family: 'Roboto', sans-serif;
-        font-size: 48px;
-        font-weight: 900;
-        color: rgb(255, 255, 255);
-        opacity: .5;
-        transition: opacity 1.5s ease-in-out;
-    }
-
-    .title-banner.shimmer {
-        position: relative;
-        background: linear-gradient(120deg, #ffffff 20%, #e0e0e07a 40%, #ffffff 60%);
-        background-size: 200% auto;
-        background-position: -100% center;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: shimmerText 5s linear infinite;
-    }
-
-    @keyframes shimmerText {
-        0% {
-        background-position: 200% center;
-        }
-        100% {
-        background-position: -200% center;
-        }
+    .title-container {
+      position: fixed;
+      top: 2%;
+      left: 1%;
+      display: flex;
+      align-items: center;
+      z-index: 10;
+      pointer-events: none;
     }
 
     .center-logo {
-        position: absolute;
-        top: 6%;
-        left: 3%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
-        opacity: 0.2;
-        transition: opacity 1s ease-in-out;
+      opacity: 0.2;
+      transition: opacity 1s ease-in-out;
     }
 
     .center-logo svg {
-        width: 7vh;
-        height: auto;
-        mix-blend-mode: hue;
-        pointer-events: none;
+      width: 7vh;
+      height: auto;
+      mix-blend-mode: hue;
+      pointer-events: none;
+    }
+
+    .title-banner {
+      font-family: 'Roboto', sans-serif;
+      font-size: clamp(24px, 4vw, 44px);
+      padding-bottom: 1px;
+      font-weight: 900;
+      color: rgb(255, 255, 255);
+      opacity: 0.5;
+      transition: opacity 1.5s ease-in-out;
+      white-space: nowrap;
+    }
+
+    .title-banner.shimmer {
+      position: relative;
+      background: linear-gradient(120deg, #ffffff 20%, #e0e0e07a 40%, #ffffff 60%);
+      background-size: 200% auto;
+      background-position: -100% center;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmerText 5s linear infinite;
+    }
+
+    @keyframes shimmerText {
+      0% {
+        background-position: 200% center;
+      }
+      100% {
+        background-position: -200% center;
+      }
     }
 
     .tip-box {
-        position: absolute;
-        bottom: 40px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 15px 20px;
-        border-radius: 12px;
-        color: white;
-        font-family: sans-serif;
-        text-align: center;
-        width: 90%;
-        max-width: 90%;
-        word-wrap: break-word;
-        transition: opacity 0.5s ease;
-        z-index: 2;
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 15px 20px;
+      border-radius: 12px;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      width: 90%;
+      max-width: 90%;
+      word-wrap: break-word;
+      transition: opacity 0.5s ease;
+      z-index: 2;
     }
 
     .tip-title {
-        font-family: 'Roboto', serif;
-        font-weight: 900;
-        margin-bottom: 5px;
-        font-size: 24px;
-        opacity: 0;
-        transition: opacity 0.5s ease;
+      font-family: 'Roboto', serif;
+      font-weight: 900;
+      margin-bottom: 5px;
+      font-size: 24px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
     }
 
     .tip-text {
-        font-family: 'Funnel Sans', sans-serif;
-        font-size: 22px;
-        opacity: 0;
-        transition: opacity 0.5s ease;
+      font-family: 'Funnel Sans', sans-serif;
+      font-size: 22px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
     }
   </style>
 </head>
 <body>
-    <div class="background" id="background"></div>
+  <div class="background" id="background"></div>
+  <div id="BG1" class="background-rotate"></div>
+  <div id="BG2" class="background-rotate"></div>
+  <div class="author" id="author"></div>
+  <div class="overlay-top"></div>
+  <div class="overlay-bottom"></div>
 
-    <div id="BG1" class="background-rotate"></div>
-    <div id="BG2" class="background-rotate"></div>
-    <div class="author" id="author"></div>
-    <div class="overlay-top"></div>
-    <div class="overlay-bottom"></div>
-    
-    <div class="title-wrapper">
-        <div class="title-banner shimmer" id="title-banner">PERPHEADS.COM</div><br>
-    </div>
-    
+  <div class="title-container">
     <div class="center-logo" id="logo">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="10" width="180" height="180" fill="none" stroke="white" stroke-width="8" stroke-dasharray="150 570" stroke-dashoffset="0">
-            <animate attributeName="stroke-dashoffset" from="0" to="720" dur="3s" repeatCount="indefinite" />
-            </rect>
-            <image href="images_excluded/loading/phlogo.png" x="-10" y="-10" width="220" height="220" preserveAspectRatio="xMidYMid meet" />
-        </svg>
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="10" width="180" height="180" fill="none" stroke="white" stroke-width="8" stroke-dasharray="150 570" stroke-dashoffset="0">
+          <animate attributeName="stroke-dashoffset" from="0" to="720" dur="3s" repeatCount="indefinite" />
+        </rect>
+        <image href="images_excluded/loading/phlogo.png" x="-10" y="-10" width="220" height="220" preserveAspectRatio="xMidYMid meet" />
+      </svg>
     </div>
-    
-    <div class="tip-box">
-        <div class="tip-title" id="tip-title">GAMEPLAY TIP</div>
-        <div class="tip-text" id="tip-text">Loading tips...</div>
-    </div>
+    <div class="title-banner shimmer" id="title-banner">PERPHEADS.COM</div>
+  </div>
 
+  <div class="tip-box">
+    <div class="tip-title" id="tip-title">GAMEPLAY TIP</div>
+    <div class="tip-text" id="tip-text">Loading tips...</div>
+  </div>
 
   <script>
     const titleBanner = document.getElementById('title-banner');
