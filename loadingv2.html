@@ -446,15 +446,12 @@
       }, 500);
     }
 
-    //delay
-    setTimeout(() => {
-        showImage(current);
-        setInterval(nextImage, timeBetweenImages);
+      showImage(current);
+      setInterval(nextImage, timeBetweenImages);
 
-        tipTitle.style.opacity = 1
-        titleBanner.style.opacity = 1
-        titleSub.style.opacity = 1
-    }, 10000);
+      tipTitle.style.opacity = 1
+      titleBanner.style.opacity = 1
+      titleSub.style.opacity = 1
 
     showNextTip();
     setInterval(showNextTip, 15000);
