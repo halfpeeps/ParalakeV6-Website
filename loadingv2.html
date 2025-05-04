@@ -25,17 +25,17 @@
       background-image: url('images_excluded/loading/devserver_loading01.png');
       background-size: cover;
       background-position: center;
-      animation: hueRotate 10s linear infinite;
+      animation: hueRotate 20s linear infinite;
       filter: hue-rotate(0deg);
       z-index: 0;
     }
 
     @keyframes hueRotate {
         from {
-        filter: hue-rotate(0deg);
+        filter: hue-rotate(360deg);
         }
         to {
-        filter: hue-rotate(360deg);
+        filter: hue-rotate(0deg);
         }
     }
 
@@ -46,7 +46,7 @@
         background-size: cover;
         background-position: center;
         opacity: 0;
-        transition: opacity 800ms ease-in-out;
+        transition: opacity 2s ease-in-out;
         pointer-events: none;
     }
 
@@ -446,12 +446,17 @@
       }, 500);
     }
 
+      // showImage(current);
+      // setInterval(nextImage, timeBetweenImages);
+
+    setTimeout(() => {
       showImage(current);
       setInterval(nextImage, timeBetweenImages);
 
       tipTitle.style.opacity = 1
-      titleBanner.style.opacity = 1
+      titleBanner.style.opacity = 1 
       titleSub.style.opacity = 1
+    }, 5000);
 
     showNextTip();
     setInterval(showNextTip, 15000);
