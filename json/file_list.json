@@ -861,5 +861,79 @@
             "filename": "20250325231729_1.jpg",
             "description": ""
         }
+    ],
+    "08Shop-Brands": [
+        {
+            "filename": "Bank.png",
+            "description": ""
+        },
+        {
+            "filename": "bank_sign_decal.png",
+            "description": ""
+        },
+        {
+            "filename": "bazaar_logo.png",
+            "description": ""
+        },
+        {
+            "filename": "digipeeps_dots.png",
+            "description": ""
+        },
+        {
+            "filename": "f.png",
+            "description": ""
+        },
+        {
+            "filename": "fish_logo.png",
+            "description": ""
+        },
+        {
+            "filename": "fredys_overlay01.png",
+            "description": ""
+        },
+        {
+            "filename": "fredys_sign02.png",
+            "description": ""
+        },
+        {
+            "filename": "gun_banner.png",
+            "description": ""
+        },
+        {
+            "filename": "gun_logo.png",
+            "description": ""
+        },
+        {
+            "filename": "hardware_sign.png",
+            "description": ""
+        },
+        {
+            "filename": "paralegalgroup.png",
+            "description": ""
+        },
+        {
+            "filename": "peepslogo.png",
+            "description": ""
+        },
+        {
+            "filename": "safety_poster_old.png",
+            "description": ""
+        },
+        {
+            "filename": "sign223.png",
+            "description": ""
+        },
+        {
+            "filename": "sign_grabngo.png",
+            "description": ""
+        },
+        {
+            "filename": "tiny.png",
+            "description": ""
+        },
+        {
+            "filename": "xq_logo_new.png",
+            "description": ""
+        }
     ]
 }
