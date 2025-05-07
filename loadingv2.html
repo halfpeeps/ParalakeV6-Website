@@ -230,13 +230,6 @@
     </div>
     <div class="title-banner shimmer" id="title-banner">PERPHEADS.COM</div>
   </div>
-
-  <div class="loading-status-box" id="loading-status-box">
-    <div id="status-text">Connecting...</div>
-    <div class="loading-bar-bg">
-      <div id="loading-bar-fill"></div>
-    </div>
-  </div>
   
   <div class="tip-box">
     <div class="tip-title" id="tip-title">GAMEPLAY TIP</div>
@@ -256,55 +249,38 @@
       }
     }
 
-    let totalFiles = 0;
+    // let totalFiles = 0;
 
-    window.SetStatusChanged = function(status) {
-      document.getElementById('status-text').textContent = status;
-    };
+    // window.SetStatusChanged = function(status) {
+    //   document.getElementById('status-text').textContent = status;
+    // };
 
-    window.SetFilesTotal = function(total) {
-      totalFiles = total;
-    };
+    // window.SetFilesTotal = function(total) {
+    //   totalFiles = total;
+    // };
 
-    window.SetFilesNeeded = function(needed) {
-      const progress = totalFiles > 0 ? ((totalFiles - needed) / totalFiles) * 100 : 0;
-      document.getElementById('status-text').textContent = `Downloading files... (${totalFiles - needed}/${totalFiles})`;
-      document.getElementById('loading-bar-fill').style.width = `${progress}%`;
-    };
+    // window.SetFilesNeeded = function(needed) {
+    //   const progress = totalFiles > 0 ? ((totalFiles - needed) / totalFiles) * 100 : 0;
+    //   document.getElementById('status-text').textContent = `Downloading files... (${totalFiles - needed}/${totalFiles})`;
+    //   document.getElementById('loading-bar-fill').style.width = `${progress}%`;
+    // };
 
-    window.GameDetails = function(servername, url, mapname, maxplayers, steamid, gamemode) {
-      console.log(`Server: ${servername}, Map: ${mapname}, Gamemode: ${gamemode}`);
-    };
+    // window.GameDetails = function(servername, url, mapname, maxplayers, steamid, gamemode) {
+    //   console.log(`Server: ${servername}, Map: ${mapname}, Gamemode: ${gamemode}`);
+    // };
 
     //------------------------------images---------------------------------
     const imageData = [
       { name: "race.jpg", author: "Super_" },
-    //   { name: "gunsmith.jpg", author: "Super_" },
-    //   { name: "illegal-operations.jpg", author: "Super_" },
-    //   { name: "intersection.jpg", author: "Super_" },
       { name: "night.jpg", author: "Super_" },
       { name: "pd-sunset.jpg", author: "Super_" },
       { name: "physgun.jpg", author: "Super_" },
-    //   { name: "shootout.jpg", author: "Super_" },
-    //   { name: "torture.jpg", author: "Lewis088" },
       { name: "clay-pigeon.jpg", author: "Rogue" },
-    //   { name: "drugs.jpg", author: "Rogue" },
-    //   { name: "road-spikes.jpg", author: "Rogue" },
-    //   { name: "roadcrew.jpg", author: "Rogue" },
-    //   { name: "car-dealer.jpg", author: "Rogue" },
-    //   { name: "medic.jpg", author: "Rogue" },
-    //   { name: "mayor-assasination.jpg", author: "Rogue" },
-    //   { name: "mcuwes.jpg", author: "Hayden" },
-    //   { name: "bank-robbery.jpg", author: "A1L" },
-    //   { name: "road-crew.jpg", author: "A1L" },
       { name: "inspect.jpg", author: "Super_" },
       { name: "roof.jpg", author: "Super_" },
       { name: "tfu-sniper.jpg", author: "Super_" },
       { name: "tfu-sniper-night.jpg", author: "Super_" },
-    //   { name: "candy-shop.jpg", author: "Ellie" },
       { name: "dusk.jpg", author: "Super_" },
-    //   { name: "fire.jpg", author: "Treeman" },
-    //   { name: "roadcrew2.jpg", author: "Exnem" },
       { name: "bank-robbery2.jpg", author: "Exnem" },
       { name: "raid.jpg", author: "Exnem" },
       { name: "anniversary.jpg", author: "Super_" },
@@ -312,7 +288,6 @@
       { name: "gas-station.jpg", author: "Super_" },
       { name: "business.jpg", author: "Super_" },
       { name: "defence.jpg", author: "Super_" },
-    //   { name: "poker.jpg", author: "Mr_Lumbert0n" },
       { name: "v6forest.jpg", author: "peeps" },
       { name: "v6highway.jpg", author: "peeps" },
       { name: "v6hungriges.jpg", author: "peeps" },
