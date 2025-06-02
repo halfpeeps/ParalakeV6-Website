@@ -56,7 +56,7 @@ body {
     position: absolute;
     right: 10px;
     bottom: 10px;
-    width: 60px;
+    width: flex;
     margin-top: 15px;
     padding: 10px 20px;
     font-family: var(--font-primary);

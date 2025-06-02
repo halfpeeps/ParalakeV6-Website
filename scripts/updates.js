@@ -34,13 +34,23 @@ function parseBBCode(bbcode) {
         { regex: /\[URL=['"]?(.*?)['"]?\](.*?)\[\/URL\]/gis, replacement: '<a href="$1" target="_blank" class="update-link">$2</a>' },
         { regex: /\[USER=(\d+)\](.*?)\[\/USER\]/gis, replacement: '<a class="update-user-mention" target="_blank" href="https://perpheads.com/members/$1/">$2</a>' },
         { regex: /\[MEDIA=youtube\](.*?)\[\/MEDIA\]/gis, replacement: '<iframe class="update-video" width="560" height="315" src="https://www.youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe>' },
-        { regex: /\[SPOILER="?(.*?)"?\](.*?)\[\/SPOILER\]/gis, replacement: '<details class="update-spoiler"><summary>$1</summary>$2</details>' }
+        { regex: /\[SPOILER="?(.*?)"?\](.*?)\[\/SPOILER\]/gis, replacement: '<details class="update-spoiler"><summary>$1</summary>$2</details>' },
+        { regex: /\[LIST(?:=(1|A))?\](.*?)\[\/LIST\]/gis, replacement: (match, type, content) => {
+            const tag = type ? `<ol${type === 'A' ? ' type="A"' : ''}>` : '<ul>';
+            const closingTag = type ? '</ol>' : '</ul>';
+            const items = content
+                .split(/\[\*\]/)
+                .filter(item => item.trim() !== "")
+                .map(item => `<li>${item.trim()}</li>`)
+                .join('');
+            return `${tag}${items}${closingTag}`;
+        }},
     ];
-    
+
     replacements.forEach(({ regex, replacement }) => {
         bbcode = bbcode.replace(regex, replacement);
     });
-    
+
     return bbcode;
 }
 
