@@ -1,10 +1,10 @@
 const EDITOR_MODE = true;
   const bounds = [[0, 0], [0, 0]];
-  const baseMap = L.imageOverlay('map_recourses/map.png', bounds);
+  const baseMap = L.imageOverlay('map_recourses/map_dark.png', bounds);
   const satelliteMap = L.imageOverlay('map_recourses/map_sat.png', bounds);
   const map = L.map('map', {
     crs: L.CRS.Simple,
-    minZoom: -2,
+    minZoom: -1.6,
     maxZoom: 2,
     layers: [baseMap]
   });
