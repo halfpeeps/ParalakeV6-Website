@@ -30,7 +30,7 @@
   "tags": [
     "Police Department", "Job", "Public Services"
   ],
-  "primaryTag": "Police Department",
+  "primaryTag": "Job",
   "description": "Description here.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/pd.png"
@@ -40,7 +40,7 @@
   "x": 1144,
   "y": 3547,
   "tags": [
-    "Vendor", "Parking"
+    "Vendor", "Shop", "Parking"
   ],
   "primaryTag": "Vendor",
   "description": "Description here.",
@@ -54,7 +54,7 @@
   "tags": [
     "Fire Department", "Job", "Vendor", "Public Services"
   ],
-  "primaryTag": "Fire Department",
+  "primaryTag": "Job",
   "description": "Description here.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/fd.png"
@@ -64,7 +64,7 @@
   "x": 1131,
   "y": 3292,
   "tags": [
-    "Vendor"
+    "Vendor", "Shop"
   ],
   "primaryTag": "Vendor",
   "description": "Description here.",
@@ -76,7 +76,7 @@
   "x": 1245,
   "y": 3214,
   "tags": [
-    "Vendor"
+    "Vendor", "Restaurant"
   ],
   "primaryTag": "Vendor",
   "description": "Description here.",
@@ -94,6 +94,690 @@
   "description": "Description here.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/garage.png"
+},
+{
+  "name": "Hospital",
+  "x": 1363,
+  "y": 2951,
+  "tags": [
+    "Hospital", "Job", "Vendor", "Public Services"
+  ],
+  "primaryTag": "Job",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/hospital.png"
+},
+{
+  "name": "City Hall",
+  "x": 840,
+  "y": 2700,
+  "tags": [
+    "Public Services", "Job", "Vendor"
+  ],
+  "primaryTag": "Job",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/cityhall.png"
+},
+{
+  "name": "Roast Rogue",
+  "x": 1164,
+  "y": 2780,
+  "tags": [
+    "Vendor", "Restaurant"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/food.png"
+},
+{
+  "name": "Ol' Stool",
+  "x": 1275,
+  "y": 2780,
+  "tags": [
+    "Vendor", "Shop"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/vendor.png"
+},
+{
+  "name": "Hardware Plus",
+  "x": 1403,
+  "y": 2780,
+  "tags": [
+    "Vendor", "Shop"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/vendor.png"
+},
+{
+  "name": "Safety First",
+  "x": 1501,
+  "y": 2789,
+  "tags": [
+    "Vendor", "Shop"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/vendor.png"
+},
+{
+  "name": "Poisson",
+  "x": 1578,
+  "y": 2789,
+  "tags": [
+    "Vendor", "Shop"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/vendor.png"
+},
+{
+  "name": "Lucia's Clothing Store",
+  "x": 1204,
+  "y": 2613,
+  "tags": [
+    "Vendor", "Shop"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/vendor.png"
+},
+{
+  "name": "HOTSHOT Gun Range",
+  "x": 1327,
+  "y": 2619,
+  "tags": [
+    "Vendor"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/vendor.png"
+},
+{
+  "name": "Fredy's Bakery",
+  "x": 1505,
+  "y": 2618,
+  "tags": [
+    "Vendor", "Restaurant"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/food.png"
+},
+{
+  "name": "DIGIPEEPS",
+  "x": 1577,
+  "y": 2616,
+  "tags": [
+    "Vendor", "Shop"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/vendor.png"
+},
+{
+  "name": "STALBURG Pumping Station",
+  "x": 612,
+  "y": 2698,
+  "tags": [
+    "Industrial", "Utility"
+  ],
+  "primaryTag": "Industrial",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/valve.png"
+},
+{
+  "name": "Bank Plaza Public Toilets",
+  "x": 588,
+  "y": 2631,
+  "tags": [
+    "Public Services"
+  ],
+  "primaryTag": "Public Services",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/wc.png"
+},
+{
+  "name": "XQ Bank",
+  "x": 803,
+  "y": 2389,
+  "tags": [
+    "Vendor"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/bank.png"
+},
+{
+  "name": "Paralake News Tower",
+  "x": 534,
+  "y": 2273,
+  "tags": [
+    "Vendor"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/pln.png"
+},
+{
+  "name": "Regals Resort",
+  "x": 613,
+  "y": 2101,
+  "tags": [
+    "Ownable", "Apartment"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/highrise_ownable.png"
+},
+{
+  "name": "Hungriges",
+  "x": 1141,
+  "y": 2161,
+  "tags": [
+    "Ownable", "Restaurant"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/food.png"
+},
+{
+  "name": "Office Complex",
+  "x": 1531,
+  "y": 2341,
+  "tags": [
+    "Ownable", "Office"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/highrise_ownable.png"
+},
+{
+  "name": "Slums Trailer",
+  "x": 546,
+  "y": 3652,
+  "tags": [
+    "Ownable"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/house_ownable.png"
+},
+{
+  "name": "Beach Huts",
+  "x": 1231,
+  "y": 1996,
+  "tags": [
+    "Ownable"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/house_ownable.png"
+},
+{
+  "name": "Large Suburbs House 1",
+  "x": 2716,
+  "y": 3478,
+  "tags": [
+    "Ownable", "House"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/house_ownable.png"
+},
+{
+  "name": "Large Suburbs House 2",
+  "x": 2874,
+  "y": 3241,
+  "tags": [
+    "Ownable", "House"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/house_ownable.png"
+},
+{
+  "name": "Large Suburbs House 3",
+  "x": 2388,
+  "y": 2544,
+  "tags": [
+    "Ownable", "House"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/house_ownable.png"
+},
+{
+  "name": "Small Suburbs House 1",
+  "x": 2553,
+  "y": 3068,
+  "tags": [
+    "Ownable", "House"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/house_ownable.png"
+},
+{
+  "name": "Small Suburbs House 2",
+  "x": 2553,
+  "y": 2944,
+  "tags": [
+    "Ownable", "House"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/house_ownable.png"
+},
+{
+  "name": "Small Suburbs House 3",
+  "x": 2386,
+  "y": 2815,
+  "tags": [
+    "Ownable", "House"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/house_ownable.png"
+},
+{
+  "name": "Small Suburbs House 4",
+  "x": 2386,
+  "y": 3203,
+  "tags": [
+    "Ownable", "House"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/house_ownable.png"
+},
+{
+  "name": "Roxie's Diner",
+  "x": 3452,
+  "y": 3261,
+  "tags": [
+    "Ownable", "Restaurant"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/food.png"
+},
+{
+  "name": "Forest Gas Station",
+  "x": 3460,
+  "y": 2892,
+  "tags": [
+    "Vendor", "Shop"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/gas.png"
+},
+{
+  "name": "Church",
+  "x": 3419,
+  "y": 2211,
+  "tags": [
+    "Ownable"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/church.png"
+},
+{
+  "name": "Farm",
+  "x": 3921,
+  "y": 2532,
+  "tags": [
+    "Ownable"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/house_ownable.png"
+},
+{
+  "name": "Comms Outpost",
+  "x": 3121,
+  "y": 1567,
+  "tags": [
+    "Ownable", "Industrial"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/factory.png"
+},
+{
+  "name": "Wood Cabin 1",
+  "x": 3748,
+  "y": 903,
+  "tags": [
+    "Ownable", "House"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/house_ownable.png"
+},
+{
+  "name": "Wood Cabin 2",
+  "x": 3228,
+  "y": 398,
+  "tags": [
+    "Ownable", "House"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/house_ownable.png"
+},
+{
+  "name": "Wood Cabin 3",
+  "x": 2620,
+  "y": 140,
+  "tags": [
+    "Ownable", "House"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/house_ownable.png"
+},
+{
+  "name": "Hicktown Trailer 1",
+  "x": 4024,
+  "y": 3740,
+  "tags": [
+    "Ownable"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/house_ownable.png"
+},
+{
+  "name": "Hicktown Trailer 2",
+  "x": 3958,
+  "y": 3834,
+  "tags": [
+    "Ownable"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/house_ownable.png"
+},
+{
+  "name": "Hicktown Trailer 3",
+  "x": 3865,
+  "y": 3820,
+  "tags": [
+    "Ownable"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/house_ownable.png"
+},
+{
+  "name": "Paralake Foundry",
+  "x": 1987,
+  "y": 483,
+  "tags": [
+    "Ownable", "Industrial"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/factory.png"
+},
+{
+  "name": "J&M Glass Co",
+  "x": 1811,
+  "y": 823,
+  "tags": [
+    "Ownable", "Industrial"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/factory.png"
+},
+{
+  "name": "Industrial 3",
+  "x": 1985,
+  "y": 1110,
+  "tags": [
+    "Ownable", "Industrial"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/factory.png"
+},
+{
+  "name": "Southgate Center",
+  "x": 1568,
+  "y": 1147,
+  "tags": [
+    "Ownable", "Office"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/highrise_ownable.png"
+},
+{
+  "name": "PPS Delivery Depot",
+  "x": 1248,
+  "y": 1135,
+  "tags": [
+    "Job", "Vendor"
+  ],
+  "primaryTag": "Job",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/delivery.png"
+},
+{
+  "name": "McUwes",
+  "x": 1217,
+  "y": 979,
+  "tags": [
+    "Vendor", "Restaurant"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/food.png"
+},
+{
+  "name": "Business Gas Station",
+  "x": 1343,
+  "y": 914,
+  "tags": [
+    "Vendor", "Shop"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/gas.png"
+},
+{
+  "name": "Bazaar Shopping Center",
+  "x": 830,
+  "y": 559,
+  "tags": [
+    "Ownable", "Shop"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/shop_ownable.png"
+},
+{
+  "name": "Casino",
+  "x": 1374,
+  "y": 556,
+  "tags": [
+    "Vendor", "Restaurant"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/casino.png"
+},
+{
+  "name": "Tidal Apartments",
+  "x": 858,
+  "y": 1156,
+  "tags": [
+    "Ownable", "Apartment"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/highrise_ownable.png"
+},
+{
+  "name": "Car Dealer",
+  "x": 1131,
+  "y": 239,
+  "tags": [
+    "Vendor"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/cardealer.png"
+},
+{
+  "name": "Collier's Auto Shop",
+  "x": 1558,
+  "y": 275,
+  "tags": [
+    "Vendor"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/roadcrew.png"
+},
+{
+  "name": "Roadcrew",
+  "x": 274,
+  "y": 2919,
+  "tags": [
+    "Job", "Public Services", "Vendor", "Shop"
+  ],
+  "primaryTag": "Job",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/roadcrew.png"
+},
+{
+  "name": "Dave's Burders",
+  "x": 96,
+  "y": 3166,
+  "tags": [
+    "Vendor", "Restaurant"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/food.png"
+},
+{
+  "name": "Business Shop 1",
+  "x": 1427,
+  "y": 707,
+  "tags": [
+    "Ownable", "Shop"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/shop_ownable.png"
+},
+{
+  "name": "Business Shop 2",
+  "x": 1345,
+  "y": 707,
+  "tags": [
+    "Ownable", "Shop"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/shop_ownable.png"
+},
+{
+  "name": "Business Shop 3",
+  "x": 1264,
+  "y": 707,
+  "tags": [
+    "Ownable", "Shop"
+  ],
+  "primaryTag": "Ownable",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/shop_ownable.png"
+},
+{
+  "name": "Lelito's Pub",
+  "x": 2393,
+  "y": 1323,
+  "tags": [
+    "Vendor", "Restaurant", "Shop"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/food.png"
+},
+{
+  "name": "Substation",
+  "x": 2556,
+  "y": 2235,
+  "tags": [
+    "Industrial", "Utility"
+  ],
+  "primaryTag": "Industrial",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/valve.png"
 }
 ]
   
