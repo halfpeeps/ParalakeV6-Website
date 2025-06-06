@@ -778,6 +778,282 @@
   "description": "Description here.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/valve.png"
+},
+{
+  "name": "Slums Parking",
+  "x": 285,
+  "y": 3807,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "City Motel Parking",
+  "x": 795,
+  "y": 3498,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "City Gas Station Parking",
+  "x": 1261,
+  "y": 3532,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Fire Department Private Parking",
+  "x": 1666,
+  "y": 3502,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "West Street Parking",
+  "x": 104,
+  "y": 2983,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Roadcrew Parking",
+  "x": 257,
+  "y": 3078,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "City Park Parking",
+  "x": 833,
+  "y": 2998,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Storage Parking",
+  "x": 1545,
+  "y": 3225,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Market Street Parking",
+  "x": 1550,
+  "y": 2938,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Bank Parking",
+  "x": 755,
+  "y": 2255,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Regals Resort Parking",
+  "x": 806,
+  "y": 2056,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Hungriges Parking",
+  "x": 989,
+  "y": 2089,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "City Parking Garage",
+  "x": 1236,
+  "y": 2369,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Office Complex Parking",
+  "x": 1487,
+  "y": 2174,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Suburbs Park Parking",
+  "x": 2226,
+  "y": 3283,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Roxie's Diner Parking",
+  "x": 3495,
+  "y": 3143,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Lelito's Pub Parking",
+  "x": 2210,
+  "y": 1043,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Business Shop Parking",
+  "x": 1582,
+  "y": 733,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Business Gas Station Parking",
+  "x": 1451,
+  "y": 906,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Tidal Apartments Parking",
+  "x": 856,
+  "y": 1060,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Collier's Auto Shop Parking",
+  "x": 1395,
+  "y": 318,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Car Dealer Parking",
+  "x": 889,
+  "y": 320,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "Promenade Parking",
+  "x": 580,
+  "y": 1187,
+  "tags": [
+    "Parking"
+  ],
+  "primaryTag": "Parking",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/parking.png"
 }
 ]
   

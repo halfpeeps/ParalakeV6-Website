@@ -238,11 +238,13 @@ const EDITOR_MODE = true;
                 name: "New location",
                 x: x,
                 y: y,
-                tags: ["Tag"],
-                primaryTag: "Tag",
-                description: "Description here.",
-                image: "map_recourses/images/image.jpg",
-                icon: "map_recourses/icons/icon.png"
+                  "tags": [
+                  "Parking"
+                ],
+                "primaryTag": "Parking",
+                "description": "Description here.",
+                "image": "map_recourses/images/image.jpg",
+                "icon": "map_recourses/icons/parking.png"
               };
               console.log(JSON.stringify(json, null, 2));
               alert('Marker data copied to console!');
