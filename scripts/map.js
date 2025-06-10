@@ -3,6 +3,7 @@ const EDITOR_MODE = true;
   const baseMap = L.imageOverlay('map_recourses/map_dark.png', bounds);
   const satelliteMap = L.imageOverlay('map_recourses/map_sat.png', bounds);
   const propertyBounds = L.imageOverlay('map_recourses/property_bounds.png', bounds);
+  const muggingMap = L.imageOverlay('map_recourses/mugging_map.png', bounds);
   const map = L.map('map', {
     crs: L.CRS.Simple,
     minZoom: -1.6,
@@ -12,6 +13,7 @@ const EDITOR_MODE = true;
 
   const overlayLayers = {
     "Property Boundaries": propertyBounds,
+    "Mugging Map": muggingMap,
   };
 
   const baseLayers = {
@@ -121,6 +123,7 @@ L.control.layers(baseLayers, overlayLayers, { position: 'bottomright' }).addTo(m
     baseMap.setBounds(bounds);
     satelliteMap.setBounds(bounds);
     propertyBounds.setBounds(bounds);
+    muggingMap.setBounds(bounds);
     map.setMaxBounds(bounds);
     map.fitBounds(bounds);
 
@@ -136,10 +139,33 @@ L.control.layers(baseLayers, overlayLayers, { position: 'bottomright' }).addTo(m
   if (overlayKey) {
     if (overlayKey === 'propertybounds') {
       propertyBounds.addTo(map);
-    // } else if (overlayKey === 'zones') {
-    //   zonesOverlay.addTo(map);
+    } else if (overlayKey === 'mugging') {
+      muggingMap.addTo(map);
+      document.getElementById('overlay-info').style.display = 'block';
     }
   }
+
+  muggingMap.on('add', () => {
+    document.getElementById('overlay-info').style.display = 'block';
+  });
+
+  muggingMap.on('remove', () => {
+    document.getElementById('overlay-info').style.display = 'none';
+    document.getElementById('overlay-info').classList.remove('hidden');
+    document.getElementById('overlay-info-toggle').style.display = 'none';
+  });
+
+  document.getElementById('hide-overlay-info').addEventListener('click', () => {
+    const info = document.getElementById('overlay-info');
+    info.classList.add('hidden');
+    document.getElementById('overlay-info-toggle').style.display = 'block';
+  });
+
+  document.getElementById('overlay-info-toggle').addEventListener('click', () => {
+    const info = document.getElementById('overlay-info');
+    info.classList.remove('hidden');
+    document.getElementById('overlay-info-toggle').style.display = 'none';
+  });
 
     Promise.all([
       fetch('/map_recourses/locations.json').then(res => res.json()),
