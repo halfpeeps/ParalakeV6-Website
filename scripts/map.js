@@ -2,17 +2,24 @@ const EDITOR_MODE = true;
   const bounds = [[0, 0], [0, 0]];
   const baseMap = L.imageOverlay('map_recourses/map_dark.png', bounds);
   const satelliteMap = L.imageOverlay('map_recourses/map_sat.png', bounds);
+  const propertyBounds = L.imageOverlay('map_recourses/property_bounds.png', bounds);
   const map = L.map('map', {
     crs: L.CRS.Simple,
     minZoom: -1.6,
     maxZoom: 2,
     layers: [baseMap]
   });
+
+  const overlayLayers = {
+    "Property Boundaries": propertyBounds,
+  };
+
   const baseLayers = {
     "Default View": baseMap,
     "Satellite View": satelliteMap
   };
-  L.control.layers(baseLayers, null, { position: 'bottomright' }).addTo(map);
+
+L.control.layers(baseLayers, overlayLayers, { position: 'bottomright' }).addTo(map);
   
   const tagColors = {};
   const markers = [];
@@ -113,9 +120,27 @@ const EDITOR_MODE = true;
     bounds[1] = [h, w];
     baseMap.setBounds(bounds);
     satelliteMap.setBounds(bounds);
+    propertyBounds.setBounds(bounds);
     map.setMaxBounds(bounds);
     map.fitBounds(bounds);
-  
+
+  function getOverlayKey() {
+    const params = new URLSearchParams(window.location.search);
+    for (const key of params.keys()) {
+      return key;
+    }
+    return null;
+  }
+
+  const overlayKey = getOverlayKey();
+  if (overlayKey) {
+    if (overlayKey === 'propertybounds') {
+      propertyBounds.addTo(map);
+    // } else if (overlayKey === 'zones') {
+    //   zonesOverlay.addTo(map);
+    }
+  }
+
     Promise.all([
       fetch('/map_recourses/locations.json').then(res => res.json()),
       fetch('/map_recourses/tags.json').then(res => res.json())
