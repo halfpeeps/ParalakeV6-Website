@@ -264,12 +264,12 @@ L.control.layers(baseLayers, overlayLayers, { position: 'bottomright' }).addTo(m
                 x: x,
                 y: y,
                   "tags": [
-                  "Parking"
+                  "ATM"
                 ],
-                "primaryTag": "Parking",
+                "primaryTag": "ATM",
                 "description": "Description here.",
                 "image": "map_recourses/images/image.jpg",
-                "icon": "map_recourses/icons/parking.png"
+                "icon": "map_recourses/icons/atm.png"
               };
               console.log(JSON.stringify(json, null, 2));
               alert('Marker data copied to console!');

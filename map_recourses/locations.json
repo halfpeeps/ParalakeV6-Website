@@ -256,7 +256,7 @@
   "x": 803,
   "y": 2389,
   "tags": [
-    "Vendor"
+    "Vendor", "ATM"
   ],
   "primaryTag": "Vendor",
   "description": "Description here.",
@@ -640,7 +640,7 @@
   "x": 830,
   "y": 559,
   "tags": [
-    "Ownable", "Shop"
+    "Ownable", "Shop", "ATM"
   ],
   "primaryTag": "Ownable",
   "description": "Description here.",
@@ -1054,6 +1054,126 @@
   "description": "Description here.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/parking.png"
+},
+{
+  "name": "City Gas Station ATM",
+  "x": 1100,
+  "y": 3510,
+  "tags": [
+    "ATM"
+  ],
+  "primaryTag": "ATM",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/atm.png"
+},
+{
+  "name": "City Block ATM",
+  "x": 1188,
+  "y": 3179,
+  "tags": [
+    "ATM"
+  ],
+  "primaryTag": "ATM",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/atm.png"
+},
+{
+  "name": "Road Crew ATM",
+  "x": 118,
+  "y": 3046,
+  "tags": [
+    "ATM"
+  ],
+  "primaryTag": "ATM",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/atm.png"
+},
+{
+  "name": "Market Street ATM",
+  "x": 118,
+  "y": 3046,
+  "tags": [
+    "ATM"
+  ],
+  "primaryTag": "ATM",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/atm.png"
+},
+{
+  "name": "Market Street ATM",
+  "x": 1295,
+  "y": 2656,
+  "tags": [
+    "ATM"
+  ],
+  "primaryTag": "ATM",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/atm.png"
+},
+{
+  "name": "XQ Bank ATM",
+  "x": 705,
+  "y": 2453,
+  "tags": [
+    "ATM"
+  ],
+  "primaryTag": "ATM",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/atm.png"
+},
+{
+  "name": "Forest Gas Station ATM",
+  "x": 3507,
+  "y": 2924,
+  "tags": [
+    "ATM"
+  ],
+  "primaryTag": "ATM",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/atm.png"
+},
+{
+  "name": "Business Gas Station ATM",
+  "x": 1400,
+  "y": 935,
+  "tags": [
+    "ATM"
+  ],
+  "primaryTag": "ATM",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/atm.png"
+},
+{
+  "name": "PPS Delivery Depot ATM",
+  "x": 1374,
+  "y": 1208,
+  "tags": [
+    "ATM"
+  ],
+  "primaryTag": "ATM",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/atm.png"
+},
+{
+  "name": "Business Plaza ATM",
+  "x": 1224,
+  "y": 688,
+  "tags": [
+    "ATM"
+  ],
+  "primaryTag": "ATM",
+  "description": "Description here.",
+  "image": "map_recourses/images/image.jpg",
+  "icon": "map_recourses/icons/atm.png"
 }
 ]
   

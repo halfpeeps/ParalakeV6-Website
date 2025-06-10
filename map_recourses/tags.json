@@ -5,6 +5,7 @@
     { "name": "Job", "color": "#bf870d" },
     { "name": "Vendor", "color": "#b63ebd" },
     { "name": "Public Services", "color": "#3269a8" },
+    { "name": "ATM", "color": "#4290f5" },
 
     { "name": "Parking", "color": "#3269a8" },
     
