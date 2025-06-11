@@ -7,7 +7,7 @@
     "Apartment", "Ownable"
   ],
   "primaryTag": "Ownable",
-  "description": "Description here.",
+  "description": "A run down apartment complex to the north of the city.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/highrise_ownable.png"
   },
@@ -19,7 +19,7 @@
     "Job"
   ],
   "primaryTag": "Job",
-  "description": "Description here.",
+  "description": "The base of operations for the taxi service in Paralake.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/garage.png"
 },
@@ -31,7 +31,7 @@
     "Police Department", "Job", "Public Services"
   ],
   "primaryTag": "Job",
-  "description": "Description here.",
+  "description": "Paralake's police department building",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/pd.png"
 },
@@ -43,7 +43,7 @@
     "Vendor", "Shop", "Parking"
   ],
   "primaryTag": "Vendor",
-  "description": "Description here.",
+  "description": "The gas station for the city, located on Station Hill",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/gas.png"
 },
@@ -55,7 +55,7 @@
     "Fire Department", "Job", "Vendor", "Public Services"
   ],
   "primaryTag": "Job",
-  "description": "Description here.",
+  "description": "The Paralake City Fire Department, located on Station Hill.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/fd.png"
 },
@@ -67,7 +67,7 @@
     "Vendor", "Shop"
   ],
   "primaryTag": "Vendor",
-  "description": "Description here.",
+  "description": "A small independent convenience store in the city.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/vendor.png"
 },
@@ -79,7 +79,7 @@
     "Vendor", "Restaurant"
   ],
   "primaryTag": "Vendor",
-  "description": "Description here.",
+  "description": "A hidden underground nightclub in the city.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/bar.png"
 },
@@ -91,7 +91,7 @@
     "Vendor"
   ],
   "primaryTag": "Vendor",
-  "description": "Description here.",
+  "description": "A set of storage garages in the city.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/garage.png"
 },
@@ -103,7 +103,7 @@
     "Hospital", "Job", "Vendor", "Public Services"
   ],
   "primaryTag": "Job",
-  "description": "Description here.",
+  "description": "St. Cameron's Hospital, located on Creed Street",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/hospital.png"
 },
@@ -115,7 +115,7 @@
     "Public Services", "Job", "Vendor"
   ],
   "primaryTag": "Job",
-  "description": "Description here.",
+  "description": "Paralake City Hall is in the center of the city, and is where the mayor resides.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/cityhall.png"
 },
@@ -127,7 +127,7 @@
     "Vendor", "Restaurant"
   ],
   "primaryTag": "Vendor",
-  "description": "Description here.",
+  "description": "A small coffee shop on Market Street.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/food.png"
 },
@@ -139,7 +139,7 @@
     "Vendor", "Shop"
   ],
   "primaryTag": "Vendor",
-  "description": "Description here.",
+  "description": "A furneture store located on Market Street.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/vendor.png"
 },
@@ -151,7 +151,7 @@
     "Vendor", "Shop"
   ],
   "primaryTag": "Vendor",
-  "description": "Description here.",
+  "description": "A hardware store located on Market Street.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/vendor.png"
 },
@@ -163,7 +163,7 @@
     "Vendor", "Shop"
   ],
   "primaryTag": "Vendor",
-  "description": "Description here.",
+  "description": "A pharmacy located on Market Street.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/vendor.png"
 },
@@ -175,7 +175,7 @@
     "Vendor", "Shop"
   ],
   "primaryTag": "Vendor",
-  "description": "Description here.",
+  "description": "A fish vendor located on Market Street.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/vendor.png"
 },
@@ -187,7 +187,7 @@
     "Vendor", "Shop"
   ],
   "primaryTag": "Vendor",
-  "description": "Description here.",
+  "description": "A clothing store located on Market Street.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/vendor.png"
 },
@@ -199,7 +199,7 @@
     "Vendor"
   ],
   "primaryTag": "Vendor",
-  "description": "Description here.",
+  "description": "Paralake's underground gun range, located on Market Street.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/vendor.png"
 },
@@ -211,7 +211,7 @@
     "Vendor", "Restaurant"
   ],
   "primaryTag": "Vendor",
-  "description": "Description here.",
+  "description": "A small bakery and cafe located on Market Street.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/food.png"
 },
@@ -223,7 +223,7 @@
     "Vendor", "Shop"
   ],
   "primaryTag": "Vendor",
-  "description": "Description here.",
+  "description": "A tech store located on Market Street.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/vendor.png"
 },
@@ -235,7 +235,7 @@
     "Industrial", "Utility"
   ],
   "primaryTag": "Industrial",
-  "description": "Description here.",
+  "description": "A utility building located on Stalburg Way, providing the city and surrounding areas with water services.  Access to the sewer system is available here.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/valve.png"
 },
@@ -247,7 +247,7 @@
     "Public Services"
   ],
   "primaryTag": "Public Services",
-  "description": "Description here.",
+  "description": "Public toilets located in the City Center",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/wc.png"
 },
@@ -259,7 +259,7 @@
     "Vendor", "ATM"
   ],
   "primaryTag": "Vendor",
-  "description": "Description here.",
+  "description": "Paralake's central bank, located in the City Center.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/bank.png"
 },
@@ -271,7 +271,7 @@
     "Vendor"
   ],
   "primaryTag": "Vendor",
-  "description": "Description here.",
+  "description": "Paralake News is the main news provider in Paralake.  Purchase adverts and billboards here.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/pln.png"
 },
@@ -283,7 +283,7 @@
     "Ownable", "Apartment"
   ],
   "primaryTag": "Ownable",
-  "description": "Description here.",
+  "description": "A luxury apartment complex located on the beach.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/highrise_ownable.png"
 },
@@ -295,7 +295,7 @@
     "Ownable", "Restaurant"
   ],
   "primaryTag": "Ownable",
-  "description": "Description here.",
+  "description": "A large restaurant with views of the beach.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/food.png"
 },
@@ -307,7 +307,7 @@
     "Ownable", "Office"
   ],
   "primaryTag": "Ownable",
-  "description": "Description here.",
+  "description": "A set of office spaces located in the city center.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/highrise_ownable.png"
 },
@@ -319,7 +319,7 @@
     "Ownable"
   ],
   "primaryTag": "Ownable",
-  "description": "Description here.",
+  "description": "A small trailer near the Slums Apartments.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/house_ownable.png"
 },
@@ -331,7 +331,7 @@
     "Ownable"
   ],
   "primaryTag": "Ownable",
-  "description": "Description here.",
+  "description": "A set of beach huts loacted by the water front for those who wish to go fishing.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/house_ownable.png"
 },
@@ -343,7 +343,7 @@
     "Ownable", "House"
   ],
   "primaryTag": "Ownable",
-  "description": "Description here.",
+  "description": "A large suburban house with garden and garage.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/house_ownable.png"
 },
@@ -355,7 +355,7 @@
     "Ownable", "House"
   ],
   "primaryTag": "Ownable",
-  "description": "Description here.",
+  "description": "A large suburban house with garden and garage.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/house_ownable.png"
 },
@@ -367,7 +367,7 @@
     "Ownable", "House"
   ],
   "primaryTag": "Ownable",
-  "description": "Description here.",
+  "description": "A large suburban house with garden and garage.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/house_ownable.png"
 },
@@ -379,7 +379,7 @@
     "Ownable", "House"
   ],
   "primaryTag": "Ownable",
-  "description": "Description here.",
+  "description": "A small suburban house with garden and garage.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/house_ownable.png"
 },
@@ -391,7 +391,7 @@
     "Ownable", "House"
   ],
   "primaryTag": "Ownable",
-  "description": "Description here.",
+  "description": "A small suburban house with garden and garage.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/house_ownable.png"
 },
@@ -403,7 +403,7 @@
     "Ownable", "House"
   ],
   "primaryTag": "Ownable",
-  "description": "Description here.",
+  "description": "A small suburban house with garden and garage.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/house_ownable.png"
 },
@@ -415,7 +415,7 @@
     "Ownable", "House"
   ],
   "primaryTag": "Ownable",
-  "description": "Description here.",
+  "description": "A small suburban house with garden and garage.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/house_ownable.png"
 },
@@ -427,7 +427,7 @@
     "Ownable", "Restaurant"
   ],
   "primaryTag": "Ownable",
-  "description": "Description here.",
+  "description": "A large restaurant located at the service station in the Forest.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/food.png"
 },
@@ -439,7 +439,7 @@
     "Vendor", "Shop"
   ],
   "primaryTag": "Vendor",
-  "description": "Description here.",
+  "description": "The gas station located at the service station in the Forest.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/gas.png"
 },
@@ -451,7 +451,7 @@
     "Ownable"
   ],
   "primaryTag": "Ownable",
-  "description": "Description here.",
+  "description": "A large property in the Forest used for gatherings and events.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/church.png"
 },
@@ -463,7 +463,7 @@
     "Ownable"
   ],
   "primaryTag": "Ownable",
-  "description": "Description here.",
+  "description": "A large barn with a small hut and field.",
   "image": "map_recourses/images/image.jpg",
   "icon": "map_recourses/icons/house_ownable.png"
 },
