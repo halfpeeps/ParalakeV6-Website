@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>GMod Loading Test</title>
-  <style>
-    body {
-      background-color: #111;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 20%;
-    }
-    .box {
-      background: #222;
-      border: 2px solid #444;
-      padding: 20px;
-      border-radius: 10px;
-      display: inline-block;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="loading/loading_fallback.css">
+  <title>Loading</title>
 </head>
+
+<div style="position: fixed; top: 0; left: 0; color: red; font-size: 18px; z-index: 9999;">
+  FALLBACK VERSION
+</div>
+
 <body>
-  <div class="box">
-    <h1>Fallback Test</h1>
-    <p>If you see this, the loading screen is rendering properly.</p>
+  <div class="background" id="background"></div>
+  <div id="BG1" class="background-rotate"></div>
+  <div id="BG2" class="background-rotate"></div>
+  <div class="author" id="author"></div>
+  <div class="overlay-top"></div>
+  <div class="overlay-bottom"></div>
+  <div class="title-container">
+    <div class="center-logo" id="logo">
+      <img src="loading/phlogo.png" alt="Logo">
+    </div>
+    <div class="title-banner" id="title-banner">PERPHEADS.COM</div>
   </div>
+  <div class="tip-box">
+    <div class="tip-title" id="tip-title">GAMEPLAY TIP</div>
+    <div class="tip-text" id="tip-text">Loading tips...</div>
+  </div>
+  <script src="loading/loading_fallback.js"></script>
 </body>
 </html>
