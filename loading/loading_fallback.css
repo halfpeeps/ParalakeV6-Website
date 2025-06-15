@@ -10,9 +10,9 @@ html, body {
   top: 0; left: 0;
   width: 100vw; height: 100vh;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
   z-index: 0;
-  transition: opacity 1s ease-in-out;
 }
 .background-rotate {
   opacity: 0;
@@ -42,11 +42,11 @@ html, body {
 }
 .overlay-top {
   top: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .overlay-bottom {
   bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 .title-container {
   position: fixed;
