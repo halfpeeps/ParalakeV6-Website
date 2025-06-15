@@ -1,4 +1,3 @@
-
 html, body {
   margin: 0;
   padding: 0;
@@ -6,28 +5,22 @@ html, body {
   overflow: hidden;
   background-color: black;
 }
-
 .background, .background-rotate {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
   background-size: cover;
   background-position: center;
   z-index: 0;
   transition: opacity 1s ease-in-out;
 }
-
 .background-rotate {
   opacity: 0;
   pointer-events: none;
 }
-
 .background-rotate.active {
   opacity: 1;
 }
-
 .author {
   position: fixed;
   text-align: left;
@@ -40,45 +33,36 @@ html, body {
   font-size: 20px;
   z-index: 10;
 }
-
 .overlay-top, .overlay-bottom {
   position: fixed;
-  left: 0;
-  width: 100%;
+  left: 0; width: 100%;
   height: 20%;
   pointer-events: none;
   z-index: 2;
 }
-
 .overlay-top {
   top: 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
 }
-
 .overlay-bottom {
   bottom: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
 }
-
 .title-container {
   position: fixed;
-  top: 2%;
-  left: 1%;
+  top: 2%; left: 1%;
   display: flex;
   align-items: center;
   z-index: 10;
   pointer-events: none;
 }
-
 .center-logo {
   opacity: 1;
 }
-
 .center-logo img {
   width: 70px;
   height: auto;
 }
-
 .title-banner {
   font-family: Arial, sans-serif;
   font-size: 36px;
@@ -86,7 +70,6 @@ html, body {
   color: white;
   margin-left: 10px;
 }
-
 .tip-box {
   position: absolute;
   bottom: 40px;
@@ -102,13 +85,11 @@ html, body {
   max-width: 600px;
   z-index: 2;
 }
-
 .tip-title {
   font-weight: bold;
   margin-bottom: 5px;
   font-size: 20px;
 }
-
 .tip-text {
   font-size: 18px;
 }
