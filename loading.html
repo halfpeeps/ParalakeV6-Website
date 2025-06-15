@@ -5,13 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" type="text/css" href="loading/loading_fallback.css">
   <title>Loading</title>
-  <script>
+  <script>  //check to see if we are on 64bit by running something that breaks on 32bit
     try {
       new Function("() => {}");
-      window.location.href = "loading_64.html";
+      window.location.href = "loading_64.html";  //if yes redirect to the loading screen with modern features
     } catch (e) {
-      // Stay here - 32bit safe fallback
-    }
+    } //if no stay here on the reduced feature loading screen
   </script>
 </head>
 <body>
