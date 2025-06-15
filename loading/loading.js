@@ -1,7 +1,11 @@
 const titleBanner = document.getElementById('title-banner');
 const mainBackground = document.getElementById('background');
-const authorText = document.getElementById('author');
+const authorLabel = document.getElementById('author');
 const logo = document.getElementById('logo');
+const imageFolder = "loading/bg_images/";
+const timeBetweenImages = 10000;
+const BG1 = document.getElementById("BG1");
+const BG2 = document.getElementById("BG2");
 
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -54,16 +58,8 @@ const imageData = [
     { name: "v6vaultopening.jpg", author: "peeps" },
 ];
 
-const imageFolder = "loading/bg_images/";
-const timeBetweenImages = 10000;
-const transitionTime = 800;
-
 let current = 0;
 let showingBG1 = true;
-
-const BG1 = document.getElementById("BG1");
-const BG2 = document.getElementById("BG2");
-const authorLabel = document.getElementById("author");
 
 function showImage(index) {
     const img = imageData[index];
@@ -86,8 +82,6 @@ function nextImage() {
 }
 
 shuffle(imageData);
-// showImage(current);
-// setInterval(nextImage, timeBetweenImages);
 
 //------------------------------hints---------------------------------
 const hints = [
@@ -216,9 +210,6 @@ function showNextTip() {
     }, 500);
 }
 
-    // showImage(current);
-    // setInterval(nextImage, timeBetweenImages);
-
 setTimeout(() => {
     showImage(current);
     setInterval(nextImage, timeBetweenImages);
@@ -228,7 +219,7 @@ setTimeout(() => {
 
     tipTitle.style.opacity = .8;
     mainBackground.style.opacity = 0;
-    authorText.style.opacity = .3;
+    authorLabel.style.opacity = .3;
     titleBanner.style.opacity= .6;
     logo.style.opacity = .4;
-}, 5000);
+}, 0);

@@ -12,7 +12,6 @@ top: 0;
 left: 0;
 width: 100vw;
 height: 100vh;
-background-image: url('devserver_loading01.png');
 background-size: cover;
 background-position: center;
 animation: hueRotate 20s linear infinite;
