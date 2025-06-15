@@ -3,19 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" type="text/css" href="loading/loading.css">
+  <link rel="stylesheet" type="text/css" href="loading/loading_fallback.css">
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Jost:ital@0;1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>Loading</title>
-
-  <script>
-  try {
-    new Function("() => {}");
-  } catch (e) {
-    window.location.href = "loading_fallback/index.html";
-  }
-</script>
+  <title>Loading 32bit</title>
 
 </head>
 <body>
@@ -43,7 +35,7 @@
     <div class="tip-text" id="tip-text">Loading tips...</div>
   </div>
 
-  <script src="loading/loading.js"></script>
+  <script src="loading/loading_fallback.js"></script>
 
 </body>
 </html>
