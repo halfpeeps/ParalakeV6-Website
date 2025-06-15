@@ -1,40 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" type="text/css" href="loading/loading_fallback.css">
-  <title>Loading</title>
-  <script>  //check to see if we are on 64bit by running something that breaks on 32bit
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PERPHeads Loading Screen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+
+    <!-- <script>  //check to see if we are on 64bit by running something that breaks on 32bit
     try {
       new Function("() => {}");
       window.location.href = "loading_64.html";  //if yes redirect to the loading screen with modern features
     } catch (e) {
     } //if no stay here on the reduced feature loading screen
-  </script>
+  </script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="cycle.js"></script>
 </head>
 
-<div style="position: fixed; top: 0; left: 0; color: red; font-size: 18px; z-index: 9999;">
-  FALLBACK VERSION
-</div>
+<body id="app">
+    <div class="container">
+        <div class="header-block center">
+            <div class="text-overlay title sub-container">
+                <span style="font-size:2em;">Perpheads</span><br>
+                <span class="blue" style="font-size:1em;">Serious Roleplaying Server</span>
+            </div>
+            <div class="header-text sub-container">
+                PERPHEADS.COM
+            </div>
 
-<body>
-  <div class="background" id="background"></div>
-  <div id="BG1" class="background-rotate"></div>
-  <div id="BG2" class="background-rotate"></div>
-  <div class="author" id="author"></div>
-  <div class="overlay-top"></div>
-  <div class="overlay-bottom"></div>
-  <div class="title-container">
-    <div class="center-logo" id="logo">
-      <img src="loading/phlogo.png" alt="Logo">
+            <div id="background-scroll">
+                <div class="info-block center">
+                    <span class="title info sub-container">
+                        <p style="margin-top: 15px; margin-bottom: 10px;" id="hint-title">WELCOME</p>
+                        <p style="line-height: 1.1;" id="hint-description" class="blue lead">Thank you for joining our server!</p>
+                    </span>
+                </div>
+                <div id="image-container">
+                </div>
+            </div>
+            <div id="author" class="author">
+                Author: Perpheads
+            </div>
+        </div>
     </div>
-    <div class="title-banner" id="title-banner">PERPHEADS.COM</div>
-  </div>
-  <div class="tip-box">
-    <div class="tip-title" id="tip-title">GAMEPLAY TIP</div>
-    <div class="tip-text" id="tip-text">Loading tips...</div>
-  </div>
-  <script src="loading/loading_fallback.js"></script>
 </body>
+
 </html>
