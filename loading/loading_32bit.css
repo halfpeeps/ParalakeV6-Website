@@ -21,7 +21,6 @@ body, html {
     background-size: cover;
     background-position: center;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
     z-index: 0;
 }
 
@@ -58,41 +57,46 @@ body, html {
 }
 
 .title-container {
-    position: fixed;
-    top: 2%;
-    left: 1%;
-    display: flex;
-    z-index: 10;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: block;
+  z-index: 10;
 }
 
 .center-logo img {
-    width: 80px;
-    height: 80px;
-    opacity: 0.4;
+  height: 48px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .title-banner {
-    font-size: 65px;
-    font-weight: bold;
-    color: white;
-    padding-left: 0px;
-    opacity: 0.6;
-    font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  opacity: 0.8;
 }
 
 .tip-box {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 15px;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    text-align: center;
-    width: 50%;
-    max-width: 90%;
-    z-index: 2;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  z-index: 2;
 }
 
 .tip-title {
