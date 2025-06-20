@@ -305,14 +305,14 @@ function initEditorMode() {
         const x = Math.round(e.latlng.lng);
         const y = Math.round(e.latlng.lat);
         const newLocation = {
-          name: "New location",
+          name: "Location",
           x,
           y,
-          tags: ["ATM"],
-          primaryTag: "ATM",
+          tags: ["Park"],
+          primaryTag: "Park",
           description: "Description here.",
           image: "map_recourses/images/image.jpg",
-          icon: "map_recourses/icons/atm.png"
+          icon: "map_recourses/icons/park.png"
         };
         console.log(JSON.stringify(newLocation, null, 2));
         alert('Marker data copied to console!');
