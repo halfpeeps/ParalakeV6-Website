@@ -1,16 +1,17 @@
-const EDITOR_MODE = true;
+const EDITOR_MODE = false;
 const bounds = [[0, 0], [0, 0]];
 const tagColors = {};
 const markers = [];
 
 const baseMap = L.imageOverlay('map_recourses/map_dark.png', bounds);
 const satelliteMap = L.imageOverlay('map_recourses/map_sat.png', bounds);
+const streetNames = L.imageOverlay('map_recourses/streetnames.png', bounds);
 const propertyBounds = L.imageOverlay('map_recourses/property_bounds.png', bounds);
 const muggingMap = L.imageOverlay('map_recourses/mugging_map.png', bounds);
 
 const map = L.map('map', {
   crs: L.CRS.Simple,
-  minZoom: -1.6,
+  minZoom: -2,
   maxZoom: 2,
   layers: [baseMap]
 });
@@ -21,6 +22,7 @@ const baseLayers = {
 };
 
 const overlayLayers = {
+  "Street Names": streetNames,
   "Property Boundaries": propertyBounds,
   "Mugging Map": muggingMap
 };
@@ -124,7 +126,7 @@ mapImage.onload = () => {
   const [w, h] = [mapImage.width, mapImage.height];
   bounds[1] = [h, w];
 
-  [baseMap, satelliteMap, propertyBounds, muggingMap].forEach(layer => layer.setBounds(bounds));
+  [baseMap, satelliteMap, streetNames, propertyBounds, muggingMap].forEach(layer => layer.setBounds(bounds));
   map.setMaxBounds(bounds);
   map.fitBounds(bounds);
 
