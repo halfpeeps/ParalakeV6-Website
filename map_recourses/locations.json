@@ -1014,8 +1014,8 @@
     "tags": [
       "Parking"
     ],
-    "primaryTag": "A central parkinglot in the Business District, for any residents or visitors to Tidal Apartments.",
-    "description": "Description here.",
+    "primaryTag": "Parking",
+    "description": "A central parkinglot in the Business District, for any residents or visitors to Tidal Apartments.",
     "image": "map_recourses/images/tidal_parking.jpg",
     "icon": "map_recourses/icons/parking.png"
   },
@@ -1050,8 +1050,8 @@
     "tags": [
       "Parking"
     ],
-    "primaryTag": "A great place to park your vehicle!",
-    "description": "Description here.",
+    "primaryTag": "Parking",
+    "description": "A great place to park your vehicle!",
     "image": "map_recourses/images/promenade_parking.jpg",
     "icon": "map_recourses/icons/parking.png"
   },
@@ -1183,7 +1183,7 @@
     "Park"
   ],
   "primaryTag": "Park",
-  "description": "Description here.",
+  "description": "A large park in the center of the city.",
   "image": "map_recourses/images/city_park.jpg",
   "icon": "map_recourses/icons/park.png"
 },
@@ -1195,7 +1195,7 @@
     "Park"
   ],
   "primaryTag": "Park",
-  "description": "Description here.",
+  "description": "A small park in the suburbs, equpped with a playground, water fountain and a football field.",
   "image": "map_recourses/images/subs_park.jpg",
   "icon": "map_recourses/icons/park.png"
 },
@@ -1207,7 +1207,7 @@
     "Park"
   ],
   "primaryTag": "Park",
-  "description": "Description here.",
+  "description": "A large pond and park in the suburbs.",
   "image": "map_recourses/images/subs_pond.jpg",
   "icon": "map_recourses/icons/park.png"
 },
@@ -1219,7 +1219,7 @@
     "Park"
   ],
   "primaryTag": "Park",
-  "description": "Description here.",
+  "description": "A small pond in the forest.",
   "image": "map_recourses/images/forest_pond.jpg",
   "icon": "map_recourses/icons/park.png"
 },
@@ -1231,8 +1231,56 @@
     "Park"
   ],
   "primaryTag": "Park",
-  "description": "Description here.",
+  "description": "A great picnic spot in the forest, with a small rest stop.",
   "image": "map_recourses/images/rest_stop.jpg",
+  "icon": "map_recourses/icons/park.png"
+},
+{
+  "name": "Central Station",
+  "x": 1123,
+  "y": 2862,
+  "tags": [
+    "Metro", "Public Services"
+  ],
+  "primaryTag": "Metro",
+  "description": "Paralake Central Station, trains run every 90 seconds.",
+  "image": "map_recourses/images/metro_central.jpg",
+  "icon": "map_recourses/icons/metro.png"
+},
+{
+  "name": "Suburbs Station",
+  "x": 2298,
+  "y": 3387,
+  "tags": [
+    "Metro", "Public Services"
+  ],
+  "primaryTag": "Metro",
+  "description": "Suburbs Metro Station, trains run every 90 seconds.",
+  "image": "map_recourses/images/metro_business.jpg",
+  "icon": "map_recourses/icons/metro.png"
+},
+{
+  "name": "Business Station",
+  "x": 951,
+  "y": 742,
+  "tags": [
+    "Metro", "Public Services"
+  ],
+  "primaryTag": "Metro",
+  "description": "Business Metro Station, trains run every 90 seconds.",
+  "image": "map_recourses/images/metro_business.jpg",
+  "icon": "map_recourses/icons/metro.png"
+},
+{
+  "name": "Lookout Point",
+  "x": 2552,
+  "y": 1131,
+  "tags": [
+    "Park"
+  ],
+  "primaryTag": "Park",
+  "description": "A wooden lookout point in the forest with views of all of Paralake.",
+  "image": "map_recourses/images/lookout.jpg",
   "icon": "map_recourses/icons/park.png"
 }
 ]

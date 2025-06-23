@@ -58,13 +58,13 @@
   transform: translateX(100%);
   transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0;
-  z-index: 1000;
+  z-index: 2000;
   box-sizing: border-box;
 }
 
 #sidebar.active {
   transform: translateX(0);
-  opacity: 1;
+  opacity: .98;
 }
 
   #sidebar h2 {
@@ -123,11 +123,14 @@
     font-size: 14px;
     border-radius: 4px;
     text-decoration: none;
+    opacity: .8;
+    transition: opazity 0.2s, background 0.2s, color 0.2s;
   }
 
   #back-button:hover {
     background: var(--accent);
     color: #fff;
+    opacity: 1;
   }
 
   #sidebar-close {
@@ -143,8 +146,8 @@
 
   #tag-filter {
     position: absolute;
-    top: 60px;
-    left: 60px;
+    top: 50px;
+    right: 10px;
     z-index: 1002;
     background: var(--sidebar-bg);
     color: var(--text);
@@ -155,6 +158,7 @@
     overflow-y: auto;
     width: 200px;
     box-sizing: border-box;
+    opacity: .8;
   }
 
   #tag-filter label {
@@ -174,11 +178,14 @@
   padding: 6px 12px;
   border-radius: 6px;
   cursor: pointer;
+  opacity: 0.8;
+  transition: background 0.2s, color 0.2s;
 }
 
 #tag-directory-toggle:hover {
   background: var(--accent);
   color: white;
+  opacity: 1;
 }
 
 #tag-directory {
@@ -252,7 +259,7 @@
 
 #overlay-info {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 10px;
   width: 260px;
   background: var(--sidebar-bg);
@@ -262,6 +269,7 @@
   z-index: 1003;
   transition: transform 0.3s ease, opacity 0.3s ease;
   box-shadow: 0 0 6px rgba(0,0,0,0.3);
+  opacity: 0.98;
 }
 
 #overlay-info.hidden {
@@ -271,7 +279,7 @@
 
 #overlay-info-toggle {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 0;
   background: var(--sidebar-bg);
   border: 1px solid var(--border);
