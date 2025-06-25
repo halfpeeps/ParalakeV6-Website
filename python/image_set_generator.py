@@ -3,9 +3,9 @@ import os
 import json
 
 # --- CONFIGURATION ---
-BASE_IMAGE_DIR = "images/07Classic-Paralake-Maps"  # relative to project root
+BASE_IMAGE_DIR = "images/16Classic-Paralake-Maps"  # relative to project root
 OUTPUT_JSON_DIR = "json/image_sets"  # where to write json files
-URL_PREFIX = "/images/07Classic-Paralake-Maps"  # web path to images
+URL_PREFIX = "/images/16Classic-Paralake-Maps"  # web path to images
 OUTPUT_JSON_NAME = "classic-screenshots.json"  # output file name
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".bmp", ".tiff"}
