@@ -4,7 +4,6 @@ const tagColors = {};
 const markers = [];
 
 const baseMap = L.imageOverlay('map_recourses/map_dark.png', bounds);
-<<<<<<< development
 const satelliteMap = L.imageOverlay('map_recourses/map_sat.png', bounds);
 const streetNames = L.imageOverlay('map_recourses/streetnames.png', bounds);
 const propertyBounds = L.imageOverlay('map_recourses/property_bounds.png', bounds);

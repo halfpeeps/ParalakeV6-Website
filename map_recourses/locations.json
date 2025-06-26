@@ -68,7 +68,7 @@
     ],
     "primaryTag": "Vendor",
     "description": "A small independent convenience store in the city.",
-    "image": "map_recourses/images/-----------------.jpg",
+    "image": "map_recourses/images/puffer_mart.jpg",
     "icon": "map_recourses/icons/vendor.png"
   },
   {
@@ -776,7 +776,7 @@
     ],
     "primaryTag": "Industrial",
     "description": "A place of high voltage, and a low chance of striking an under the table deal. Located by Love Lane in the Forest.",
-    "image": "map_recourses/images/----------------.jpg",
+    "image": "map_recourses/images/substation.jpg",
     "icon": "map_recourses/icons/valve.png"
   },
   {
@@ -800,7 +800,7 @@
     ],
     "primaryTag": "Parking",
     "description": "A Central parkinglot by the motel for you to park your vehicle.",
-    "image": "map_recourses/images/-------------------.jpg",
+    "image": "map_recourses/images/city_motel.jpg",
     "icon": "map_recourses/icons/parking.png"
   },
   {
@@ -836,7 +836,7 @@
     ],
     "primaryTag": "Parking",
     "description": "A parkinglot in the Slums for you to park your vehicle.",
-    "image": "map_recourses/images/roadcrew_parking.jpg",
+    "image": "map_recourses/images/rc_atm.jpg",
     "icon": "map_recourses/icons/parking.png"
   },
   {
@@ -848,7 +848,7 @@
     ],
     "primaryTag": "Parking",
     "description": "A parkinglot just by Roadcrew for any mechanic or customers to park their vehicles.",
-    "image": "map_recourses/images/roadcrew.jpg",
+    "image": "map_recourses/images/rc_parking.jpg",
     "icon": "map_recourses/icons/parking.png"
   },
   {
@@ -920,7 +920,7 @@
     ],
     "primaryTag": "Parking",
     "description": "A central parkinglot in the City, for any residents or visitors of Hungriges.",
-    "image": "map_recourses/images/-----------------.jpg",
+    "image": "map_recourses/images/hungriges_parking.jpg",
     "icon": "map_recourses/icons/parking.png"
   },
   {
@@ -1076,7 +1076,7 @@
     ],
     "primaryTag": "ATM",
     "description": "A place for you top up your wallet, or deposit your change, in the Central City.",
-    "image": "map_recourses/images/-------------.jpg",
+    "image": "map_recourses/images/neon_atm.jpg",
     "icon": "map_recourses/icons/atm.png"
   },
   {
@@ -1100,7 +1100,7 @@
     ],
     "primaryTag": "ATM",
     "description": "A place for you top up your wallet, or deposit your change, in the Central City.",
-    "image": "map_recourses/images/------------.jpg",
+    "image": "map_recourses/images/fish_atm.jpg",
     "icon": "map_recourses/icons/atm.png"
   },
   {
@@ -1112,7 +1112,7 @@
     ],
     "primaryTag": "ATM",
     "description": "A place for you top up your wallet, or deposit your change, just by the City Gas Station.",
-    "image": "map_recourses/images/---------------.jpg",
+    "image": "map_recourses/images/hotshot_atm.jpg",
     "icon": "map_recourses/icons/atm.png"
   },
   {
@@ -1160,7 +1160,7 @@
     ],
     "primaryTag": "ATM",
     "description": "A place for you top up your wallet, or deposit your change, just by the Paralake Parcel Service.",
-    "image": "map_recourses/images/pps.jpg",
+    "image": "map_recourses/images/pps_atm.jpg",
     "icon": "map_recourses/icons/atm.png"
   },
   {
@@ -1172,7 +1172,7 @@
     ],
     "primaryTag": "ATM",
     "description": "A place for you top up your wallet, or deposit your change, located just by the Business Plaza.",
-    "image": "map_recourses/images/-------------------.jpg",
+    "image": "map_recourses/images/bplaza_atm.jpg",
     "icon": "map_recourses/icons/atm.png"
   },
   {
