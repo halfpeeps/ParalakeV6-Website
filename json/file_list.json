@@ -115,6 +115,14 @@
             "description": ""
         },
         {
+            "filename": "mcuwes_logo1.png",
+            "description": ""
+        },
+        {
+            "filename": "mcuwes_logo2.png",
+            "description": ""
+        },
+        {
             "filename": "orangejuice.png",
             "description": ""
         },
@@ -136,6 +144,10 @@
         },
         {
             "filename": "pointlesspawn.png",
+            "description": ""
+        },
+        {
+            "filename": "pub_woodsign01.png",
             "description": ""
         },
         {
@@ -261,6 +273,14 @@
             "description": ""
         },
         {
+            "filename": "available_hor.png",
+            "description": ""
+        },
+        {
+            "filename": "available_vert.png",
+            "description": ""
+        },
+        {
             "filename": "bazaar_media.png",
             "description": ""
         },
@@ -309,6 +329,10 @@
             "description": ""
         },
         {
+            "filename": "fireextinguisher.png",
+            "description": ""
+        },
+        {
             "filename": "foundry_closure_sign.png",
             "description": ""
         },
@@ -317,7 +341,35 @@
             "description": ""
         },
         {
+            "filename": "fredysmen4.png",
+            "description": ""
+        },
+        {
+            "filename": "gmod_fABUe8bQUP.png",
+            "description": ""
+        },
+        {
             "filename": "hvac_label.png",
+            "description": ""
+        },
+        {
+            "filename": "IMG_2800.png",
+            "description": ""
+        },
+        {
+            "filename": "MCUWESmen1.png",
+            "description": ""
+        },
+        {
+            "filename": "MCUWESmen2.png",
+            "description": ""
+        },
+        {
+            "filename": "MCUWESmen3.png",
+            "description": ""
+        },
+        {
+            "filename": "MCUWESmen4.png",
             "description": ""
         },
         {
@@ -333,15 +385,87 @@
             "description": ""
         },
         {
+            "filename": "rogue5.png",
+            "description": ""
+        },
+        {
             "filename": "screen.png",
+            "description": ""
+        },
+        {
+            "filename": "spawnroom_bg01.png",
+            "description": ""
+        },
+        {
+            "filename": "spawnroom_bg02.png",
             "description": ""
         },
         {
             "filename": "v6monitor.png",
             "description": ""
+        },
+        {
+            "filename": "vert06.png",
+            "description": ""
+        },
+        {
+            "filename": "vert07.png",
+            "description": ""
+        },
+        {
+            "filename": "xqbank-screen-1.png",
+            "description": ""
+        },
+        {
+            "filename": "xqbank-screen-2.png",
+            "description": ""
+        },
+        {
+            "filename": "xqbank-screen-3.png",
+            "description": ""
+        },
+        {
+            "filename": "xqbank-screen-4.png",
+            "description": ""
+        },
+        {
+            "filename": "xqbank-screen-5.png",
+            "description": ""
+        },
+        {
+            "filename": "xqbank-screen-6.png",
+            "description": ""
+        },
+        {
+            "filename": "xqbank-screen-7.png",
+            "description": ""
+        },
+        {
+            "filename": "xqbank-screen-8.png",
+            "description": ""
+        },
+        {
+            "filename": "zergad.png",
+            "description": ""
         }
     ],
     "09In-Game-Art/Parking-Signs": [
+        {
+            "filename": "bazaar.png",
+            "description": ""
+        },
+        {
+            "filename": "business.png",
+            "description": ""
+        },
+        {
+            "filename": "cardealer.png",
+            "description": ""
+        },
+        {
+            "filename": "marketstreet.png",
+            "description": ""
+        },
         {
             "filename": "parkingsign_bank.png",
             "description": ""
@@ -360,6 +484,10 @@
         },
         {
             "filename": "parkingsign_shoppingcenter.png",
+            "description": ""
+        },
+        {
+            "filename": "promenade.png",
             "description": ""
         }
     ],
@@ -479,7 +607,27 @@
             "description": ""
         },
         {
+            "filename": "metro-stations-inv.png",
+            "description": ""
+        },
+        {
+            "filename": "metro-stations-tp.png",
+            "description": ""
+        },
+        {
+            "filename": "metroslot2.png",
+            "description": ""
+        },
+        {
+            "filename": "metro_slot_1.png",
+            "description": ""
+        },
+        {
             "filename": "motelsign.png",
+            "description": ""
+        },
+        {
+            "filename": "pd.png",
             "description": ""
         },
         {
@@ -509,11 +657,27 @@
     ],
     "09In-Game-Art/Wayfinding-Signs": [
         {
+            "filename": "autoshop.png",
+            "description": ""
+        },
+        {
+            "filename": "autoshop_rev.png",
+            "description": ""
+        },
+        {
             "filename": "bankplaza_wayfinding.png",
             "description": ""
         },
         {
             "filename": "bankplaza_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "bazaar.png",
+            "description": ""
+        },
+        {
+            "filename": "bazaar_rev.png",
             "description": ""
         },
         {
@@ -533,6 +697,30 @@
             "description": ""
         },
         {
+            "filename": "bshops.png",
+            "description": ""
+        },
+        {
+            "filename": "bshops_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "cardealer.png",
+            "description": ""
+        },
+        {
+            "filename": "cardealer_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "casino.png",
+            "description": ""
+        },
+        {
+            "filename": "casino_rev.png",
+            "description": ""
+        },
+        {
             "filename": "citycenter_wayfinding.png",
             "description": ""
         },
@@ -546,6 +734,22 @@
         },
         {
             "filename": "citypark_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "delivery.png",
+            "description": ""
+        },
+        {
+            "filename": "delivery_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "docks.png",
+            "description": ""
+        },
+        {
+            "filename": "docks_rev.png",
             "description": ""
         },
         {
@@ -570,6 +774,22 @@
         },
         {
             "filename": "hungriges_wayfinding_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "industrial.png",
+            "description": ""
+        },
+        {
+            "filename": "industrial_rev.png",
+            "description": ""
+        },
+        {
+            "filename": "mcuwes.png",
+            "description": ""
+        },
+        {
+            "filename": "mcuwes_rev.png",
             "description": ""
         },
         {
@@ -621,6 +841,14 @@
             "description": ""
         },
         {
+            "filename": "pub.png",
+            "description": ""
+        },
+        {
+            "filename": "pub_rev.png",
+            "description": ""
+        },
+        {
             "filename": "regals_wayfinding.png",
             "description": ""
         },
@@ -669,6 +897,14 @@
             "description": ""
         },
         {
+            "filename": "tidal.png",
+            "description": ""
+        },
+        {
+            "filename": "tidal_rev.png",
+            "description": ""
+        },
+        {
             "filename": "toilets_wayfinding.png",
             "description": ""
         },
@@ -678,7 +914,133 @@
         }
     ],
     "13Other": [],
-    "13Other/14Logos": [
+    "13Other/Bank-Property-Images": [
+        {
+            "filename": "barn.png",
+            "description": ""
+        },
+        {
+            "filename": "bazaar.png",
+            "description": ""
+        },
+        {
+            "filename": "bazaarLarge.png",
+            "description": ""
+        },
+        {
+            "filename": "beachhuts.png",
+            "description": ""
+        },
+        {
+            "filename": "bshop.png",
+            "description": ""
+        },
+        {
+            "filename": "church.png",
+            "description": ""
+        },
+        {
+            "filename": "comms.png",
+            "description": ""
+        },
+        {
+            "filename": "foundry.png",
+            "description": ""
+        },
+        {
+            "filename": "glassco.png",
+            "description": ""
+        },
+        {
+            "filename": "hicktown1.png",
+            "description": ""
+        },
+        {
+            "filename": "hicktown2.png",
+            "description": ""
+        },
+        {
+            "filename": "hicktown3.png",
+            "description": ""
+        },
+        {
+            "filename": "hungriges.png",
+            "description": ""
+        },
+        {
+            "filename": "industrial3.png",
+            "description": ""
+        },
+        {
+            "filename": "officeComplex.png",
+            "description": ""
+        },
+        {
+            "filename": "regals.png",
+            "description": ""
+        },
+        {
+            "filename": "roxies.png",
+            "description": ""
+        },
+        {
+            "filename": "slums.png",
+            "description": ""
+        },
+        {
+            "filename": "slumsTrailer.png",
+            "description": ""
+        },
+        {
+            "filename": "southgate.png",
+            "description": ""
+        },
+        {
+            "filename": "subsLarge1.png",
+            "description": ""
+        },
+        {
+            "filename": "subsLarge2.png",
+            "description": ""
+        },
+        {
+            "filename": "subsLarge3.png",
+            "description": ""
+        },
+        {
+            "filename": "subsSmall1.png",
+            "description": ""
+        },
+        {
+            "filename": "subsSmall2.png",
+            "description": ""
+        },
+        {
+            "filename": "subsSmall3.png",
+            "description": ""
+        },
+        {
+            "filename": "subsSmall4.png",
+            "description": ""
+        },
+        {
+            "filename": "tidal.png",
+            "description": ""
+        },
+        {
+            "filename": "woodCabin1.png",
+            "description": ""
+        },
+        {
+            "filename": "woodCabin2.png",
+            "description": ""
+        },
+        {
+            "filename": "woodCabin3.png",
+            "description": ""
+        }
+    ],
+    "13Other/Logos": [
         {
             "filename": "Adobe_Premiere_Pro_LIqUKNug77.png",
             "description": ""
@@ -756,7 +1118,23 @@
             "description": ""
         },
         {
+            "filename": "spawnroom_credits.png",
+            "description": ""
+        },
+        {
+            "filename": "spawnroom_gradient.png",
+            "description": ""
+        },
+        {
+            "filename": "spawnroom_logo.png",
+            "description": ""
+        },
+        {
             "filename": "tn.png",
+            "description": ""
+        },
+        {
+            "filename": "v6pt_badge.png",
             "description": ""
         },
         {
@@ -773,6 +1151,538 @@
         },
         {
             "filename": "ytbanner.png",
+            "description": ""
+        }
+    ],
+    "13Other/Map-Location-Images": [
+        {
+            "filename": "autoshop.jpg",
+            "description": ""
+        },
+        {
+            "filename": "autoshop_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "bank.jpg",
+            "description": ""
+        },
+        {
+            "filename": "bankplaza_wc.jpg",
+            "description": ""
+        },
+        {
+            "filename": "bank_atm.jpg",
+            "description": ""
+        },
+        {
+            "filename": "bank_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "barn.jpg",
+            "description": ""
+        },
+        {
+            "filename": "bazaar.jpg",
+            "description": ""
+        },
+        {
+            "filename": "bazaar_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "beach.jpg",
+            "description": ""
+        },
+        {
+            "filename": "beach_huts.jpg",
+            "description": ""
+        },
+        {
+            "filename": "boathouse.jpg",
+            "description": ""
+        },
+        {
+            "filename": "bplaza_atm.jpg",
+            "description": ""
+        },
+        {
+            "filename": "bshops.jpg",
+            "description": ""
+        },
+        {
+            "filename": "bshop_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "business_gas.jpg",
+            "description": ""
+        },
+        {
+            "filename": "cardealer.jpg",
+            "description": ""
+        },
+        {
+            "filename": "cardealer_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "casino.jpg",
+            "description": ""
+        },
+        {
+            "filename": "church.jpg",
+            "description": ""
+        },
+        {
+            "filename": "cityhall.jpg",
+            "description": ""
+        },
+        {
+            "filename": "citypark_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "city_gas.jpg",
+            "description": ""
+        },
+        {
+            "filename": "city_gas_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "city_motel.jpg",
+            "description": ""
+        },
+        {
+            "filename": "city_park.jpg",
+            "description": ""
+        },
+        {
+            "filename": "city_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "comms.jpg",
+            "description": ""
+        },
+        {
+            "filename": "daves.jpg",
+            "description": ""
+        },
+        {
+            "filename": "digipeeps.jpg",
+            "description": ""
+        },
+        {
+            "filename": "docks.jpg",
+            "description": ""
+        },
+        {
+            "filename": "fd.jpg",
+            "description": ""
+        },
+        {
+            "filename": "fd_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "fish.jpg",
+            "description": ""
+        },
+        {
+            "filename": "fish_atm.jpg",
+            "description": ""
+        },
+        {
+            "filename": "forest_gas.jpg",
+            "description": ""
+        },
+        {
+            "filename": "forest_pond.jpg",
+            "description": ""
+        },
+        {
+            "filename": "foundry.jpg",
+            "description": ""
+        },
+        {
+            "filename": "fredys.jpg",
+            "description": ""
+        },
+        {
+            "filename": "glassco.jpg",
+            "description": ""
+        },
+        {
+            "filename": "hammer.jpg",
+            "description": ""
+        },
+        {
+            "filename": "hicktown1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "hicktown2.jpg",
+            "description": ""
+        },
+        {
+            "filename": "hicktown3.jpg",
+            "description": ""
+        },
+        {
+            "filename": "hospital.jpg",
+            "description": ""
+        },
+        {
+            "filename": "hotshot.jpg",
+            "description": ""
+        },
+        {
+            "filename": "hotshot_atm.jpg",
+            "description": ""
+        },
+        {
+            "filename": "hungriges.jpg",
+            "description": ""
+        },
+        {
+            "filename": "hungriges_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "industrial3.jpg",
+            "description": ""
+        },
+        {
+            "filename": "lookout.jpg",
+            "description": ""
+        },
+        {
+            "filename": "lucias.jpg",
+            "description": ""
+        },
+        {
+            "filename": "marketstreet_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "mcuwes.jpg",
+            "description": ""
+        },
+        {
+            "filename": "metro_business.jpg",
+            "description": ""
+        },
+        {
+            "filename": "metro_central.jpg",
+            "description": ""
+        },
+        {
+            "filename": "neon.jpg",
+            "description": ""
+        },
+        {
+            "filename": "neon_atm.jpg",
+            "description": ""
+        },
+        {
+            "filename": "office.jpg",
+            "description": ""
+        },
+        {
+            "filename": "office_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "olstool.jpg",
+            "description": ""
+        },
+        {
+            "filename": "outlet.jpg",
+            "description": ""
+        },
+        {
+            "filename": "pd.jpg",
+            "description": ""
+        },
+        {
+            "filename": "pln.jpg",
+            "description": ""
+        },
+        {
+            "filename": "pln_stand.jpg",
+            "description": ""
+        },
+        {
+            "filename": "pps.jpg",
+            "description": ""
+        },
+        {
+            "filename": "pps_atm.jpg",
+            "description": ""
+        },
+        {
+            "filename": "promenade_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "pub.jpg",
+            "description": ""
+        },
+        {
+            "filename": "pub_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "puffer_mart.jpg",
+            "description": ""
+        },
+        {
+            "filename": "rc_atm.jpg",
+            "description": ""
+        },
+        {
+            "filename": "rc_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "regals.jpg",
+            "description": ""
+        },
+        {
+            "filename": "regals_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "rest_stop.jpg",
+            "description": ""
+        },
+        {
+            "filename": "roadcrew.jpg",
+            "description": ""
+        },
+        {
+            "filename": "roadcrew_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "roastrogue.jpg",
+            "description": ""
+        },
+        {
+            "filename": "roxies.jpg",
+            "description": ""
+        },
+        {
+            "filename": "ruralmotel.jpg",
+            "description": ""
+        },
+        {
+            "filename": "safety_first.jpg",
+            "description": ""
+        },
+        {
+            "filename": "slums.jpg",
+            "description": ""
+        },
+        {
+            "filename": "slums_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "slums_trailer.jpg",
+            "description": ""
+        },
+        {
+            "filename": "southgate.jpg",
+            "description": ""
+        },
+        {
+            "filename": "stalburg.jpg",
+            "description": ""
+        },
+        {
+            "filename": "storage.jpg",
+            "description": ""
+        },
+        {
+            "filename": "substation.jpg",
+            "description": ""
+        },
+        {
+            "filename": "subs_large1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "subs_large2.jpg",
+            "description": ""
+        },
+        {
+            "filename": "subs_large3.jpg",
+            "description": ""
+        },
+        {
+            "filename": "subs_park.jpg",
+            "description": ""
+        },
+        {
+            "filename": "subs_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "subs_pond.jpg",
+            "description": ""
+        },
+        {
+            "filename": "subs_small1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "subs_small2.jpg",
+            "description": ""
+        },
+        {
+            "filename": "subs_small3.jpg",
+            "description": ""
+        },
+        {
+            "filename": "taxi.jpg",
+            "description": ""
+        },
+        {
+            "filename": "tidal.jpg",
+            "description": ""
+        },
+        {
+            "filename": "tidal_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "woodcabin1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "woodcabin2.jpg",
+            "description": ""
+        },
+        {
+            "filename": "woodcabin3.jpg",
+            "description": ""
+        }
+    ],
+    "13Other/Playtesting": [
+        {
+            "filename": "agree.png",
+            "description": ""
+        },
+        {
+            "filename": "bugreports.png",
+            "description": ""
+        },
+        {
+            "filename": "feedback.png",
+            "description": ""
+        },
+        {
+            "filename": "givingfeedback.png",
+            "description": ""
+        },
+        {
+            "filename": "howtoinstall.png",
+            "description": ""
+        },
+        {
+            "filename": "imagecompare.png",
+            "description": ""
+        },
+        {
+            "filename": "installtutorial.png",
+            "description": ""
+        },
+        {
+            "filename": "itempanel.png",
+            "description": ""
+        },
+        {
+            "filename": "minicard_orange.png",
+            "description": ""
+        },
+        {
+            "filename": "note.png",
+            "description": ""
+        },
+        {
+            "filename": "onboarding.png",
+            "description": ""
+        },
+        {
+            "filename": "s1_small.png",
+            "description": ""
+        },
+        {
+            "filename": "s2_small.png",
+            "description": ""
+        },
+        {
+            "filename": "s3_small.png",
+            "description": ""
+        },
+        {
+            "filename": "s4_small.png",
+            "description": ""
+        },
+        {
+            "filename": "s5_small.png",
+            "description": ""
+        },
+        {
+            "filename": "s6_small.png",
+            "description": ""
+        },
+        {
+            "filename": "s7_small.png",
+            "description": ""
+        },
+        {
+            "filename": "section1.png",
+            "description": ""
+        },
+        {
+            "filename": "section2.png",
+            "description": ""
+        },
+        {
+            "filename": "section3.png",
+            "description": ""
+        },
+        {
+            "filename": "section4.png",
+            "description": ""
+        },
+        {
+            "filename": "section5.png",
+            "description": ""
+        },
+        {
+            "filename": "section6.png",
+            "description": ""
+        },
+        {
+            "filename": "section7.png",
+            "description": ""
+        },
+        {
+            "filename": "test.png",
+            "description": ""
+        },
+        {
+            "filename": "tips.png",
+            "description": ""
+        },
+        {
+            "filename": "welcome.png",
             "description": ""
         }
     ],
