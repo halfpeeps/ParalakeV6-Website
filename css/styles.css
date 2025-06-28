@@ -70,8 +70,8 @@ body {
 #header-menu {
     position: absolute;
     top: 110%;
-    left: calc(50% - 600px);
-    width: 1200px;
+    left: calc(50% - 500px);
+    width: 1000px;
     background-color: var(--color-hover-transparent);
     text-align: center;
     align-items: center;
