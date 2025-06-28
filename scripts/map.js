@@ -18,7 +18,7 @@ const map = L.map('map', {
 
 const baseLayers = {
   "Default View": baseMap,
-  "Satellite View": satelliteMap
+  // "Satellite View": satelliteMap
 };
 
 const overlayLayers = {
