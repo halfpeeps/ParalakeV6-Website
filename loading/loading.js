@@ -56,7 +56,7 @@ const imageData = [
     { name: "v6projector.jpg", author: "peeps" },
     { name: "v6pub.jpg", author: "peeps" },
     { name: "v6vaultopening.jpg", author: "peeps" },
-    { name: "sniperAmmo.jpg", author: "sm3321" },
+    { name: "sniperAmmo.jpeg", author: "sm3321" },
 ];
 
 let current = 0;

@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/archive.css">
     <link rel="stylesheet" type="text/css" href="css/splashscreen.css">
-    <link rel="icon" type="image/x-icon" href="images/06Promotional-Material/Logos/archive_icon_mono.png">
+    <link rel="icon" type="image/x-icon" href="images_excluded/archive_icon_mono.png">
     <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Jost:ital@0;1&display=swap" rel="stylesheet">
@@ -25,19 +25,19 @@
         </div>
     </div>
     
-    <!-- SPLASH SCREEN -->
+    <!-- SPLASH SCREEN: Disable/Enable in the CSS -->
     <div class="popup-overlay" id="popup">
         <div class="popup-container">
             <button class="popup-close" onclick="closePopup()">&times;</button>
             <div class="popup-image">
-                <img src="images_excluded/v6_trailer_poster02.png">
+                <img src="images_excluded/splashscreen_launch.png">
             </div>
             <div class="popup-content">
-                <div class="popup-header">Paralake V6 releases this June</div>
+                <div class="popup-header">Paralake V6:  OUT NOW!</div>
                 <div class="popup-text">
                     Bigger, more detailed,
-                    but still distinctly Paralake.  On June 28th,
-                    experience a roleplaying map designed for
+                    but still distinctly Paralake.
+                    Experience a roleplaying map designed for
                     modern day PERPHeads.
 
                     Whether you’re looking to start a business,
@@ -49,7 +49,7 @@
                     surrounding forest has it all.</div>
             </div>
             <!-- add the forum post here -->
-            <a href="https://perpheads.com/threads/paralake-v6-release-date-trailer.69130/" target="_blank" class="popup-button">Find Out More</a>
+            <a href="downloads.html"  class="popup-button">Download Now</a>
         </div>
     </div>
     
@@ -58,17 +58,18 @@
         <span id="header-title" style="line-height: 0.8;">Paralake V6 Development Archive<br><span id="header-subtitle" style="font-size: 22px;">Coming Soon</span></span>
         
         <a href="archive.html" style="padding-top: 5px">
-            <img src="images/06Promotional-Material/Logos/archive_logo_mono.png" alt="Logo" style="height: 45px; border: 0px"
-            onmouseover="this.src='images/06Promotional-Material/Logos/archive_logo.png';"
-            onmouseout="this.src='images/06Promotional-Material/Logos/archive_logo_mono.png';">
+            <img src="images_excluded/archive_logo_mono.png" alt="Logo" style="height: 45px; border: 0px"
+            onmouseover="this.src='images_excluded/archive_logo.png';"
+            onmouseout="this.src='images_excluded/archive_logo_mono.png';">
         </a>
 
         <div id="header-menu">
             <button class="menu-button-active" onclick="location.href='archive.html'">Development Archive</button>
-            <button class="menu-button-disabled" onclick="location.href='#'">Changelogs Archive</button>
-            <button class="menu-button" onclick="location.href='updates.html'">Update Posts</button>
+            <!-- <button class="menu-button-disabled" onclick="location.href='#'">Changelogs Archive</button> -->
+            <button class="menu-button" onclick="location.href='updates.html'">Updates</button>
             <button class="menu-button" onclick="location.href='downloads.html'">Downloads</button>
             <button class="menu-button" onclick="location.href='credits.html'">Map Credits</button>
+            <button class="menu-button-map" onclick="location.href='map.html'">Interactive Map</button>
             <button id="theme-toggle">Dark Theme</button>
         </div>
     </div>

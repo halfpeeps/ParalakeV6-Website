@@ -1,0 +1,1286 @@
+[
+  {
+  "name": "Slums Apartments",
+  "x": 417,
+  "y": 3788,
+  "tags": [
+    "Apartment", "Ownable"
+  ],
+  "primaryTag": "Ownable",
+  "description": "A run down apartment complex to the north of the city.",
+  "image": "map_recourses/images/slums.jpg",
+  "icon": "map_recourses/icons/highrise_ownable.png"
+  },
+  {
+  "name": "Taxi Depot",
+  "x": 599,
+  "y": 3516,
+  "tags": [
+    "Job"
+  ],
+  "primaryTag": "Job",
+  "description": "The base of operations for the taxi service in Paralake.",
+  "image": "map_recourses/images/taxi.jpg",
+  "icon": "map_recourses/icons/garage.png"
+  },
+  {
+    "name": "Paralake Police Department",
+    "x": 830,
+    "y": 3203,
+    "tags": [
+      "Police Department", "Job", "Public Services"
+    ],
+    "primaryTag": "Job",
+    "description": "Paralake's police department building",
+    "image": "map_recourses/images/pd.jpg",
+    "icon": "map_recourses/icons/pd.png"
+  },
+  {
+    "name": "City Gas Station",
+    "x": 1144,
+    "y": 3547,
+    "tags": [
+      "Vendor", "Shop", "Parking"
+    ],
+    "primaryTag": "Vendor",
+    "description": "The gas station for the city, located on Station Hill",
+    "image": "map_recourses/images/city_gas.jpg",
+    "icon": "map_recourses/icons/gas.png"
+  },
+  {
+    "name": "Fire Department",
+    "x": 1504,
+    "y": 3534,
+    "tags": [
+      "Fire Department", "Job", "Vendor", "Public Services"
+    ],
+    "primaryTag": "Job",
+    "description": "The Paralake City Fire Department, located on Station Hill.",
+    "image": "map_recourses/images/fd.jpg",
+    "icon": "map_recourses/icons/fd.png"
+  },
+  {
+    "name": "Puffer Mart",
+    "x": 1131,
+    "y": 3292,
+    "tags": [
+      "Vendor", "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "A small independent convenience store in the city.",
+    "image": "map_recourses/images/puffer_mart.jpg",
+    "icon": "map_recourses/icons/vendor.png"
+  },
+  {
+    "name": "NEON",
+    "x": 1245,
+    "y": 3214,
+    "tags": [
+      "Vendor", "Restaurant"
+    ],
+    "primaryTag": "Vendor",
+    "description": "A hidden underground nightclub in the city.",
+    "image": "map_recourses/images/neon.jpg",
+    "icon": "map_recourses/icons/bar.png"
+  },
+  {
+    "name": "Storage",
+    "x": 1546,
+    "y": 3305,
+    "tags": [
+      "Vendor"
+    ],
+    "primaryTag": "Vendor",
+    "description": "A set of storage garages in the city.",
+    "image": "map_recourses/images/storage.jpg",
+    "icon": "map_recourses/icons/garage.png"
+  },
+  {
+    "name": "Hospital",
+    "x": 1363,
+    "y": 2951,
+    "tags": [
+      "Hospital", "Job", "Vendor", "Public Services"
+    ],
+    "primaryTag": "Job",
+    "description": "St. Cameron's Hospital, located on Creed Street",
+    "image": "map_recourses/images/hospital.jpg",
+    "icon": "map_recourses/icons/hospital.png"
+  },
+  {
+    "name": "City Hall",
+    "x": 840,
+    "y": 2700,
+    "tags": [
+      "Public Services", "Job", "Vendor"
+    ],
+    "primaryTag": "Job",
+    "description": "Paralake City Hall is in the center of the city, and is where the mayor resides.",
+    "image": "map_recourses/images/cityhall.jpg",
+    "icon": "map_recourses/icons/cityhall.png"
+  },
+  {
+    "name": "Roast Rogue",
+    "x": 1164,
+    "y": 2780,
+    "tags": [
+      "Vendor", "Restaurant"
+    ],
+    "primaryTag": "Vendor",
+    "description": "A small coffee shop on Market Street.",
+    "image": "map_recourses/images/roastrogue.jpg",
+    "icon": "map_recourses/icons/food.png"
+  },
+  {
+    "name": "Ol' Stool",
+    "x": 1275,
+    "y": 2780,
+    "tags": [
+      "Vendor", "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "A furneture store located on Market Street.",
+    "image": "map_recourses/images/olstool.jpg",
+    "icon": "map_recourses/icons/vendor.png"
+  },
+  {
+    "name": "Hammer Plus",
+    "x": 1403,
+    "y": 2780,
+    "tags": [
+      "Vendor", "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "A hardware store located on Market Street.",
+    "image": "map_recourses/images/hammer.jpg",
+    "icon": "map_recourses/icons/vendor.png"
+  },
+  {
+    "name": "Safety First",
+    "x": 1501,
+    "y": 2789,
+    "tags": [
+      "Vendor", "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "A pharmacy located on Market Street.",
+    "image": "map_recourses/images/safetyfirst.jpg",
+    "icon": "map_recourses/icons/vendor.png"
+  },
+  {
+    "name": "Poisson",
+    "x": 1578,
+    "y": 2789,
+    "tags": [
+      "Vendor", "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "A fish vendor located on Market Street.",
+    "image": "map_recourses/images/fish.jpg",
+    "icon": "map_recourses/icons/vendor.png"
+  },
+  {
+    "name": "Lucia's Clothing Store",
+    "x": 1204,
+    "y": 2613,
+    "tags": [
+      "Vendor", "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "A clothing store located on Market Street.",
+    "image": "map_recourses/images/lucias.jpg",
+    "icon": "map_recourses/icons/vendor.png"
+  },
+  {
+    "name": "HOTSHOT Gun Range",
+    "x": 1327,
+    "y": 2619,
+    "tags": [
+      "Vendor"
+    ],
+    "primaryTag": "Vendor",
+    "description": "Paralake's underground gun range, located on Market Street.",
+    "image": "map_recourses/images/hotshot.jpg",
+    "icon": "map_recourses/icons/vendor.png"
+  },
+  {
+    "name": "Fredy's Bakery",
+    "x": 1505,
+    "y": 2618,
+    "tags": [
+      "Vendor", "Restaurant"
+    ],
+    "primaryTag": "Vendor",
+    "description": "A small bakery and cafe located on Market Street.",
+    "image": "map_recourses/images/fredys.jpg",
+    "icon": "map_recourses/icons/food.png"
+  },
+  {
+    "name": "DIGIPEEPS",
+    "x": 1577,
+    "y": 2616,
+    "tags": [
+      "Vendor", "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "A tech store located on Market Street.",
+    "image": "map_recourses/images/digipeeps.jpg",
+    "icon": "map_recourses/icons/vendor.png"
+  },
+  {
+    "name": "STALBURG Pumping Station",
+    "x": 612,
+    "y": 2698,
+    "tags": [
+      "Industrial", "Utility"
+    ],
+    "primaryTag": "Industrial",
+    "description": "A utility building located on Stalburg Way, providing the city and surrounding areas with water services.  Access to the sewer system is available here.",
+    "image": "map_recourses/images/stalburg.jpg",
+    "icon": "map_recourses/icons/valve.png"
+  },
+  {
+    "name": "Bank Plaza Public Toilets",
+    "x": 588,
+    "y": 2631,
+    "tags": [
+      "Public Services"
+    ],
+    "primaryTag": "Public Services",
+    "description": "Public toilets located in the City Center",
+    "image": "map_recourses/images/bankplaza_wc.jpg",
+    "icon": "map_recourses/icons/wc.png"
+  },
+  {
+    "name": "XQ Bank",
+    "x": 803,
+    "y": 2389,
+    "tags": [
+      "Vendor", "ATM"
+    ],
+    "primaryTag": "Vendor",
+    "description": "Paralake's central bank, located in the City Center.",
+    "image": "map_recourses/images/bank.jpg",
+    "icon": "map_recourses/icons/bank.png"
+  },
+  {
+    "name": "Paralake News Tower",
+    "x": 534,
+    "y": 2273,
+    "tags": [
+      "Vendor"
+    ],
+    "primaryTag": "Vendor",
+    "description": "Paralake News is the main news provider in Paralake.  Purchase adverts and billboards here.",
+    "image": "map_recourses/images/pln.jpg",
+    "icon": "map_recourses/icons/pln.png"
+  },
+  {
+    "name": "Regals Resort",
+    "x": 613,
+    "y": 2101,
+    "tags": [
+      "Ownable", "Apartment"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A luxury apartment complex located on the beach.",
+    "image": "map_recourses/images/regals.jpg",
+    "icon": "map_recourses/icons/highrise_ownable.png"
+  },
+  {
+    "name": "Hungriges",
+    "x": 1141,
+    "y": 2161,
+    "tags": [
+      "Ownable", "Restaurant"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A large restaurant with views of the beach.",
+    "image": "map_recourses/images/hungriges.jpg",
+    "icon": "map_recourses/icons/food.png"
+  },
+  {
+    "name": "Office Complex",
+    "x": 1531,
+    "y": 2341,
+    "tags": [
+      "Ownable", "Office"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A set of office spaces located in the city center.",
+    "image": "map_recourses/images/office.jpg",
+    "icon": "map_recourses/icons/highrise_ownable.png"
+  },
+  {
+    "name": "Slums Trailer",
+    "x": 546,
+    "y": 3652,
+    "tags": [
+      "Ownable"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A small trailer near the Slums Apartments.",
+    "image": "map_recourses/images/slums_trailer.jpg",
+    "icon": "map_recourses/icons/house_ownable.png"
+  },
+  {
+    "name": "Beach Huts",
+    "x": 1231,
+    "y": 1996,
+    "tags": [
+      "Ownable"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A set of beach huts loacted by the water front for those who wish to go fishing.",
+    "image": "map_recourses/images/beach_huts.jpg",
+    "icon": "map_recourses/icons/house_ownable.png"
+  },
+  {
+    "name": "Large Suburbs House 1",
+    "x": 2716,
+    "y": 3478,
+    "tags": [
+      "Ownable", "House"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A large suburban house with garden and garage.",
+    "image": "map_recourses/images/subs_large1.jpg",
+    "icon": "map_recourses/icons/house_ownable.png"
+  },
+  {
+    "name": "Large Suburbs House 2",
+    "x": 2874,
+    "y": 3241,
+    "tags": [
+      "Ownable", "House"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A large suburban house with garden and garage.",
+    "image": "map_recourses/images/subs_large2.jpg",
+    "icon": "map_recourses/icons/house_ownable.png"
+  },
+  {
+    "name": "Large Suburbs House 3",
+    "x": 2388,
+    "y": 2544,
+    "tags": [
+      "Ownable", "House"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A large suburban house with garden and garage.",
+    "image": "map_recourses/images/subs_large3.jpg",
+    "icon": "map_recourses/icons/house_ownable.png"
+  },
+  {
+    "name": "Small Suburbs House 1",
+    "x": 2553,
+    "y": 3068,
+    "tags": [
+      "Ownable", "House"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A small suburban house with garden and garage.",
+    "image": "map_recourses/images/subs_small1.jpg",
+    "icon": "map_recourses/icons/house_ownable.png"
+  },
+  {
+    "name": "Small Suburbs House 2",
+    "x": 2553,
+    "y": 2944,
+    "tags": [
+      "Ownable", "House"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A small suburban house with garden and garage.",
+    "image": "map_recourses/images/subs_small2.jpg",
+    "icon": "map_recourses/icons/house_ownable.png"
+  },
+  {
+    "name": "Small Suburbs House 3",
+    "x": 2386,
+    "y": 2815,
+    "tags": [
+      "Ownable", "House"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A small suburban house with garden and garage.",
+    "image": "map_recourses/images/subs_small3.jpg",
+    "icon": "map_recourses/icons/house_ownable.png"
+  },
+  {
+    "name": "Small Suburbs House 4",
+    "x": 2386,
+    "y": 3203,
+    "tags": [
+      "Ownable", "House"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A small suburban house with garden and garage.",
+    "image": "map_recourses/images/subs_small4.jpg",
+    "icon": "map_recourses/icons/house_ownable.png"
+  },
+  {
+    "name": "Roxie's Diner",
+    "x": 3452,
+    "y": 3261,
+    "tags": [
+      "Ownable", "Restaurant"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A large restaurant located at the service station in the Forest.",
+    "image": "map_recourses/images/roxies.jpg",
+    "icon": "map_recourses/icons/food.png"
+  },
+  {
+    "name": "Forest Gas Station",
+    "x": 3460,
+    "y": 2892,
+    "tags": [
+      "Vendor", "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "The gas station located at the service station in the Forest.",
+    "image": "map_recourses/images/forest_gas.jpg",
+    "icon": "map_recourses/icons/gas.png"
+  },
+  {
+    "name": "Church",
+    "x": 3419,
+    "y": 2211,
+    "tags": [
+      "Ownable"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A large property in the Forest used for gatherings and events.",
+    "image": "map_recourses/images/church.jpg",
+    "icon": "map_recourses/icons/church.png"
+  },
+  {
+    "name": "Farm",
+    "x": 3921,
+    "y": 2532,
+    "tags": [
+      "Ownable"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A large barn with a small hut and field.",
+    "image": "map_recourses/images/barn.jpg",
+    "icon": "map_recourses/icons/house_ownable.png"
+  },
+  {
+    "name": "Comms Outpost",
+    "x": 3121,
+    "y": 1567,
+    "tags": [
+      "Ownable", "Industrial"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A medium sized communication outpost in the forest.",
+    "image": "map_recourses/images/comms.jpg",
+    "icon": "map_recourses/icons/factory.png"
+  },
+  {
+    "name": "Wood Cabin 1", 
+    "x": 3748,
+    "y": 903,
+    "tags": [
+      "Ownable", "House"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A small wooden cabin, deep in the forest.",
+    "image": "map_recourses/images/woodcabin1.jpg",
+    "icon": "map_recourses/icons/house_ownable.png"
+  },
+  {
+    "name": "Wood Cabin 2",
+    "x": 3228,
+    "y": 398,
+    "tags": [
+      "Ownable", "House"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A small wooden cabin, deep in the forest.",
+    "image": "map_recourses/images/woodcabin2.jpg",
+    "icon": "map_recourses/icons/house_ownable.png"
+  },
+  {
+    "name": "Wood Cabin 3",
+    "x": 2620,
+    "y": 140,
+    "tags": [
+      "Ownable", "House"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A small wooden cabin, deep in the forest.",
+    "image": "map_recourses/images/woodcabin3.jpg",
+    "icon": "map_recourses/icons/house_ownable.png"
+  },
+  {
+    "name": "Hicktown Trailer 1",
+    "x": 4024,
+    "y": 3740,
+    "tags": [
+      "Ownable"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A small trailer located in the trailerpark of hicktown.",
+    "image": "map_recourses/images/hicktown1.jpg",
+    "icon": "map_recourses/icons/house_ownable.png"
+  },
+  {
+    "name": "Hicktown Trailer 2",
+    "x": 3958,
+    "y": 3834,
+    "tags": [
+      "Ownable"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A small trailer located in the trailerpark of hicktown.",
+    "image": "map_recourses/images/hicktown2.jpg",
+    "icon": "map_recourses/icons/house_ownable.png"
+  },
+  {
+    "name": "Hicktown Trailer 3",
+    "x": 3865,
+    "y": 3820,
+    "tags": [
+      "Ownable"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A small trailer located in the trailerpark of hicktown.",
+    "image": "map_recourses/images/hicktown3.jpg",
+    "icon": "map_recourses/icons/house_ownable.png"
+  },
+  {
+    "name": "Paralake Foundry",
+    "x": 1987,
+    "y": 483,
+    "tags": [
+      "Ownable", "Industrial"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A large industrial foundry just by Mill Street in the outskirts of business district.",
+    "image": "map_recourses/images/foundry.jpg",
+    "icon": "map_recourses/icons/factory.png"
+  },
+  {
+    "name": "J&M Glass Co",
+    "x": 1811,
+    "y": 823,
+    "tags": [
+      "Ownable", "Industrial"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A large sized industrial property in the center of the industrial sector, alongside Mill Street.",
+    "image": "map_recourses/images/glassco.jpg",
+    "icon": "map_recourses/icons/factory.png"
+  },
+  {
+    "name": "Industrial 3",
+    "x": 1985,
+    "y": 1110,
+    "tags": [
+      "Ownable", "Industrial"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A medium sized industrial property located alongside Pine Road, just across lelitos pub.",
+    "image": "map_recourses/images/industrial3.jpg",
+    "icon": "map_recourses/icons/factory.png"
+  },
+  {
+    "name": "Southgate Center",
+    "x": 1568,
+    "y": 1147,
+    "tags": [
+      "Ownable", "Office"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A large industrial office compound located in the center of Mill Street.",
+    "image": "map_recourses/images/southgate.jpg",
+    "icon": "map_recourses/icons/highrise_ownable.png"
+  },
+  {
+    "name": "PPS Delivery Depot",
+    "x": 1248,
+    "y": 1135,
+    "tags": [
+      "Job", "Vendor"
+    ],
+    "primaryTag": "Job",
+    "description": "Paralake Parcel Service's Warehouse. A great location for a swift delivery of your parcels, or steady income.",
+    "image": "map_recourses/images/pps.jpg",
+    "icon": "map_recourses/icons/delivery.png"
+  },
+  {
+    "name": "McUwes",
+    "x": 1217,
+    "y": 979,
+    "tags": [
+      "Vendor", "Restaurant"
+    ],
+    "primaryTag": "Vendor",
+    "description": "A great location for a quick snack or a ordinary meal, located just across Business Plaza.",
+    "image": "map_recourses/images/mcuwes.jpg",
+    "icon": "map_recourses/icons/food.png"
+  },
+  {
+    "name": "Business Gas Station",
+    "x": 1343,
+    "y": 914,
+    "tags": [
+      "Vendor", "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "The gas station for the city, located by Business Street",
+    "image": "map_recourses/images/business_gas.jpg",
+    "icon": "map_recourses/icons/gas.png"
+  },
+  {
+    "name": "Bazaar Shopping Center",
+    "x": 830,
+    "y": 559,
+    "tags": [
+      "Ownable", "Shop", "ATM"
+    ],
+    "primaryTag": "Ownable",
+    "description": "The centrum for all shopkeepers. A great location for you to purchase items, or sell them. The shopping center is located alongside Plaza Street",
+    "image": "map_recourses/images/bazaar.jpg",
+    "icon": "map_recourses/icons/shop_ownable.png"
+  },
+  {
+    "name": "Casino",
+    "x": 1374,
+    "y": 556,
+    "tags": [
+      "Vendor", "Restaurant"
+    ],
+    "primaryTag": "Vendor",
+    "description": "Feeling lucky? Come test your luck on the slots, wheels or tables at Fellton's Casino located alongside Plaza Street.",
+    "image": "map_recourses/images/casino.jpg",
+    "icon": "map_recourses/icons/casino.png"
+  },
+  {
+    "name": "Tidal Apartments",
+    "x": 858,
+    "y": 1156,
+    "tags": [
+      "Ownable", "Apartment"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A set of medium sized luxerious apartment units in the Center of Business District, located alongside Harbor Road. ",
+    "image": "map_recourses/images/tidal.jpg",
+    "icon": "map_recourses/icons/highrise_ownable.png"
+  },
+  {
+    "name": "Car Dealer",
+    "x": 1131,
+    "y": 239,
+    "tags": [
+      "Vendor"
+    ],
+    "primaryTag": "Vendor",
+    "description": "Your number one provider of all vehicles. You can purchase, test drive, spawn or customize your vehicle here. The Car Dealer is located alongside Plaza Street.",
+    "image": "map_recourses/images/cardealer.jpg",
+    "icon": "map_recourses/icons/cardealer.png"
+  },
+  {
+    "name": "Collier's Auto Shop",
+    "x": 1558,
+    "y": 275,
+    "tags": [
+      "Vendor"
+    ],
+    "primaryTag": "Vendor",
+    "description": "At Collier's Auto Shop you can repair your vehicle, upgrade your engine or customize your speedometer. You can locate the Autoshop alongside Plaza Street. ",
+    "image": "map_recourses/images/autoshop.jpg",
+    "icon": "map_recourses/icons/roadcrew.png"
+  },
+  {
+    "name": "Roadcrew",
+    "x": 274,
+    "y": 2919,
+    "tags": [
+      "Job", "Public Services", "Vendor", "Shop"
+    ],
+    "primaryTag": "Job",
+    "description": "The base of operations for Roadcrew, located on West Street. You can repair or unimpound a vehicle here, or take on on the duties of a Roadcrew employee yourself.",
+    "image": "map_recourses/images/roadcrew.jpg",
+    "icon": "map_recourses/icons/roadcrew.png"
+  },
+  {
+    "name": "Dave's Burgers",
+    "x": 96,
+    "y": 3166,
+    "tags": [
+      "Vendor", "Restaurant"
+    ],
+    "primaryTag": "Vendor",
+    "description": "Feeling Hungry? Dave's Burders has the juciest fast food in all of Paralake, you Can find Dave's in the West Street in the City.",
+    "image": "map_recourses/images/daves.jpg",
+    "icon": "map_recourses/icons/food.png"
+  },
+  {
+    "name": "Business Shop 1",
+    "x": 1427,
+    "y": 707,
+    "tags": [
+      "Ownable", "Shop"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A large property for you or your organization to front your operations or other businesses, located alongside Business Street.",
+    "image": "map_recourses/images/bshops.jpg",
+    "icon": "map_recourses/icons/shop_ownable.png"
+  },
+  {
+    "name": "Business Shop 2",
+    "x": 1345,
+    "y": 707,
+    "tags": [
+      "Ownable", "Shop"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A large property for you or your organization to front your operations or other businesses, located alongside Business Street.",
+    "image": "map_recourses/images/bshops.jpg",
+    "icon": "map_recourses/icons/shop_ownable.png"
+  },
+  {
+    "name": "Business Shop 3",
+    "x": 1264,
+    "y": 707,
+    "tags": [
+      "Ownable", "Shop"
+    ],
+    "primaryTag": "Ownable",
+    "description": "A large property for you or your organization to front your operations or other businesses, located alongside Business Street.",
+    "image": "map_recourses/images/bshops.jpg",
+    "icon": "map_recourses/icons/shop_ownable.png"
+  },
+  {
+    "name": "Lelito's Pub",
+    "x": 2393,
+    "y": 1323,
+    "tags": [
+      "Vendor", "Restaurant", "Shop"
+    ],
+    "primaryTag": "Vendor",
+    "description": "Looking to raise a glass or drown your sorrows? Come get a taste of the finest drops, located on the beach front just by Pine Road.",
+    "image": "map_recourses/images/pub.jpg",
+    "icon": "map_recourses/icons/food.png"
+  },
+  {
+    "name": "Substation",
+    "x": 2556,
+    "y": 2235,
+    "tags": [
+      "Industrial", "Utility"
+    ],
+    "primaryTag": "Industrial",
+    "description": "A place of high voltage, and a low chance of striking an under the table deal. Located by Love Lane in the Forest.",
+    "image": "map_recourses/images/substation.jpg",
+    "icon": "map_recourses/icons/valve.png"
+  },
+  {
+    "name": "Slums Parking",
+    "x": 285,
+    "y": 3807,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A Slums parkinglot for you to park your vehicle.",
+    "image": "map_recourses/images/slums_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "City Motel Parking",
+    "x": 795,
+    "y": 3498,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A Central parkinglot by the motel for you to park your vehicle.",
+    "image": "map_recourses/images/city_motel.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "City Gas Station Parking",
+    "x": 1261,
+    "y": 3532,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A Central parkinlot by the City Gas Station for you to park your vehicle.",
+    "image": "map_recourses/images/city_gas_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Fire Department Private Parking",
+    "x": 1666,
+    "y": 3502,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A Central parkinglot for any firefighters or their visitors to park their vehicles.",
+    "image": "map_recourses/images/fd_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "West Street Parking",
+    "x": 104,
+    "y": 2983,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A parkinglot in the Slums for you to park your vehicle.",
+    "image": "map_recourses/images/rc_atm.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Roadcrew Parking",
+    "x": 257,
+    "y": 3078,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A parkinglot just by Roadcrew for any mechanic or customers to park their vehicles.",
+    "image": "map_recourses/images/rc_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "City Park Parking",
+    "x": 833,
+    "y": 2998,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A central Parkinglot in the city for you to park your vehicle.",
+    "image": "map_recourses/images/citypark_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Storage Parking",
+    "x": 1545,
+    "y": 3225,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A central parkinglot in the City for you to park your vehicle while storing or retrieving your items.",
+    "image": "map_recourses/images/storage.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Market Street Parking",
+    "x": 1550,
+    "y": 2938,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A central parkinglot in the City, for you to park while going on a shopping spree.",
+    "image": "map_recourses/images/marketstreet_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Bank Parking",
+    "x": 755,
+    "y": 2255,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A central parkinglot in the City, for any customers of XQ Bank.",
+    "image": "map_recourses/images/bank_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Regals Resort Parking",
+    "x": 806,
+    "y": 2056,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A central parkinglot in the City, for any residents or visitors of Regals Resort.",
+    "image": "map_recourses/images/regals_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Hungriges Parking",
+    "x": 989,
+    "y": 2089,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A central parkinglot in the City, for any residents or visitors of Hungriges.",
+    "image": "map_recourses/images/hungriges_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "City Parking Garage",
+    "x": 1236,
+    "y": 2369,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A good place to park, or retrieve your vehicle! Located alongside Main Street.",
+    "image": "map_recourses/images/city_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Office Complex Parking",
+    "x": 1487,
+    "y": 2174,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A central parkinglot in the City, for any workers or visitors to the Office Complex.",
+    "image": "map_recourses/images/office_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Suburbs Park Parking",
+    "x": 2226,
+    "y": 3283,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A central parkinglot in the Suburbs, for any residents or visitors.",
+    "image": "map_recourses/images/subs_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Roxie's Diner Parking",
+    "x": 3495,
+    "y": 3143,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A great place to park, for any customers of Roxie's Diner or the Suburbs Gas Station.",
+    "image": "map_recourses/images/roxies.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Lelito's Pub Parking",
+    "x": 2210,
+    "y": 1043,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A parkinglot for any customers of Lelito's pub.",
+    "image": "map_recourses/images/pub_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Business Shop Parking",
+    "x": 1582,
+    "y": 733,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A great place to park, for any shopkeeper or potential customer.",
+    "image": "map_recourses/images/bshop_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Business Gas Station Parking",
+    "x": 1451,
+    "y": 906,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A Central location to park your vehicle while conducting your business in the Business District.",
+    "image": "map_recourses/images/business_gas.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Tidal Apartments Parking",
+    "x": 856,
+    "y": 1060,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A central parkinglot in the Business District, for any residents or visitors to Tidal Apartments.",
+    "image": "map_recourses/images/tidal_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Collier's Auto Shop Parking",
+    "x": 1395,
+    "y": 318,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A place to park for any Autoshop Customers.",
+    "image": "map_recourses/images/autoshop_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Car Dealer Parking",
+    "x": 889,
+    "y": 320,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A place to park for all customers to the Car Dealership.",
+    "image": "map_recourses/images/cardealer_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "Promenade Parking",
+    "x": 580,
+    "y": 1187,
+    "tags": [
+      "Parking"
+    ],
+    "primaryTag": "Parking",
+    "description": "A great place to park your vehicle!",
+    "image": "map_recourses/images/promenade_parking.jpg",
+    "icon": "map_recourses/icons/parking.png"
+  },
+  {
+    "name": "City Gas Station ATM",
+    "x": 1100,
+    "y": 3510,
+    "tags": [
+      "ATM"
+    ],
+    "primaryTag": "ATM",
+    "description": "A place for you top up your wallet, or deposit your change, just by the City Gas Station.",
+    "image": "map_recourses/images/city_gas.jpg",
+    "icon": "map_recourses/icons/atm.png"
+  },
+  {
+    "name": "City Block ATM",
+    "x": 1188,
+    "y": 3179,
+    "tags": [
+      "ATM"
+    ],
+    "primaryTag": "ATM",
+    "description": "A place for you top up your wallet, or deposit your change, in the Central City.",
+    "image": "map_recourses/images/neon_atm.jpg",
+    "icon": "map_recourses/icons/atm.png"
+  },
+  {
+    "name": "Road Crew ATM",
+    "x": 118,
+    "y": 3046,
+    "tags": [
+      "ATM"
+    ],
+    "primaryTag": "ATM",
+    "description": "A place for you top up your wallet, or deposit your change, by the Roadcrew Station",
+    "image": "map_recourses/images/roadcrew_parking.jpg",
+    "icon": "map_recourses/icons/atm.png"
+  },
+  {
+    "name": "Market Street ATM",
+    "x": 118,
+    "y": 3046,
+    "tags": [
+      "ATM"
+    ],
+    "primaryTag": "ATM",
+    "description": "A place for you top up your wallet, or deposit your change, in the Central City.",
+    "image": "map_recourses/images/fish_atm.jpg",
+    "icon": "map_recourses/icons/atm.png"
+  },
+  {
+    "name": "Market Street ATM",
+    "x": 1295,
+    "y": 2656,
+    "tags": [
+      "ATM"
+    ],
+    "primaryTag": "ATM",
+    "description": "A place for you top up your wallet, or deposit your change, just by the City Gas Station.",
+    "image": "map_recourses/images/hotshot_atm.jpg",
+    "icon": "map_recourses/icons/atm.png"
+  },
+  {
+    "name": "XQ Bank ATM",
+    "x": 705,
+    "y": 2453,
+    "tags": [
+      "ATM"
+    ],
+    "primaryTag": "ATM",
+    "description": "A place for you top up your wallet, or deposit your change.",
+    "image": "map_recourses/images/bank.jpg",
+    "icon": "map_recourses/icons/atm.png"
+  },
+  {
+    "name": "Forest Gas Station ATM",
+    "x": 3507,
+    "y": 2924,
+    "tags": [
+      "ATM"
+    ],
+    "primaryTag": "ATM",
+    "description": "A place for you top up your wallet, or deposit your change, for any customers of the Forest Gas Station.",
+    "image": "map_recourses/images/forest_gas.jpg",
+    "icon": "map_recourses/icons/atm.png"
+  },
+  {
+    "name": "Business Gas Station ATM",
+    "x": 1400,
+    "y": 935,
+    "tags": [
+      "ATM"
+    ],
+    "primaryTag": "ATM",
+    "description": "A place for you top up your wallet, or deposit your change, just by the Business Gas Station",
+    "image": "map_recourses/images/business_gas.jpg",
+    "icon": "map_recourses/icons/atm.png"
+  },
+  {
+    "name": "PPS Delivery Depot ATM",
+    "x": 1374,
+    "y": 1208,
+    "tags": [
+      "ATM"
+    ],
+    "primaryTag": "ATM",
+    "description": "A place for you top up your wallet, or deposit your change, just by the Paralake Parcel Service.",
+    "image": "map_recourses/images/pps_atm.jpg",
+    "icon": "map_recourses/icons/atm.png"
+  },
+  {
+    "name": "Business Plaza ATM",
+    "x": 1224,
+    "y": 688,
+    "tags": [
+      "ATM"
+    ],
+    "primaryTag": "ATM",
+    "description": "A place for you top up your wallet, or deposit your change, located just by the Business Plaza.",
+    "image": "map_recourses/images/bplaza_atm.jpg",
+    "icon": "map_recourses/icons/atm.png"
+  },
+  {
+  "name": "City Park",
+  "x": 585,
+  "y": 3122,
+  "tags": [
+    "Park"
+  ],
+  "primaryTag": "Park",
+  "description": "A large park in the center of the city.",
+  "image": "map_recourses/images/city_park.jpg",
+  "icon": "map_recourses/icons/park.png"
+},
+{
+  "name": "Suburbs Park",
+  "x": 2443,
+  "y": 3453,
+  "tags": [
+    "Park"
+  ],
+  "primaryTag": "Park",
+  "description": "A small park in the suburbs, equpped with a playground, water fountain and a football field.",
+  "image": "map_recourses/images/subs_park.jpg",
+  "icon": "map_recourses/icons/park.png"
+},
+{
+  "name": "Suburbs Pond",
+  "x": 2868,
+  "y": 2955,
+  "tags": [
+    "Park"
+  ],
+  "primaryTag": "Park",
+  "description": "A large pond and park in the suburbs.",
+  "image": "map_recourses/images/subs_pond.jpg",
+  "icon": "map_recourses/icons/park.png"
+},
+{
+  "name": "Forest Pond",
+  "x": 2543,
+  "y": 553,
+  "tags": [
+    "Park"
+  ],
+  "primaryTag": "Park",
+  "description": "A small pond in the forest.",
+  "image": "map_recourses/images/forest_pond.jpg",
+  "icon": "map_recourses/icons/park.png"
+},
+{
+  "name": "Rest Stop",
+  "x": 2986,
+  "y": 596,
+  "tags": [
+    "Park"
+  ],
+  "primaryTag": "Park",
+  "description": "A great picnic spot in the forest, with a small rest stop.",
+  "image": "map_recourses/images/rest_stop.jpg",
+  "icon": "map_recourses/icons/park.png"
+},
+{
+  "name": "Central Station",
+  "x": 1123,
+  "y": 2862,
+  "tags": [
+    "Metro", "Public Services"
+  ],
+  "primaryTag": "Metro",
+  "description": "Paralake Central Station, trains run every 90 seconds.",
+  "image": "map_recourses/images/metro_central.jpg",
+  "icon": "map_recourses/icons/metro.png"
+},
+{
+  "name": "Suburbs Station",
+  "x": 2298,
+  "y": 3387,
+  "tags": [
+    "Metro", "Public Services"
+  ],
+  "primaryTag": "Metro",
+  "description": "Suburbs Metro Station, trains run every 90 seconds.",
+  "image": "map_recourses/images/metro_business.jpg",
+  "icon": "map_recourses/icons/metro.png"
+},
+{
+  "name": "Business Station",
+  "x": 951,
+  "y": 742,
+  "tags": [
+    "Metro", "Public Services"
+  ],
+  "primaryTag": "Metro",
+  "description": "Business Metro Station, trains run every 90 seconds.",
+  "image": "map_recourses/images/metro_business.jpg",
+  "icon": "map_recourses/icons/metro.png"
+},
+{
+  "name": "Lookout Point",
+  "x": 2552,
+  "y": 1131,
+  "tags": [
+    "Park"
+  ],
+  "primaryTag": "Park",
+  "description": "A wooden lookout point in the forest with views of all of Paralake.",
+  "image": "map_recourses/images/lookout.jpg",
+  "icon": "map_recourses/icons/park.png"
+}
+]

@@ -7,7 +7,7 @@
     <title>Downloads | Paralake V6 Development Archive</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/downloads.css">
-    <link rel="icon" type="image/x-icon" href="images/06Promotional-Material/Logos/archive_icon_mono.png">
+    <link rel="icon" type="image/x-icon" href="images_excluded/archive_icon_mono.png">
     <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
@@ -23,32 +23,51 @@
         <span id="header-title" style="line-height: 0.8;">Paralake V6 Development Archive<br><span id="header-subtitle" style="font-size: 22px;">Downloads</span></span>
         
         <a href="archive.html" style="padding-top: 5px">
-            <img src="images/06Promotional-Material/Logos/archive_logo_mono.png" alt="Logo" style="height: 45px; border: 0px"
-            onmouseover="this.src='images/06Promotional-Material/Logos/archive_logo.png';"
-            onmouseout="this.src='images/06Promotional-Material/Logos/archive_logo_mono.png';">
+            <img src="images_excluded/archive_logo_mono.png" alt="Logo" style="height: 45px; border: 0px"
+            onmouseover="this.src='images_excluded/archive_logo.png';"
+            onmouseout="this.src='images_excluded/archive_logo_mono.png';">
         </a>
 
         <div id="header-menu">
             <button class="menu-button" onclick="location.href='archive.html'">Development Archive</button>
-            <button class="menu-button-disabled" onclick="location.href='#'">Changelogs Archive</button>
-            <button class="menu-button" onclick="location.href='updates.html'">Update Posts</button>
+            <!-- <button class="menu-button-disabled" onclick="location.href='#'">Changelogs Archive</button> -->
+            <button class="menu-button" onclick="location.href='updates.html'">Updates</button>
             <button class="menu-button-active" onclick="location.href='downloads.html'">Downloads</button>
             <button class="menu-button" onclick="location.href='credits.html'">Map Credits</button>
+            <button class="menu-button-map" onclick="location.href='map.html'">Interactive Map</button>
             <button id="theme-toggle">Dark Theme</button>
         </div>
     </div>
+
+    <div id="zip-loading-popup">
+        <div id="zip-loading-popup-content">
+          <div id="zip-progress-label">Preparing download...</div>
+          <div id="zip-file-progress-label" style="font-size: 0.9rem; margin-bottom: 8px;"></div>
+      
+          <div id="zip-progress-bar-container">
+            <div id="zip-progress-bar"></div>
+          </div>
+      
+          <div id="zip-success-message" style="display: none; margin-top: 20px;">
+            <svg id="zip-success-check" viewBox="0 0 52 52">
+              <path d="M14 27 L22 35 L38 17" fill="none" stroke="var(--color-accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <div style="margin-top: 10px; font-size: 1.2rem; color: var(--color-text);">Download Ready!</div>
+          </div>
+        </div>
+      </div>       
         
     <div id="page-container" style="background-image: url('images_excluded/bg04.png');">
         <main id="downloads-container">
             <h1>Downloads</h1>
             <div class="download-item-map">
-                <img src="images_excluded/releasedate_square.png">
+                <img src="images_excluded/rp_paralake_city_v6.png">
                 <div class="download-info" style="background-color: #0000005d; padding: var(--spacing-small); padding-right: 20px; border-radius: var(--border-radius); min-height: 378px;">
-                    <h1>rp_paralake_city_v6</h1>
-                    <p>The 6th iteration of Paralake City.  Releasing June 28th, 2025.</p><br>
+                    <h1>Paralake City V6</h1>
+                    <p>The 6th iteration of Paralake City.  Out Now!</p><br>
                     Bigger, more detailed,
-                    but still distinctly Paralake.  On June 28th,
-                    experience a roleplaying map designed for
+                    but still distinctly Paralake.  Experience a
+                    roleplaying map designed for
                     modern day PERPHeads.
 
                     Whether you’re looking to start a business,
@@ -59,31 +78,28 @@
                     and everything inbetween - the City, and its
                     surrounding forest has it all.
                     <br><br><br><br><br>
-                    <a href="https://www.youtube.com/watch?v=5Qaa1ktVTX0" target="_blank" class="download-link">WATCH THE TRAILER</a>
-                    <a href="https://perpheads.com/threads/paralake-v6-release-date-trailer.69130/" target="_blank" class="download-link">FIND OUT MORE</a>
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3510652177" target="_blank" class="download-link-steam">Steam Workshop</a>
+                    <a href="https://www.youtube.com/watch?v=5Qaa1ktVTX0" target="_blank" class="download-link">Watch The Trailer</a>
                 </div>
-            </div>
-
-            <div id="zip-loading-popup">
-                <div id="zip-loading-popup-content">
-                  <div id="zip-progress-label">Preparing download...</div>
-                  <div id="zip-file-progress-label" style="font-size: 0.9rem; margin-bottom: 8px;"></div>
-              
-                  <div id="zip-progress-bar-container">
-                    <div id="zip-progress-bar"></div>
-                  </div>
-              
-                  <div id="zip-success-message" style="display: none; margin-top: 20px;">
-                    <svg id="zip-success-check" viewBox="0 0 52 52">
-                      <path d="M14 27 L22 35 L38 17" fill="none" stroke="var(--color-accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <div style="margin-top: 10px; font-size: 1.2rem; color: var(--color-text);">Download Ready!</div>
-                  </div>
-                </div>
-              </div>                                     
+            </div>       
             
             <div class="download-item">
-                <img src="images/06Promotional-Material/Logos/wallpaperpack.png">
+                <img src="images_excluded/paralake_v5.jpg">
+                <div class="download-info">
+                    <h2>Classic Paralake Maps</h2>
+                    <p>The classics.  Paralake City versions 1 through 5.  Versions of the map used by the server from 2014 to 2025.  Note: Counter-Strike: Source is required for V1-4.</p>
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3438073075" target="_blank" class="download-link-steam">Steam Workshop</a>
+                    <button class="download-button zip-download"
+                        data-source="json/image_sets/classic-screenshots.json"
+                        data-zipname="Classic-Paralake-Screenshots.zip">
+                        Download Classic Screenshots
+                    </button>
+                    <a href="https://store.steampowered.com/app/240/CounterStrike_Source/" target="_blank" class="download-link">Counter-Strike: Source</a>
+                </div>
+            </div>
+            
+            <div class="download-item">
+                <img src="images_excluded/wallpaperpack.png">
                 <div class="download-info">
                     <h2>Garry's Mod Paralake V6 Menu Background Pack</h2>
                     <p>A collection of renders from Paralake V6, available as Garry's Mod main menu backgrounds.</p>
@@ -97,35 +113,11 @@
             </div>
 
             <div class="download-item">
-                <img src="images/06Promotional-Material/Logos/phv6_sfm.png">
+                <img src="images_excluded/phv6_sfm.png">
                 <div class="download-info">
-                    <h2>rp_paralake_city_v6 - SFM Edition</h2>
+                    <h2>Paralake City V6 - SFM Edition</h2>
                     <p>A specific version of Paralake V6 designed to work with SFM's reduced map limits.  Coming sometime post launch.</p>
                     <a href="#" class="download-link">Coming Soon</a>
-                </div>
-            </div>
-
-            <div class="download-item">
-                <img src="images_excluded/paralake_v5.jpg">
-                <div class="download-info">
-                    <h2>rp_paralake_city_v5</h2>
-                    <p>The current version of Paralake City, used by the PERPHeads server.</p>
-                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2486584849&searchtext=paralake" target="_blank" class="download-link-steam">Steam Workshop</a>
-                </div>
-            </div>
-            
-            <div class="download-item">
-                <img src="images_excluded/paralake_v1.png">
-                <div class="download-info">
-                    <h2>Classic Paralake Maps</h2>
-                    <p>The classics.  Paralake City versions 1 through 4.  Versions of the map used by the server from 2014 to 2021.  Note: Counter-Strike: Source is required.</p>
-                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3438073075" target="_blank" class="download-link-steam">Steam Workshop</a>
-                    <a href="https://store.steampowered.com/app/240/CounterStrike_Source/" target="_blank" class="download-link">Required: Counter-Strike: Source</a>
-                    <button class="download-button zip-download"
-                        data-source="json/image_sets/classic-screenshots.json"
-                        data-zipname="Classic-Paralake-Screenshots.zip">
-                        Download Classic Screenshots
-                    </button>
                 </div>
             </div>
 

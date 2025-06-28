@@ -10,6 +10,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
+    /* set display to flex to enable, none to disable */
     display: flex;
     align-items: center;
     justify-content: center;

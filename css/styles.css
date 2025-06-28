@@ -70,8 +70,8 @@ body {
 #header-menu {
     position: absolute;
     top: 110%;
-    left: calc(50% - 550px);
-    width: 1100px;
+    left: calc(50% - 500px);
+    width: 1000px;
     background-color: var(--color-hover-transparent);
     text-align: center;
     align-items: center;
@@ -141,6 +141,27 @@ body {
 
 .menu-button-disabled:hover {
     background: var(--color-hover-dark);
+}
+
+.menu-button-map {
+    background: linear-gradient(to right, #484f8d, #5b61b1, #484f8d);
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    color: var(--color-text);
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s, color 0.3s;
+    border-radius: var(--border-radius);
+}
+
+.menu-button-map:hover {
+    background: var(--color-accent);
+    color: var(--color-text-dark);
+    transform: scale(1.05);
+    transition: transform 0.1s, color 0.3s;
 }
 
 #header:hover + #header-menu,
