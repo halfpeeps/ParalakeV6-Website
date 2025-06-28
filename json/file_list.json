@@ -1118,6 +1118,10 @@
             "description": ""
         },
         {
+            "filename": "rp_paralake_city_v6.png",
+            "description": ""
+        },
+        {
             "filename": "spawnroom_credits.png",
             "description": ""
         },
@@ -1888,6 +1892,84 @@
         },
         {
             "filename": "Underground+Parking06.jpg",
+            "description": ""
+        }
+    ],
+    "15Promotional-Material/Steam-Workshop": [
+        {
+            "filename": "bank.jpg",
+            "description": ""
+        },
+        {
+            "filename": "bazaar.jpg",
+            "description": ""
+        },
+        {
+            "filename": "boathouse.jpg",
+            "description": ""
+        },
+        {
+            "filename": "bplaza.jpg",
+            "description": ""
+        },
+        {
+            "filename": "church.jpg",
+            "description": ""
+        },
+        {
+            "filename": "cityhall.jpg",
+            "description": ""
+        },
+        {
+            "filename": "courtroom.jpg",
+            "description": ""
+        },
+        {
+            "filename": "courtyard.jpg",
+            "description": ""
+        },
+        {
+            "filename": "foundry.jpg",
+            "description": ""
+        },
+        {
+            "filename": "homeless.jpg",
+            "description": ""
+        },
+        {
+            "filename": "hungriges.jpg",
+            "description": ""
+        },
+        {
+            "filename": "metro.jpg",
+            "description": ""
+        },
+        {
+            "filename": "parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "pd_int.jpg",
+            "description": ""
+        },
+        {
+            "filename": "pub.jpg",
+            "description": ""
+        },
+        {
+            "filename": "sewers.jpg",
+            "description": ""
+        },
+        {
+            "filename": "subs.jpg",
+            "description": ""
+        },
+        {
+            "filename": "tennement.jpg",
+            "description": ""
+        },
+        {
+            "filename": "tidal.jpg",
             "description": ""
         }
     ],
