@@ -3,11 +3,11 @@ const bounds = [[0, 0], [0, 0]];
 const tagColors = {};
 const markers = [];
 
-const baseMap = L.imageOverlay('map_recourses/map_dark.png', bounds);
-const satelliteMap = L.imageOverlay('map_recourses/map_sat.png', bounds);
-const streetNames = L.imageOverlay('map_recourses/streetnames.png', bounds);
-const propertyBounds = L.imageOverlay('map_recourses/property_bounds.png', bounds);
-const muggingMap = L.imageOverlay('map_recourses/mugging_map.png', bounds);
+const baseMap = L.imageOverlay('map_resources/map_dark.png', bounds);
+const satelliteMap = L.imageOverlay('map_resources/map_sat.png', bounds);
+const streetNames = L.imageOverlay('map_resources/streetnames.png', bounds);
+const propertyBounds = L.imageOverlay('map_resources/property_bounds.png', bounds);
+const muggingMap = L.imageOverlay('map_resources/mugging_map.png', bounds);
 
 const map = L.map('map', {
   crs: L.CRS.Simple,
@@ -121,7 +121,7 @@ document.getElementById('search-box').addEventListener('input', () => {
 });
 
 const mapImage = new Image();
-mapImage.src = 'map_recourses/map.png';
+mapImage.src = 'map_resources/map.png';
 mapImage.onload = () => {
   const [w, h] = [mapImage.width, mapImage.height];
   bounds[1] = [h, w];
@@ -161,8 +161,8 @@ mapImage.onload = () => {
 //get tags
 function loadMapData() {
   Promise.all([
-    fetch('/map_recourses/locations.json').then(res => res.json()),
-    fetch('/map_recourses/tags.json').then(res => res.json())
+    fetch('/map_resources/locations.json').then(res => res.json()),
+    fetch('/map_resources/tags.json').then(res => res.json())
   ]).then(([locations, tags]) => {
     tags.forEach(t => tagColors[t.name] = t.color);
     setupTagFilter(tags, locations);
@@ -313,8 +313,8 @@ function initEditorMode() {
           tags: ["Park"],
           primaryTag: "Park",
           description: "Description here.",
-          image: "map_recourses/images/image.jpg",
-          icon: "map_recourses/icons/park.png"
+          image: "map_resources/images/image.jpg",
+          icon: "map_resources/icons/park.png"
         };
         console.log(JSON.stringify(newLocation, null, 2));
         alert('Marker data copied to console!');
