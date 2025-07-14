@@ -164,7 +164,7 @@
     ],
     "primaryTag": "Vendor",
     "description": "A pharmacy located on Market Street.",
-    "image": "map_resources/images/safetyfirst.jpg",
+    "image": "map_resources/images/safety_first.jpg",
     "icon": "map_resources/icons/vendor.png"
   },
   {
@@ -416,7 +416,7 @@
     ],
     "primaryTag": "Ownable",
     "description": "A small suburban house with garden and garage.",
-    "image": "map_resources/images/subs_small4.jpg",
+    "image": "map_resources/images/subs_small3.jpg",
     "icon": "map_resources/icons/house_ownable.png"
   },
   {
