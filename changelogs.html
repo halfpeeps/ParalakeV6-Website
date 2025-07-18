@@ -1,64 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changelog Archive | Paralake V6 Development Archive</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changelog Archive | Paralake V6 Development Archive</title>
+
+    <!-- Markdown renderer -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/changelogs.css">
-    <link rel="stylesheet" href="css/splashscreenChangelogsArchive.css">
-    <link rel="icon" type="image/x-icon" href="images_excluded/archive_icon_mono.png">
-    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/changelogs.css" />
+    <link rel="stylesheet" href="css/splashscreenChangelogsArchive.css" />
+
+    <link rel="icon" type="image/x-icon" href="images_excluded/archive_icon_mono.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+    <!--‑‑ Header ‑‑-->
     <div id="header">
-        <span id="header-title" style="line-height: 0.8;">Paralake V6 Development Archive<br><span id="header-subtitle" style="font-size: 22px;">Development Changelogs</span></span>
-        
-        <a href="archive.html" style="padding-top: 5px">
-            <img src="images_excluded/archive_logo_mono.png" alt="Logo" style="height: 45px; border: 0px"
-            onmouseover="this.src='images_excluded/archive_logo.png';"
-            onmouseout="this.src='images_excluded/archive_logo_mono.png';">
+        <span id="header-title" style="line-height:0.8">
+            Paralake V6 Development Archive<br />
+            <span id="header-subtitle" style="font-size:22px">Development Changelogs</span>
+        </span>
+
+        <a href="archive.html" style="padding-top:5px">
+            <img  src="images_excluded/archive_logo_mono.png"
+                  alt="Logo"
+                  style="height:45px;border:0"
+                  onmouseover="this.src='images_excluded/archive_logo.png'"
+                  onmouseout="this.src='images_excluded/archive_logo_mono.png'" />
         </a>
 
         <div id="header-menu">
-            <button class="menu-button" onclick="location.href='archive.html'">Development Archive</button>
-            <button class="menu-button-active" onclick="location.href='changelogs.html'">Changelogs Archive</button>
-            <button class="menu-button" onclick="location.href='updates.html'">Updates</button>
-            <button class="menu-button" onclick="location.href='downloads.html'">Downloads</button>
-            <button class="menu-button" onclick="location.href='credits.html'">Map Credits</button>
-            <button class="menu-button-map" onclick="location.href='map.html'">Interactive Map</button>
+            <button class="menu-button"          onclick="location.href='archive.html'">Development Archive</button>
+            <button class="menu-button-active"   onclick="location.href='changelogs.html'">Changelogs Archive</button>
+            <button class="menu-button"          onclick="location.href='updates.html'">Updates</button>
+            <button class="menu-button"          onclick="location.href='downloads.html'">Downloads</button>
+            <button class="menu-button"          onclick="location.href='credits.html'">Map Credits</button>
+            <button class="menu-button-map"      onclick="location.href='map.html'">Interactive Map</button>
             <button id="theme-toggle">Dark Theme</button>
         </div>
     </div>
 
-    <!-- SPLASH SCREEN: Disable/Enable in the CSS -->
+    <!--‑‑ Splash‑screen (toggle via CSS) ‑‑-->
     <div class="popup-overlay" id="popup">
         <div class="popup-container">
             <button class="popup-close" onclick="closePopup()">&times;</button>
             <div class="popup-content">
                 <div class="popup-header">Changelogs Archive</div>
-                <div class="popup-text">Here you can find all the changelogs for the development builds of the map.  These date from June 2024 all the way up to the maps release.</div>
-                <!-- <a href="#" class="popup-button">BUTTON</a> -->
+                <div class="popup-text">
+                    Here you can find all the changelogs for the development builds of the map.  
+                    These date from June&nbsp;2024 all the way up to the map’s release.
+                </div>
             </div>
         </div>
     </div>
 
+    <!--‑‑ Main layout ‑‑-->
     <div id="container">
         <div id="sidebar">
             <div id="timeline-line"></div>
         </div>
+
         <div id="changelog-container">
             <div id="changelog-content-wrapper">
-                <!-- changelog entries will be dynamically loaded here -->
+                <!-- Entries injected here -->
             </div>
         </div>
     </div>
 
-    <script src="scripts/changelogs.js"></script>
+    <div id="loading" style="text-align:center;color:gray;padding:40px;">
+        Loading changelogs…
+    </div>
 
-    <div id="pagefooter" style="position: sticky !important; bottom: 0; width: 100%; z-index: 9999;"></div>
+    <!--‑‑ Scripts ‑‑-->
+    <script src="scripts/changelogs.js"></script>
     <script src="scripts/footer.js"></script>
     <script src="scripts/headerMenu.js"></script>
     <script src="scripts/splashscreen.js"></script>

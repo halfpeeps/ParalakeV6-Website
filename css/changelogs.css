@@ -126,17 +126,33 @@ a {
     font-family: var(--font-secondary);
     white-space: normal;
 }
-
-.changelog-entry li {
-    margin-bottom: 4px;
-    white-space: normal;
-}
-
+.changelog-entry li { margin-bottom: 4px; white-space: normal; }
 .changelog-entry pre,
 .changelog-entry code {
     font-family: var(--font-primary);
     background: none;
     padding: 0;
+    white-space: pre-wrap;
+    display: block;
+}
+
+.markdown-body {
+    all: unset;
+    font-family: var(--font-secondary);
     white-space: normal;
+    display: block;
+}
+.markdown-body ul,
+.markdown-body ol {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+.markdown-body li { margin-bottom: 4px; }
+.markdown-body pre,
+.markdown-body code {
+    font-family: var(--font-primary);
+    white-space: pre-wrap;
+    background: none;
     display: block;
 }
