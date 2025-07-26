@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Changelog Archive | Paralake V6 Development Archive</title>
 
-    <!-- Markdown renderer -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-    <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/changelogs.css" />
     <link rel="stylesheet" href="css/splashscreenChangelogsArchive.css" />
@@ -19,7 +17,6 @@
 </head>
 <body>
 
-    <!--‑‑ Header ‑‑-->
     <div id="header">
         <span id="header-title" style="line-height:0.8">
             Paralake V6 Development Archive<br />
@@ -45,7 +42,6 @@
         </div>
     </div>
 
-    <!--‑‑ Splash‑screen (toggle via CSS) ‑‑-->
     <div class="popup-overlay" id="popup">
         <div class="popup-container">
             <button class="popup-close" onclick="closePopup()">&times;</button>
@@ -59,7 +55,6 @@
         </div>
     </div>
 
-    <!--‑‑ Main layout ‑‑-->
     <div id="container">
         <div id="sidebar">
             <div id="timeline-line"></div>
@@ -67,16 +62,14 @@
 
         <div id="changelog-container">
             <div id="changelog-content-wrapper">
-                <!-- Entries injected here -->
             </div>
         </div>
     </div>
 
-    <div id="loading" style="text-align:center;color:gray;padding:40px;">
+    <!-- <div id="loading" style="text-align:center;color:gray;padding:40px;">
         Loading changelogs…
-    </div>
+    </div> -->
 
-    <!--‑‑ Scripts ‑‑-->
     <script src="scripts/changelogs.js"></script>
     <script src="scripts/footer.js"></script>
     <script src="scripts/headerMenu.js"></script>

@@ -21,7 +21,7 @@ a {
     background: var(--color-sidebar);
     padding: var(--spacing-medium);
     overflow-y: auto;
-    height: calc(100vh - var(--footer-height) - 128px);
+    height: flex;
     position: sticky;
     top: 0;
     display: flex;

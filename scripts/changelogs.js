@@ -1,10 +1,4 @@
-/*  Changelog loader — throttled & error‑tolerant
-    Uses requestIdleCallback (with a fallback) so large numbers
-    of entries don’t clobber the layout engine.
-*/
-
 (async function () {
-    // --------------------------------------------------------------------
     const idleCallback = window.requestIdleCallback ||
                          function (cb) { setTimeout(cb, 0); };
 
@@ -14,10 +8,8 @@
     const container    = document.getElementById("changelog-container");
     const loadingEl    = document.getElementById("loading");
 
-    // ------------------------------------------------ load one entry
     async function loadSingleChangelog(log) {
         try {
-            /* ----------- sidebar button & dot ----------- */
             const entry = document.createElement("div");
             entry.classList.add("timeline-entry");
 
@@ -43,7 +35,6 @@
             entry.append(dot, btn);
             sidebar.appendChild(entry);
 
-            /* ----------- fetch markdown ----------- */
             const mdRes = await fetch(`changelogs/${log.file}`);
             if (!mdRes.ok) {
                 console.error(`Failed to fetch ${log.file}:`, mdRes.statusText);
@@ -51,7 +42,6 @@
             }
             const mdText = await mdRes.text();
 
-            /* ----------- inject changelog HTML ----------- */
             const wrap = document.createElement("div");
             wrap.classList.add("changelog-entry");
             wrap.id = btn.dataset.target;
@@ -67,7 +57,6 @@
         }
     }
 
-    // ------------------------------------------------ master loader
     async function loadChangelogs() {
         const res = await fetch("json/changelog_list.json");
         if (!res.ok) { throw new Error("Unable to load changelog_list.json"); }
@@ -82,14 +71,12 @@
             });
         }
 
-        /* -- timeline height -- */
         const entries = sidebar.querySelectorAll(".timeline-entry");
         if (entries.length) {
             const last = entries[entries.length - 1];
             timelineLine.style.height = `${last.offsetTop + last.offsetHeight}px`;
         }
 
-        /* -- remove loader & start scroll‑tracking -- */
         loadingEl.style.display = "none";
 
         container.addEventListener("scroll", () => {
@@ -105,7 +92,6 @@
         });
     }
 
-    /* ------------------------------------------------ kick things off */
     try {
         await loadChangelogs();
     } catch (e) {
