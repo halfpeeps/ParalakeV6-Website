@@ -35,7 +35,8 @@ function getScaleFromZoom(zoom) {
 
 function startCode() {
   const params = new URLSearchParams(window.location.search);
-  return [...params.keys()][0] || null;
+  const firstKey = [...params.keys()][0] || null;
+  return firstKey ? firstKey.split('/')[0].toLowerCase() : null;
 }
 
 function colorizeIcon(imgSrc, colorHex, scale = 1, callback) {
