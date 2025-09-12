@@ -1,6 +1,6 @@
 (async function () {
     const idleCallback = window.requestIdleCallback ||
-    function (cb) { setTimeout(cb, 0); };
+                         function (cb) { setTimeout(cb, 0); };
 
     const sidebar      = document.getElementById("sidebar");
     const timelineLine = document.getElementById("timeline-line");
@@ -35,7 +35,7 @@
             entry.append(dot, btn);
             sidebar.appendChild(entry);
 
-            const mdRes = await fetch(`changelogs/${log.file}`);
+            const mdRes = await fetch(`changelogs_archive/${log.file}`);
             if (!mdRes.ok) {
                 console.error(`Failed to fetch ${log.file}:`, mdRes.statusText);
                 return;
@@ -46,6 +46,7 @@
             wrap.classList.add("changelog-entry");
             wrap.id = btn.dataset.target;
             wrap.innerHTML = `
+                <h2>${log.title}</h2>
                 <p><strong>Build:</strong> ${log.build} | <strong>Date:</strong> ${log.date}</p>
                 <div class="markdown-body">${marked.parse(mdText)}</div>
             `;
@@ -57,11 +58,9 @@
     }
 
     async function loadChangelogs() {
-        const res = await fetch("json/changelog_list.json");
-        if (!res.ok) { throw new Error("Unable to load changelog_list.json"); }
+        const res = await fetch("json/changelog_archive_list.json");
+        if (!res.ok) { throw new Error("Unable to load changelog_archive_list.json"); }
         const changelogs = await res.json();
-
-        changelogs.reverse();
 
         for (const log of changelogs) {
             await new Promise(resolve => {
