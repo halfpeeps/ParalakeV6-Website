@@ -1,398 +1,87 @@
 [
     {
-        "date": "2024-07-02",
-        "build": "1.1.4",
-        "title": "Latest Lelios changes, new city buildings",
-        "file": "1.1.4.md"
+        "date": "2025-06-28",
+        "build": "6.0.00",
+        "file": "6.0.00.md"
     },
     {
-        "date": "2024-07-15",
-        "build": "1.1.5",
-        "title": "Bank Plaza",
-        "file": "1.1.5.md"
+        "date": "2025-06-29",
+        "build": "6.0.01",
+        "file": "6.0.01.md"
     },
     {
-        "date": "2024-07-27",
-        "build": "1.1.6",
-        "title": "Hospital, Homeless Area, Roadcrew",
-        "file": "1.1.6.md"
+        "date": "2025-07-04",
+        "build": "6.0.02",
+        "file": "6.0.02.md"
     },
     {
-        "date": "2024-08-10",
-        "build": "1.1.7",
-        "title": "Taxi Depot, City Block",
-        "file": "1.1.7.md"
+        "date": "2025-07-05",
+        "build": "6.0.03",
+        "file": "6.0.03.md"
     },
     {
-        "date": "2024-08-11",
-        "build": "1.1.8",
-        "title": "Early Version of New Mainstreet",
-        "file": "1.1.8.md"
+        "date": "2025-07-08",
+        "build": "6.0.04",
+        "file": "6.0.04.md"
     },
     {
-        "date": "2024-08-12",
-        "build": "1.1.9",
-        "title": "New Mainstreet",
-        "file": "1.1.9.md"
+        "date": "2025-07-08",
+        "build": "6.0.05",
+        "file": "6.0.05.md"
     },
     {
-        "date": "2024-08-13",
-        "build": "1.2.0",
-        "title": "City Highway On/Off Ramp + Bug Fixes",
-        "file": "1.2.0.md"
+        "date": "2025-07-09",
+        "build": "6.0.06",
+        "file": "6.0.06.md"
     },
     {
-        "date": "2024-08-16",
-        "build": "1.2.1",
-        "title": "Started work on Soundscapes, FD Parking, City Center Sidewalks",
-        "file": "1.2.1.md"
+        "date": "2025-07-16",
+        "build": "6.0.07",
+        "file": "6.0.07.md"
     },
     {
-        "date": "2024-08-22",
-        "build": "1.2.2",
-        "title": "City Soundscapes, Gas Station",
-        "file": "1.2.2.md"
+        "date": "2025-07-23",
+        "build": "6.0.08",
+        "file": "6.0.08.md"
     },
     {
-        "date": "2024-08-31",
-        "build": "1.2.3",
-        "title": "New new City Hall",
-        "file": "1.2.3.md"
+        "date": "2025-07-24",
+        "build": "6.0.09",
+        "file": "6.0.09.md"
     },
     {
-        "date": "2024-09-28",
-        "build": "1.2.5",
-        "title": "City Metro Station",
-        "file": "1.2.5.md"
+        "date": "2025-07-25",
+        "build": "6.0.10",
+        "file": "6.0.10.md"
     },
     {
-        "date": "2024-10-08",
-        "build": "1.2.6",
-        "title": "PD Garage, City Hall Exterior, Many Fixes",
-        "file": "1.2.6.md"
+        "date": "2025-08-02",
+        "build": "6.0.11",
+        "file": "6.0.11.md"
     },
     {
-        "date": "2024-10-15",
-        "build": "1.2.7",
-        "title": "WIP Slums, WIP Suburbs",
-        "file": "1.2.7.md"
+        "date": "2025-08-02",
+        "build": "6.0.12",
+        "file": "6.0.12.md"
     },
     {
-        "date": "2024-10-19",
-        "build": "1.2.8",
-        "title": "Mostly Fixes",
-        "file": "1.2.8.md"
+        "date": "2025-09-04",
+        "build": "6.0.13",
+        "file": "6.0.13.md"
     },
     {
-        "date": "2024-11-12",
-        "build": "1.2.9",
-        "title": "Merged Playtest Build",
-        "file": "1.2.9.md"
+        "date": "2025-09-07",
+        "build": "6.0.14",
+        "file": "6.0.14.md"
     },
     {
-        "date": "2024-11-15",
-        "build": "1.3.0",
-        "title": "Forest Rework, New Parking Garage",
-        "file": "1.3.0.md"
+        "date": "2025-09-08",
+        "build": "6.0.15",
+        "file": "6.0.15.md"
     },
     {
-        "date": "2024-11-24",
-        "build": "1.3.1",
-        "title": "Slums Area Overhaul",
-        "file": "1.3.1.md"
-    },
-    {
-        "date": "2024-12-15",
-        "build": "1.3.2",
-        "title": "WIP Forest Detailing",
-        "file": "1.3.2.md"
-    },
-    {
-        "date": "2024-12-18",
-        "build": "1.3.3",
-        "title": "Subs/Forest Iterative Update 1",
-        "file": "1.3.3.md"
-    },
-    {
-        "date": "2025-01-04",
-        "build": "1.3.4",
-        "title": "Forest and Suburbs Soundscapes",
-        "file": "1.3.4.md"
-    },
-    {
-        "date": "2025-01-06",
-        "build": "1.3.5",
-        "title": "Subs/Forest Iterative Update 2",
-        "file": "1.3.5.md"
-    },
-    {
-        "date": "2025-01-09",
-        "build": "1.3.6",
-        "title": "Reduced draw distance",
-        "file": "1.3.6.md"
-    },
-    {
-        "date": "2025-01-14",
-        "build": "1.3.7",
-        "title": "Performance improvements, Menu locations",
-        "file": "1.3.7.md"
-    },
-    {
-        "date": "2025-01-20",
-        "build": "1.3.8",
-        "title": "City Fixes and Improvements",
-        "file": "1.3.8.md"
-    },
-    {
-        "date": "2025-01-20",
-        "build": "1.3.9",
-        "title": "Raised map by 1000 units",
-        "file": "1.3.9.md"
-    },
-    {
-        "date": "2025-01-21",
-        "build": "1.4.0",
-        "title": "Merged Lelios' Business + 3D skybox",
-        "file": "1.4.0.md"
-    },
-    {
-        "date": "2025-01-27",
-        "build": "1.4.1",
-        "title": "Central Business Layout Overhaul",
-        "file": "1.4.1.md"
-    },
-    {
-        "date": "2025-02-01",
-        "build": "1.4.2",
-        "title": "Dockside Apartment Blockout",
-        "file": "1.4.2.md"
-    },
-    {
-        "date": "2025-02-01",
-        "build": "1.4.2-revision2",
-        "title": "Dockside Apartment Blockout Revision 2",
-        "file": "1.4.2-revision2.md"
-    },
-    {
-        "date": "2025-02-01",
-        "build": "1.4.2-revision3",
-        "title": "Dockside Apartment Blockout Revision 3",
-        "file": "1.4.2-revision3.md"
-    },
-    {
-        "date": "2025-02-07",
-        "build": "1.4.3",
-        "title": "Mall Interior, Casino Lobby",
-        "file": "1.4.3.md"
-    },
-    {
-        "date": "2025-02-??",
-        "build": "1.4.4",
-        "title": "Business Apt, Business Industrial Layout",
-        "file": "1.4.4.md"
-    },
-    {
-        "date": "2025-03-??",
-        "build": "1.4.5",
-        "title": "Functional Metro Logic",
-        "file": "1.4.5.md"
-    },
-    {
-        "date": "2025-03-09",
-        "build": "1.4.6",
-        "title": "Business Industrial Buildings",
-        "file": "1.4.6.md"
-    },
-    {
-        "date": "2025-03-18",
-        "build": "1.4.7",
-        "title": "Paralake Foundry",
-        "file": "1.4.7.md"
-    },
-    {
-        "date": "2025-03-29",
-        "build": "1.4.8",
-        "title": "Paralake Foundry",
-        "file": "1.4.8.md"
-    },
-    {
-        "date": "2025-04-30",
-        "build": "1.4.9",
-        "title": "Feature Complete Map",
-        "file": "1.4.9.md"
-    },
-    {
-        "date": "2025-05-03",
-        "build": "1.5.0",
-        "title": "Highway Updates, Fixes",
-        "file": "1.5.0.md"
-    },
-    {
-        "date": "2025-05-08",
-        "build": "1.5.1",
-        "title": "Business Soundscapes",
-        "file": "1.5.1.md"
-    },
-    {
-        "date": "2025-05-10",
-        "build": "1.5.2",
-        "title": "Banks Vault, Shutters and Vent",
-        "file": "1.5.2.md"
-    },
-    {
-        "date": "2025-05-12",
-        "build": "1.5.3",
-        "title": "PD Changes",
-        "file": "1.5.3.md"
-    },
-    {
-        "date": "2025-05-13",
-        "build": "1.5.4",
-        "title": "City Bridge",
-        "file": "1.5.4.md"
-    },
-    {
-        "date": "2025-05-15",
-        "build": "1.5.5",
-        "title": "Lots of fixes, Soundscape chanes",
-        "file": "1.5.5.md"
-    },
-    {
-        "date": "2025-05-16",
-        "build": "1.5.6",
-        "title": "New Bank Escape Route",
-        "file": "1.5.6.md"
-    },
-    {
-        "date": "2025-05-17",
-        "build": "1.5.7",
-        "title": "Playtest Build",
-        "file": "1.5.7.md"
-    },
-    {
-        "date": "2025-05-21",
-        "build": "1.5.8",
-        "title": "Playtest Responce Changes",
-        "file": "1.5.8.md"
-    },
-    {
-        "date": "2025-05-23",
-        "build": "1.5.9",
-        "title": "Metro System",
-        "file": "1.5.9.md"
-    },
-    {
-        "date": "2025-05-24",
-        "build": "1.6.0",
-        "title": "Playtest Build",
-        "file": "1.6.0.md"
-    },
-    {
-        "date": "2025-05-26",
-        "build": "1.6.1",
-        "title": "Updates to GlassCo and Southgate",
-        "file": "1.6.1.md"
-    },
-    {
-        "date": "2025-06-01",
-        "build": "1.6.2",
-        "title": "FD Update, Training Area, Bollboards",
-        "file": "1.6.2.md"
-    },
-    {
-        "date": "2025-06-03",
-        "build": "1.6.3",
-        "title": "LRD + HDR Lighting",
-        "file": "1.6.3.md"
-    },
-    {
-        "date": "2025-06-04",
-        "build": "1.6.4",
-        "title": "Road Sign Update",
-        "file": "1.6.4.md"
-    },
-    {
-        "date": "2025-06-07",
-        "build": "1.6.5",
-        "title": "Street Signs, Traffic Lights",
-        "file": "1.6.5.md"
-    },
-    {
-        "date": "2025-06-10",
-        "build": "1.6.6",
-        "title": "Bazaar Optimization, Area Portals, Drug Dealer Location Changes",
-        "file": "1.6.6.md"
-    },
-    {
-        "date": "2025-06-13",
-        "build": "1.6.7",
-        "title": "Optimization, Bug Fixes",
-        "file": "1.6.7.md"
-    },
-    {
-        "date": "2025-06-16",
-        "build": "1.6.8",
-        "title": "Merge Lelios Skybox Forrest Terrian",
-        "file": "1.6.8.md"
-    },
-    {
-        "date": "2025-06-17",
-        "build": "1.6.9",
-        "title": "Exterior Skybox Rework (WIP)",
-        "file": "1.6.9.md"
-    },
-    {
-        "date": "2025-06-18",
-        "build": "1.7.0",
-        "title": "Business Skybox",
-        "file": "1.7.0.md"
-    },
-    {
-        "date": "2025-06-19",
-        "build": "1.7.1",
-        "title": "Final HDR+LDR Test",
-        "file": "1.7.1.md"
-    },
-    {
-        "date": "2025-06-20",
-        "build": "1.7.2",
-        "title": "Map Border",
-        "file": "1.7.2.md"
-    },
-    {
-        "date": "2025-06-20",
-        "build": "1.7.3",
-        "title": "Highway Barriers, Bug Fixes",
-        "file": "1.7.3.md"
-    },
-    {
-        "date": "2025-06-22",
-        "build": "1.7.4",
-        "title": "Sea Monster, Fixes",
-        "file": "1.7.4.md"
-    },
-    {
-        "date": "2025-06-23",
-        "build": "1.7.5",
-        "title": "Minor Changes and Bug Fixes",
-        "file": "1.7.5.md"
-    },
-    {
-        "date": "2025-06-24",
-        "build": "1.7.6",
-        "title": "More Minor Changes and Fixes",
-        "file": "1.7.6.md"
-    },
-    {
-        "date": "2025-06-25",
-        "build": "1.7.7",
-        "title": "Pre-Release Candidate",
-        "file": "1.7.7.md"
-    },
-    {
-        "date": "2025-06-27",
-        "build": "1.7.8",
-        "title": "Release Build (6.0.00)",
-        "file": "1.7.8.md"
+        "date": "2025-09-10",
+        "build": "6.0.16",
+        "file": "6.0.16.md"
     }
 ]
