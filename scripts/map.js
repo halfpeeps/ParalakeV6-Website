@@ -4,6 +4,7 @@ const tagColors = {};
 const markers = [];
 
 const baseMap = L.imageOverlay('map_resources/map_dark.png', bounds);
+const baseMapLight = L.imageOverlay('map_resources/map_light.png', bounds);
 const satelliteMap = L.imageOverlay('map_resources/map_sat.png', bounds);
 const streetNames = L.imageOverlay('map_resources/streetnames.png', bounds);
 const propertyBounds = L.imageOverlay('map_resources/property_bounds.png', bounds);
@@ -17,7 +18,8 @@ const map = L.map('map', {
 });
 
 const baseLayers = {
-  "Default View": baseMap,
+  "Dark Mode": baseMap,
+  "Light Mode": baseMapLight,
   "Satellite View": satelliteMap
 };
 
@@ -127,7 +129,7 @@ mapImage.onload = () => {
   const [w, h] = [mapImage.width, mapImage.height];
   bounds[1] = [h, w];
 
-  [baseMap, satelliteMap, streetNames, propertyBounds, muggingMap].forEach(layer => layer.setBounds(bounds));
+  [baseMap, baseMapLight, satelliteMap, streetNames, propertyBounds, muggingMap].forEach(layer => layer.setBounds(bounds));
   map.setMaxBounds(bounds);
   map.fitBounds(bounds);
 
@@ -323,3 +325,17 @@ function initEditorMode() {
     }
   });
 }
+
+map.on('baselayerchange', function(e) {
+  if (e.name === "Dark Mode") {
+    document.body.classList.add("dark-mode");
+    document.body.classList.remove("light-mode");
+  } else if (e.name === "Light Mode") {
+    document.body.classList.add("light-mode");
+    document.body.classList.remove("dark-mode");
+  } else {
+    document.body.classList.remove("dark-mode", "light-mode");
+  }
+});
+
+document.body.classList.add("dark-mode");
