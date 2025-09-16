@@ -73,8 +73,8 @@
   },
   {
     "name": "NEON",
-    "x": 1245,
-    "y": 3214,
+    "x": 1352,
+    "y": 3211,
     "tags": [
       "Vendor", "Restaurant"
     ],
@@ -85,8 +85,8 @@
   },
   {
     "name": "Storage",
-    "x": 1546,
-    "y": 3305,
+    "x": 1442,
+    "y": 3241,
     "tags": [
       "Vendor"
     ],
@@ -312,18 +312,6 @@
     "icon": "map_resources/icons/highrise_ownable.png"
   },
   {
-    "name": "Slums Trailer",
-    "x": 546,
-    "y": 3652,
-    "tags": [
-      "Ownable"
-    ],
-    "primaryTag": "Ownable",
-    "description": "A small trailer near the Slums Apartments.",
-    "image": "map_resources/images/slums_trailer.jpg",
-    "icon": "map_resources/icons/house_ownable.png"
-  },
-  {
     "name": "Beach Huts",
     "x": 1231,
     "y": 1996,
@@ -420,18 +408,6 @@
     "icon": "map_resources/icons/house_ownable.png"
   },
   {
-    "name": "Roxie's Diner",
-    "x": 3452,
-    "y": 3261,
-    "tags": [
-      "Ownable", "Restaurant"
-    ],
-    "primaryTag": "Ownable",
-    "description": "A large restaurant located at the service station in the Forest.",
-    "image": "map_resources/images/roxies.jpg",
-    "icon": "map_resources/icons/food.png"
-  },
-  {
     "name": "Forest Gas Station",
     "x": 3460,
     "y": 2892,
@@ -481,8 +457,8 @@
   },
   {
     "name": "Wood Cabin 1", 
-    "x": 3748,
-    "y": 903,
+    "x": 3952,
+    "y": 3792,
     "tags": [
       "Ownable", "House"
     ],
@@ -493,18 +469,6 @@
   },
   {
     "name": "Wood Cabin 2",
-    "x": 3228,
-    "y": 398,
-    "tags": [
-      "Ownable", "House"
-    ],
-    "primaryTag": "Ownable",
-    "description": "A small wooden cabin, deep in the forest.",
-    "image": "map_resources/images/woodcabin2.jpg",
-    "icon": "map_resources/icons/house_ownable.png"
-  },
-  {
-    "name": "Wood Cabin 3",
     "x": 2620,
     "y": 140,
     "tags": [
@@ -517,38 +481,38 @@
   },
   {
     "name": "Hicktown Trailer 1",
-    "x": 4024,
-    "y": 3740,
+    "x": 3492,
+    "y": 1229,
     "tags": [
       "Ownable"
     ],
     "primaryTag": "Ownable",
     "description": "A small trailer located in the trailerpark of hicktown.",
-    "image": "map_resources/images/hicktown1.jpg",
+    "image": "map_resources/images/hicktown.jpg",
     "icon": "map_resources/icons/house_ownable.png"
   },
   {
     "name": "Hicktown Trailer 2",
-    "x": 3958,
-    "y": 3834,
+    "x": 3585,
+    "y": 1236,
     "tags": [
       "Ownable"
     ],
     "primaryTag": "Ownable",
     "description": "A small trailer located in the trailerpark of hicktown.",
-    "image": "map_resources/images/hicktown2.jpg",
+    "image": "map_resources/images/hicktown.jpg",
     "icon": "map_resources/icons/house_ownable.png"
   },
   {
     "name": "Hicktown Trailer 3",
-    "x": 3865,
-    "y": 3820,
+    "x": 3605,
+    "y": 1151,
     "tags": [
       "Ownable"
     ],
     "primaryTag": "Ownable",
     "description": "A small trailer located in the trailerpark of hicktown.",
-    "image": "map_resources/images/hicktown3.jpg",
+    "image": "map_resources/images/hicktown.jpg",
     "icon": "map_resources/icons/house_ownable.png"
   },
   {
@@ -561,18 +525,6 @@
     "primaryTag": "Ownable",
     "description": "A large industrial foundry just by Mill Street in the outskirts of business district.",
     "image": "map_resources/images/foundry.jpg",
-    "icon": "map_resources/icons/factory.png"
-  },
-  {
-    "name": "J&M Glass Co",
-    "x": 1811,
-    "y": 823,
-    "tags": [
-      "Ownable", "Industrial"
-    ],
-    "primaryTag": "Ownable",
-    "description": "A large sized industrial property in the center of the industrial sector, alongside Mill Street.",
-    "image": "map_resources/images/glassco.jpg",
     "icon": "map_resources/icons/factory.png"
   },
   {
@@ -612,18 +564,6 @@
     "icon": "map_resources/icons/delivery.png"
   },
   {
-    "name": "McUwes",
-    "x": 1217,
-    "y": 979,
-    "tags": [
-      "Vendor", "Restaurant"
-    ],
-    "primaryTag": "Vendor",
-    "description": "A great location for a quick snack or a ordinary meal, located just across Business Plaza.",
-    "image": "map_resources/images/mcuwes.jpg",
-    "icon": "map_resources/icons/food.png"
-  },
-  {
     "name": "Business Gas Station",
     "x": 1343,
     "y": 914,
@@ -640,10 +580,10 @@
     "x": 830,
     "y": 559,
     "tags": [
-      "Ownable", "Shop", "ATM"
+      "Ownable", "Shop", "ATM", "Restaurant", "Vendor"
     ],
     "primaryTag": "Ownable",
-    "description": "The centrum for all shopkeepers. A great location for you to purchase items, or sell them. The shopping center is located alongside Plaza Street",
+    "description": "The centrum for all shopkeepers. A great location for you to purchase items, or sell them. The shopping center is located alongside Plaza Street.  Contains a Lucia's Clothing Store and McUwes Fast Food Restaurant.",
     "image": "map_resources/images/bazaar.jpg",
     "icon": "map_resources/icons/shop_ownable.png"
   },
@@ -865,8 +805,8 @@
   },
   {
     "name": "Storage Parking",
-    "x": 1545,
-    "y": 3225,
+    "x": 1444,
+    "y": 3188,
     "tags": [
       "Parking"
     ],
@@ -877,8 +817,8 @@
   },
   {
     "name": "Market Street Parking",
-    "x": 1550,
-    "y": 2938,
+     "x": 1626,
+     "y": 2960,
     "tags": [
       "Parking"
     ],
@@ -960,15 +900,15 @@
     "icon": "map_resources/icons/parking.png"
   },
   {
-    "name": "Roxie's Diner Parking",
+    "name": "Lake View Hotel Parking",
     "x": 3495,
     "y": 3143,
     "tags": [
       "Parking"
     ],
     "primaryTag": "Parking",
-    "description": "A great place to park, for any customers of Roxie's Diner or the Suburbs Gas Station.",
-    "image": "map_resources/images/roxies.jpg",
+    "description": "A great place to park, for anyone staying at the Lake View Hotel or using the Suburbs Gas Station.",
+    "image": "map_resources/images/hotel_parking.jpg",
     "icon": "map_resources/icons/parking.png"
   },
   {
@@ -1065,18 +1005,6 @@
     "primaryTag": "ATM",
     "description": "A place for you top up your wallet, or deposit your change, just by the City Gas Station.",
     "image": "map_resources/images/city_gas.jpg",
-    "icon": "map_resources/icons/atm.png"
-  },
-  {
-    "name": "City Block ATM",
-    "x": 1188,
-    "y": 3179,
-    "tags": [
-      "ATM"
-    ],
-    "primaryTag": "ATM",
-    "description": "A place for you top up your wallet, or deposit your change, in the Central City.",
-    "image": "map_resources/images/neon_atm.jpg",
     "icon": "map_resources/icons/atm.png"
   },
   {
@@ -1282,5 +1210,29 @@
   "description": "A wooden lookout point in the forest with views of all of Paralake.",
   "image": "map_resources/images/lookout.jpg",
   "icon": "map_resources/icons/park.png"
+},
+{
+  "name": "The Bunker",
+  "x": 3918,
+  "y": 295,
+  "tags": [
+    "Ownable", "Industrial"
+  ],
+  "primaryTag": "Ownable",
+  "description": "A secluded property with lots of secrets",
+  "image": "map_resources/images/bunker.jpg",
+  "icon": "map_resources/icons/factory.png"
+},
+{
+  "name": "Lake View Hotel",
+  "x": 3486,
+  "y": 3278,
+  "tags": [
+    "Ownable"
+  ],
+  "primaryTag": "Ownable",
+  "description": "A large rustic hotel with rooms for let.",
+  "image": "map_resources/images/hotel.jpg",
+  "icon": "map_resources/icons/highrise_ownable.png"
 }
 ]
