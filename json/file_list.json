@@ -5764,6 +5764,72 @@
             "description": ""
         }
     ],
+    "06Paralake-6.1/Promotional-Material": [
+        {
+            "filename": "bazaar.png",
+            "description": ""
+        },
+        {
+            "filename": "cityhall.png",
+            "description": ""
+        },
+        {
+            "filename": "farm.png",
+            "description": ""
+        },
+        {
+            "filename": "foundry.png",
+            "description": ""
+        },
+        {
+            "filename": "highway.png",
+            "description": ""
+        },
+        {
+            "filename": "homeless.png",
+            "description": ""
+        },
+        {
+            "filename": "hotel.png",
+            "description": ""
+        },
+        {
+            "filename": "metro.png",
+            "description": ""
+        },
+        {
+            "filename": "plaza.png",
+            "description": ""
+        },
+        {
+            "filename": "pub.png",
+            "description": ""
+        },
+        {
+            "filename": "river.png",
+            "description": ""
+        },
+        {
+            "filename": "storage.png",
+            "description": ""
+        },
+        {
+            "filename": "suburbs.png",
+            "description": ""
+        },
+        {
+            "filename": "tennement.png",
+            "description": ""
+        },
+        {
+            "filename": "tidal.png",
+            "description": ""
+        },
+        {
+            "filename": "waterfall.png",
+            "description": ""
+        }
+    ],
     "09In-Game-Art": [],
     "09In-Game-Art/Branding": [
         {
