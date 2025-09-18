@@ -14,7 +14,10 @@ const map = L.map('map', {
   crs: L.CRS.Simple,
   minZoom: -2,
   maxZoom: 2,
-  layers: [baseMap]
+  layers: [baseMap],
+  scrollWheelZoom: 'center',
+  wheelPxPerZoomLevel: 120,
+  zoomSnap: 0
 });
 
 const baseLayers = {
@@ -32,7 +35,7 @@ const overlayLayers = {
 L.control.layers(baseLayers, overlayLayers, { position: 'bottomright' }).addTo(map);
 
 function getScaleFromZoom(zoom) {
-  return 1 + zoom * 0.3;
+  return 1 + zoom * 0.25;
 }
 
 function startCode() {
