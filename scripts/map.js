@@ -1,4 +1,4 @@
-const EDITOR_MODE = true;
+const EDITOR_MODE = false;
 const bounds = [[0, 0], [0, 0]];
 const tagColors = {};
 const markers = [];
