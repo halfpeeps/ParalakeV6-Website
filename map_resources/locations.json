@@ -752,7 +752,7 @@
     ],
     "primaryTag": "Parking",
     "description": "A parkinglot in the Slums for you to park your vehicle.",
-    "image": "map_resources/images/rc_atm.jpg",
+    "image": "map_resources/images/roadcrew_parking.jpg",
     "icon": "map_resources/icons/parking.png"
   },
   {
@@ -992,19 +992,7 @@
     ],
     "primaryTag": "ATM",
     "description": "A place for you top up your wallet, or deposit your change, by the Roadcrew Station",
-    "image": "map_resources/images/roadcrew_parking.jpg",
-    "icon": "map_resources/icons/atm.png"
-  },
-  {
-    "name": "Market Street ATM",
-    "x": 118,
-    "y": 3046,
-    "tags": [
-      "ATM"
-    ],
-    "primaryTag": "ATM",
-    "description": "A place for you top up your wallet, or deposit your change, in the Central City.",
-    "image": "map_resources/images/fish_atm.jpg",
+    "image": "map_resources/images/rc_atm.jpg",
     "icon": "map_resources/icons/atm.png"
   },
   {
