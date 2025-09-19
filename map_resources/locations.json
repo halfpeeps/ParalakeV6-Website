@@ -660,33 +660,9 @@
     "icon": "map_resources/icons/food.png"
   },
   {
-    "name": "Business Shop 1",
-    "x": 1427,
-    "y": 707,
-    "tags": [
-      "Ownable", "Shop"
-    ],
-    "primaryTag": "Ownable",
-    "description": "A large property for you or your organization to front your operations or other businesses, located alongside Business Street.",
-    "image": "map_resources/images/bshops.jpg",
-    "icon": "map_resources/icons/shop_ownable.png"
-  },
-  {
-    "name": "Business Shop 2",
-    "x": 1345,
-    "y": 707,
-    "tags": [
-      "Ownable", "Shop"
-    ],
-    "primaryTag": "Ownable",
-    "description": "A large property for you or your organization to front your operations or other businesses, located alongside Business Street.",
-    "image": "map_resources/images/bshops.jpg",
-    "icon": "map_resources/icons/shop_ownable.png"
-  },
-  {
-    "name": "Business Shop 3",
-    "x": 1264,
-    "y": 707,
+    "name": "Business Shop",
+    "x": 1215,
+    "y": 977,
     "tags": [
       "Ownable", "Shop"
     ],
