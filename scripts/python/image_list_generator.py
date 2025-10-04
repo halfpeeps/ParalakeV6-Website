@@ -3,7 +3,7 @@ import json
 import re
 
 IMAGE_DIR = "images"
-OUTPUT_FILE = "json/file_list.json"
+OUTPUT_FILE = "data/file_list.json"
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".gif", ".bmp", ".webp"}
 INFO_PATTERN = re.compile(r"^info(\d{2})?$", re.IGNORECASE)  # Matches "info", "info01", "info02", etc.
 
@@ -40,7 +40,7 @@ def sort_images(images):
     return sorted_info_images + other_images
 
 
-def load_existing_file_list(output_file):
+def load_existing_data/file_list(output_file):
     if os.path.exists(output_file):
         with open(output_file, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -59,10 +59,10 @@ def update_descriptions(existing_tree, new_tree):
     return new_tree
 
 
-def save_file_list(directory, output_file):
-    existing_file_list = load_existing_file_list(output_file)
+def save_data/file_list(directory, output_file):
+    existing_data/file_list = load_existing_data/file_list(output_file)
     new_file_tree = scan_directory(directory)
-    updated_file_tree = update_descriptions(existing_file_list, new_file_tree)
+    updated_file_tree = update_descriptions(existing_data/file_list, new_file_tree)
     
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(updated_file_tree, f, indent=4)
@@ -70,7 +70,7 @@ def save_file_list(directory, output_file):
 
 
 if __name__ == "__main__":
-    save_file_list(IMAGE_DIR, OUTPUT_FILE)
+    save_data/file_list(IMAGE_DIR, OUTPUT_FILE)
 
 
 # Images called info01.png, info02.jpg, etc. will be sorted to the beginning of the list, followed by other images.  info with no number will be sorted first.

@@ -1,12 +1,12 @@
-# This script needs to be configured for each output JSON file.
+# image_set_generator preset with the full archive vairables
 import os
 import json
 
 # --- CONFIGURATION ---
-BASE_IMAGE_DIR = "images/16Classic-Paralake-Maps"  # relative to project root
-OUTPUT_JSON_DIR = "json/image_sets"  # where to write json files
-URL_PREFIX = "/images/16Classic-Paralake-Maps"  # web path to images
-OUTPUT_JSON_NAME = "classic-screenshots.json"  # output file name
+BASE_IMAGE_DIR = "images"
+OUTPUT_JSON_DIR = "data/image_sets"
+URL_PREFIX = "/images"
+OUTPUT_JSON_NAME = "full-archive.json"
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".bmp", ".tiff"}
 

@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //add the following to the button
 {/*
     <button class="download-button zip-download"
-        data-source="json/image_sets/json-name.json"
+        data-source="data/image_sets/json-name.json"
         data-zipname="zip-name.zip">
         Button text
     </button>

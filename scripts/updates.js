@@ -1,10 +1,10 @@
 async function loadUpdates() {
-    const response = await fetch('json/update_list.json');
+    const response = await fetch('data/update_list.json');
     const updates = await response.json();
     const updateList = document.getElementById('update-content-wrapper');
 
     for (const update of updates) {
-        const mdResponse = await fetch(`updates/${update.file}`);
+        const mdResponse = await fetch(`data/updates/${update.file}`);
         const bbText = await mdResponse.text();
         
         const updateEntry = document.createElement('div');
