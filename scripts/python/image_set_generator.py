@@ -1,12 +1,12 @@
-# image_set_generator preset with the full archive vairables
+# This script needs to be configured for each output JSON file.
 import os
 import json
 
 # --- CONFIGURATION ---
-BASE_IMAGE_DIR = "images"
-OUTPUT_JSON_DIR = "json/image_sets"
-URL_PREFIX = "/images"
-OUTPUT_JSON_NAME = "full-archive.json"
+BASE_IMAGE_DIR = "images/15Promotional-Material/Menu-Background-Pack"  # relative to project root
+OUTPUT_JSON_DIR = "data/image_sets"  # where to write json files
+URL_PREFIX = "/images/15Promotional-Material/Menu-Background-Pack"  # web path to images
+OUTPUT_JSON_NAME = "wallpapers.json"  # output file name
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".bmp", ".tiff"}
 

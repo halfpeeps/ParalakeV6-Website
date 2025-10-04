@@ -35,7 +35,7 @@
             entry.append(dot, btn);
             sidebar.appendChild(entry);
 
-            const mdRes = await fetch(`changelogs/${log.file}`);
+            const mdRes = await fetch(`data/changelogs/${log.file}`);
             if (!mdRes.ok) {
                 console.error(`Failed to fetch ${log.file}:`, mdRes.statusText);
                 return;
@@ -57,8 +57,8 @@
     }
 
     async function loadChangelogs() {
-        const res = await fetch("json/changelog_list.json");
-        if (!res.ok) { throw new Error("Unable to load changelog_list.json"); }
+        const res = await fetch("data/changelog_list.json");
+        if (!res.ok) { throw new Error("Unable to load data/changelog_list.json"); }
         const changelogs = await res.json();
 
         changelogs.reverse();

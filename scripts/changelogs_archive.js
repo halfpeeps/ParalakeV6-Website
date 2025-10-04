@@ -58,8 +58,8 @@
     }
 
     async function loadChangelogs() {
-        const res = await fetch("json/changelog_archive_list.json");
-        if (!res.ok) { throw new Error("Unable to load changelog_archive_list.json"); }
+        const res = await fetch("data/changelog_archive_list.json");
+        if (!res.ok) { throw new Error("Unable to load data/changelog_archive_list.json"); }
         const changelogs = await res.json();
 
         for (const log of changelogs) {
