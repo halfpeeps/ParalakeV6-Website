@@ -26,8 +26,9 @@ def count_images(directory):
 
 if __name__ == "__main__":
     script_directory = os.path.dirname(os.path.abspath(__file__))
-    site_root = os.path.abspath(os.path.join(script_directory, ".."))
+    site_root = os.path.abspath(os.path.join(script_directory, "..", ".."))
     images_directory = os.path.join(site_root, "images")
+
 
     if not os.path.exists(images_directory):
         print("Error: The 'images' directory does not exist in the site root.")
