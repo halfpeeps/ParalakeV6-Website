@@ -57,13 +57,13 @@
         </div>
       </div>       
         
-    <div id="page-container" style="background-image: url('images_excluded/bg04.png');">
-        <main id="downloads-container">
+    <div id="page-container" style="background-image: url('images_excluded/bg07.png');">
+        <div id="downloads-container">
             <h1>Downloads</h1>
             <div class="download-item-map">
                 <img src="images_excluded/rp_paralake_city_v6.png">
                 <div class="download-info" style="background-color: #0000005d; padding: var(--spacing-small); padding-right: 20px; border-radius: var(--border-radius); min-height: 378px;">
-                    <h1>Paralake City V6.1</h1>
+                    <h1>Paralake City V6</h1>
                     <p>Update 6.1 out now: overhauled Forest District, updated Bazaar, new properties, and much more!</p><br>
                     Bigger, more detailed,
                     but still distinctly Paralake.  Experience a
@@ -84,6 +84,22 @@
                 </div>
             </div>
 
+            <div class="download-item-map-night">
+                <img src="images_excluded/rp_paralake_city_v6_night.png">
+                <div class="download-info" style="background-color: #0000005d; padding: var(--spacing-small); padding-right: 20px; border-radius: var(--border-radius); min-height: 245px;">
+                    <h1>Paralake City V6 Night</h1>
+                    <p>Paralake V6 in a whole new light (literally).  
+                    Experience the city and surrounding districts long after dark, just following a brief rain shower.  
+                    Glowing lights, reflections in the streets, and spooky dark forests.  
+                    Download for Paralake City reworked for night time atmosphere.
+                    <br><br>
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3583696319" target="_blank" class="download-link-steam">Steam Workshop</a>
+                </div>
+            </div>
+        </div>
+        
+        <main id="downloads-container">
+            <h1>Other Versions</h1>
             <div class="download-item">
                 <img src="images_excluded/rp_paralake_city_v6_legacy.png">
                 <div class="download-info">
@@ -124,7 +140,10 @@
                     </button>
                 </div>
             </div>
-            
+        </main>
+
+        <main id="downloads-container">
+            <h1>Other Downloads</h1>
             <div class="download-item">
                 <img src="images_excluded/wallpaperpack.png">
                 <div class="download-info">
@@ -149,19 +168,6 @@
             </div>
 
             <div class="download-item">
-                <img src="images_excluded/download_archive.png">
-                <div class="download-info">
-                    <h2>Archive Download</h2>
-                    <p>Download all images stored in the development archive.  (Note: This may take a while)</p>
-                    <button class="download-button zip-download"
-                        data-source="data/image_sets/full-archive.json"
-                        data-zipname="Paralake-Development-Archive.zip">
-                        Download Archive
-                    </button>
-                </div>
-            </div>
-
-            <div class="download-item">
                 <img src="images_excluded/ccv.png">
                 <div class="download-info">
                     <h2>VMT Color Converter Tool</h2>
@@ -173,8 +179,20 @@
                 </div>
             </div>
 
-        </div>
-    </main>
+            <div class="download-item">
+                <img src="images_excluded/download_archive.png">
+                <div class="download-info">
+                    <h2>Archive Download</h2>
+                    <p>Download all images stored in the development archive.  (Note: This may take a while)</p>
+                    <button class="download-button zip-download"
+                        data-source="data/image_sets/full-archive.json"
+                        data-zipname="Paralake-Development-Archive.zip">
+                        Download Archive
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
       
     <div id="pagefooter" style="position: sticky !important; bottom: 0; width: 100%; z-index: 9999;"></div>
     <script src="scripts/mobileWarning.js"></script>
@@ -182,6 +200,7 @@
     <script src="scripts/headerMenu.js"></script>
 
     <!-- img download scripts -->
+    <script src="scripts/downloads.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
     <script src="scripts/imageZipper.js"></script>
