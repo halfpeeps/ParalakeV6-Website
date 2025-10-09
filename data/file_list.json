@@ -5830,6 +5830,73 @@
             "description": ""
         }
     ],
+    "07Paralake-V6-Night": [],
+    "07Paralake-V6-Night/Promotional-Material": [
+        {
+            "filename": "1.png",
+            "description": ""
+        },
+        {
+            "filename": "10.png",
+            "description": ""
+        },
+        {
+            "filename": "11.png",
+            "description": ""
+        },
+        {
+            "filename": "12.png",
+            "description": ""
+        },
+        {
+            "filename": "14.png",
+            "description": ""
+        },
+        {
+            "filename": "15.png",
+            "description": ""
+        },
+        {
+            "filename": "16.png",
+            "description": ""
+        },
+        {
+            "filename": "17.png",
+            "description": ""
+        },
+        {
+            "filename": "19.png",
+            "description": ""
+        },
+        {
+            "filename": "2.png",
+            "description": ""
+        },
+        {
+            "filename": "20.png",
+            "description": ""
+        },
+        {
+            "filename": "21.png",
+            "description": ""
+        },
+        {
+            "filename": "23.png",
+            "description": ""
+        },
+        {
+            "filename": "25.png",
+            "description": ""
+        },
+        {
+            "filename": "5.png",
+            "description": ""
+        },
+        {
+            "filename": "9.png",
+            "description": ""
+        }
+    ],
     "09In-Game-Art": [],
     "09In-Game-Art/Branding": [
         {
@@ -8974,132 +9041,6 @@
         }
     ],
     "20Misc": [],
-    "20Misc/Bank-Property-Images": [
-        {
-            "filename": "barn.png",
-            "description": ""
-        },
-        {
-            "filename": "bazaar.png",
-            "description": ""
-        },
-        {
-            "filename": "bazaarLarge.png",
-            "description": ""
-        },
-        {
-            "filename": "beachhuts.png",
-            "description": ""
-        },
-        {
-            "filename": "bshop.png",
-            "description": ""
-        },
-        {
-            "filename": "church.png",
-            "description": ""
-        },
-        {
-            "filename": "comms.png",
-            "description": ""
-        },
-        {
-            "filename": "foundry.png",
-            "description": ""
-        },
-        {
-            "filename": "glassco.png",
-            "description": ""
-        },
-        {
-            "filename": "hicktown1.png",
-            "description": ""
-        },
-        {
-            "filename": "hicktown2.png",
-            "description": ""
-        },
-        {
-            "filename": "hicktown3.png",
-            "description": ""
-        },
-        {
-            "filename": "hungriges.png",
-            "description": ""
-        },
-        {
-            "filename": "industrial3.png",
-            "description": ""
-        },
-        {
-            "filename": "officeComplex.png",
-            "description": ""
-        },
-        {
-            "filename": "regals.png",
-            "description": ""
-        },
-        {
-            "filename": "roxies.png",
-            "description": ""
-        },
-        {
-            "filename": "slums.png",
-            "description": ""
-        },
-        {
-            "filename": "slumsTrailer.png",
-            "description": ""
-        },
-        {
-            "filename": "southgate.png",
-            "description": ""
-        },
-        {
-            "filename": "subsLarge1.png",
-            "description": ""
-        },
-        {
-            "filename": "subsLarge2.png",
-            "description": ""
-        },
-        {
-            "filename": "subsLarge3.png",
-            "description": ""
-        },
-        {
-            "filename": "subsSmall1.png",
-            "description": ""
-        },
-        {
-            "filename": "subsSmall2.png",
-            "description": ""
-        },
-        {
-            "filename": "subsSmall3.png",
-            "description": ""
-        },
-        {
-            "filename": "subsSmall4.png",
-            "description": ""
-        },
-        {
-            "filename": "tidal.png",
-            "description": ""
-        },
-        {
-            "filename": "woodCabin1.png",
-            "description": ""
-        },
-        {
-            "filename": "woodCabin2.png",
-            "description": ""
-        },
-        {
-            "filename": "woodCabin3.png",
-            "description": ""
-        }
-    ],
     "20Misc/Logos": [
         {
             "filename": "Adobe_Premiere_Pro_LIqUKNug77.png",
@@ -9154,6 +9095,10 @@
             "description": ""
         },
         {
+            "filename": "night_logo.png",
+            "description": ""
+        },
+        {
             "filename": "paralake-city.png",
             "description": ""
         },
@@ -9194,15 +9139,7 @@
             "description": ""
         },
         {
-            "filename": "rp_paralake_city_v6.png",
-            "description": ""
-        },
-        {
-            "filename": "rp_paralake_city_v6_nav.png",
-            "description": ""
-        },
-        {
-            "filename": "rp_paralake_city_v6_unrestricted.png",
+            "filename": "spawnroom_bg_night.png",
             "description": ""
         },
         {
@@ -9214,11 +9151,19 @@
             "description": ""
         },
         {
+            "filename": "spawnroom_credits_night.png",
+            "description": ""
+        },
+        {
             "filename": "spawnroom_gradient.png",
             "description": ""
         },
         {
             "filename": "spawnroom_logo.png",
+            "description": ""
+        },
+        {
+            "filename": "spawnroom_logo_night_night.png",
             "description": ""
         },
         {
@@ -9305,6 +9250,10 @@
         },
         {
             "filename": "bshop_parking.jpg",
+            "description": ""
+        },
+        {
+            "filename": "bunker.jpg",
             "description": ""
         },
         {
@@ -9412,6 +9361,10 @@
             "description": ""
         },
         {
+            "filename": "hicktown.jpg",
+            "description": ""
+        },
+        {
             "filename": "hicktown1.jpg",
             "description": ""
         },
@@ -9425,6 +9378,14 @@
         },
         {
             "filename": "hospital.jpg",
+            "description": ""
+        },
+        {
+            "filename": "hotel.jpg",
+            "description": ""
+        },
+        {
+            "filename": "hotel_parking.jpg",
             "description": ""
         },
         {
@@ -9664,6 +9625,238 @@
             "description": ""
         }
     ],
+    "20Misc/New-Bank-Property-Images": [
+        {
+            "filename": "barn.jpg",
+            "description": ""
+        },
+        {
+            "filename": "bazaar.jpg",
+            "description": ""
+        },
+        {
+            "filename": "beachhuts.jpg",
+            "description": ""
+        },
+        {
+            "filename": "bshop.jpg",
+            "description": ""
+        },
+        {
+            "filename": "bunker.jpg",
+            "description": ""
+        },
+        {
+            "filename": "church.jpg",
+            "description": ""
+        },
+        {
+            "filename": "comms.jpg",
+            "description": ""
+        },
+        {
+            "filename": "foundry.jpg",
+            "description": ""
+        },
+        {
+            "filename": "hicktown.jpg",
+            "description": ""
+        },
+        {
+            "filename": "hotel.jpg",
+            "description": ""
+        },
+        {
+            "filename": "hungriges.jpg",
+            "description": ""
+        },
+        {
+            "filename": "industrial3.jpg",
+            "description": ""
+        },
+        {
+            "filename": "largesubs1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "largesubs2.jpg",
+            "description": ""
+        },
+        {
+            "filename": "largesubs3.jpg",
+            "description": ""
+        },
+        {
+            "filename": "office.jpg",
+            "description": ""
+        },
+        {
+            "filename": "regals.jpg",
+            "description": ""
+        },
+        {
+            "filename": "slums.jpg",
+            "description": ""
+        },
+        {
+            "filename": "smallsubs1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "smallsubs2.jpg",
+            "description": ""
+        },
+        {
+            "filename": "smallsubs3.jpg",
+            "description": ""
+        },
+        {
+            "filename": "smallsubs4.jpg",
+            "description": ""
+        },
+        {
+            "filename": "southgate.jpg",
+            "description": ""
+        },
+        {
+            "filename": "tidal.jpg",
+            "description": ""
+        },
+        {
+            "filename": "woodCabin1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "woodCabin2.jpg",
+            "description": ""
+        }
+    ],
+    "20Misc/Old-Bank-Property-Images": [
+        {
+            "filename": "barn.png",
+            "description": ""
+        },
+        {
+            "filename": "bazaar.png",
+            "description": ""
+        },
+        {
+            "filename": "bazaarLarge.png",
+            "description": ""
+        },
+        {
+            "filename": "beachhuts.png",
+            "description": ""
+        },
+        {
+            "filename": "bshop.png",
+            "description": ""
+        },
+        {
+            "filename": "church.png",
+            "description": ""
+        },
+        {
+            "filename": "comms.png",
+            "description": ""
+        },
+        {
+            "filename": "foundry.png",
+            "description": ""
+        },
+        {
+            "filename": "glassco.png",
+            "description": ""
+        },
+        {
+            "filename": "hicktown1.png",
+            "description": ""
+        },
+        {
+            "filename": "hicktown2.png",
+            "description": ""
+        },
+        {
+            "filename": "hicktown3.png",
+            "description": ""
+        },
+        {
+            "filename": "hungriges.png",
+            "description": ""
+        },
+        {
+            "filename": "industrial3.png",
+            "description": ""
+        },
+        {
+            "filename": "officeComplex.png",
+            "description": ""
+        },
+        {
+            "filename": "regals.png",
+            "description": ""
+        },
+        {
+            "filename": "roxies.png",
+            "description": ""
+        },
+        {
+            "filename": "slums.png",
+            "description": ""
+        },
+        {
+            "filename": "slumsTrailer.png",
+            "description": ""
+        },
+        {
+            "filename": "southgate.png",
+            "description": ""
+        },
+        {
+            "filename": "subsLarge1.png",
+            "description": ""
+        },
+        {
+            "filename": "subsLarge2.png",
+            "description": ""
+        },
+        {
+            "filename": "subsLarge3.png",
+            "description": ""
+        },
+        {
+            "filename": "subsSmall1.png",
+            "description": ""
+        },
+        {
+            "filename": "subsSmall2.png",
+            "description": ""
+        },
+        {
+            "filename": "subsSmall3.png",
+            "description": ""
+        },
+        {
+            "filename": "subsSmall4.png",
+            "description": ""
+        },
+        {
+            "filename": "tidal.png",
+            "description": ""
+        },
+        {
+            "filename": "woodCabin1.png",
+            "description": ""
+        },
+        {
+            "filename": "woodCabin2.png",
+            "description": ""
+        },
+        {
+            "filename": "woodCabin3.png",
+            "description": ""
+        }
+    ],
     "20Misc/Playtesting": [
         {
             "filename": "agree.png",
@@ -9775,6 +9968,28 @@
         },
         {
             "filename": "welcome.png",
+            "description": ""
+        }
+    ],
+    "20Misc/Thumbnails": [
+        {
+            "filename": "rp_paralake_city_v6.png",
+            "description": ""
+        },
+        {
+            "filename": "rp_paralake_city_v6_legacy.png",
+            "description": ""
+        },
+        {
+            "filename": "rp_paralake_city_v6_nav.png",
+            "description": ""
+        },
+        {
+            "filename": "rp_paralake_city_v6_night.png",
+            "description": ""
+        },
+        {
+            "filename": "rp_paralake_city_v6_unrestricted.png",
             "description": ""
         }
     ]
