@@ -1,6 +1,11 @@
 [
     {
         "postedby": "peeps",
+        "date": "09/10/2025",
+        "file": "2025-10-nightversion.bbcode"
+    },
+    {
+        "postedby": "peeps",
         "date": "19/09/2025",
         "file": "2025-09-updatelog.bbcode"
     },
