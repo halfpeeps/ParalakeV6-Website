@@ -44,6 +44,18 @@
     min-width: 800px;
 }
 
+.download-item-map-night {
+    display: flex;
+    min-height: 200px;
+    align-items: center;
+    background: var(--color-v6-gradient-night);
+    padding: 1%;
+    border-radius: var(--border-radius);
+    transition: background .3s ease;
+    font-family: var(--font-primary);
+    min-width: 800px;
+}
+
 .download-item:hover {
     background: var(--color-downloads-background);
 }
@@ -67,11 +79,25 @@
     border-width: 0px;
 }
 
+.download-item-map-night img {
+    width: 245px;
+    height: 245px;
+    object-fit: contain;
+    border-radius: var(--border-radius);
+    margin-right: var(--spacing-medium);
+    margin-left: 5px;
+    border-width: 0px;
+}
+
 .download-item img:hover {
     border-width: 0px;
 }
 
 .download-item-map img:hover {
+    border-width: 0px;
+}
+
+.download-item-map-night img:hover {
     border-width: 0px;
 }
 
