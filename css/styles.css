@@ -9,6 +9,7 @@
     --color-border: #44444400;
     --color-border-hover: #444;
     --color-v6-gradient: linear-gradient(to right, #d12d9c, #f25f30, #5ea2ef);
+    --color-v6-gradient-night: linear-gradient(to right, #772971, #2f3133, #314163);
     --color-v6-gradient-subtle: linear-gradient(to right, #d12d9c, #f25f30, #5ea2ef, #333, #333, #333, #333, #333, #333);
     --color-text: #fff;
     --color-text-dark: #121212;
