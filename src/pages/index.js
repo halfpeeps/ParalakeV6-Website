@@ -8,5 +8,5 @@ export default function Home() {
     window.location.href = '/downloads.html';
   }, []);
 
-  return <p>Redirecting...</p>;
+  return <p></p>;
 }
