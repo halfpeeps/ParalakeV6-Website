@@ -5,7 +5,7 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    window.location.href = '/downloads.html';
+    window.location.href = '/archive.html';
   }, []);
 
   return <p></p>;
