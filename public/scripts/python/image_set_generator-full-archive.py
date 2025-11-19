@@ -3,8 +3,8 @@ import os
 import json
 
 # --- CONFIGURATION ---
-BASE_IMAGE_DIR = "images"
-OUTPUT_JSON_DIR = "data/image_sets"
+BASE_IMAGE_DIR = "public/images"
+OUTPUT_JSON_DIR = "public/data/image_sets"
 URL_PREFIX = "/images"
 OUTPUT_JSON_NAME = "full-archive.json"
 
