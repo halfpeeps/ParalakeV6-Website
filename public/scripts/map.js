@@ -32,6 +32,44 @@ const overlayLayers = {
   "Mugging Map": muggingMap
 };
 
+const muggingToggleButton = L.control({ position: 'bottomright' });
+muggingToggleButton.onAdd = function(map) {
+  const div = L.DomUtil.create('div', 'leaflet-control');
+  div.style.display = 'flex';
+  div.style.gap = '0';
+  div.style.alignItems = 'center';
+  
+  const button = L.DomUtil.create('a', 'leaflet-bar', div);
+  button.href = '#';
+  button.title = 'Toggle Mugging Map';
+  button.textContent = 'Toggle Mugging Map';
+  button.style.padding = '7px 10px';
+  button.style.fontSize = '12px';
+  button.style.fontWeight = 'bold';
+  button.style.cursor = 'pointer';
+  button.style.whiteSpace = 'nowrap';
+  button.style.display = 'block';
+  button.style.backgroundColor = '#f4f4f4';
+  button.style.color = '#333';
+  button.style.textDecoration = 'none';
+  button.style.borderRadius = '4px 0 0 4px';
+
+  L.DomEvent.on(button, 'click', (e) => {
+    L.DomEvent.preventDefault(e);
+    if (map.hasLayer(muggingMap)) {
+      muggingMap.removeFrom(map);
+      button.style.opacity = '0.5';
+    } else {
+      muggingMap.addTo(map);
+      button.style.opacity = '1';
+    }
+  });
+
+  button.style.opacity = '0.5';
+  return div;
+};
+muggingToggleButton.addTo(map);
+
 L.control.layers(baseLayers, overlayLayers, { position: 'bottomright' }).addTo(map);
 
 function getScaleFromZoom(zoom) {
