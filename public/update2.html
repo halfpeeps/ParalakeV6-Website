@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paralake V6.2</title>
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --panel: #111318;
+      --text: #e8e8ea;
+      --muted: #9aa0a6;
+      --ring: rgba(255, 255, 255, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 700px at 30% -10%, rgba(255,255,255,0.06), transparent 55%),
+                  radial-gradient(900px 600px at 110% 10%, rgba(255,255,255,0.04), transparent 60%),
+                  var(--bg);
+      color: var(--text);
+    }
+
+    .wrap {
+      min-height: 100vh;
+      padding: 16px;
+    }
+
+    .hint {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 14px;
+      user-select: none;
+    }
+
+    .grid {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(auto-fill, minmax(720px, 1fr));
+      align-items: start;
+    }
+
+    .tile {
+      background: var(--panel);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 14px;
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+      transition: transform 120ms ease, border-color 120ms ease;
+    }
+
+    .tile:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255,255,255,0.14);
+    }
+
+    .tile img {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: rgba(0,0,0,0.18);
+    }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 6px;
+      background: rgba(0,0,0,0.78);
+      backdrop-filter: blur(6px);
+      z-index: 999;
+    }
+
+    .modal.open { display: flex; }
+
+    .modal-inner {
+      position: relative;
+      width: 99vw;
+      height: 98vh;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.10);
+      box-shadow: 0 24px 70px rgba(0,0,0,0.55);
+      background: rgba(17,19,24,0.65);
+      display: grid;
+      place-items: center;
+    }
+
+    .modal-inner img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      background: rgba(0,0,0,0.2);
+      display: block;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.14);
+      background: rgba(0,0,0,0.35);
+      color: var(--text);
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      font-size: 18px;
+      transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+      z-index: 2;
+    }
+
+    .close-btn:hover {
+      transform: scale(1.05);
+      background: rgba(0,0,0,0.5);
+      border-color: rgba(255,255,255,0.22);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="grid" id="grid">
+      <div class="tile"><img src="images_excluded/update2/1.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/2.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/3.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/4.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/5.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/6.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/7.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/8.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/9.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/10.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/11.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/12.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/13.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/14.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/15.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/16.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/17.png" alt=""></div>
+      <div class="tile"><img src="images_excluded/update2/18.png" alt=""></div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-inner" id="modalInner">
+      <button class="close-btn" id="closeBtn" aria-label="Close preview">✕</button>
+      <img id="modalImg" src="" alt="">
+    </div>
+  </div>
+
+  <script>
+    const grid = document.getElementById("grid");
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.getElementById("closeBtn");
+
+    function openModal(src) {
+      modalImg.src = src;
+      modal.classList.add("open");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+      closeBtn.focus();
+    }
+
+    function closeModal() {
+      modal.classList.remove("open");
+      modal.setAttribute("aria-hidden", "true");
+      modalImg.src = "";
+      document.body.style.overflow = "";
+    }
+
+    grid.addEventListener("click", (e) => {
+      const img = e.target.closest("img");
+      if (!img) return;
+      openModal(img.src);
+    });
+
+    closeBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      closeModal();
+    });
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && modal.classList.contains("open")) {
+        closeModal();
+      }
+    });
+
+    document.getElementById("modalInner").addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
+  </script>
+</body>
+</html>
