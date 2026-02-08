@@ -5830,8 +5830,75 @@
             "description": ""
         }
     ],
-    "07Paralake-V6-Night": [],
-    "07Paralake-V6-Night/Promotional-Material": [
+    "07Paralake-6.2": [],
+    "07Paralake-6.2/Promotional Images": [
+        {
+            "filename": "1.jpg",
+            "description": ""
+        },
+        {
+            "filename": "10.jpg",
+            "description": ""
+        },
+        {
+            "filename": "11.jpg",
+            "description": ""
+        },
+        {
+            "filename": "12.jpg",
+            "description": ""
+        },
+        {
+            "filename": "13.jpg",
+            "description": ""
+        },
+        {
+            "filename": "14.jpg",
+            "description": ""
+        },
+        {
+            "filename": "15.jpg",
+            "description": ""
+        },
+        {
+            "filename": "16.jpg",
+            "description": ""
+        },
+        {
+            "filename": "2.jpg",
+            "description": ""
+        },
+        {
+            "filename": "3.jpg",
+            "description": ""
+        },
+        {
+            "filename": "4.jpg",
+            "description": ""
+        },
+        {
+            "filename": "5.jpg",
+            "description": ""
+        },
+        {
+            "filename": "6.jpg",
+            "description": ""
+        },
+        {
+            "filename": "7.jpg",
+            "description": ""
+        },
+        {
+            "filename": "8.jpg",
+            "description": ""
+        },
+        {
+            "filename": "9.jpg",
+            "description": ""
+        }
+    ],
+    "08Paralake-V6-Night": [],
+    "08Paralake-V6-Night/Promotional-Material": [
         {
             "filename": "1.png",
             "description": ""
@@ -5897,8 +5964,8 @@
             "description": ""
         }
     ],
-    "08Paralake-V6-Winter": [],
-    "08Paralake-V6-Winter/Promotional-Material": [
+    "09Paralake-V6-Winter": [],
+    "09Paralake-V6-Winter/Promotional-Material": [
         {
             "filename": "1.jpg",
             "description": ""
@@ -5956,8 +6023,8 @@
             "description": ""
         }
     ],
-    "09In-Game-Art": [],
-    "09In-Game-Art/Branding": [
+    "10In-Game-Art": [],
+    "10In-Game-Art/Branding": [
         {
             "filename": "air-con.png",
             "description": ""
@@ -6235,7 +6302,7 @@
             "description": ""
         }
     ],
-    "09In-Game-Art/Misc": [
+    "10In-Game-Art/Misc": [
         {
             "filename": "Artboard 1.png",
             "description": ""
@@ -6425,7 +6492,7 @@
             "description": ""
         }
     ],
-    "09In-Game-Art/Parking-Signs": [
+    "10In-Game-Art/Parking-Signs": [
         {
             "filename": "bazaar.png",
             "description": ""
@@ -6467,7 +6534,7 @@
             "description": ""
         }
     ],
-    "09In-Game-Art/Police-Department": [
+    "10In-Game-Art/Police-Department": [
         {
             "filename": "pd_dirsign02a.png",
             "description": ""
@@ -6513,7 +6580,7 @@
             "description": ""
         }
     ],
-    "09In-Game-Art/Signs": [
+    "10In-Game-Art/Signs": [
         {
             "filename": "cheapmenu01.png",
             "description": ""
@@ -6631,7 +6698,7 @@
             "description": ""
         }
     ],
-    "09In-Game-Art/Wayfinding-Signs": [
+    "10In-Game-Art/Wayfinding-Signs": [
         {
             "filename": "autoshop.png",
             "description": ""
@@ -9206,6 +9273,14 @@
             "description": ""
         },
         {
+            "filename": "rp_paralake_city_v6.png",
+            "description": ""
+        },
+        {
+            "filename": "rp_paralake_city_v6_update1.png",
+            "description": ""
+        },
+        {
             "filename": "rp_paralake_city_v6_winter.png",
             "description": ""
         },
@@ -10048,7 +10123,7 @@
     ],
     "20Misc/Thumbnails": [
         {
-            "filename": "rp_paralake_city_v6.png",
+            "filename": "rp_paralake_city_v6_launch.png",
             "description": ""
         },
         {
@@ -10065,6 +10140,18 @@
         },
         {
             "filename": "rp_paralake_city_v6_unrestricted.png",
+            "description": ""
+        },
+        {
+            "filename": "rp_paralake_city_v6_update1.png",
+            "description": ""
+        },
+        {
+            "filename": "rp_paralake_city_v6_update2.png",
+            "description": ""
+        },
+        {
+            "filename": "rp_paralake_city_v6_winter.png",
             "description": ""
         }
     ]
