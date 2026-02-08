@@ -1198,5 +1198,41 @@
   "description": "A large rustic hotel with rooms for let.",
   "image": "map_resources/images/hotel.jpg",
   "icon": "map_resources/icons/highrise_ownable.png"
+},
+{
+  "name": "Slums Warehouse",
+  "x": 332,
+  "y": 3426,
+  "tags": [
+    "Ownable", "Industrial"
+  ],
+  "primaryTag": "Ownable",
+  "description": "A warehouse located near the Slums.",
+  "image": "map_resources/images/slumswarehouse.png",
+  "icon": "map_resources/icons/factory.png"
+},
+{
+  "name": "City Shop",
+  "x": 1325,
+  "y": 3296,
+  "tags": [
+    "Ownable", "Shop"
+  ],
+  "primaryTag": "Ownable",
+  "description": "A large shop in the City",
+  "image": "map_resources/images/cityshop.png",
+  "icon": "map_resources/icons/shop_ownable.png"
+},
+{
+  "name": "Wallpaper World",
+  "x": 1346,
+  "y": 709,
+  "tags": [
+    "Vendor", "Shop"
+  ],
+  "primaryTag": "Vendor",
+  "description": "Selling wallpapers for your stores.",
+  "image": "map_resources/images/wallpaperworld.png",
+  "icon": "map_resources/icons/vendor.png"
 }
 ]
