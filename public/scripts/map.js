@@ -170,7 +170,7 @@ mapImage.onload = () => {
   const [w, h] = [mapImage.width, mapImage.height];
   bounds[1] = [h, w];
 
-  [baseMap, baseMapLight, streetNames, propertyBounds, muggingMap].forEach(layer => layer.setBounds(bounds));
+  [baseMap, baseMapLight, satelliteMap, streetNames, propertyBounds, muggingMap].forEach(layer => layer.setBounds(bounds));
   map.setMaxBounds(bounds);
   map.fitBounds(bounds);
 
