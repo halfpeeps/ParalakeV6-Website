@@ -7,6 +7,24 @@
     width: 100vw;
 }
 
+.version-tag {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-weight: normal;
+    font-family: var(--font-primary);
+    position: relative;
+    top: -3px;
+}
+
+ .download-info p {
+     margin: 0 0 var(--spacing-small);
+ }
+
 #downloads-container {
     max-width: 60%;
     min-width: 400px;
