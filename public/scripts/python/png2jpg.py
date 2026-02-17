@@ -17,7 +17,7 @@ from PIL import Image
 # =============================================================================
 
 # Root folder to search
-ROOT_DIR = Path(r"C:\Users\samue\Documents\Github\Paralake-V6-Development-Archive\public\images")
+ROOT_DIR = Path(r"C:\Users\samue\Documents\Github\Paralake-V6-Development-Archive\public\images_excluded")
 
 # Blacklisted folders (relative paths OR folder names)
 # Examples:
