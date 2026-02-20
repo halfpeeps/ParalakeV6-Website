@@ -453,7 +453,7 @@ function SetStatusChanged(status) {
     if (pos) pos.style.display = "none";
     if (slash) slash.style.display = "none";
     if (size) size.style.display = "none";
-  } else if (status === "Client info sent!") {
+  } else if (status === "Client info sent!" || status === "Recieved all the lua files we needed!") {
     StartPollingQueueStatus()
   }
 }
