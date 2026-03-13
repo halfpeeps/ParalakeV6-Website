@@ -7,6 +7,7 @@
     <title>Credits | Paralake V6</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/credits.css">
+    <link rel="stylesheet" type="text/css" href="css/splashscreen.css">
     <link rel="icon" type="image/x-icon" href="images_excluded/archive_icon_mono.png">
     <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -31,6 +32,28 @@
             <button id="theme-toggle">Dark Theme</button>
         </div>
     </div>
+
+    <!-- SPLASH SCREEN: Disable/Enable in the CSS -->
+    <div class="popup-overlay" id="popup">
+        <div class="popup-container">
+            <button class="popup-close" onclick="closePopup()">&times;</button>
+            <div class="popup-image">
+                <img src="images_excluded/outnowpromo.jpg">
+            </div>
+            <div class="popup-content">
+                <div class="popup-header">We are moving to www.ParalakeCity.com</div>
+                <div class="popup-text">
+                    At some point in the coming months, the Paralake website will be moving to a new domain: <b>www.ParalakeCity.com</b>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <a href="https://www.paralakecity.com/credits"  class="popup-button">Go to the new domain!</a>
+        </div>
+    </div>
+
         
     <div id="page-container" style="background-image: url('images_excluded/bg06.png');">
         <main id="credits-container">
@@ -198,5 +221,6 @@
     <script src="scripts/mobileWarning.js"></script>
     <script src="scripts/footer.js"></script>
     <script src="scripts/headerMenu.js"></script>
+    <script src="scripts/splashscreen.js"></script>
 </body>
 </html>
