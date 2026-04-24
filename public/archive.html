@@ -1,120 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="bjevHpP5Qc-g1TjDo6F0PUbD0nyB646EqcNfrxjrxjs" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paralake V6 | Development Archive</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/archive.css">
-    <link rel="stylesheet" type="text/css" href="css/splashscreen.css">
-    <link rel="icon" type="image/x-icon" href="images_excluded/archive_icon_mono.png">
+    <title>We've Moved - Paralake City</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Jost:ital@0;1&display=swap" rel="stylesheet">
+    
+    <style>
+        @property --angle {
+            syntax: '<angle>';
+            initial-value: 0deg;
+            inherits: false;
+        }
+
+        @property --text-angle {
+            syntax: '<angle>';
+            initial-value: 0deg;
+            inherits: false;
+        }
+
+        :root {
+            /* Inferred colors based on your provided styles */
+            --color-bg: #0a0a0a;
+            --color-text: #ffffff;
+            --color-accent: #f3b447;
+            --color-accent-hover: #ffc56b;
+            --color-border-hover: rgba(255, 255, 255, 0.15);
+            
+            /* Gradient colors */
+            --grad-color-1: #d12d9c;
+            --grad-color-2: #f25f30;
+            --grad-color-3: #5ea2ef;
+            
+            /* Fonts */
+            --font-body: 'Funnel Sans', sans-serif;
+            --font-secondary: 'Jost', sans-serif;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+        }
+
+        body {
+            animation: spin-dots 10s linear infinite;
+            background-image: 
+                radial-gradient(ellipse at top, transparent 0%, var(--color-bg) 85%),
+                radial-gradient(circle, transparent 1px, var(--color-bg) 2.5px),
+                conic-gradient(from var(--angle), 
+                    var(--grad-color-1), 
+                    var(--grad-color-2), 
+                    var(--grad-color-3), 
+                    var(--grad-color-1)
+                );
+            background-size: 100% 100%, 20px 20px, 100% 100%;
+            background-position: center top, center center, center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes spin-dots {
+            to { --angle: 360deg; }
+        }
+
+        @keyframes spin-text-gradient {
+            to { --text-angle: 360deg; }
+        }
+
+        /* Layout container */
+        #container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: var(--font-body);
+            font-size: 18px;
+            align-items: center;
+        }
+
+        /* Hero Section Adapted for Redirect Card */
+        .hero-section {
+            width: 100%;
+            max-width: 1024px;
+            border-radius: 12px;
+            /* Subtly darkened background since we don't have the external image */
+            background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.95));
+            border: 1px solid var(--color-border-hover);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+            text-align: center;
+            padding: 60px 40px;
+            box-sizing: border-box;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-content {
+            color: #fff;
+        }
+
+        .hero-title {
+            font-family: var(--font-secondary);
+            font-size: 3em;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+            animation: spin-text-gradient 20s linear infinite;
+            background: linear-gradient(
+                var(--text-angle), 
+                #9c9c9c, 
+                #e4e4e4, 
+                #727272, 
+                #9c9c9c
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0px 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-body);
+            font-size: 1.2em;
+            margin: 0 0 10px 0;
+            opacity: 0.9;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+
+        .redirect-note {
+            font-size: 0.9em;
+            opacity: 0.6;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-btn {
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-family: var(--font-secondary);
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+        }
+
+        .hero-btn.primary {
+            background: var(--color-accent);
+            color: #121212;
+        }
+
+        .hero-btn.primary:hover {
+            background: var(--color-accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(243, 180, 71, 0.4);
+        }
+    </style>
 </head>
 <body>
-    <div id="loading-screen">
-        <div class="spinner"></div>
-    </div>
-    
-    <div id="mobile-warning">
-        <div class="mobile-warning-content">
-            <p>This site is not designed to work on mobile devices.</p>
-            <button onclick="closeMobileWarning()">Okay</button>
-        </div>
-    </div>
-    
-    <!-- SPLASH SCREEN: Disable/Enable in the CSS -->
-    <div class="popup-overlay" id="popup">
-        <div class="popup-container">
-            <button class="popup-close" onclick="closePopup()">&times;</button>
-            <div class="popup-image">
-                <img src="images_excluded/outnowpromo.jpg">
-            </div>
-            <div class="popup-content">
-                <div class="popup-header">We are moving to www.ParalakeCity.com</div>
-                <div class="popup-text">
-                    At some point in the coming months, the Paralake website will be moving to a new domain: <b>www.ParalakeCity.com</b>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
-            <a href="https://www.paralakecity.com"  class="popup-button">Go to the new domain!</a>
-        </div>
-    </div>
-    
-    <div id="header">
-        <span id="header-title" style="line-height: 0.8;">Paralake V6<br><span id="header-subtitle" style="font-size: 22px;">Development Archive</span></span>
-        
-        <a href="archive.html" style="padding-top: 5px">
-            <img src="images_excluded/archive_logo_mono.png" alt="Logo" style="height: 45px; border: 0px"
-            onmouseover="this.src='images_excluded/archive_logo.png';"
-            onmouseout="this.src='images_excluded/archive_logo_mono.png';">
-        </a>
-
-        <div id="header-menu">
-            <button class="menu-button-active" onclick="location.href='archive.html'">Development Archive</button>
-            <button class="menu-button" onclick="location.href='changelogs.html'">Changelogs</button>
-            <button class="menu-button" onclick="location.href='updates.html'">Posts</button>
-            <button class="menu-button" onclick="location.href='downloads.html'">Downloads</button>
-            <button class="menu-button" onclick="location.href='credits.html'">Map Credits</button>
-            <button class="menu-button-map" onclick="location.href='map.html'">Interactive Map</button>
-            <button id="theme-toggle">Dark Theme</button>
-        </div>
-    </div>
 
     <div id="container">
-        <div id="sidebar"></div>
-        <div id="image-container"></div>
-    </div>
-
-    <!--image popup-->
-    <div id="image-preview">
-        <span class="close">&times;</span>
-        <div class="preview-content">
-            <a id="preview-link" hreg="" target="_blank">
-                <img id="preview-img" src="" alt="Image">
-            </a>
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Paralake V6 Development Archive</h1>
+                <p class="hero-subtitle">All things Paralake V6 are now available at: <strong>ParalakeCity.com</strong></p>
+                
+                <div class="hero-buttons">
+                    <a href="https://paralakecity.com" class="hero-btn primary">Go to ParalakeCity.com</a>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div id="pagefooter" style="position: sticky; z-index: 9999;"></div>
-
-    <!-- image loading spinner -->
-    <div id="image-spinner" style="display: none;">
-        <div class="image-spinner"></div>
-    </div>
-    
-    <script>
-        // loading screen
-        let minLoadingTime = 500; // 1 second minimum
-                let startTime = Date.now();
-
-                window.addEventListener("load", function() {
-                    let loadingScreen = document.getElementById("loading-screen");
-                    let content = document.getElementById("content");
-
-                    let timeElapsed = Date.now() - startTime;
-                    let remainingTime = Math.max(0, minLoadingTime - timeElapsed);
-
-                    setTimeout(() => {
-                        loadingScreen.classList.add("hidden");
-
-                        setTimeout(() => {
-                            loadingScreen.style.display = "none";
-                        }, 500);
-                    }, remainingTime);
-                });
-    </script>
-
-    <script src="scripts/mobileWarning.js"></script>
-    <script src="scripts/footer.js"></script>
-    <script src="scripts/headerMenu.js"></script>
-    <script src="scripts/archive.js"></script>
-    <script src="scripts/splashscreen.js"></script>
-
 </body>
 </html>

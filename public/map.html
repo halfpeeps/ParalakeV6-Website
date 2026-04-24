@@ -1,87 +1,189 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paralake V6 Interactive Map  |  Paralake V6 Development Archive</title>
-    <link rel="icon" type="image/x-icon" href="images_excluded/archive_icon_mono.png">
+    <title>We've Moved - Paralake City</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Jost:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <link rel="stylesheet" href="css/map.css" />
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  </head>
-  <body>
-    <div id="map-container">
-      <input type="text" id="search-box" placeholder="Search locations..." />
-      <div id="map"></div>
-
-        <div id="tag-filter">
-          <strong style="display:block; margin-bottom: 6px;">Filter by Tag</strong>
-        </div>
-
-        <button id="tag-directory-toggle">📂 Directory</button>
-        <div id="tag-directory">
-          <div id="tag-directory-content"></div>
-        </div>
-
-        <a href="archive.html" id="back-button" title="Back to archive">Back</a>
-        <button id="editor-toggle" style="display: none;">Enable Editor</button>
-
-        <div id="sidebar">
-          <button id="sidebar-close" title="Close sidebar">×</button>
-          <h2 id="location-name"></h2>
-          <div class="tags" id="location-tags"></div>
-          <p id="location-description"></p>
-          <img id="location-image" class="location-image" />
-      </div>
-    </div>
-
     
-    <div id="overlay-info" style="display: none;">
-      <button id="hide-overlay-info" title="Hide info" style="float:right;">×</button>
-      <h3 
-        style="color: rgb(66, 161, 66);
-        text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px  1px 0 black,
-        1px  1px 0 black;
-      ">
-     Green Areas</h3>
-      <p>In green areas you can mug other players and be completely out of view from the public.</p>
+    <style>
+        @property --angle {
+            syntax: '<angle>';
+            initial-value: 0deg;
+            inherits: false;
+        }
 
+        @property --text-angle {
+            syntax: '<angle>';
+            initial-value: 0deg;
+            inherits: false;
+        }
 
-      <h3 
-        style="color: rgb(194, 166, 43);
-        text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px  1px 0 black,
-        1px  1px 0 black;
-      ">
-      Yellow Areas</h3>
-      <p>In yellow areas you should take extra care to make sure you are out of view of the public.  This may mean forcing the player you are attempting to mug into a more hidden part of the area.</p>
-      <h3 
-        style="color: rgb(204, 64, 64);
-        text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px  1px 0 black,
-        1px  1px 0 black;
-      ">
-      Unmarked Areas</h3>
-      <p>You may not mug other players in unmarked areas.</p>
-      <h3>Exceptions</h3>
-      <p>- All private property is a muggable location. (You should still take care not to be in view of those outside)</p>
-      <p>- All Drug Dealer locations are muggable areas.</p>
-      <p>- Office vents are a muggable area.</p>
+        :root {
+            /* Inferred colors based on your provided styles */
+            --color-bg: #0a0a0a;
+            --color-text: #ffffff;
+            --color-accent: #f3b447;
+            --color-accent-hover: #ffc56b;
+            --color-border-hover: rgba(255, 255, 255, 0.15);
+            
+            /* Gradient colors */
+            --grad-color-1: #d12d9c;
+            --grad-color-2: #f25f30;
+            --grad-color-3: #5ea2ef;
+            
+            /* Fonts */
+            --font-body: 'Funnel Sans', sans-serif;
+            --font-secondary: 'Jost', sans-serif;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+        }
+
+        body {
+            animation: spin-dots 10s linear infinite;
+            background-image: 
+                radial-gradient(ellipse at top, transparent 0%, var(--color-bg) 85%),
+                radial-gradient(circle, transparent 1px, var(--color-bg) 2.5px),
+                conic-gradient(from var(--angle), 
+                    var(--grad-color-1), 
+                    var(--grad-color-2), 
+                    var(--grad-color-3), 
+                    var(--grad-color-1)
+                );
+            background-size: 100% 100%, 20px 20px, 100% 100%;
+            background-position: center top, center center, center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes spin-dots {
+            to { --angle: 360deg; }
+        }
+
+        @keyframes spin-text-gradient {
+            to { --text-angle: 360deg; }
+        }
+
+        /* Layout container */
+        #container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: var(--font-body);
+            font-size: 18px;
+            align-items: center;
+        }
+
+        /* Hero Section Adapted for Redirect Card */
+        .hero-section {
+            width: 100%;
+            max-width: 1024px;
+            border-radius: 12px;
+            /* Subtly darkened background since we don't have the external image */
+            background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.95));
+            border: 1px solid var(--color-border-hover);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+            text-align: center;
+            padding: 60px 40px;
+            box-sizing: border-box;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-content {
+            color: #fff;
+        }
+
+        .hero-title {
+            font-family: var(--font-secondary);
+            font-size: 3em;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+            animation: spin-text-gradient 20s linear infinite;
+            background: linear-gradient(
+                var(--text-angle), 
+                #9c9c9c, 
+                #e4e4e4, 
+                #727272, 
+                #9c9c9c
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0px 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-body);
+            font-size: 1.2em;
+            margin: 0 0 10px 0;
+            opacity: 0.9;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+
+        .redirect-note {
+            font-size: 0.9em;
+            opacity: 0.6;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-btn {
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-family: var(--font-secondary);
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+        }
+
+        .hero-btn.primary {
+            background: var(--color-accent);
+            color: #121212;
+        }
+
+        .hero-btn.primary:hover {
+            background: var(--color-accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(243, 180, 71, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Paralake V6 Interactive Map</h1>
+                <p class="hero-subtitle">The interactive map has moved to: <strong>ParalakeCity.com</strong></p>
+                
+                <div class="hero-buttons">
+                    <a href="https://paralakecity.com/map" class="hero-btn primary">Go to the new map page.</a>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div id="overlay-info-toggle">▶</div>
-
-    <script src="scripts/map.js"></script>
-
-  </body>
+</body>
 </html>
