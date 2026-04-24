@@ -1,226 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="bjevHpP5Qc-g1TjDo6F0PUbD0nyB646EqcNfrxjrxjs" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Credits | Paralake V6</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/credits.css">
-    <link rel="stylesheet" type="text/css" href="css/splashscreen.css">
-    <link rel="icon" type="image/x-icon" href="images_excluded/archive_icon_mono.png">
+    <title>We've Moved - Paralake City</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Jost:ital@0;1&display=swap" rel="stylesheet">
+    
+    <style>
+        @property --angle {
+            syntax: '<angle>';
+            initial-value: 0deg;
+            inherits: false;
+        }
+
+        @property --text-angle {
+            syntax: '<angle>';
+            initial-value: 0deg;
+            inherits: false;
+        }
+
+        :root {
+            /* Inferred colors based on your provided styles */
+            --color-bg: #0a0a0a;
+            --color-text: #ffffff;
+            --color-accent: #f3b447;
+            --color-accent-hover: #ffc56b;
+            --color-border-hover: rgba(255, 255, 255, 0.15);
+            
+            /* Gradient colors */
+            --grad-color-1: #d12d9c;
+            --grad-color-2: #f25f30;
+            --grad-color-3: #5ea2ef;
+            
+            /* Fonts */
+            --font-body: 'Funnel Sans', sans-serif;
+            --font-secondary: 'Jost', sans-serif;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+        }
+
+        body {
+            animation: spin-dots 10s linear infinite;
+            background-image: 
+                radial-gradient(ellipse at top, transparent 0%, var(--color-bg) 85%),
+                radial-gradient(circle, transparent 1px, var(--color-bg) 2.5px),
+                conic-gradient(from var(--angle), 
+                    var(--grad-color-1), 
+                    var(--grad-color-2), 
+                    var(--grad-color-3), 
+                    var(--grad-color-1)
+                );
+            background-size: 100% 100%, 20px 20px, 100% 100%;
+            background-position: center top, center center, center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @keyframes spin-dots {
+            to { --angle: 360deg; }
+        }
+
+        @keyframes spin-text-gradient {
+            to { --text-angle: 360deg; }
+        }
+
+        /* Layout container */
+        #container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: var(--font-body);
+            font-size: 18px;
+            align-items: center;
+        }
+
+        /* Hero Section Adapted for Redirect Card */
+        .hero-section {
+            width: 100%;
+            max-width: 1024px;
+            border-radius: 12px;
+            /* Subtly darkened background since we don't have the external image */
+            background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.95));
+            border: 1px solid var(--color-border-hover);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+            text-align: center;
+            padding: 60px 40px;
+            box-sizing: border-box;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-content {
+            color: #fff;
+        }
+
+        .hero-title {
+            font-family: var(--font-secondary);
+            font-size: 3em;
+            margin: 0 0 10px 0;
+            font-weight: 700;
+            animation: spin-text-gradient 20s linear infinite;
+            background: linear-gradient(
+                var(--text-angle), 
+                #9c9c9c, 
+                #e4e4e4, 
+                #727272, 
+                #9c9c9c
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0px 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-body);
+            font-size: 1.2em;
+            margin: 0 0 10px 0;
+            opacity: 0.9;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.5;
+        }
+
+        .redirect-note {
+            font-size: 0.9em;
+            opacity: 0.6;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-btn {
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-family: var(--font-secondary);
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+        }
+
+        .hero-btn.primary {
+            background: var(--color-accent);
+            color: #121212;
+        }
+
+        .hero-btn.primary:hover {
+            background: var(--color-accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(243, 180, 71, 0.4);
+        }
+    </style>
 </head>
 <body>
-    <div id="header">
-        <span id="header-title" style="line-height: 0.8;">Paralake V6<br><span id="header-subtitle" style="font-size: 22px;">Credits</span></span>
-        
-        <a href="archive.html" style="padding-top: 5px">
-            <img src="images_excluded/archive_logo_mono.png" alt="Logo" style="height: 45px; border: 0px"
-            onmouseover="this.src='images_excluded/archive_logo.png';"
-            onmouseout="this.src='images_excluded/archive_logo_mono.png';">
-        </a>
 
-        <div id="header-menu">
-            <button class="menu-button" onclick="location.href='archive.html'">Development Archive</button>
-            <button class="menu-button" onclick="location.href='changelogs.html'">Changelogs</button>
-            <button class="menu-button" onclick="location.href='updates.html'">Posts</button>
-            <button class="menu-button" onclick="location.href='downloads.html'">Downloads</button>
-            <button class="menu-button-active" onclick="location.href='credits.html'">Map Credits</button>
-            <button class="menu-button-map" onclick="location.href='map.html'">Interactive Map</button>
-            <button id="theme-toggle">Dark Theme</button>
+    <div id="container">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Paralake V6 Development Archive</h1>
+                <p class="hero-subtitle">All things Paralake V6 are now available at: <strong>ParalakeCity.com</strong></p>
+                
+                <div class="hero-buttons">
+                    <a href="https://paralakecity.com" class="hero-btn primary">Go to ParalakeCity.com</a>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- SPLASH SCREEN: Disable/Enable in the CSS -->
-    <div class="popup-overlay" id="popup">
-        <div class="popup-container">
-            <button class="popup-close" onclick="closePopup()">&times;</button>
-            <div class="popup-image">
-                <img src="images_excluded/outnowpromo.jpg">
-            </div>
-            <div class="popup-content">
-                <div class="popup-header">We are moving to www.ParalakeCity.com</div>
-                <div class="popup-text">
-                    At some point in the coming months, the Paralake website will be moving to a new domain: <b>www.ParalakeCity.com</b>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>
-            <a href="https://www.paralakecity.com/credits"  class="popup-button">Go to the new domain!</a>
-        </div>
-    </div>
-
-        
-    <div id="page-container" style="background-image: url('images_excluded/bg06.png');">
-        <main id="credits-container">
-            <h1 style="font-family: var(--font-secondary); font-size: 36px;">Credits</h1>
-    
-            <div class="credit-item-primary">
-                <h1>Paralake V6 created by</h1>
-                <div class="image-row">
-                    <div class="image-box">
-                        <a href="https://perpheads.com/members/peeps.10255/"  target="_blank">
-                            <img src="images_excluded/peeps.png">
-                        </a>
-                        <a href="https://perpheads.com/members/peeps.10255/"  target="_blank">
-                            <p>peeps</p>
-                        </a>
-                    </div>
-                    <div class="image-box">
-                        <a href="https://perpheads.com/members/lelios1.3501/"  target="_blank">
-                            <img src="images_excluded/lelios.jpg">
-                        </a>
-                        <a href="https://perpheads.com/members/lelios1.3501/"  target="_blank">
-                            <p>Lelios1</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="credit-item-basedon">
-                <h1>Based on the original Paralake maps by 
-                    <a href="https://perpheads.com/members/xquality.4/"  target="_blank">
-                        Xquality
-                    </a>
-                </h1>
-            </div>
-    
-            <div class="credit-item">
-                <div class="credit-row">
-                    <div class="credits-collumn">
-                        <h1>Modelling & Texturing</h1>
-                        <h2><a href="https://perpheads.com/members/carrot.259/" target="_blank">Carrot</a></h2>
-                        <h2><a href="https://perpheads.com/members/ezza.5947/" target="_blank">Ezza</a></h2>
-                        <h2><a href="https://perpheads.com/members/jyrgen.6367/" target="_blank">Jyrgen</a></h2>
-                        <h2><a href="https://perpheads.com/members/kasperr.7604/" target="_blank">Kasperr</a></h2>
-                        <h2><a href="https://perpheads.com/members/lelios1.3501/" target="_blank">Lelios</a></h2>
-                        <h2><a href="https://perpheads.com/members/peeps.10255/" target="_blank">peeps</a></h2>
-                        <h2><a href="https://perpheads.com/members/stephenpuffs.57/" target="_blank">StephenPuffs</a></h2>
-                    </div>
-
-                    <div class="credits-collumn">
-                        <h1>Coding</h1>
-                        <h2><a href="https://perpheads.com/members/bolli.5/" target="_blank">Bolli</a></h2>
-                        <h2><a href="https://perpheads.com/members/carrot.259/" target="_blank">Carrot</a></h2>
-                        <h2><a href="https://perpheads.com/members/fredy.1/" target="_blank">Fredy</a></h2>
-                        <h2><a href="https://perpheads.com/members/gp.9773/" target="_blank">GP</a></h2>
-                        <h2><a href="https://perpheads.com/members/maia.4436/" target="_blank">Maia</a></h2>
-                        <h2><a href="https://perpheads.com/members/peeps.10255/" target="_blank">peeps</a></h2>
-                        <h2><a href="https://perpheads.com/members/sindarin.9772/" target="_blank">Sindarin</a></h2>
-                    </div>
-
-                    <div class="credits-collumn">
-                        <h1>Additional Textures</h1>
-                        <h2><a href="https://perpheads.com/members/bnjemann.6288/" target="_blank">Bnjemann</a></h2>
-                        <h2><a href="https://perpheads.com/members/bolli.5/" target="_blank">Bolli</a></h2>
-                        <h2><a href="https://perpheads.com/members/captain.5202/" target="_blank">Captain</a></h2>
-                        <h2><a href="https://perpheads.com/members/eistee-von-aldi.10876/" target="_blank">Eistee von Aldi</a></h2>
-                        <h2><a href="https://perpheads.com/members/juanbonita.11019/" target="_blank">JuanBonita </a></h2>
-                        <h2><a href="https://perpheads.com/members/recession.13832/" target="_blank">Recession</a></h2>
-                        <h2><a href="https://perpheads.com/members/rogue.2641/" target="_blank">rogue</a></h2>
-                        <h2><a href="https://perpheads.com/members/scoot.9705/" target="_blank">Scoot</a></h2>
-                        <h2><a href="https://perpheads.com/members/shaquille-oatmeal.10280/" target="_blank">Shaquille Oatmeal</a></h2>
-                        <h2><a href="https://perpheads.com/members/skudist.1274/" target="_blank">Skudist</a></h2>
-                        <h2><a href="https://perpheads.com/members/snusmus.8921/" target="_blank">Snusmus</a></h2>
-                        <h2><a href="https://perpheads.com/members/tony-montanna.11877/" target="_blank">Tony Montanna</a></h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="credit-item">
-                <h1>Playtesters</h1>
-                <div class="credit-row">
-                    <div class="credits-collumn">
-                        <h2>3izu</h2>
-                        <h2>A1L</h2>
-                        <h2>Abyssalryder</h2>
-                        <h2>Agent47</h2>
-                        <h2>aMagicalSmile</h2>
-                        <h2>AwesomeGamersHQ</h2>
-                        <h2>Aquaa</h2>
-                        <h2>Blobvis 2.0</h2>
-                        <h2>Bnjemann</h2>
-                        <h2>Bojing</h2>
-                        <h2>Bolli</h2>
-                        <h2>Callum</h2>
-                        <h2>Captain</h2>
-                        <h2>Carrot</h2>
-                        <h2>Collier</h2>
-                        <h2>Curak</h2>
-                        <h2>Dayz096</h2>
-                        <h2>Draxen</h2>
-                        <h2>Ellie</h2>
-                        <h2>Ezza</h2>
-                        <h2>Fredy</h2>
-                        <h2>GP</h2>
-                        <h2>Ggamer</h2>
-                        <h2>Hodgparjor</h2>
-                        <h2>Jyrgen</h2>
-                        <h2>Kasperr</h2>
-                    </div>
-
-                    <div class="credits-collumn">
-                        <h2>Lelios</h2>
-                        <h2>lencz</h2>
-                        <h2>Maia</h2>
-                        <h2>Mallard</h2>
-                        <h2>Maya</h2>
-                        <h2>Megasaw</h2>
-                        <h2>Mimeyy</h2>
-                        <h2>Mocho</h2>
-                        <h2>Nikoszarv</h2>
-                        <h2>NorthNorthEast</h2>
-                        <h2>Nottoc</h2>
-                        <h2>Oddy</h2>
-                        <h2>peeps</h2>
-                        <h2>Phoondos</h2>
-                        <h2>rogue</h2>
-                        <h2>Scoot</h2>
-                        <h2>Scrabuz</h2>
-                        <h2>Sean</h2>
-                        <h2>Sindarin</h2>
-                        <h2>Skudist</h2>
-                        <h2>SNUSMUS</h2>
-                        <h2>StephenPuffs</h2>
-                        <h2>Super_</h2>
-                        <h2>Tilin</h2>
-                        <h2>Tyla Jai</h2>
-                        <h2>Vollgas</h2>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="credit-item">
-                <h1>Special Thanks</h1>
-                <div class="credit-row">
-                    <div class="credits-collumn">
-                        <a href="https://store.steampowered.com/app/251110/INFRA/" target="_blank"><h2>Loiste Interactive, for allowing us to use assets from their game INFRA</h2></a>
-                        <h1>&#9135;&#9135;&#9135;&#9135;&#9135;</h1>
-                        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2925489145&searchtext=nyc" target="_blank"><h2>Fishke, for use of the Unioncity assets</h2></a>
-                        <h1>&#9135;&#9135;&#9135;&#9135;&#9135;</h1>
-                        <a href="https://ficool2.github.io/HammerPlusPlus-Website/" target="_blank"><h2></hw>ficool2, for creating Hammer++</h2></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="credit-item">
-                <div class="credit-row">
-                    <div class="credits-collumn" style="font-size: 14px; padding: 0;">
-                        <h3>Missing from this list?  Contact peeps on the Forums or Discord.</h3>
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <div id="pagefooter" style="position: sticky !important; bottom: 0; width: 100%; z-index: 9999;"></div>
-    <script src="scripts/mobileWarning.js"></script>
-    <script src="scripts/footer.js"></script>
-    <script src="scripts/headerMenu.js"></script>
-    <script src="scripts/splashscreen.js"></script>
 </body>
 </html>
